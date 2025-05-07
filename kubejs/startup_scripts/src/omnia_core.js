@@ -58,9 +58,9 @@ let LETTERS = {
   y: 'Y',
   z: 'Z'
 }
-let TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'hoe']
-let ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
-let DIVING = ['diving_helmet', 'backtank', 'diving_boots']
+const TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'hoe']
+const ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
+const DIVING = ['diving_helmet', 'backtank', 'diving_boots']
 
 StartupEvents.registry('item', event => { // Register new items here event.create('example_item').displayName('Example Item')
   /**

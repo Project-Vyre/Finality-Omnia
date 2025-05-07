@@ -1,7 +1,6 @@
 // requires: enigmaticlegacy
 
 let EL_TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'scythe']
-let ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
 
 ItemEvents.modification(event => {
   for (let i = 0; i < EL_TOOLS.length; i++) {
