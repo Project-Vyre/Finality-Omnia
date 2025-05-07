@@ -28,6 +28,7 @@ blacksmith.jar
 config/aether/*
 embeddium-fingerprint.json
 config/resourceful-config-web.json
+emi.json
 
 # Ignore Essential files
 essential/*.jar
