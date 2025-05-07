@@ -64,6 +64,7 @@ jei/world/local/
 debug/
 exposures/*
 .mixin.out/*
+config/yes_steve_model/*
 
 # Ignore ProbeJS generated files in .vscode
 fluid-attributes.json
