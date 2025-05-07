@@ -1,0 +1,267 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_management"
+	group: "668E3EA3A7A91B79"
+	hide_quest_details_until_startable: true
+	icon: "minecraft:chest"
+	id: "32CC85BACCD9E454"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4A691BB889286C89"]
+			description: [
+				"You are free to utilize whatever storage methods you feel best suit your needs."
+				""
+				"&eCreate&r can also be utilized to become your storage management system if you put in the effort of setting up something impressive."
+			]
+			hide_until_deps_visible: true
+			id: "1229F8883A381F07"
+			size: 1.5d
+			subtitle: "There are many options for storage."
+			tasks: [{
+				id: "6F00A5E440FE9504"
+				title: "Everything Storage checkmark"
+				type: "checkmark"
+			}]
+			title: "Introduction to Storage Management"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1229F8883A381F07"]
+			id: "301D20710476E211"
+			subtitle: "Blastproof and *secure!"
+			tasks: [{
+				id: "078A5AE4E756FD21"
+				item: {
+					Count: 1
+					id: "monobank:monobank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Big Bank"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["301D20710476E211"]
+			id: "058EC694FF4FE1C9"
+			subtitle: "Drawers are pretty hefty."
+			tasks: [{
+				id: "12A35040DB282694"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			title: "Drawers!"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["301D20710476E211"]
+			id: "5140FC24786708B5"
+			tasks: [
+				{
+					id: "526CAF2E9C2C5C33"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+				{
+					id: "054EE76284B88D15"
+					item: "functionalstorage:gold_upgrade"
+					type: "item"
+				}
+				{
+					id: "3CEA5BCD8FD7EE69"
+					item: "functionalstorage:diamond_upgrade"
+					type: "item"
+				}
+				{
+					id: "2AC7DF9B86EE181D"
+					item: "functionalstorage:netherite_upgrade"
+					type: "item"
+				}
+			]
+			title: "Storage Upgrades"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["058EC694FF4FE1C9"]
+			id: "0D79A9F2AA71B6E9"
+			tasks: [{
+				id: "2B610225571C90A4"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1229F8883A381F07"]
+			description: [
+				"The Tesseract is more like a transportation device than a storage device, despite having some capacity."
+				""
+				"You can create an unlimited amount of channels as well."
+			]
+			id: "6359967C28611C4B"
+			subtitle: "Transporting items, fluids and energy through space and time."
+			tasks: [{
+				id: "6CAD49E7CC74375E"
+				item: "tesseract:tesseract"
+				type: "item"
+			}]
+			title: "The Tesseract"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1229F8883A381F07"]
+			description: ["For your information, your backpack will keep its NBT data when it is upgraded using the shaped recipe."]
+			id: "17BAAE47FAB941C3"
+			shape: "hexagon"
+			tasks: [{
+				id: "4498F51394DF3D28"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Introduction to Sophisticated Backpacks"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1229F8883A381F07"]
+			description: ["If you have already made a Barrel or Chest, you can utilize the Basic Tier Upgrade to upgrade a vanilla storage block into a Sophisticated Storage storage solution."]
+			id: "5BDC5533A3AB84D1"
+			rewards: [{
+				id: "2089E210FA525F93"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Sophisticated Storage, for sophisticated storage solutions."
+			tasks: [
+				{
+					id: "72CB2362186B864C"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:barrel"
+						tag: {
+							woodType: "spruce"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B889EA83EB8D08F"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:chest"
+						tag: {
+							uuid: [I;
+								-1802955342
+								1560300475
+								-1477787380
+								-60431196
+							]
+							woodType: "spruce"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Introduction to Sophisticated Storage"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1229F8883A381F07"]
+			description: [
+				"The following items are required to set up an Ars Nouveau storage system."
+				""
+				"- Storage Lectern"
+				"- Bookwyrm Charms"
+				"- Dominion Wand"
+				"- Chest or Barrel"
+				""
+				"At least 1 of each is required."
+				""
+				"First, right click the Storage Lectern with a Bookwyrm Charm in your main hand. This will summon a Bookwyrm that is linked to that Storage Lectern."
+				""
+				"After that, sneak + right click with the Dominion Wand in your main hand on the Storage Lectern. Do the same to a Chest or Barrel to link it to the Storage Lectern."
+				""
+				"A Sophisticated Storage Controller with Sophisticated Storage's storage blocks allows easier interfacing so you don't have to repeat the above step multiple times for each storage block."
+			]
+			id: "16A0492D4152E409"
+			subtitle: "Storage access, with magic!"
+			tasks: [{
+				id: "77B5ACA2689988CB"
+				item: "ars_nouveau:storage_lectern"
+				type: "item"
+			}]
+			title: "The Magical Storage Lectern"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1229F8883A381F07"]
+			description: [
+				"AE2's quest tree is separate from here due to the mod's depth and complexity."
+				""
+				"However, here's a free Item Storage Cell to get you started."
+			]
+			icon: "ae2:singularity"
+			id: "7BD513644C310AAF"
+			rewards: [{
+				id: "2C3282CE8E09DF5F"
+				item: {
+					Count: 1
+					id: "ae2:item_storage_cell_16k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Short for Applied Energistics 2"
+			tasks: [{
+				id: "1628C478BBDD0977"
+				title: "Acknowledge the button!"
+				type: "checkmark"
+			}]
+			title: "Applied Energistics 2"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BDC5533A3AB84D1"]
+			id: "0EE78A71498C83CB"
+			shape: "square"
+			subtitle: "You'll need them."
+			tasks: [{
+				id: "4D20D7A67BC73C86"
+				item: "sophisticatedstorage:upgrade_base"
+				type: "item"
+			}]
+			title: "Sophisticated Storage Upgrades"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17BAAE47FAB941C3"]
+			id: "12B5168B3AB4D0B9"
+			shape: "square"
+			subtitle: "You'll need these as well."
+			tasks: [{
+				id: "477B1C9E2FFF6B76"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			title: "Sophisticated Backpack Upgrades"
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+	subtitle: ["Organization is your best friend."]
+	title: "Storage Management"
+}
