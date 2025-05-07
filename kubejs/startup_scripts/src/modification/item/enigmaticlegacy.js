@@ -1,7 +1,9 @@
 // requires: enigmaticlegacy
 
+let EL_TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'scythe']
+let ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
+
 ItemEvents.modification(event => {
-  let EL_TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'scythe']
   for (let i = 0; i < EL_TOOLS.length; i++) {
     let insert = EL_TOOLS[i];
     event.modify(`enigmaticlegacy:etherium_${insert}`, item => {

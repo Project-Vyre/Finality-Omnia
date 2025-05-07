@@ -5,6 +5,9 @@
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  */
 
+let TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'hoe']
+let ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
+
 let INFERIUM_TOOLS = 2048
 let PRUDENTIUM_TOOLS = 4096
 let TERTIUM_TOOLS = 4096

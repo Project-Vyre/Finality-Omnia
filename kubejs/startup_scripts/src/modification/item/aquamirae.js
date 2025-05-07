@@ -1,5 +1,7 @@
 // requires: aquamirae
 
+let ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
+
 ItemEvents.modification(event => {
   let LEGENDARY = ['whisper_of_the_abyss', 'coral_lance', 'divider']
   let ABYSS_ARMOR = ['heaume', 'brigantine', 'leggings', 'boots']

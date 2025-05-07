@@ -1,5 +1,8 @@
 // requires: aether
 
+let TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'hoe']
+let ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
+
 ItemEvents.modification(event => {
   for (let i = 0; i < TOOLS.length; i++) {
     let tool = TOOLS[i];
