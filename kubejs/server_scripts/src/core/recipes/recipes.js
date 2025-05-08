@@ -10,7 +10,6 @@
  */
 
 // priority: 100
-// requires: fusion
 // requires: kubejs_create
 // requires: farmersdelight
 // requires: salt

@@ -10,7 +10,6 @@
 
 // priority: 10
 // requires: create
-// requires: fusion
 
 StartupEvents.postInit(event => {
   Platform.mods.kubejs.name = 'FinalityJS'

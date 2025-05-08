@@ -1,5 +1,4 @@
 // requires: better_beacons
-// requires: fusion
 
 ServerEvents.tags('item', event => {
   event.add('minecraft:beacon_payment_items', 'kubejs:high_entropy_alloy')
