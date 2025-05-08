@@ -26,6 +26,10 @@ ServerEvents.recipes(event => {
     'minecraft:crossbow',
     'create:experience_block'
   ]).id('kubejs:unbreakable_crossbow')
+  event.recipes.kubejs.shapeless(Item.of('minecraft:flint_and_steel').withNBT({ Unbreakable: 1}), [
+    'minecraft:flint_and_steel',
+    'create:experience_block'
+  ]).id('kubejs:unbreakable_flint_and_steel')
   if (Platform.isLoaded('kubejs_create')) {
     event.recipes.kubejs.shapeless(Item.of('kubejs:final_sand_paper').withNBT({ Unbreakable: 1 }), [
       'kubejs:final_sand_paper',
@@ -107,6 +111,12 @@ ServerEvents.recipes(event => {
         'create:experience_block'
       ]).id('kubejs:celestisynth/unbreakable_' + recipeid)
     }
+  }
+  if (Platform.isLoaded('realistictorches')) {
+    event.recipes.kubejs.shapeless(Item.of('realistictorches:matchbox').withNBT({ Unbreakable: 1 }), [
+      'realistictorches:matchbox',
+      'create:experience_block'
+    ]).id('kubejs:unbreakable_matchbox')
   }
 })
 
