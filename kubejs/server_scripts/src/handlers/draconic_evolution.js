@@ -1,3 +1,6 @@
+// requires: draconicevolution
+// requires: kubejs_create
+
 let gold_ingot = 'minecraft:gold_ingot'
 let diamond = 'minecraft:diamond'
 

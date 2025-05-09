@@ -112,12 +112,6 @@ ServerEvents.recipes(event => {
       ]).id('kubejs:celestisynth/unbreakable_' + recipeid)
     }
   }
-  if (Platform.isLoaded('realistictorches')) {
-    event.recipes.kubejs.shapeless(Item.of('realistictorches:matchbox').withNBT({ Unbreakable: 1 }), [
-      'realistictorches:matchbox',
-      'create:experience_block'
-    ]).id('kubejs:unbreakable_matchbox')
-  }
 })
 
 /*
