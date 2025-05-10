@@ -1,5 +1,6 @@
 /**
  * @file Handles mechanics for items.
+ * @version 1201-O
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  * @author Liopyu <https://github.com/liopyu> Slapped me into my senses 
  */
@@ -53,12 +54,12 @@ ItemEvents.firstRightClicked(event => {
   let lightningBolt = entity.block.createEntity('minecraft:lightning_bolt')
   let playerAABB = player.boundingBox.inflate(5)
   let myBoundingBox = AABB.of( // [19:08:50] [ERROR] ! src/core/mechanics.js#55: Error in 'ItemEvents.firstRightClicked': TypeError: Cannot call method "x" of undefined
-    player.pos.x() - 20,
-    player.pos.y() - 5,
-    player.pos.z() - 20,
-    player.pos.x() + 20,
-    player.pos.y() + 10,
-    player.pos.z() + 20
+    player.position().x() - 20,
+    player.position().y() - 5,
+    player.position().z() - 20,
+    player.position().x() + 20,
+    player.position().y() + 10,
+    player.position().z() + 20
   )
   if (item.getId() == 'kubejs:final_sword') {
     level.getEntitiesWithin(myBoundingBox).forEach(entity => {
@@ -117,12 +118,12 @@ ItemEvents.firstRightClicked(event => {
   }
   if (item.getId() == 'kubejs:final_axe') {
     let fangBox = AABB.of(
-      player.pos.x() - 20,
-      player.pos.y() - 5,
-      player.pos.z() - 20,
-      player.pos.x() + 20,
-      player.pos.y() + 10,
-      player.pos.z() + 20
+      player.position().x() - 20,
+      player.position().y() - 5,
+      player.position().z() - 20,
+      player.position().x() + 20,
+      player.position().y() + 10,
+      player.position().z() + 20
     )
     level.getEntitiesWithin(fangBox).forEach(entity => {
       switch (entity.getType()) {
@@ -167,12 +168,12 @@ ItemEvents.rightClicked(event => {
   let lightningBolt = entity.block.createEntity('minecraft:lightning_bolt')
   let playerAABB = player.boundingBox.inflate(5)
   let myBoundingBox = AABB.of(
-    player.pos.x() - 20,
-    player.pos.y() - 5,
-    player.pos.z() - 20,
-    player.pos.x() + 20,
-    player.pos.y() + 10,
-    player.pos.z() + 20
+    player.position().x() - 20,
+    player.position().y() - 5,
+    player.position().z() - 20,
+    player.position().x() + 20,
+    player.position().y() + 10,
+    player.position().z() + 20
   )
   if (item.getId() == 'kubejs:final_sword') {
     level.getEntitiesWithin(myBoundingBox).forEach(entity => {

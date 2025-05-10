@@ -1,6 +1,6 @@
 /**
  * @file The core registry, responsible for items, blocks, fluids, etc.
- * @version 1.20.1
+ * @version 1201-O
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  * @author squoshi <https://github.com/squoshi> Helped me a lot very early on. Thank you. Also artist of the gold block texture.
  * @author ChiefArug <https://github.com/ChiefArug> Helped me a lot very early on. Thank you.

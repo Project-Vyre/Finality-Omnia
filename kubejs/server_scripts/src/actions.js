@@ -3,7 +3,7 @@
 
 /**
  * @file Server handler for certain player actions...
- * @version 1201-M
+ * @version 1201-O
  * @author pietro-lopes <https://github.com/pietro-lopes> AKA Uncandango
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  */

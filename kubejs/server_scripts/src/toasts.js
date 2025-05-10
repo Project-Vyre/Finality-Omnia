@@ -1,6 +1,8 @@
 // priority: 20
 
 /**
+ * @file Toast notifications on boss death.
+ * @version 1201-O
  * @author EvanHsieh0415 <https://github.com/EvanHsieh0415> Creating the basis of the boss death toast notification. https://discord.com/channels/303440391124942858/1129981022554050630
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  */

@@ -1,6 +1,6 @@
 /**
  * @file Live in-game tips.
- * 
+ * @version 1201-O
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  * @author squoshi <https://github.com/squoshi> Proposing the switch function
  * @author pietro-lopes <https://github.com/pietro-lopes> For fixing the math portion
