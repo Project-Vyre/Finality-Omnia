@@ -56,6 +56,46 @@ ServerEvents.recipes(event => {
   }
 })
 
+let bop_stripped_logs = [
+  'biomesoplenty:stripped_empyreal_log',
+  'biomesoplenty:stripped_fir_log',
+  'biomesoplenty:stripped_maple_log',
+  'biomesoplenty:stripped_pine_log'
+]
+
+let bop_stripped_woods = [
+  'biomesoplenty:stripped_empyreal_wood',
+  'biomesoplenty:stripped_fir_wood',
+  'biomesoplenty:stripped_maple_wood',
+  'biomesoplenty:stripped_pine_wood'
+]
+
+ServerEvents.tags('item', event => {
+  if (Platform.isLoaded('create')) {
+    for (let i = 0; i < bop_stripped_logs.length; i++) {
+      let element = bop_stripped_logs[i];
+      event.add('forge:stripped_logs', element)
+    }
+    for (let I = 0; I < bop_stripped_woods.length; I++) {
+      let element = bop_stripped_woods[I];
+      event.add('forge:stripped_wood', element)
+    }
+  }
+})
+
+ServerEvents.tags('block', event => {
+  if (Platform.isLoaded('create')) {
+    for (let i = 0; i < bop_stripped_logs.length; i++) {
+      let element = bop_stripped_logs[i];
+      event.add('forge:stripped_logs', element)
+    }
+    for (let I = 0; I < bop_stripped_woods.length; I++) {
+      let element = bop_stripped_woods[I];
+      event.add('forge:stripped_wood', element)
+    }
+  }
+})
+
 ServerEvents.tags('fluid', event => {
   event.add('create:bottomless/allow', 'biomesoplenty:blood')
 })
