@@ -199,20 +199,22 @@ function allMessages(event) {
       ])
       break;
     case 12:
-      event.server.tell([
-        Component.of('<'),
-        Component.of('CelestialAbyss').lightPurple(),
-        Component.of('> '),
-        Component.translatable('string.kubejs.announcer.hourglass.line_1')
-      ])
-      event.server.scheduleInTicks(75, t => {
+      if (Platform.isLoaded('hourglass')) {
         event.server.tell([
           Component.of('<'),
           Component.of('CelestialAbyss').lightPurple(),
           Component.of('> '),
-          Component.translatable('string.kubejs.announcer.hourglass.line_2')
+          Component.translatable('string.kubejs.announcer.hourglass.line_1')
         ])
-      })
+        event.server.scheduleInTicks(75, t => {
+          event.server.tell([
+            Component.of('<'),
+            Component.of('CelestialAbyss').lightPurple(),
+            Component.of('> '),
+            Component.translatable('string.kubejs.announcer.hourglass.line_2')
+          ])
+        })
+      }
       break;
     case 13:
       event.server.tell([
