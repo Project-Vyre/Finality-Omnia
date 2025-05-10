@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     'minecraft:crossbow',
     'create:experience_block'
   ]).id('kubejs:unbreakable_crossbow')
-  event.recipes.kubejs.shapeless(Item.of('minecraft:flint_and_steel').withNBT({ Unbreakable: 1}), [
+  event.recipes.kubejs.shapeless(Item.of('minecraft:flint_and_steel').withNBT({ Unbreakable: 1 }), [
     'minecraft:flint_and_steel',
     'create:experience_block'
   ]).id('kubejs:unbreakable_flint_and_steel')
@@ -58,6 +58,15 @@ ServerEvents.recipes(event => {
     'farmersdelight:netherite_knife',
     'create:experience_block'
   ]).id('kubejs:farmersdelight/unbreakable_netherite_knife')
+  if (Platform.isLoaded('chalk')) {
+    for (let i = 0; i < COLOR.length; i++) {
+      let chalk_color = COLOR[i];
+      event.recipes.kubejs.shapeless(Item.of('chalk:' + chalk_color + '_chalk').withNBT({ Unbreakable: 1 }), [
+        'chalk:' + chalk_color + '_chalk',
+        'create:experience_block'
+      ]).id('kubejs:chalk/unbreakable_' + chalk_color + '_chalk')
+    }
+  }
   if (Platform.isLoaded('pickletweaks')) {
     event.recipes.kubejs.shapeless(Item.of('pickletweaks:netherite_paxel').withNBT({ Unbreakable: 1 }), [
       'pickletweaks:netherite_paxel',
