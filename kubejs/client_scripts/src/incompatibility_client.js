@@ -1,5 +1,4 @@
 // priority: 0
-// requires: create
 
 /**
  * @ChiefArug
@@ -10,7 +9,7 @@
  * *cough* OptiFine *cough*
  */
 
-const BAD_MODS = ['optifine']
+const BAD_MODS = ['optifine', 'oculus']
 
 let badModsLoaded = BAD_MODS.filter(mod => Platform.getMods().keySet().contains(mod))
 
