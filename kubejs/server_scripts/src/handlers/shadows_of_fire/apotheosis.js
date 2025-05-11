@@ -51,6 +51,12 @@ let END_GEMS = [
 ]
 
 ServerEvents.recipes(event => {
+  if (Platform.isLoaded('realistictorches')) {
+    event.recipes.minecraft.campfire_cooking(
+      'realistictorches:lit_torch',
+      'minecraft:stick'
+    ).xp(0).cookingTime(40).id('apotheosis:torch')
+  }
   if (!Platform.isLoaded('productivebees')) {
     event.custom({
       "type": "apotheosis:spawner_modifier",
