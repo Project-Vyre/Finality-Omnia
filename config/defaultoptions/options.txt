@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["file/Enhanced Audio r6.zip","file/Enhanced Audio Ambience r1.zip"]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/Nicer-Rain-1.0.0.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
