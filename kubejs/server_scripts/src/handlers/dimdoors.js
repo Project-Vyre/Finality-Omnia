@@ -9,7 +9,8 @@
 
 let dim_dupe = [
   'world_thread',
-  'solid_static'
+  'solid_static',
+  'infrangible_fiber'
 ]
 
 ServerEvents.recipes(event => {
