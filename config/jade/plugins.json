@@ -54,6 +54,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "lightmanscurrency": {
+    "model_variant": true,
+    "paygate": true
+  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
