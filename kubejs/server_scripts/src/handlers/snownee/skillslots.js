@@ -1,5 +1,5 @@
 // requires: skillslots
-// ignored: false
+// ignored: true
 
 /**
  * @file Handler for Skill Slots.
