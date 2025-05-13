@@ -940,11 +940,6 @@
 					item: "kubejs:high_entropy_alloy"
 					type: "item"
 				}
-				{
-					id: "72EB9D43B9C91A20"
-					item: "kubejs:duplicator"
-					type: "item"
-				}
 			]
 			title: "Presenting High Entropy Alloy"
 			x: 0.0d

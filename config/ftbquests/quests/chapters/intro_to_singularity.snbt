@@ -556,17 +556,6 @@
 					type: "item"
 				}
 				{
-					id: "47D090D0F1DB4831"
-					item: {
-						Count: 1
-						id: "scannable:scanner"
-						tag: {
-							energy: 5000
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "4B0026FA48D35100"
 					item: "tesseract:tesseract"
 					type: "item"

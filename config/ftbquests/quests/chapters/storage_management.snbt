@@ -47,59 +47,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["301D20710476E211"]
-			id: "058EC694FF4FE1C9"
-			subtitle: "Drawers are pretty hefty."
-			tasks: [{
-				id: "12A35040DB282694"
-				item: "functionalstorage:oak_1"
-				type: "item"
-			}]
-			title: "Drawers!"
-			x: -3.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["301D20710476E211"]
-			id: "5140FC24786708B5"
-			tasks: [
-				{
-					id: "526CAF2E9C2C5C33"
-					item: "functionalstorage:copper_upgrade"
-					type: "item"
-				}
-				{
-					id: "054EE76284B88D15"
-					item: "functionalstorage:gold_upgrade"
-					type: "item"
-				}
-				{
-					id: "3CEA5BCD8FD7EE69"
-					item: "functionalstorage:diamond_upgrade"
-					type: "item"
-				}
-				{
-					id: "2AC7DF9B86EE181D"
-					item: "functionalstorage:netherite_upgrade"
-					type: "item"
-				}
-			]
-			title: "Storage Upgrades"
-			x: -2.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["058EC694FF4FE1C9"]
-			id: "0D79A9F2AA71B6E9"
-			tasks: [{
-				id: "2B610225571C90A4"
-				item: "functionalstorage:ender_drawer"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["1229F8883A381F07"]
 			description: [
 				"The Tesseract is more like a transportation device than a storage device, despite having some capacity."
@@ -175,35 +122,6 @@
 			title: "Introduction to Sophisticated Storage"
 			x: 2.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["1229F8883A381F07"]
-			description: [
-				"The following items are required to set up an Ars Nouveau storage system."
-				""
-				"- Storage Lectern"
-				"- Bookwyrm Charms"
-				"- Dominion Wand"
-				"- Chest or Barrel"
-				""
-				"At least 1 of each is required."
-				""
-				"First, right click the Storage Lectern with a Bookwyrm Charm in your main hand. This will summon a Bookwyrm that is linked to that Storage Lectern."
-				""
-				"After that, sneak + right click with the Dominion Wand in your main hand on the Storage Lectern. Do the same to a Chest or Barrel to link it to the Storage Lectern."
-				""
-				"A Sophisticated Storage Controller with Sophisticated Storage's storage blocks allows easier interfacing so you don't have to repeat the above step multiple times for each storage block."
-			]
-			id: "16A0492D4152E409"
-			subtitle: "Storage access, with magic!"
-			tasks: [{
-				id: "77B5ACA2689988CB"
-				item: "ars_nouveau:storage_lectern"
-				type: "item"
-			}]
-			title: "The Magical Storage Lectern"
-			x: 1.5d
-			y: -1.5d
 		}
 		{
 			dependencies: ["1229F8883A381F07"]
