@@ -26,6 +26,10 @@ ServerEvents.recipes(event => {
     G: 'ae2:quartz_vibrant_glass',
     P: 'create:mechanical_press'
   }).id('create_mechanical_extruder:mechanical_extruder')
+  event.recipes.create_mechanical_extruder.extruding(Item.of('minecraft:amethyst_shard').withChance(0.020), [
+    Item.of('minecraft:budding_amethyst'),
+    Item.of('minecraft:budding_amethyst')
+  ]).requiredBonks(24).withCatalyst('minecraft:budding_amethyst').id('kubejs:extruding/amethyst_shard_from_budding_amethyst_catalyst')
   for (let [material, raw] of Object.entries(orestones)) {
     event.recipes.create_mechanical_extruder.extruding(Item.of(`create:${material}`, 64), [
       Item.of(raw),

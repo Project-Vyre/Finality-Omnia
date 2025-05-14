@@ -623,17 +623,27 @@ ServerEvents.recipes(event => {
     Fluid.of('kubejs:condensed_universal_entropy')
   ]).superheated().id('kubejs:mixing/create_stone_types_renew')
   // Be3Al2(SiO3)6
-  event.recipes.create.mixing('minecraft:emerald', [
+  event.recipes.create.mixing('minecraft:emerald_block', [
     'minecraft:quartz',
     'minecraft:glass',
     '3x minecraft:iron_nugget'
   ]).superheated().id('finality:renew_emerald')
-  event.recipes.create.mixing('minecraft:amethyst_shard', [
+  event.recipes.create.mixing('minecraft:amethyst_block', [
     'minecraft:quartz',
     'minecraft:glass',
     'minecraft:smooth_basalt',
     'minecraft:iron_nugget',
   ]).superheated().id('finality:renew_amethyst')
+  event.recipes.create.compacting([
+    'minecraft:budding_amethyst',
+    'minecraft:clock',
+    'minecraft:amethyst_shard',
+    Item.of('minecraft:amethyst_shard', 3).withChance(0.75),
+    Item.of('minecraft:amethyst_shard', 3).withChance(0.25)
+  ], [
+    'minecraft:clock',
+    'minecraft:budding_amethyst',
+  ]).superheated().id('kubejs:compacting/accelerated_amethyst_budding')
   // Thank you to FunnyMan4579 on the official Create Discord for giving me this idea :3
   event.recipes.create.mixing('minecraft:nether_gold_ore', [
     'create:cinder_flour',
