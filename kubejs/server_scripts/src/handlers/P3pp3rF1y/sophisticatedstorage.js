@@ -474,7 +474,7 @@ ServerEvents.recipes(event => {
       let element = WOOD_TYPES[i];
       event.recipes.minecraft.crafting_shapeless(Item.of('sophisticatedstorage:chest', `{woodType:"${element}"}`), [
         'woodworks:' + element + '_chest',
-        'minecraft:redstone_torch'
+        'create:electron_tube'
       ]).id(`kubejs:sophisticatedstorage/${element}_chest_from_woodworks_${element}_chest`)
     }
   }
@@ -493,6 +493,7 @@ ServerEvents.recipes(event => {
     { id: 'sophisticatedstorage:cherry_barrel' },
     { id: 'sophisticatedstorage:bamboo_barrel' },
     // chests
+    { id: 'sophisticatedstorage:generic_chest' },
     { id: 'sophisticatedstorage:acacia_chest' },
     { id: 'sophisticatedstorage:birch_chest' },
     { id: 'sophisticatedstorage:crimson_chest' },
@@ -556,6 +557,16 @@ ServerEvents.recipes(event => {
     { id: 'minecraft:shulker_box_from_vanilla_shulker_box' },
     { id: 'sophisticatedstorage:shulker_box' }
   ])
+  if (Platform.isLoaded('quark')) {
+    for (let i = 0; i < sophisticated_wood.length; i++) {
+      let element = sophisticated_wood[i];
+      event.remove({ id: 'sophisticatedstorage:' + element + '_chest_from_quark_' + element + '_chest' })
+      event.recipes.minecraft.crafting_shapeless(Item.of('sophisticatedstorage:chest', `{woodType:"${element}"}`), [
+        'quark:' + element + '_chest',
+        'create:electron_tube'
+      ]).id(`kubejs:sophisticatedstorage/${element}_chest_from_quark`)
+    }
+  }
   event.recipes.minecraft.crafting_shapeless(Item.of('sophisticatedstorage:barrel', '{woodType:"spruce"}'), [
     'minecraft:barrel',
     'create:electron_tube'
