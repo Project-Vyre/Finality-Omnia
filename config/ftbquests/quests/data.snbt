@@ -20,7 +20,7 @@
 	]
 	emergency_items_cooldown: 5
 	grid_scale: 0.5d
-	icon: "create:brass_block"
+	icon: "kubejs:final_singularity_stage_three"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -30,6 +30,6 @@
 	pause_game: false
 	progression_mode: "default"
 	show_lock_icons: true
-	title: "Finality Genesis"
+	title: "Finality Omnia"
 	version: 13
 }

@@ -4397,6 +4397,25 @@
 			x: -5.5d
 			y: 4.5d
 		}
+		{
+			dependencies: ["2E386081E5302CF5"]
+			description: ["An essential ingredient for all things wireless."]
+			id: "650BBE0DE66EE46A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3071CA4F1B606E34"
+				table_id: 4080767580040306585L
+				type: "random"
+			}]
+			subtitle: "Wireless communication!"
+			tasks: [{
+				id: "2EB6E6704DBE53C3"
+				item: "create:transmitter"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.5d
+		}
 	]
 	subtitle: [
 		"This is Create."
