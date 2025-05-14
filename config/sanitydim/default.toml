@@ -36,7 +36,7 @@
 		monster = 0.0
 		#Players will gain this amount of sanity per second while being in the dark
 		#Range: -100.0 ~ 100.0
-		darkness = -0.25
+		darkness = -10.0
 		#Maximum light level considered to be darkness (inclusive)
 		#Range: 0 ~ 15
 		darkness_threshold = 4
