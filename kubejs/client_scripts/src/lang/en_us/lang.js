@@ -145,7 +145,7 @@ ClientEvents.lang('en_us', event => {
     "kubejs.tooltip.hold_control": "§8Hold [§r§7Ctrl§r§8]§r §8for Controls§r",
     "kubejs.tooltip.hold_shift": "§8Hold [§r§7Shift§r§8]§r §8for Summary§r",
     "kubejs.tooltip.hold_control.held": "§8Hold [§r§fCtrl§r§8]§r §8for Controls§r",
-    "kubejs.tooltip.hold_shift.held": "§8Hold [§r§fShift§r§8]§r §8for Controls§r",
+    "kubejs.tooltip.hold_shift.held": "§8Hold [§r§fShift§r§8]§r §8for Summary§r",
     "kubejs.minecraft.beacon.tooltip1": "Gives positive effects to players in a certain radius.",
     "kubejs.minecraft.beacon.tooltip2": "Requires a base built out of precious metals or gems to function!",
     "kubejs.minecraft.beacon.tooltip3": "§fIron§r§7,§r §eGold§r§7,§r §bDiamond§r§7,§r §aEmerald§r §7and§r §8Netherite§r §7are valid materials.§r",
