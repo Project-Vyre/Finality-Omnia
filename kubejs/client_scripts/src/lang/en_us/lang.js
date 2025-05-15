@@ -181,7 +181,7 @@ ClientEvents.lang('en_us', event => {
   */
   if (Platform.isLoaded('universalbonemeal')) {
     event.addAll('kubejs', {
-      "kubejs.bone_meal.tooltip": "Used for accelerating the growth of plants. However, it can now universally bone meal a lot more things compared to before!",
+      "kubejs.bone_meal.tooltip.summary": "Used for accelerating the growth of plants. However, it can now universally bone meal a lot more things compared to before!",
       "kubejs.bone_meal.tooltip.condition1": "On right click on plants or crops:",
       "kubejs.bone_meal.tooltip.behaviour1": "Accelerates growth, self explanatory.",
       "kubejs.bone_meal.tooltip.condition2": "On right click on grass blocks:",
@@ -516,6 +516,12 @@ ClientEvents.lang('en_us', event => {
       "alexsmobs.potion.poison_resistance.desc": "Grants immunity to poison."
     })
   }
+  if (Platform.isLoaded('apotheosis')) {
+    event.addAll('kubejs', {
+      "item.apotheosis.gem.kubejs:eversor": "Eversor Gem",
+      "item.apotheosis.gem.kubejs:acuti_ora": "Acuti Ora Gem"
+    })
+  }
   if (Platform.isLoaded('apotheosis') && Platform.isLoaded('gateways')) {
     event.addAll('kubejs', {
       "kubejs.blaze_gate_small": "Small Blaze Gate",
@@ -570,8 +576,6 @@ ClientEvents.lang('en_us', event => {
       "kubejs.mass_destruction_boss_gate_large": "Bosses of Mass Destruction Gate",
       "kubejs.endless/artifact_mimic_gate": "Endless Artifact Mimic Gate",
       "kubejs.wilden_gate": "Wilden Gate",
-      "item.apotheosis.gem.kubejs:eversor": "Eversor Gem",
-      "item.apotheosis.gem.kubejs:acuti_ora": "Acuti Ora Gem",
       "name.kubejs.skill_check": "Skill Check",
       "rewards.gateways.loot_table.bastion_treasure": "Bastion Treasure Loot"
     })
