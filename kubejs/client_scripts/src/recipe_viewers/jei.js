@@ -220,6 +220,10 @@ if (!Platform.isLoaded('roughlyenoughitems')) {
       event.hide('pipez:wrench')
     }
 
+    if (Platform.isLoaded('easy_villagers')) {
+      event.hide('easy_villagers:iron_farm')
+    }
+
     if (Platform.isLoaded('headhunter_mod') && Platform.isLoaded('apotheosis')) {
       event.hide([
         'headhunter_mod:vertical_beam_spawn_egg',
