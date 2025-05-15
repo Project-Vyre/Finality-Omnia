@@ -24,8 +24,10 @@ ItemEvents.tooltip(event => {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
       text.add(3, Component.translatable('kubejs.minecraft.beacon.tooltip1').green().bold())
-      text.add(4, Component.translatable('kubejs.minecraft.beacon.tooltip2').red())
-      text.add(5, Component.translatable('kubejs.minecraft.beacon.tooltip3'))
+      text.add(4, '')
+      text.add(5, Component.translatable('kubejs.minecraft.beacon.tooltip2').red())
+      text.add(6, '')
+      text.add(7, Component.translatable('kubejs.minecraft.beacon.tooltip3'))
     }
   })
   event.addAdvanced('extendedcrafting:handheld_table', (item, advanced, text) => {
