@@ -1,7 +1,6 @@
+# Dimensions to apply this config to, e.g. minecraft:overworld, minecraft:the_nether, minecraft:the_end
+applied_dimensions = [ "minecraft:the_nether", "minecraft:the_end" ]
 
-#Sanity configuration
-#NOTE: all sanity values are measured in percentages (i.e. 40.0 is equal to 40% of sanity bar)
-#NOTE: each subsequent usage of an active source or item has its effectiveness multiplied by (timeSinceLastUsage / cooldown) (capped at 1.0)
 [sanity]
 	#For balancing purposes: the effectiveness of all positive sanity sources will be multiplied by this number
 	#Range: 1.401298464324817E-45 ~ 3.4028234663852886E38
@@ -36,13 +35,13 @@
 		monster = 0.0
 		#Players will gain this amount of sanity per second while being in the dark
 		#Range: -100.0 ~ 100.0
-		darkness = -1.25
+		darkness = 0.0
 		#Maximum light level considered to be darkness (inclusive)
 		#Range: 0 ~ 15
 		darkness_threshold = 2
 		#Players will gain this amount of sanity per second while being in the light
 		#Range: -100.0 ~ 100.0
-		lightness = 2.0
+		lightness = 0.0
 		#Minimum light level considered to be lightness (inclusive)
 		#Range: 0 ~ 15
 		lightness_threshold = 4
