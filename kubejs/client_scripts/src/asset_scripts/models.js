@@ -285,7 +285,7 @@ ClientEvents.highPriorityAssets(event => {
       }
     })
   }
-  if (Platform.isLoaded('apotheosis') && Platform.isLoaded('gateways')) {
+  if (Platform.isLoaded('apotheosis')) {
     event.add('apotheosis:models/item/ancient_material', {
       "parent": "item/generated",
       "textures": {
