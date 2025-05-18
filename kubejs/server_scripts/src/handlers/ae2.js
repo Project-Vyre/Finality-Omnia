@@ -5,7 +5,6 @@
  */
 
 // requires: ae2
-// requires: dimdoors
 // requires: kubejs_create
 
 ServerEvents.recipes(event => {
@@ -323,16 +322,31 @@ ServerEvents.recipes(event => {
     R: 'ae2:sky_dust',
     C: 'kubejs:awakened_singularity_core'
   }).id('kubejs:ae2/mechanical_crafting/sky_stone_singularity')
-  event.recipes.create.mechanical_crafting('ae2:quantum_link', [
-    ' QQQ ',
-    'QFRFQ',
-    'QRARQ',
-    'QFRFQ',
-    ' QQQ '
-  ], {
-    Q: 'ae2:quartz_glass',
-    F: 'ae2:fluix_pearl',
-    R: 'dimdoors:rift_pearl',
-    A: 'dimdoors:fabric_of_finality'
-  })
+  if (!Platform.isLoaded('dimdoors')) {
+    event.recipes.create.mechanical_crafting('ae2:quantum_link', [
+      ' QQQ ',
+      'QFRFQ',
+      'QRARQ',
+      'QFRFQ',
+      ' QQQ '
+    ], {
+      Q: 'ae2:quartz_glass',
+      F: 'ae2:fluix_pearl',
+      R: 'kubejs:end_crystal_singularity',
+      A: 'kubejs:chromatic_concrete_singularity'
+    }).id('kubejs:mechanical_crafting/quantum_link')
+  } else {
+    event.recipes.create.mechanical_crafting('ae2:quantum_link', [
+      ' QQQ ',
+      'QFRFQ',
+      'QRARQ',
+      'QFRFQ',
+      ' QQQ '
+    ], {
+      Q: 'ae2:quartz_glass',
+      F: 'ae2:fluix_pearl',
+      R: 'dimdoors:rift_pearl',
+      A: 'dimdoors:fabric_of_finality'
+    }).id('kubejs:mechanical_crafting/quantum_link_dimdoors_override')
+  }
 })
