@@ -279,7 +279,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["419034CE4A6DDF92"]
+			dependencies: ["4A691BB889286C89"]
 			description: [
 				"You can now &arepair&r your tools in the crafting grid, so you won't have to throw away your tools."
 				""
@@ -353,7 +353,7 @@
 			]
 			title: "Convenient Utilities Ch.1"
 			x: 0.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -465,7 +465,7 @@
 			]
 			title: "Convenient Utilities Ch.2"
 			x: 0.0d
-			y: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1E4655B38C025E5A"]
@@ -563,7 +563,7 @@
 			]
 			title: "Convenient Utilities Ch.3"
 			x: 0.0d
-			y: 10.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["5E5E9241EB84A4E9"]
@@ -593,7 +593,7 @@
 			}]
 			title: "He who remains..."
 			x: 0.0d
-			y: 12.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0AE06EB85B6E1CB6"]
@@ -709,7 +709,7 @@
 			]
 			title: "Getting somewhere..."
 			x: 0.0d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["03F919758AA7E318"]
@@ -748,7 +748,7 @@
 			}]
 			title: "Introduction to Create"
 			x: -1.5d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["03F919758AA7E318"]
@@ -799,7 +799,7 @@
 			}]
 			title: "Diamond Pickaxe Acquired!"
 			x: 0.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -839,7 +839,7 @@
 			]
 			title: "Useful Guidance"
 			x: 1.5d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -940,7 +940,7 @@
 			]
 			title: "A Heads Up: Infinite Materials"
 			x: 1.5d
-			y: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2FF7795C03DDC67B"]
@@ -1066,7 +1066,7 @@
 			}]
 			title: "Coins exist?"
 			x: 1.5d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2EF808209CCECE6A"]
@@ -1085,7 +1085,7 @@
 			}]
 			title: "Unbreakable!"
 			x: 0.0d
-			y: 9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -1109,37 +1109,7 @@
 			}]
 			title: "The Mysterious Cube"
 			x: -1.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["4A691BB889286C89"]
-			description: [
-				"I would highly suggest getting some flowers to make a Garland."
-				""
-				"If you don't, then you can just find out and ignore these instructions."
-			]
-			id: "419034CE4A6DDF92"
-			rewards: [{
-				id: "5E4C0F1A0A019B15"
-				item: "bhc:red_heart_canister"
-				type: "item"
-			}]
-			shape: "rsquare"
-			subtitle: "Crazy? I was crazy once."
-			tasks: [{
-				id: "096A710C63E68E50"
-				item: {
-					Count: 1
-					id: "sanitydim:garland"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "The Garland"
-			x: 0.0d
-			y: 1.5d
+			y: 6.5d
 		}
 	]
 	subtitle: ["This chapter serves both as an introduction and some awareness of utilities."]
