@@ -65,6 +65,7 @@ debug/
 exposures/*
 .mixin.out/*
 config/yes_steve_model/*
+tlm_custom_pack/*
 
 # Ignore ProbeJS generated files in .vscode
 fluid-attributes.json
