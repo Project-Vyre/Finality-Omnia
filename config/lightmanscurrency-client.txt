@@ -12,15 +12,15 @@
 	#Can define an item tag instead of an item by formatting as "#namespace:item_tag;SCALE" instead
 	itemScaleOverrides=["#lightmanscurrency:display_half_size;0.5"]
 	
-	#Whether the Gacha Machine should display the items within the gacha balls
-	#Enabling will double the number of items being rendered, and can cause FPS issues near Gacha Machines
-	#Default: false
-	gachaMachineFullRender=false
-	
 	#Whether the Gacha Ball should render the item inside
-	#Enabling will double the number of items being rendered, and can cause FPS issues near Gacha Machines
+	#Enabling will double the number of items being rendered, and can cause FPS issues near Gacha Machines if their fancy graphics are enabled
 	#Default: true
 	gachaBallFullRender=false
+	
+	#Whether the Gacha Machine will render each Gacha Ball individually
+	#Disable if you're having FPS issues near the Gacha Machine, this will make the machine render a far more simplisitic representation of its contents.
+	#Default: true
+	gachaMachineFancyGraphics=true
 	
 #Time Formatting Settings
 [time]
