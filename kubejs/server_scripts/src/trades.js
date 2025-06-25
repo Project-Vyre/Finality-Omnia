@@ -40,6 +40,12 @@ MoreJSEvents.villagerTrades(event => {
   event.addTrade('minecraft:librarian', 5, [
     'minecraft:end_crystal'
   ], 'kubejs:gold_coin').maxUses(16)
+  if (Platform.isLoaded('quark')) {
+    event.addTrade('minecraft:mason', 1, [
+      'kubejs:copper_coin',
+      'minecraft:cobblestone'
+    ], '4x quark:limestone')
+  }
   if (Platform.isLoaded('supplementaries')) {
     event.addTrade('minecraft:cartographer', 5, [
       'kubejs:iron_coin',
@@ -210,6 +216,10 @@ MoreJSEvents.wandererTrades(event => {
       'minecraft:glowstone_dust',
       'minecraft:emerald'
     ], 'quark:glow_shroom')
+    event.addTrade(1, [
+      'kubejs:copper_coin',
+      'minecraft:cobblestone'
+    ], '4x quark:limestone')
   }
   if (Platform.isLoaded('tetra')) {
     event.addTrade(2, [
