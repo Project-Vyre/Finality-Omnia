@@ -9,31 +9,31 @@
 [Events]
 	#Weight of the Blood Moon Event [Default: 60]
 	#Range: 0 ~ 100
-	bloodMoonWeight = 60
+	bloodMoonWeight = 10
 	#Weight of the Crimson Moon Event [Default: 20]
 	#Range: 0 ~ 100
-	crimsonMoonWeight = 20
+	crimsonMoonWeight = 5
 	#Weight of the Miner Moon Event [Default: 40]
 	#Range: 0 ~ 100
-	minerMoonWeight = 40
+	minerMoonWeight = 45
 	#Weight of the White Moon Event [Default: 10]
 	#Range: 0 ~ 100
-	whiteMoonWeight = 10
+	whiteMoonWeight = 50
 	#Weight of the Tiny Moon Event [Default: 10]
 	#Range: 0 ~ 100
-	tinyMoonWeight = 10
+	tinyMoonWeight = 25
 	#Weight of the Big Moon Event [Default: 10]
 	#Range: 0 ~ 100
-	bigMoonWeight = 10
+	bigMoonWeight = 25
 	#Weight of the Big Moon Event [Default: 5]
 	#Range: 0 ~ 100
-	badOmenMoonWeight = 5
+	badOmenMoonWeight = 0
 	#Weight of the Hero Moon Event [Default: 5]
 	#Range: 0 ~ 100
-	heroMoonWeight = 5
+	heroMoonWeight = 10
 	#Weight of the Eclipse Moon Event [Default: 2]
 	#Range: 0 ~ 100
-	eclipseMoonWeight = 2
+	eclipseMoonWeight = 50
 
 #Crimson Replacement settings
 [Crimson]
