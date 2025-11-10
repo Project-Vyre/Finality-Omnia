@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 9,
+  "currentVersion": "1211.1.0-alpha.1",
+  "modpackName": "Finality Omnia",
+  "modpackAuthor": "CelestialAbyss",
+  "modpackReleaseType": "alpha",
+  "updateCheckerId": "https://raw.githubusercontent.com/Project-Vyre/Finality-Watcher/main/1.21.1/omnia/",
+  "advanced": {
+    "bccEnabled": true,
+    "expandButton": false,
+    "updateCheckerType": 2,
+    "retroWarning": false,
+    "modpackMods": []
+  }
+}

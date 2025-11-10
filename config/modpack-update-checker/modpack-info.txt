@@ -1,0 +1,6 @@
+Welcome to Finality Omnia for NeoForge 1.21.1.
+
+If you are on an alpha version, things are still heavily a work in progress due to a lot of things needing to be rewritten.
+This includes recipes, item mechanics, textures and other things.
+
+Apologies for the inconvenience.

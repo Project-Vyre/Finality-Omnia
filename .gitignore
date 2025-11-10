@@ -64,6 +64,8 @@ jei/world/local/
 debug/
 exposures/*
 .mixin.out/*
+dynamic-data-pack-cache/*
+dynamic-resource-pack-cache/*
 
 # Ignore ProbeJS generated files in .vscode
 fluid-attributes.json
