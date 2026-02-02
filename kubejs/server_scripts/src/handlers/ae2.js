@@ -221,6 +221,18 @@ ServerEvents.recipes(event => {
     H: 'create:hand_crank',
     C: 'minecraft:copper_ingot'
   }).id('ae2:network/blocks/crank')
+  event.recipes.minecraft.crafting_shaped('ae2:matter_cannon', [
+    'IIF',
+    'SE ',
+    'P  '
+  ], {
+    I: 'kubejs:iridium_ingot',
+    S: 'ae2:cell_component_4k',
+    F: 'ae2:formation_core',
+    E: 'ae2:energy_cell',
+    P: 'kubejs:iridium_sheet'
+  }).id('ae2:tools/matter_cannon')
+  /*
   event.recipes.create.mechanical_crafting('ae2:matter_cannon', [
     'ISIIIIF',
     'IEI    ',
@@ -232,6 +244,7 @@ ServerEvents.recipes(event => {
     E: 'ae2:energy_cell',
     P: 'kubejs:iridium_sheet'
   }).id('kubejs:ae2/tools/matter_cannon')
+  */
   event.recipes.create.mechanical_crafting('ae2:annihilation_core', [
     'QFL'
   ], {

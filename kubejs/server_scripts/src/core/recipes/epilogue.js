@@ -89,7 +89,9 @@ ServerEvents.recipes(event => {
     Fluid.of('kubejs:condensed_universal_entropy'),
     Item.of('create:experience_nugget').withChance(0.25)
   ], [
-    'minecraft:crying_obsidian'
+    'minecraft:crying_obsidian',
+    'minecraft:twisting_vines',
+    'minecraft:weeping_vines'
   ]).superheated().id('kubejs:compacting/condensing_universe_essence_superheated')
 
   event.recipes.create.emptying(
