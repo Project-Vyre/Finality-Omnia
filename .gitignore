@@ -61,6 +61,7 @@ XaeroWaypoints_BACKUP*/
 XaeroWorldMap/
 modernfix/
 jei/world/local/
+config/jei/world
 debug/
 exposures/*
 .mixin.out/*
