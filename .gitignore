@@ -29,6 +29,7 @@ config/aether/*
 embeddium-fingerprint.json
 config/resourceful-config-web.json
 emi.json
+config/touhou_little_maid/info.json
 
 # Ignore Essential files
 essential/*.jar
