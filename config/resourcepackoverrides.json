@@ -4,7 +4,12 @@
   "default_packs": [
     "file/Enhanced Audio r6.zip",
     "file/Enhanced Audio Ambience r1.zip",
-    "file/Nicer-Rain-1.0.0.zip"
+    "file/Nicer-Rain-1.0.0.zip",
+    "file/Fusion Emissive Ores v1.0.2 for Minecraft 1.20-1.21.8.zip",
+    "file/Fusion Connected Glass v1.0.1 for Minecraft 1.20-1.21.8.zip",
+    "file/RST Backport Supporter \u00A7cv1.4\u00A7r.zip",
+    "scholar:colored_books",
+    "obscure_tooltips/packs/vibrant_tooltips"
   ],
   "default_overrides": {
     "force_compatible": true
@@ -13,7 +18,12 @@
     "omnia_resources": [
       "file/Enhanced Audio r6.zip",
       "file/Enhanced Audio Ambience r1.zip",
-      "file/Nicer-Rain-1.0.0.zip"
+      "file/Nicer-Rain-1.0.0.zip",
+      "file/Fusion Emissive Ores v1.0.2 for Minecraft 1.20-1.21.8.zip",
+      "file/Fusion Connected Glass v1.0.1 for Minecraft 1.20-1.21.8.zip",
+      "file/RST Backport Supporter \u00A7cv1.4\u00A7r.zip",
+      "scholar:colored_books",
+      "obscure_tooltips/packs/vibrant_tooltips"
     ],
     "$$omnia_resources": {
       "fixed_position": true,
