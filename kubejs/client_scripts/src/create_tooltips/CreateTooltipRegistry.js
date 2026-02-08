@@ -4,7 +4,7 @@
 
 /**
  * @file Responsible for making tooltips using Create's tooltip registry.
- * @version 1.20.1-6.0.0
+ * @version 1.20.1-6.0.8
  * @author pietro-lopes <https://github.com/pietro-lopes> Author of the CreateTooltip prototype class
  * @author squoshi <https://github.com/squoshi> Initial implementation of ClientEvents.init()
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Wrote the old function system
@@ -69,9 +69,13 @@ const $TooltipModifier = Java.loadClass('com.simibubi.create.foundation.item.Too
 const $Palette = Java.loadClass('net.createmod.catnip.lang.FontHelper$Palette')
 const $TooltipHelper = Java.loadClass('com.simibubi.create.foundation.item.TooltipHelper')
 
-// No longer exists
-// const $Palette = Java.loadClass('com.simibubi.create.foundation.item.TooltipHelper$Palette')
-// Try net.createmod.catnip.lang.FontHelper.Palette instead?
+/*
+No longer exists
+const $Palette = Java.loadClass('com.simibubi.create.foundation.item.TooltipHelper$Palette')
+Try net.createmod.catnip.lang.FontHelper.Palette instead?
+
+Where to put $TooltipHelper... hmmm.
+*/
 
 /**
  * Prototype class to handle both registering and lang using Create's tooltip registry.

@@ -149,6 +149,13 @@ ClientEvents.lang('en_us', event => {
     "kubejs.minecraft.beacon.tooltip1": "Gives positive effects to players in a certain radius.",
     "kubejs.minecraft.beacon.tooltip2": "Requires a base built out of precious metals or gems to function!",
     "kubejs.minecraft.beacon.tooltip3": "§fIron§r§7,§r §eGold§r§7,§r §bDiamond§r§7,§r §aEmerald§r §7and§r §8Netherite§r §7are valid materials.§r",
+    "kubejs.minecraft.obsidian.tooltip.summary": "Infinitely renewable, but takes forever to break automatically.",
+    "kubejs.minecraft.obsidian.tooltip.condition1": "Method 1 - Drills",
+    "kubejs.minecraft.obsidian.tooltip.behaviour1": "You can have a deployer place a lava bucket next to a waterlogged block or drill. This does take a while, however.",
+    "kubejs.minecraft.obsidian.tooltip.condition2": "Method 2 - Contraption Parking",
+    "kubejs.minecraft.obsidian.tooltip.behaviour2": "You can have a Mechanical Bearing or Mechanical Piston park blocks into place to break the Obsidian instantly.",
+    "kubejs.minecraft.obsidian.tooltip.condition3": "Method 3 - Cursed Recipes",
+    "kubejs.minecraft.obsidian.tooltip.behaviour3": "You can compact Water and Lava in a Basin because of Create's cursed recipe magic or other methods shown by the recipe viewer.",
     "block.create.hose_pulley.tooltip.summary": "By default, any volume of fluid will be considered bottomless at _*10,000 fluid source blocks_ which would normally require a hole that is _25x25x16_ in volume. That is _Length_ * _Width_ * _Height_ for those who don't know how to calculate volume. Please _DO NOT_ issue a bug report if you have not read the additional text below.",
     "block.create.hose_pulley.tooltip.condition1": "Additional Info",
     "block.create.hose_pulley.tooltip.behaviour1": "*Sometimes some fluids may require _more than 10,000_ fluid source blocks due to Create's Hose Pulley being weird. A hole that is _25x25x17_ in volume fixes this issue. _However_, Hose Pulleys are _unable_ to output _more than 10,050_ fluid source blocks due to a weird bug in Create itself."
@@ -336,6 +343,7 @@ ClientEvents.lang('en_us', event => {
   event.add('block.kubejs.la_lettre_a_focalors', 'La Lettre a Focalors')
   event.add('block.kubejs.pour_la_justice', 'Pour la Justice')
   */
+  // Only generate text below when Text Animator is present.
   if (Platform.isLoaded('textanimator')) {
     event.addAll('kubejs', {
       "item.kubejs.dormant_singularity_core": "§d<shake>Dormant Singularity Core</shake>",

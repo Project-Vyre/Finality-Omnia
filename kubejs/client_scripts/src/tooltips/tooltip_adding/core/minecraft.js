@@ -84,4 +84,22 @@ ItemEvents.tooltip(event => {
       }
     })
   }
+  event.addAdvanced('minecraft:obsidian', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('kubejs.minecraft.obsidian.tooltip.summary'))
+      text.add(4, '')
+      text.add(5, Component.translatable('kubejs.minecraft.obsidian.tooltip.condition1'))
+      text.add(6, Component.translatable('kubejs.minecraft.obsidian.tooltip.behaviour1'))
+      text.add(7, '')
+      text.add(8, Component.translatable('kubejs.minecraft.obsidian.tooltip.condition2'))
+      text.add(9, Component.translatable('kubejs.minecraft.obsidian.tooltip.behaviour2'))
+      text.add(10, '')
+      text.add(11, Component.translatable('kubejs.minecraft.obsidian.tooltip.condition3'))
+      text.add(12, Component.translatable('kubejs.minecraft.obsidian.tooltip.behaviour3'))
+    }
+  })
 })
