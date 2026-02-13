@@ -34,6 +34,14 @@ ServerEvents.recipes(event => {
       mod: 'tconstruct',
       output: 'minecraft:flint',
       type: 'minecraft:crafting_shapeless'
+    },
+    {
+      mod: 'tconstruct',
+      output: 'minecraft:clock'
+    },
+    {
+      mod: 'tconstruct',
+      output: 'minecraft:compass'
     }
   ])
   // all the grout
