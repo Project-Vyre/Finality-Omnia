@@ -3,28 +3,28 @@
 [General]
 	#Chance of a Lunar Event happening when night falls [Default: 0.4]
 	#Range: 0.0 ~ 1.0
-	lunarEventChance = 0.4
+	lunarEventChance = 0.25
 
 #Event settings
 [Events]
 	#Weight of the Blood Moon Event [Default: 60]
 	#Range: 0 ~ 100
-	bloodMoonWeight = 10
+	bloodMoonWeight = 30
 	#Weight of the Crimson Moon Event [Default: 20]
 	#Range: 0 ~ 100
-	crimsonMoonWeight = 5
+	crimsonMoonWeight = 7
 	#Weight of the Miner Moon Event [Default: 40]
 	#Range: 0 ~ 100
 	minerMoonWeight = 45
 	#Weight of the White Moon Event [Default: 10]
 	#Range: 0 ~ 100
-	whiteMoonWeight = 50
+	whiteMoonWeight = 45
 	#Weight of the Tiny Moon Event [Default: 10]
 	#Range: 0 ~ 100
 	tinyMoonWeight = 25
 	#Weight of the Big Moon Event [Default: 10]
 	#Range: 0 ~ 100
-	bigMoonWeight = 25
+	bigMoonWeight = 0
 	#Weight of the Big Moon Event [Default: 5]
 	#Range: 0 ~ 100
 	badOmenMoonWeight = 0
@@ -51,7 +51,7 @@
 	#Allow sleeping during the Blood Moon Event [Default: true]
 	bloodMoonSleeping = false
 	#Allow sleeping during the Crimson Moon Event [Default: true]
-	crimsonMoonSleeping = true
+	crimsonMoonSleeping = false
 	#Allow sleeping during the Miner Moon Event [Default: true]
 	minerMoonSleeping = true
 	#Allow sleeping during the White Moon Event [Default: true]
