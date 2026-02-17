@@ -42,6 +42,10 @@ ServerEvents.recipes(event => {
     {
       mod: 'tconstruct',
       output: 'minecraft:compass'
+    },
+    {
+      mod: 'tconstruct',
+      input: 'minecraft:lodestone'
     }
   ])
   // all the grout

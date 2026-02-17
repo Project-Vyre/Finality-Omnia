@@ -125,7 +125,8 @@ ServerEvents.recipes(event => {
     'minecraft:piston',
     'minecraft:hopper',
     'minecraft:beacon',
-    'minecraft:bucket'
+    'minecraft:bucket',
+    'minecraft:lodestone'
   ]
   for (let i = 0; i < vanilla_recipes.length; i++) {
     let recipeIds = vanilla_recipes[i];
@@ -187,6 +188,14 @@ ServerEvents.recipes(event => {
     I: '#forge:ingots/iron',
     S: '#forge:rods/wooden'
   }).id('minecraft:rail')
+  event.shaped('minecraft:lodestone', [
+    'BBB',
+    'BCB',
+    'BBB'
+  ], {
+    B: 'minecraft:chiseled_stone_bricks',
+    C: '#forge:ingots/iron'
+  }).id('kubejs:lodestone')
   event.shaped('minecraft:trident', [
     'PPP',
     ' A ',
