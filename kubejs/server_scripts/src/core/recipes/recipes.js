@@ -1,6 +1,6 @@
 /**
  * @file Handler for core recipes.
- * @version 1.20.1.M
+ * @version 1.20.1-OMNIA
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  * @author squoshi <https://github.com/squoshi> Helped a lot early on in development. Thank you. Also helped translate my ideas into scripts!
  * @author pietro-lopes <https://github.com/pietro-lopes> AKA Uncandango in the KubeJS Discord. Fixed issues related to damage cancel script
@@ -53,56 +53,6 @@ const COLOR = [
   'yellow'
 ]
 
-let template_duplication = [
-  'netherite_upgrade_smithing_template',
-  'sentry_armor_trim_smithing_template',
-  'vex_armor_trim_smithing_template',
-  'wild_armor_trim_smithing_template',
-  'coast_armor_trim_smithing_template',
-  'dune_armor_trim_smithing_template',
-  'wayfinder_armor_trim_smithing_template',
-  'raiser_armor_trim_smithing_template',
-  'shaper_armor_trim_smithing_template',
-  'host_armor_trim_smithing_template',
-  'ward_armor_trim_smithing_template',
-  'silence_armor_trim_smithing_template',
-  'tide_armor_trim_smithing_template',
-  'snout_armor_trim_smithing_template',
-  'rib_armor_trim_smithing_template',
-  'eye_armor_trim_smithing_template',
-  'spire_armor_trim_smithing_template'
-]
-let item_duplication = {
-  blue_ice: 'minecraft:blue_ice',
-  asurine: 'create:asurine',
-  crimsite: 'create:crimsite',
-  ochrum: 'create:ochrum',
-  veridium: 'create:veridium',
-  iridium_upgrade_smithing_template: 'kubejs:iridium_upgrade_smithing_template'
-}
-let sherd_duplication = [
-  'angler',
-  'archer',
-  'arms_up',
-  'blade',
-  'brewer',
-  'burn',
-  'danger',
-  'explorer',
-  'friend',
-  'heart',
-  'heartbreak',
-  'howl',
-  'miner',
-  'mourner',
-  'plenty',
-  'prize',
-  'sheaf',
-  'shelter',
-  'skull',
-  'snort'
-]
-
 let iridium_blocks = [
   'iridium_block_connecting',
   'ornate_iridium_block_connecting',
@@ -132,6 +82,13 @@ ServerEvents.recipes(event => {
     let insert = CURSEDRECIPES[i];
     event.remove({ id: `minecraft:${insert}` })
   }
+  event.recipes.minecraft.crafting_shaped('minecraft:chest', [
+    'WWW',
+    'W W',
+    'WWW'
+  ], {
+    W: '#minecraft:planks'
+  }).id('minecraft:chest')
   for (let i = 0; i < STONEPLATES.length; i++) {
     let stone = STONEPLATES[i];
     event.recipes.create.cutting([
@@ -337,25 +294,6 @@ ServerEvents.recipes(event => {
     D: 'minecraft:crying_obsidian',
     S: 'create:shaft'
   }).id('finality:deconstructor')
-  if (!Platform.isLoaded('dimdoors')) {
-    event.recipes.create.mechanical_crafting('kubejs:duplicator', [
-      'NC',
-      'SN'
-    ], {
-      C: 'create:clipboard',
-      S: 'create:sturdy_sheet',
-      N: '#forge:nuggets/netherite'
-    }).id('finality:mechanical_crafting/duplicator')
-  } else {
-    event.recipes.create.mechanical_crafting('kubejs:duplicator', [
-      'FC',
-      'SF'
-    ], {
-      C: 'create:clipboard',
-      S: 'create:sturdy_sheet',
-      F: 'dimdoors:enduring_fibers'
-    }).id('finality:mechanical_crafting/duplicator')
-  }
   /**
    * QoL
    */
@@ -365,29 +303,7 @@ ServerEvents.recipes(event => {
   event.recipes.minecraft.blasting('create:zinc_block', 'create:raw_zinc_block')
     .cookingTime(900).xp(6.3)
     .id('finality:blasting/zinc_block_from_raw_zinc_block')
-  for (let i = 0; i < template_duplication.length; i++) {
-    let element = template_duplication[i];
-    event.remove({ id: 'minecraft:' + element })
-    event.recipes.create.deploying('2x minecraft:' + element, [
-      'minecraft:' + element,
-      'kubejs:duplicator'
-    ]).keepHeldItem().id('kubejs:deploying/' + element + '_duplication')
-  }
-  for (let [recipeId, itemId] of Object.entries(item_duplication)) {
-    event.recipes.create.deploying(Item.of(itemId, 2), [
-      itemId,
-      'kubejs:duplicator'
-    ]).keepHeldItem().id('kubejs:deploying/' + recipeId + '_duplication')
-  }
-  for (let i = 0; i < sherd_duplication.length; i++) {
-    let element = sherd_duplication[i];
-    event.recipes.create.deploying([
-      '2x minecraft:' + element + '_pottery_sherd'
-    ], [
-      'minecraft:' + element + '_pottery_sherd',
-      'kubejs:duplicator'
-    ]).keepHeldItem().id('kubejs:deploying/' + element + '_pottery_sherd_duplication')
-  }
+
   event.recipes.minecraft.crafting_shaped('minecraft:ender_pearl', [
     'TTT',
     'TNT',
@@ -451,13 +367,17 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting('minecraft:obsidian', [
     Fluid.water(1000),
     Fluid.lava(1000)
-  ]).id('finality:compacting/cursed_obsidian')
+  ]).id('kubejs:compacting/cursed_obsidian')
+  event.recipes.create.compacting('create:blaze_cake_base', [
+    'minecraft:potato',
+    'minecraft:sugar',
+    'create:cinder_flour',
+  ]).id('kubejs:compacting/blaze_cake_base_from_potato')
   event.recipes.create.compacting('create:blaze_cake_base', [
     'farmersdelight:rice',
     'minecraft:sugar',
-    'create:cinder_flour',
-    'minecraft:potato'
-  ]).id('finality:compacting/blaze_cake_base_from_rice')
+    'create:cinder_flour'
+  ]).id('kubejs:compacting/blaze_cake_base_from_rice')
   /**
    * CRUSHING
    */

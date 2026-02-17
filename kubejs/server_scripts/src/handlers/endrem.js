@@ -1,12 +1,12 @@
 // requires: endrem
 // requires: kubejs_create
-// requires: exposure
 // requires: supplementaries
 // requires: lootjs
 // requires: summoningrituals
 
 /**
  * @file Server handler for End Remastered.
+ * @version 1.20.1-OMNIA
  * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
  */
 
@@ -118,6 +118,18 @@ ServerEvents.recipes(event => {
     ])
     .blockBelow('minecraft:blue_ice')
     .id('kubejs:endrem/altar/cold_eye')
+  if (!Platform.isLoaded('extendedcrafting')) {
+    event.recipes.summoningrituals.altar('minecraft:ender_eye')
+      .itemOutput('endrem:witch_eye')
+      .input([
+        'endrem:witch_pupil',
+        'minecraft:redstone',
+        'minecraft:glowstone_dust',
+        'minecraft:nether_wart',
+        'minecraft:glass_bottle'
+      ])
+      .id('kubejs:endrem/altar/witch_eye')
+  }
   if (Platform.isLoaded('extendedcrafting')) {
     event.custom({
       type: 'extendedcrafting:combination',

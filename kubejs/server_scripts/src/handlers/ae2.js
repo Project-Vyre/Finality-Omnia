@@ -77,19 +77,6 @@ ServerEvents.recipes(event => {
     { id: 'ae2:network/blocks/quantum_link' }
   ])
   // presses
-  let presses = [
-    'engineering_processor',
-    'calculation_processor',
-    'logic_processor',
-    'silicon'
-  ]
-  for (let i = 0; i < presses.length; i++) {
-    let element = presses[i];
-    event.recipes.create.deploying('2x ae2:' + element + '_press', [
-      'ae2:' + element + '_press',
-      'kubejs:duplicator'
-    ]).keepHeldItem().id('kubejs:deploying/ae2/' + element + '_duplication')
-  }
   event.recipes.create.deploying('ae2:printed_engineering_processor', [
     'minecraft:diamond',
     'ae2:engineering_processor_press'

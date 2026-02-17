@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
     'kubejs:monochromatic_singularity'
   ], 'kubejs:monochromatic_singularity').processingTime(500).id('kubejs:crushing/monochromatic_singularity')
   event.recipes.create.crushing([
-    Item.of('kubejs:null_matter').withChance(0.12),
+    'kubejs:null_matter',
     Item.of('kubejs:null_matter', 2).withChance(0.01)
   ], 'create:crushing_wheel').processingTime(500).id('kubejs:crushing/divide_crushing_by_crushing_equals_null')
   // will balance in the future...

@@ -97,5 +97,8 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.tags('fluid', event => {
-  event.add('create:bottomless/allow', 'biomesoplenty:blood')
+  event.add('create:bottomless/allow', [
+    'biomesoplenty:blood',
+    'biomesoplenty:liquid_null'
+  ])
 })
