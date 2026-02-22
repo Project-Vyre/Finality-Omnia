@@ -1,0 +1,519 @@
+{
+  "general": {
+    "generateOverrideConfigs": {
+      "value": false,
+      "comment": "If true, then crafting and damage override config files, as well as language template files, will be dumped into the config folder at boot.  WARNING: this will overwrite your existing override config files!  Language files must be put into packs to function and will NOT overwrite anything."
+    },
+    "opSignEditingOnly": {
+      "value": false,
+      "comment": "If true, only OPs will be able to edit signs on servers.  Does not affect client worlds."
+    },
+    "opPickupVehiclesOnly": {
+      "value": false,
+      "comment": "If true, only OPs will be able to pick up vehicles with wrenches.  Does not affect client worlds."
+    },
+    "creativePickupVehiclesOnly": {
+      "value": false,
+      "comment": "If true, vehicles can only be picked up in creative mode."
+    },
+    "keyRequiredToStartVehicles": {
+      "value": false,
+      "comment": "If true, vehicles can only be started if the player has the key in their hand."
+    },
+    "noclipVehicles": {
+      "value": false,
+      "comment": "If true, vehicles will not be able to collide with blocks.  This also prevents them from moving if they do not have wheels on them, as otherwise they would phase through the ground into the void."
+    },
+    "chunkloadVehicles": {
+      "value": true,
+      "comment": "If true, vehicles will be chunkloaded when on roads/tracks.  This allows them to travel into unloaded chunks."
+    },
+    "doLegacyLightCompats": {
+      "value": true,
+      "comment": "If true, legacy compatibility code will be performed on all models to make their lights work with newer versions.  This code will significantly slow down boot times due to needing to parse all models on boot, however, packs may not have functional lights without it.  Choose wisely if you want speed or features."
+    },
+    "useHSV": {
+      "value": false,
+      "comment": "If enabled, the MTS dev mode will export color values as HSV instead of hex."
+    },
+    "allPlanesWithNav": {
+      "value": false,
+      "comment": "If true, all planes will have the ability to use beacons for navigation.  This is false to allow pack authors to define new/old planes that have this capability, but can be turned on if you don't care about realism."
+    },
+    "giveManualsOnJoin": {
+      "value": true,
+      "comment": "If true, then whenever a new player joins a world, they will be given a copy of the mod manuals."
+    },
+    "performModCompatFunctions": {
+      "value": true,
+      "comment": "If true, mod compatibility functions will be executed.  Should be true unless you're configuring a modpack and know and have addressed the various incompatibilities."
+    },
+    "forceRenderLastSolid": {
+      "value": false,
+      "comment": "If enabled, MTS will do rendering on the world-last Forge event.  This is not normally something you want, but can be used if some mods make things invisible.  Replaymod being one such example."
+    },
+    "devMode": {
+      "value": false,
+      "comment": "If enabled, MTS will allow access to the dev mode GUI while sitting in vehicles.  The GUI allows editing JSONs in-game without the need to restart."
+    },
+    "roadMaxLength": {
+      "value": 32,
+      "comment": "How long a single segment of road can be, in blocks.  While you can have longer segements, be aware they have more collision boxes and will generate more lag when broken or interacted with, and may not render if outside the chunk they are in.  Must be a whole number."
+    },
+    "aircraftSpeedFactor": {
+      "value": 0.35,
+      "comment": "Factor to apply to aircraft movement.  1 is the realistic value, but this makes vehicles move too fast for Minecraft. Adjust with caution."
+    },
+    "carSpeedFactor": {
+      "value": 0.35,
+      "comment": "Factor to apply to car movement.  1 is the realistic value, but this makes vehicles move too fast for Minecraft. Adjust with caution."
+    },
+    "fuelUsageFactor": {
+      "value": 1.0,
+      "comment": "Factor times which engines use fuel.  Change this if you think engines use fuel too fast or slow.  Setting it to 0 will disable fuel and allow engines to run without it."
+    },
+    "engineHoursFactor": {
+      "value": 1.0,
+      "comment": "Factor times which engines hours accumulate.  Change this if you want to adjust how fast engines wear out."
+    },
+    "climbSpeed": {
+      "value": 0.125,
+      "comment": "How far a vehicle will 'climb' blocks every tick when the wheels go into the ground.  Higher values make vehicles climb blocks quicker at the cost of smooth movement."
+    },
+    "gravityFactor": {
+      "value": 1.0,
+      "comment": "Factor for gravitational forces applied to vehicles.  Can be adjusted if you think cars are too 'floaty'.  Does not affect aircraft."
+    },
+    "maxFlightHeight": {
+      "value": 0.0,
+      "comment": "How high planes can fly.  Setting this to 0 (default) will allow planes to fly as high as their natural physics allows.  Useful if you want to cap vertical height for some reason."
+    },
+    "engineSpeedTempFactor": {
+      "value": 1.0,
+      "comment": "Factor for how RPM affects engine temp.  Higher values will make engines heat up quicker at higher RPMs."
+    },
+    "engineBiomeTempFactor": {
+      "value": 1.0,
+      "comment": "Factor for how biome temp affects engine temp.  Higher values will make engines heat up quicker in hotter biomes."
+    },
+    "rfToElectricityFactor": {
+      "value": 0.02,
+      "comment": "Factor for converting RF to internal electicity for vehicles.  Default value is 1/100, but can be adjusted."
+    },
+    "vehicleDeathDespawnTime": {
+      "value": 0.0,
+      "comment": "Time (in seconds) between when vehicles reach 0 health and they de-spawn.  Normally 0, which means they never de-spawn."
+    },
+    "seaLevel": {
+      "value": 63,
+      "comment": "The Y-Level that will be used to base altitude off of. Will also be factored in for engine performance calculations. Change only if you know what you're doing/ why this matters to engines/flying."
+    },
+    "defaultVehicleRepairMaterials": {
+      "value": [],
+      "comment": "List of items that can be used to repair vehicles by default, if no repair recipe is set in the vehicle's JSON."
+    },
+    "defaultPartRepairMaterials": {
+      "value": [],
+      "comment": "List of items that can be used to repair part by default, if no repair recipe is set in the part's JSON."
+    },
+    "engineDimensionBlacklist": {
+      "value": [],
+      "comment": "Blacklist of dimension names where engines will be prevented from being started.  Can be used to disable vehicles in specific dimensions.  Think Galacticraft, where you don't want folks flying planes on the moon."
+    },
+    "engineDimensionWhitelist": {
+      "value": [],
+      "comment": "Whitelist of dimension names where engines will only be alowed to work.  Overrides the blacklist if this exists."
+    },
+    "packVehicleScales": {
+      "value": {
+        "automotives": 1.0,
+        "mts": 1.0
+      },
+      "comment": "Scale of all vehicles for this pack.  You probably won't want to change this, but if you do want the vehicles to be smaller for some reason, you can."
+    },
+    "packSpeedFactors": {
+      "value": {
+        "automotives": 1.0,
+        "mts": 1.0
+      },
+      "comment": "A mapping of pack-speciifc speed factors.  These values will only apply to the vehicles in the pack modified.  This allows for speeding up packs with slower vehicles, or slowing down packs with fast vehicles for a more even play experience.  Note that this applies on top of the global speed factor.  So if that is set to 0.30, and a pack is set to 0.5, then the total speed factor will be 0.15"
+    },
+    "itemWeights": {
+      "comment1": "The following section is used for calculating item weights.  Any item that contains the text bits will have its weight multiplied by the following factor.",
+      "comment2": "This mass factors into vehicle performance, with particular emphasis on vehicle payloads.  Some defaults are presented here, but you can add/remove to your liking.",
+      "comment3": "Note that the part of the name searched is the item's registry name, NOT the in-game display name.  This is similar to what is in the /give command.",
+      "weights": {
+        "gold": 4.0,
+        "diamond": 4.0,
+        "ore": 2.5,
+        "iron": 4.0,
+        "coal": 2.0,
+        "stone": 1.5
+      }
+    },
+    "joinedPlayers": {
+      "value": [
+        "9f1a1123-452e-442f-8741-4b2434abaf74"
+      ],
+      "comment": "Listing of players that have joined this world.  Players will be given the manual on their first join."
+    }
+  },
+  "damage": {
+    "bulletBlockBreaking": {
+      "value": true,
+      "comment": "Whether or not bullets/bombs can break blocks when they hit them.  This will also disable explosive block breakage (though not explosions themselves) and prevent incendiary bullets from setting blocks on fire."
+    },
+    "bulletExplosions": {
+      "value": true,
+      "comment": "Whether or not bullets/bombs will blow up.  This does not disable block breakage, but it will pretty much nerf all block mass-destruction weapons."
+    },
+    "vehicleBlockBreaking": {
+      "value": true,
+      "comment": "Whether or not vehicles can break blocks when they run into them or blow up.  If false, vehicles will simply stop when they hit blocks."
+    },
+    "vehicleDestruction": {
+      "value": true,
+      "comment": "Whether or not vehicles can be destroyed by ramming into blocks at high speeds.  Set this to false if you don't like loosing vehicles to badly-placed walls."
+    },
+    "vehicleExplosions": {
+      "value": true,
+      "comment": "Whether or not vehicles explode when crashed or shot down.  If this is false, vehicles will simply poof when they crash."
+    },
+    "creativePlayerDamage": {
+      "value": false,
+      "comment": "If true, damage from vehicles and guns will be applied to creative players.  Not sure why you'd want this, but it's here."
+    },
+    "wheelBreakage": {
+      "value": true,
+      "comment": "Whether or not wheels can be broken (go flat)."
+    },
+    "wheelDamageIgnoreVelocity": {
+      "value": false,
+      "comment": "Whether or not velocity is ignored when calculating wheel damage."
+    },
+    "allowExternalDamage": {
+      "value": false,
+      "comment": "Whether or not non-IV things can damage vehicles.  This is normally false, as external damage is a hassle for most people, but can be true if you want other mod's guns to be able to attack vehicles in addition to IV's."
+    },
+    "propellerDamageFactor": {
+      "value": 1.0,
+      "comment": "Factor for damage caused by a propeller."
+    },
+    "jetDamageFactor": {
+      "value": 1.0,
+      "comment": "Factor for damage caused by a jet engine."
+    },
+    "wheelDamageFactor": {
+      "value": 1.0,
+      "comment": "Factor for damage caused by wheels on vehicles."
+    },
+    "crashDamageFactor": {
+      "value": 1.0,
+      "comment": "Factor for damage caused by crashes."
+    },
+    "bulletDamageFactor": {
+      "value": 1.0,
+      "comment": "Factor for damage caused by bullets on vehicles."
+    },
+    "wheelDamageMinimumVelocity": {
+      "value": 0.2,
+      "comment": "Minimum velocity (blocks/second) which vehicles must be going to damage entities with their wheels."
+    },
+    "packBulletDamageFactors": {
+      "value": {
+        "automotives": 1.0,
+        "mts": 1.0
+      },
+      "comment": "A mapping of pack-speciifc bullet damage factors.  These values will apply to all bullets in a pack when they hit something, be it a vehicle or entity."
+    }
+  },
+  "fuel": {
+    "comment1": "The following section is used for fuel configs for engines.  Each entry here is a single fuel type for engines.",
+    "comment2": "Inside each entry exist values for the potency of the fluids that can be considered to be that fuel type.",
+    "comment3": "You can make engines take different types of fluids for their fuels by editing these values.  See the in-game handbook for more information.",
+    "comment4": "If you are having troubles getting the name for a particular fluid, run the game with the mods you want and check the 'lastLoadedFluids' list.  This contains all the fluids that were present during the last run of the game.",
+    "comment5": "The first entry in the list is the registered fluid name, while the second entry will be the displayed name.  Only use the first name, as the second name changes based on game language settings.",
+    "fuels": {
+      "lava": {
+        "lava": 1.0
+      },
+      "furnace": {
+        "lava": 1.0
+      },
+      "brewing_stand": {
+        "lava": 1.0
+      }
+    },
+    "lastLoadedFluids": {
+      "dragon_breath": "fluid.create_central_kitchen.dragon_breath",
+      "seed_oil": "fluid.createaddition.seed_oil",
+      "molten_copper": "fluid.tconstruct.molten_copper",
+      "flowing_shimmer": "fluid.kubejs.shimmer",
+      "flowing_molten_signalum": "fluid.tconstruct.molten_signalum",
+      "magma": "fluid.tconstruct.magma",
+      "seared_stone": "fluid.tconstruct.seared_stone",
+      "flowing_molten_steel": "fluid.tconstruct.molten_steel",
+      "flowing_molten_pig_iron": "fluid.tconstruct.molten_pig_iron",
+      "stracciatella": "item.caupona.stracciatella",
+      "epic_arcane_ink": "fluid.kubejs.epic_arcane_ink",
+      "tea": "fluid.create.tea",
+      "walnut_soup": "item.caupona.walnut_soup",
+      "flowing_molten_emerald": "fluid.tconstruct.molten_emerald",
+      "custard": "item.caupona.custard",
+      "flowing_molten_uranium": "fluid.tconstruct.molten_uranium",
+      "flowing_molten_cadmium": "fluid.tconstruct.molten_cadmium",
+      "flowing_epic_arcane_ink": "fluid.kubejs.epic_arcane_ink",
+      "melon_juice": "fluid.create_central_kitchen.melon_juice",
+      "flowing_molten_copper": "fluid.tconstruct.molten_copper",
+      "milk": "Milk",
+      "earth_slime": "fluid.tconstruct.earth_slime",
+      "liquid_soul": "fluid.tconstruct.liquid_soul",
+      "flowing_molten_bronze": "fluid.tconstruct.molten_bronze",
+      "flowing_tea": "fluid.create.tea",
+      "dilute_soup": "item.caupona.dilute_soup",
+      "flowing_magma": "fluid.tconstruct.magma",
+      "flowing_lava": "Lava",
+      "invisibility_elixir": "fluid_type.irons_spellbooks.invisibility_elixir",
+      "rare_arcane_ink": "fluid.kubejs.rare_arcane_ink",
+      "molten_ender": "fluid.tconstruct.molten_ender",
+      "molten_signalum": "fluid.tconstruct.molten_signalum",
+      "flowing_seed_oil": "fluid.createaddition.seed_oil",
+      "goulash": "item.caupona.goulash",
+      "fish_chowder": "item.caupona.fish_chowder",
+      "hodgepodge": "item.caupona.hodgepodge",
+      "ukha": "item.caupona.ukha",
+      "rabbit_stew": "fluid.tconstruct.rabbit_stew",
+      "flowing_rare_arcane_ink": "fluid.kubejs.rare_arcane_ink",
+      "flowing_molten_ender": "fluid.tconstruct.molten_ender",
+      "greater_oakskin_elixir": "fluid_type.irons_spellbooks.greater_oakskin_elixir",
+      "flowing_liquid_soul": "fluid.tconstruct.liquid_soul",
+      "molten_slimesteel": "fluid.tconstruct.molten_slimesteel",
+      "flowing_earth_slime": "fluid.tconstruct.earth_slime",
+      "pumpkin_soup": "item.caupona.pumpkin_soup",
+      "flowing_molten_tungsten": "fluid.tconstruct.molten_tungsten",
+      "beetroot_soup": "fluid.tconstruct.beetroot_soup",
+      "molten_platinum": "fluid.tconstruct.molten_platinum",
+      "molten_gold": "fluid.tconstruct.molten_gold",
+      "flowing_angelheart_mixture": "fluid.kubejs.angelheart_mixture",
+      "molten_nickel": "fluid.tconstruct.molten_nickel",
+      "bioethanol": "fluid.createaddition.bioethanol",
+      "molten_clay": "fluid.tconstruct.molten_clay",
+      "condensed_universal_order": "fluid.kubejs.condensed_universal_order",
+      "flowing_molten_queens_slime": "fluid.tconstruct.molten_queens_slime",
+      "borscht_cream": "item.caupona.borscht_cream",
+      "molten_steel": "fluid.tconstruct.molten_steel",
+      "acquacotta": "item.caupona.acquacotta",
+      "flowing_molten_nickel": "fluid.tconstruct.molten_nickel",
+      "blood": "fluid_type.irons_spellbooks.blood",
+      "molten_pig_iron": "fluid.tconstruct.molten_pig_iron",
+      "flowing_molten_glass": "fluid.tconstruct.molten_glass",
+      "fertile_mixture": "fluid.kubejs.fertile_mixture",
+      "meat_soup": "fluid.tconstruct.meat_soup",
+      "flowing_blood": "block.biomesoplenty.blood",
+      "flowing_ink": "fluid.create_enchantment_industry.ink",
+      "oakskin_elixir": "fluid_type.irons_spellbooks.oakskin_elixir",
+      "cream_of_mushroom_soup": "item.caupona.cream_of_mushroom_soup",
+      "molten_refined_glowstone": "fluid.tconstruct.molten_refined_glowstone",
+      "flowing_seared_stone": "fluid.tconstruct.seared_stone",
+      "flowing_chocolate": "fluid.create.chocolate",
+      "flowing_molten_cobalt": "fluid.tconstruct.molten_cobalt",
+      "flowing_uncommon_arcane_ink": "fluid.kubejs.uncommon_arcane_ink",
+      "molten_uranium": "fluid.tconstruct.molten_uranium",
+      "apple_cider": "fluid.create_central_kitchen.apple_cider",
+      "flowing_mushroom_stew": "fluid.tconstruct.mushroom_stew",
+      "molten_cadmium": "fluid.tconstruct.molten_cadmium",
+      "hyper_experience": "fluid.create_enchantment_industry.hyper_experience",
+      "flowing_hyper_experience": "fluid.create_enchantment_industry.hyper_experience",
+      "empty": "Air",
+      "acid": "fluid_type.alexscaves.acid",
+      "goji_tongsui": "item.caupona.goji_tongsui",
+      "flowing_molten_lumium": "fluid.tconstruct.molten_lumium",
+      "molten_amethyst_bronze": "fluid.tconstruct.molten_amethyst_bronze",
+      "flowing_molten_lead": "fluid.tconstruct.molten_lead",
+      "molten_duralumin": "fluid.tconstruct.molten_duralumin",
+      "molten_lumium": "fluid.tconstruct.molten_lumium",
+      "flowing_glowing_water": "fluid.kubejs.glowing_water",
+      "scalded_milk": "item.caupona.scalded_milk",
+      "molten_iron": "fluid.tconstruct.molten_iron",
+      "molten_cobalt": "fluid.tconstruct.molten_cobalt",
+      "greater_evasion_elixir": "fluid_type.irons_spellbooks.greater_evasion_elixir",
+      "flowing_molten_debris": "fluid.tconstruct.molten_debris",
+      "murky_flow": "fluid_type.mahoutsukai.murky",
+      "molten_amethyst": "fluid.tconstruct.molten_amethyst",
+      "molten_hepatizon": "fluid.tconstruct.molten_hepatizon",
+      "borscht": "item.caupona.borscht",
+      "molten_bendalloy": "fluid.tconstruct.molten_bendalloy",
+      "molten_steeleaf": "fluid.tconstruct.molten_steeleaf",
+      "aphrodite_mixture": "fluid.kubejs.aphrodite_mixture",
+      "flowing_aphrodite_mixture": "fluid.kubejs.aphrodite_mixture",
+      "flowing_molten_duralumin": "fluid.tconstruct.molten_duralumin",
+      "molten_osmium": "fluid.tconstruct.molten_osmium",
+      "okroshka": "item.caupona.okroshka",
+      "flowing_molten_zinc": "fluid.tconstruct.molten_zinc",
+      "flowing_molten_obsidian": "fluid.tconstruct.molten_obsidian",
+      "mushroom_stew": "fluid.tconstruct.mushroom_stew",
+      "flowing_molten_amethyst": "fluid.tconstruct.molten_amethyst",
+      "flowing_molten_amethyst_bronze": "fluid.tconstruct.molten_amethyst_bronze",
+      "flowing_honey": "fluid.tconstruct.honey",
+      "powdered_snow": "fluid.tconstruct.powdered_snow",
+      "flowing_molten_porcelain": "fluid.tconstruct.molten_porcelain",
+      "molten_refined_obsidian": "fluid.tconstruct.molten_refined_obsidian",
+      "walnut_oil": "fluid.kubejs.walnut_oil",
+      "glowing_water": "fluid.kubejs.glowing_water",
+      "ice_venom": "fluid_type.irons_spellbooks.ice_venom",
+      "flowing_molten_invar": "fluid.tconstruct.molten_invar",
+      "lava": "Lava",
+      "molten_tungsten": "fluid.tconstruct.molten_tungsten",
+      "flowing_molten_bendalloy": "fluid.tconstruct.molten_bendalloy",
+      "evasion_elixir": "fluid_type.irons_spellbooks.evasion_elixir",
+      "condensed_universal_entropy": "fluid.kubejs.condensed_universal_entropy",
+      "honey": "fluid.tconstruct.honey",
+      "flowing_apple_cider": "fluid.create_central_kitchen.apple_cider",
+      "flowing_molten_brass": "fluid.tconstruct.molten_brass",
+      "potion": "Uncraftable Potion",
+      "flowing_molten_hepatizon": "fluid.tconstruct.molten_hepatizon",
+      "molten_emerald": "fluid.tconstruct.molten_emerald",
+      "xp_flowing": "fluid_type.sophisticatedcore.experience",
+      "greater_invisibility_elixir": "fluid_type.irons_spellbooks.greater_invisibility_elixir",
+      "purple_soda_flowing": "fluid_type.alexscaves.purple_soda",
+      "cream_of_meat_soup": "item.caupona.cream_of_meat_soup",
+      "gruel": "item.caupona.gruel",
+      "flowing_walnut_oil": "fluid.kubejs.walnut_oil",
+      "epic_ink": "fluid_type.irons_spellbooks.epic_ink",
+      "acid_flowing": "fluid_type.alexscaves.acid",
+      "molten_cinderslime": "fluid.tconstruct.molten_cinderslime",
+      "seaweed_soup": "item.caupona.seaweed_soup",
+      "molten_porcelain": "fluid.tconstruct.molten_porcelain",
+      "flowing_molten_nicrosil": "fluid.tconstruct.molten_nicrosil",
+      "vegetable_chowder": "item.caupona.vegetable_chowder",
+      "molten_bronze": "fluid.tconstruct.molten_bronze",
+      "flowing_venom": "fluid.tconstruct.venom",
+      "flowing_molten_iron": "fluid.tconstruct.molten_iron",
+      "molten_pewter": "fluid.tconstruct.molten_pewter",
+      "molten_electrum": "fluid.tconstruct.molten_electrum",
+      "flowing_meat_soup": "fluid.tconstruct.meat_soup",
+      "molten_silver": "fluid.tconstruct.molten_silver",
+      "ichor": "fluid.tconstruct.ichor",
+      "bone_gelatin": "item.caupona.bone_gelatin",
+      "bisque": "item.caupona.bisque",
+      "molten_zinc": "fluid.tconstruct.molten_zinc",
+      "common_ink": "fluid_type.irons_spellbooks.common_ink",
+      "rare_ink": "fluid_type.irons_spellbooks.rare_ink",
+      "venom": "fluid.tconstruct.venom",
+      "ender_slime": "fluid.tconstruct.ender_slime",
+      "flowing_molten_diamond": "fluid.tconstruct.molten_diamond",
+      "flowing_molten_soulsteel": "fluid.tconstruct.molten_soulsteel",
+      "poultry_soup": "item.caupona.poultry_soup",
+      "flowing_ichor": "fluid.tconstruct.ichor",
+      "flowing_experience": "fluid.create_enchantment_industry.experience",
+      "flowing_molten_pewter": "fluid.tconstruct.molten_pewter",
+      "flowing_molten_tin": "fluid.tconstruct.molten_tin",
+      "flowing_bioethanol": "fluid.createaddition.bioethanol",
+      "angelheart_mixture": "fluid.kubejs.angelheart_mixture",
+      "legendary_arcane_ink": "fluid.kubejs.legendary_arcane_ink",
+      "pumpkin_soup_cream": "item.caupona.pumpkin_soup_cream",
+      "flowing_molten_refined_glowstone": "fluid.tconstruct.molten_refined_glowstone",
+      "flowing_molten_manyullyn": "fluid.tconstruct.molten_manyullyn",
+      "xp_juice_flowing": "fluid_type.reliquary.xp_juice",
+      "flowing_molten_cinderslime": "fluid.tconstruct.molten_cinderslime",
+      "molten_aluminum": "fluid.tconstruct.molten_aluminum",
+      "flowing_molten_aluminum": "fluid.tconstruct.molten_aluminum",
+      "flowing_molten_silver": "fluid.tconstruct.molten_silver",
+      "chocolate": "fluid.create.chocolate",
+      "molten_debris": "fluid.tconstruct.molten_debris",
+      "tomato_sauce": "fluid.create_central_kitchen.tomato_sauce",
+      "lemon_juice": "fluid.kubejs.lemon_juice",
+      "flowing_molten_netherite": "fluid.tconstruct.molten_netherite",
+      "molten_netherite": "fluid.tconstruct.molten_netherite",
+      "xp_still": "fluid_type.sophisticatedcore.experience",
+      "blazing_blood": "fluid.tconstruct.blazing_blood",
+      "flowing_molten_slimesteel": "fluid.tconstruct.molten_slimesteel",
+      "scorched_stone": "fluid.tconstruct.scorched_stone",
+      "fig_vinegar": "fluid.kubejs.fig_vinegar",
+      "molten_manyullyn": "fluid.tconstruct.molten_manyullyn",
+      "flowing_condensed_universal_entropy": "fluid.kubejs.condensed_universal_entropy",
+      "xp_juice_still": "fluid_type.reliquary.xp_juice",
+      "egg_drop_soup": "item.caupona.egg_drop_soup",
+      "flowing_fig_vinegar": "fluid.kubejs.fig_vinegar",
+      "fiery_liquid": "fluid.tconstruct.fiery_liquid",
+      "molten_enderium": "fluid.tconstruct.molten_enderium",
+      "molten_lead": "fluid.tconstruct.molten_lead",
+      "murky_still": "fluid_type.mahoutsukai.murky",
+      "nail_soup": "item.caupona.nail_soup",
+      "flowing_molten_clay": "fluid.tconstruct.molten_clay",
+      "flowing_fiery_liquid": "fluid.tconstruct.fiery_liquid",
+      "flowing_molten_gold": "fluid.tconstruct.molten_gold",
+      "flowing_lemon_juice": "fluid.kubejs.lemon_juice",
+      "flowing_blazing_blood": "fluid.tconstruct.blazing_blood",
+      "porridge": "item.caupona.porridge",
+      "flowing_molten_quartz": "fluid.tconstruct.molten_quartz",
+      "flowing_molten_osmium": "fluid.tconstruct.molten_osmium",
+      "molten_soulsteel": "fluid.tconstruct.molten_soulsteel",
+      "flowing_molten_electrum": "fluid.tconstruct.molten_electrum",
+      "molten_nicrosil": "fluid.tconstruct.molten_nicrosil",
+      "sky_slime": "fluid.tconstruct.sky_slime",
+      "molten_chromium": "fluid.tconstruct.molten_chromium",
+      "molten_brass": "fluid.tconstruct.molten_brass",
+      "molten_diamond": "fluid.tconstruct.molten_diamond",
+      "timeless_slurry": "fluid_type.irons_spellbooks.timeless_slurry",
+      "flowing_sky_slime": "fluid.tconstruct.sky_slime",
+      "fish_soup": "item.caupona.fish_soup",
+      "experience": "fluid.create_enchantment_industry.experience",
+      "liquid_null": "block.biomesoplenty.liquid_null",
+      "nettle_soup": "item.caupona.nettle_soup",
+      "hot_cocoa": "fluid.create_central_kitchen.hot_cocoa",
+      "mushroom_soup": "item.caupona.mushroom_soup",
+      "flowing_molten_refined_obsidian": "fluid.tconstruct.molten_refined_obsidian",
+      "molten_glass": "fluid.tconstruct.molten_glass",
+      "stock": "item.caupona.stock",
+      "common_arcane_ink": "fluid.kubejs.common_arcane_ink",
+      "flowing_tomato_sauce": "fluid.create_central_kitchen.tomato_sauce",
+      "flowing_ender_slime": "fluid.tconstruct.ender_slime",
+      "vegetable_soup": "item.caupona.vegetable_soup",
+      "uncommon_arcane_ink": "fluid.kubejs.uncommon_arcane_ink",
+      "flowing_scorched_stone": "fluid.tconstruct.scorched_stone",
+      "flowing_molten_steeleaf": "fluid.tconstruct.molten_steeleaf",
+      "molten_knightslime": "fluid.tconstruct.molten_knightslime",
+      "water": "Water",
+      "legendary_ink": "fluid_type.irons_spellbooks.legendary_ink",
+      "molten_quartz": "fluid.tconstruct.molten_quartz",
+      "flowing_water": "Water",
+      "flowing_rabbit_stew": "fluid.tconstruct.rabbit_stew",
+      "molten_queens_slime": "fluid.tconstruct.molten_queens_slime",
+      "congee": "item.caupona.congee",
+      "flowing_potion": "Uncraftable Potion",
+      "flowing_molten_platinum": "fluid.tconstruct.molten_platinum",
+      "egg_tongsui": "item.caupona.egg_tongsui",
+      "molten_knightmetal": "fluid.tconstruct.molten_knightmetal",
+      "molten_obsidian": "fluid.tconstruct.molten_obsidian",
+      "flowing_molten_rose_gold": "fluid.tconstruct.molten_rose_gold",
+      "flowing_condensed_universal_order": "fluid.kubejs.condensed_universal_order",
+      "flowing_melon_juice": "fluid.create_central_kitchen.melon_juice",
+      "fricassee": "item.caupona.fricassee",
+      "flowing_common_arcane_ink": "fluid.kubejs.common_arcane_ink",
+      "molten_invar": "fluid.tconstruct.molten_invar",
+      "flowing_liquid_null": "block.biomesoplenty.liquid_null",
+      "flowing_legendary_arcane_ink": "fluid.kubejs.legendary_arcane_ink",
+      "flowing_molten_knightmetal": "fluid.tconstruct.molten_knightmetal",
+      "lumisene": "block.supplementaries.lumisene",
+      "flowing_hot_cocoa": "fluid.create_central_kitchen.hot_cocoa",
+      "flowing_beetroot_soup": "fluid.tconstruct.beetroot_soup",
+      "shimmer": "fluid.kubejs.shimmer",
+      "flowing_milk": "Milk",
+      "flowing_dragon_breath": "fluid.create_central_kitchen.dragon_breath",
+      "rice_pudding": "item.caupona.rice_pudding",
+      "flowing_molten_enderium": "fluid.tconstruct.molten_enderium",
+      "ink": "fluid.create_enchantment_industry.ink",
+      "flowing_fertile_mixture": "fluid.kubejs.fertile_mixture",
+      "molten_rose_gold": "fluid.tconstruct.molten_rose_gold",
+      "flowing_molten_chromium": "fluid.tconstruct.molten_chromium",
+      "flowing_molten_knightslime": "fluid.tconstruct.molten_knightslime",
+      "molten_constantan": "fluid.tconstruct.molten_constantan",
+      "molten_tin": "fluid.tconstruct.molten_tin",
+      "purple_soda": "fluid_type.alexscaves.purple_soda",
+      "flowing_molten_constantan": "fluid.tconstruct.molten_constantan",
+      "greater_healing_elixir": "fluid_type.irons_spellbooks.greater_healing_elixir",
+      "uncommon_ink": "fluid_type.irons_spellbooks.uncommon_ink"
+    }
+  }
+}
