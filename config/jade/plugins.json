@@ -119,6 +119,9 @@
     "converter": true,
     "breeder": true
   },
+  "pipez": {
+    "pipe": true
+  },
   "touhou_little_maid": {
     "maid": true,
     "shrine_lamp": true
