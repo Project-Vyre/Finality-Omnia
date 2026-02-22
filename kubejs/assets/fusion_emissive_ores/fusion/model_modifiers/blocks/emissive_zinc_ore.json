@@ -1,0 +1,10 @@
+{
+  "targets": [
+    "create:zinc_ore",
+    "create:deepslate_zinc_ore"
+  ],
+  "append": [
+    "fusion_emissive_ores:block/zinc_ore_overlay"
+  ],
+  "show_breaking_overlay": false
+}
