@@ -30,6 +30,7 @@ embeddium-fingerprint.json
 config/resourceful-config-web.json
 emi.json
 config/touhou_little_maid/info.json
+config/NoChatReports/NCR-Encryption.json
 
 # Ignore Essential files
 essential/*.jar
