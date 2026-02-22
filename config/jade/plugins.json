@@ -108,6 +108,9 @@
     "lightroom": true,
     "photograph_frame": true
   },
+  "yes_steve_model": {
+    "model_info": true
+  },
   "jadeaddons.lootr": {
     "info": true
   },
