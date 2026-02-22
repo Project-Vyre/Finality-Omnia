@@ -28,7 +28,8 @@ ServerEvents.tags('item', event => {
   event.add('kubejs:compost_eligible', [
     'minecraft:poisonous_potato',
     'minecraft:rotten_flesh',
-    'minecraft:egg'
+    'minecraft:egg',
+    '#minecraft:leaves'
   ])
   event.add('kubejs:sand_singularities', [
     'kubejs:sand_singularity',
