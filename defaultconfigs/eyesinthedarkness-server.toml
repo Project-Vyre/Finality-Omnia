@@ -12,7 +12,7 @@
 	SpeedNoAggro = 0.10000000149011612
 	#The speed at which the eyes move when aggressive.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	SpeedFullAggro = 0.5
+	SpeedFullAggro = 1.7
 	#The time the spawn cycle can take before a warning is printed to the log. In Microseconds. Default = 50ms
 	#Range: 0 ~ 9223372036854775807
 	LongSpawnCycleWarning = 50000
