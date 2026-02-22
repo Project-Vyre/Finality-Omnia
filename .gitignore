@@ -42,6 +42,10 @@ essential/loader
 essential/lwjgl3-natives
 essential/*-metadata
 
+# Ignore specific SVC files
+config/voicechat/category-volumes.properties
+config/voicechat/player-volumes.properties
+
 # Ignore folders 
 .probe/*
 backups/
