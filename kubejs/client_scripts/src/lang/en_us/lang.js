@@ -158,10 +158,32 @@ ClientEvents.lang('en_us', event => {
     "block.minecraft.obsidian.tooltip.behaviour3": "You can compact Water and Lava in a Basin because of Create's cursed recipe magic or other methods shown by the recipe viewer.",
     "item.kubejs.unstable_entropy_particles.tooltip.summary": "It appears that it needs to be _stabilized_ first by something that is _very_ cold.",
     "item.kubejs.unstable_entropy_particles.tooltip.condition1": "Acquisition",
-    "item.kubejs.unstable_entropy_particles.tooltip.behaviour1": "Can only be created by mixing many different materials together.",
+    "item.kubejs.unstable_entropy_particles.tooltip.behaviour1": "Can only be created by mixing many different materials together."
+  })
+  event.addAll('create', {
     "block.create.hose_pulley.tooltip.summary": "By default, any volume of fluid will be considered bottomless at _*10,000 fluid source blocks_ which would normally require a hole that is _25x25x16_ in volume. That is _Length_ * _Width_ * _Height_ for those who don't know how to calculate volume. Please _DO NOT_ issue a bug report if you have not read the additional text below.",
     "block.create.hose_pulley.tooltip.condition1": "Additional Info",
-    "block.create.hose_pulley.tooltip.behaviour1": "*Sometimes some fluids may require _more than 10,000_ fluid source blocks due to Create's Hose Pulley being weird. A hole that is _25x25x17_ in volume fixes this issue. _However_, Hose Pulleys are _unable_ to output _more than 10,050_ fluid source blocks due to a weird bug in Create itself."
+    "block.create.hose_pulley.tooltip.behaviour1": "*Sometimes some fluids may require _more than 10,000_ fluid source blocks due to Create's Hose Pulley being weird. A hole that is _25x25x17_ in volume fixes this issue. _However_, Hose Pulleys are _unable_ to output _more than 10,050_ fluid source blocks due to a weird bug in Create itself.",
+    "item.create.chromatic_compound.tooltip": "CHROMATIC COMPOUND",
+    "item.create.chromatic_compound.tooltip.summary": "It seems to have some subtle _hue shifting_... Perhaps it can be changed?",
+    "item.create.chromatic_compound.tooltip.condition1": "Uses",
+    "item.create.chromatic_compound.tooltip.behaviour1": "Can be thrown into the _light_ or into the _void_ to be transformed into a different material.",
+    "item.create.refined_radiance.tooltip": "REFINED RADIANCE",
+    "item.create.refined_radiance.tooltip.summary": "After being exposed to _bright light_, it is now in your hands.",
+    "block.create.refined_radiance_casing.summary": "Mostly for decorative purposes.",
+    "item.create.shadow_steel.tooltip": "SHADOW STEEL",
+    "item.create.shadow_steel.tooltip.summary": "No light seems to come from this.",
+    "block.create.shadow_steel_casing.summary": "Mostly for decorative purposes.",
+    "item.create.raw_zinc.tooltip.summary": "Unrefined, but an _important_ ingredient in everything Create related.",
+    "item.create.raw_zinc.tooltip.condition1": "Renewal",
+    "item.create.raw_zinc.tooltip.behaviour1": "Has a _chance_ of dropping from _Creepers_ in nugget form.",
+    "item.create.zinc_ingot.tooltip.summary": "Now in its _refined_ form, it is now _useful_ to you.",
+    "item.create.zinc_ingot.tooltip.condition1": "When combined with a Copper Ingot",
+    "item.create.zinc_ingot.tooltip.behaviour1": "Creates _two_ Brass Ingots.",
+    "item.create.zinc_ingot.tooltip.condition2": "Renewal",
+    "item.create.zinc_ingot.tooltip.behaviour2": "Has a _chance_ of dropping from _Creepers_ in nugget form.",
+    "item.create.zinc_nugget.tooltip.summary": "Now _renewable_ from Creepers as a potential loot drop.",
+    "block.create.item_vault.tooltip.summary": "In addition to being a large, shared inventory, the Item Vault can't be destroyed by _any_ kind of explosion. Your valueables are _guaranteed_ to be safe."
   })
   if (Platform.isLoaded('farmersdelight')) {
     event.addAll('kubejs', {
@@ -253,8 +275,7 @@ ClientEvents.lang('en_us', event => {
       "string.kubejs.announcer.shake_line_start": "-----------------------------------------------------\n",
       "string.kubejs.announcer.shake_line_end": "-----------------------------------------------------",
       "string.kubejs.announcer.hold_w_to_ponder": "Remember to hold [w] to Ponder!\n",
-      "string.kubejs.announcer.campfire_regeneration": "Campfires now regenerate your health when you are close to them. Cozy!",
-      "item.create.chromatic_compound.tooltip.summary": "Either throw into the void or into a beacon or an intense light source like glowstone."
+      "string.kubejs.announcer.campfire_regeneration": "Campfires now regenerate your health when you are close to them. Cozy!"
     })
     for (let [number, name] of Object.entries(INTEGERS)) {
       event.add(
@@ -405,8 +426,7 @@ ClientEvents.lang('en_us', event => {
       "string.kubejs.announcer.shake_line_start": "<shake>-----------------------------------------------------</shake>\n",
       "string.kubejs.announcer.shake_line_end": "\n<shake>-----------------------------------------------------</shake>",
       "string.kubejs.announcer.hold_w_to_ponder": "Remember to hold <rainb>[w]</rainb> to Ponder!\n",
-      "string.kubejs.announcer.campfire_regeneration": "Campfires now regenerate your health when you are close to them. <wave>Cozy!</wave>",
-      "item.create.chromatic_compound.tooltip.summary": "<rainb>Either throw into the void or into a beacon or an intense light source like glowstone.</rainb>"
+      "string.kubejs.announcer.campfire_regeneration": "Campfires now regenerate your health when you are close to them. <wave>Cozy!</wave>"
     })
     for (let [id, name] of Object.entries(compressedBlocks)) {
       event.add(
