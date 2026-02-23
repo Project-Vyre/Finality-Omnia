@@ -80,7 +80,7 @@ ItemEvents.firstRightClicked(event => {
     })
   }
   if (item.getId() == 'kubejs:final_lance') {
-    let arrow = event.entity.level.getBlock(event.entity.x, event.entity.y + 1.2, event.entity.z).createEntity('minecraft:arrow')
+    let arrow = event.entity.level.getBlock(event.entity.x, event.entity.eyeY + 0.5, event.entity.z).createEntity('minecraft:arrow')
     let speed = 50.0
     let motionX = event.entity.lookAngle.x() * speed;
     let motionY = event.entity.lookAngle.y() * speed;
@@ -91,7 +91,7 @@ ItemEvents.firstRightClicked(event => {
     arrow.spawn()
   }
   if (item.getId() == 'kubejs:final_scythe') {
-    let end_ball = event.entity.level.getBlock(event.entity.x, event.entity.y + 0.5, event.entity.z).createEntity('minecraft:dragon_fireball')
+    let end_ball = event.entity.level.getBlock(event.entity.x, event.entity.eyeY + 0.5, event.entity.z).createEntity('minecraft:wither_skull')
     let speed = 3.0
     let motionX = event.entity.lookAngle.x() * speed;
     let motionY = event.entity.lookAngle.y() * speed;
@@ -149,7 +149,7 @@ ItemEvents.firstRightClicked(event => {
     })
   }
   if (item.getId() == 'kubejs:crimson_moons_semblance') {
-    let fire_ball = event.entity.level.getBlock(event.entity.x, event.entity.y + 0.5, event.entity.z).createEntity('minecraft:fireball')
+    let fire_ball = event.entity.level.getBlock(event.entity.x, event.entity.eyeY + 0.5, event.entity.z).createEntity('minecraft:fireball')
     let speed = 5.0
     let motionX = event.entity.lookAngle.x() * speed;
     let motionY = event.entity.lookAngle.y() * speed;

@@ -11,7 +11,7 @@ EntityJSEvents.modifyEntity(event => {
   event.modify('minecraft:fireball', modifyBuilder => {
     modifyBuilder.tick(entity => global.crimson_moon(entity))
   })
-  event.modify('minecraft:dragon_fireball', modifyBuilder => {
+  event.modify('minecraft:wither_skull', modifyBuilder => {
     modifyBuilder.tick(entity => global.final_scythe(entity))
   })
 })
