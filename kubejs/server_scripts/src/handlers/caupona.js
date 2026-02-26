@@ -21,6 +21,8 @@ let panMaterials = [
 ]
 
 ServerEvents.tags('item', event => {
+  event.add('create:modded_stripped_logs', 'caupona:stripped_walnut_log')
+  event.add('create:modded_stripped_wood', 'caupona:stripped_walnut_wood')
   event.add('forge:fruits/fig', 'caupona:fig')
 })
 

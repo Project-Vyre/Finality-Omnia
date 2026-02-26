@@ -21,6 +21,7 @@ ServerEvents.recipes(event => {
   event.shapeless('4x biomesoplenty:rose_quartz_chunk', [
     'biomesoplenty:rose_quartz_block'
   ]).id('finality:bop/rose_quartz_block_decompression')
+  // FLESH RELATED RECIPES
   event.recipes.create.cutting([
     '2x minecraft:rotten_flesh',
     Item.of('biomesoplenty:flesh_tendons', 2).withChance(0.75)
@@ -54,6 +55,36 @@ ServerEvents.recipes(event => {
       ]
     }).id(`finality:biomesoplenty/crafting/vanilla_chest_fallback`)
   }
+  // END CORRUPTION
+  event.recipes.create.emptying([
+    Fluid.of('biomesoplenty:liquid_null')
+  ], 'kubejs:null_matter').id('kubejs:biomesoplenty/emptying/null_matter_emptying')
+  event.recipes.create.emptying([
+    Fluid.of('biomesoplenty:liquid_null'),
+    'kubejs:monochromatic_singularity'
+  ], 'kubejs:monochromatic_singularity').id('kubejs:biomesoplenty/emptying/liquid_null_from_monochromatic_singularity')
+  event.recipes.create.filling('biomesoplenty:unmapped_end_stone', [
+    'minecraft:end_stone',
+    Fluid.of('biomesoplenty:liquid_null', 250)
+  ]).id('kubejs:biomesoplenty/filling/unmapped_end_stone')
+  event.recipes.create.filling('biomesoplenty:null_leaves', [
+    '#minecraft:leaves',
+    Fluid.of('biomesoplenty:liquid_null', 250)
+  ]).id('kubejs:biomesoplenty/filling/null_leaves')
+  event.recipes.create.filling('biomesoplenty:null_plant', [
+    '#minecraft:saplings',
+    Fluid.of('biomesoplenty:liquid_null', 250)
+  ]).id('kubejs:biomesoplenty/filling/null_plant')
+  event.recipes.create.crushing(
+    'biomesoplenty:null_block',
+    'biomesoplenty:null_end_stone'
+  ).id('kubejs:biomesoplenty/crushing/null_block')
+  event.recipes.minecraft.crafting_shaped('biomesoplenty:anomaly', [
+    '00',
+    '00'
+  ], {
+    0: 'biomesoplenty:null_block'
+  }).id('kubejs:biomesoplenty/anomaly')
 })
 
 let bop_stripped_logs = [
