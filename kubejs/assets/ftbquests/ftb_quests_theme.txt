@@ -2,6 +2,10 @@
 background: minecraft:textures/gui/presets/background.png
 [62E40BF215C76563]
 background: minecraft:textures/gui/presets/create_quests.png
+[704BE125DC1524EA]
+background: minecraft:textures/gui/presets/ae2_background.png
+[5880C1B8A5D298A1]
+background: minecraft:textures/gui/presets/hostile_neural_networks.png
 [*]
 background:          ftblibrary:textures/gui/background_squares.png; color=#DCFFFFFF; tile_size=64
 extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
