@@ -14,8 +14,8 @@ ServerEvents.recipes(event => {
     '  AAAA   '
   ], {
     A: 'create:andesite_alloy_block',
-    G: 'kubejs:color_green',
-    R: 'kubejs:color_red',
-    Y: 'kubejs:color_yellow'
+    G: '#minecraft:leaves',
+    R: 'minecraft:red_wool',
+    Y: 'minecraft:yellow_wool'
   }).id('kubejs:touhou_little_maid/mechanical_crafting/substitute_jizo')
 })
