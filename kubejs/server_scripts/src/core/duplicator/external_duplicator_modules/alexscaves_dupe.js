@@ -14,6 +14,25 @@ let alexscaves_sherds = [
   'hero'
 ]
 
+let alexscaves_duplication = {
+  ambersol: 'alexscaves:ambersol',
+  spelunkery_table: 'alexscaves:spelunkery_table',
+  diving_helmet: 'alexscaves:diving_helmet',
+  diving_chestplate: 'alexscaves:diving_chestplate',
+  diving_leggings: 'alexscaves:diving_leggings',
+  diving_boots: 'alexscaves:diving_boots',
+  galena: 'alexscaves:galena'
+}
+
+let cave_tablets = {
+  abyssal_chasm: '{CaveBiome:"alexscaves:abyssal_chasm"}',
+  candy_cavity: '{CaveBiome:"alexscaves:candy_cavity"}',
+  forlorn_hollows: '{CaveBiome:"alexscaves:forlorn_hollows"}',
+  magnetic_caves: '{CaveBiome:"alexscaves:magnetic_caves"}',
+  primordial_caves: '{CaveBiome:"alexscaves:primordial_caves"}',
+  toxic_caves: '{CaveBiome:"alexscaves:toxic_caves"}'
+}
+
 ServerEvents.recipes(event => {
   event.remove({ id: 'alexscaves:polarity_armor_trim_smithing_template' })
   event.recipes.create.deploying('2x alexscaves:polarity_armor_trim_smithing_template', [
@@ -29,24 +48,16 @@ ServerEvents.recipes(event => {
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + element + '_pottery_sherd_duplication')
   }
-  event.recipes.create.deploying('2x alexscaves:spelunkery_table', [
-    'alexscaves:spelunkery_table',
-    'kubejs:duplicator'
-  ]).keepHeldItem().id('kubejs:deploying/spelunkery_table_duplication')
-  event.recipes.create.deploying('2x alexscaves:diving_helmet', [
-    'alexscaves:diving_helmet',
-    'kubejs:duplicator'
-  ]).keepHeldItem().id('kubejs:deploying/diving_helmet_duplication')
-  event.recipes.create.deploying('2x alexscaves:diving_chestplate', [
-    'alexscaves:diving_chestplate',
-    'kubejs:duplicator'
-  ]).keepHeldItem().id('kubejs:deploying/diving_chestplate_duplication')
-  event.recipes.create.deploying('2x alexscaves:diving_leggings', [
-    'alexscaves:diving_leggings',
-    'kubejs:duplicator'
-  ]).keepHeldItem().id('kubejs:deploying/diving_leggings_duplication')
-  event.recipes.create.deploying('2x alexscaves:diving_boots', [
-    'alexscaves:diving_boots',
-    'kubejs:duplicator'
-  ]).keepHeldItem().id('kubejs:deploying/diving_boots_duplication')
+  for (let [recipeId, itemId] of Object.entries(alexscaves_duplication)) {
+    event.recipes.create.deploying(Item.of(itemId, 2), [
+      itemId,
+      'kubejs:duplicator'
+    ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + recipeId + '_duplication')
+  }
+  for (let [recipeId, tabletId] of Object.entries(cave_tablets)) {
+    event.recipes.create.deploying(Item.of('alexscaves:cave_tablet', 2, tabletId), [
+      Item.of('alexscaves:cave_tablet', tabletId).weakNBT(),
+      'kubejs:duplicator'
+    ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + recipeId + '_cave_tablet_duplication')
+  }
 })
