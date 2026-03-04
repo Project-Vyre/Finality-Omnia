@@ -176,7 +176,7 @@ ItemEvents.tooltip(event => {
       text.add(3, Component.translatable('item.cataclysm.gauntlet_of_bulwark.tooltip.summary'))
       text.add(4, '')
       text.add(5, Component.translatable('item.cataclysm.gauntlet_of_bulwark.tooltip.condition1'))
-      text.add(6, [' ', Component.translatable('item.cataclysm.gauntlet_of_bulwark.tooltip.behaviour1')])
+      text.add(6, Component.translatable('item.cataclysm.gauntlet_of_bulwark.tooltip.behaviour1'))
       text.add(7, '')
       text.add(8, Component.translatable('kubejs.cataclysm.original_tooltip_text').darkPurple())
     }
