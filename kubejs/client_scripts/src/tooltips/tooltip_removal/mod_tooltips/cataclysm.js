@@ -1,5 +1,5 @@
 // requires: cataclysm
-// requires: create
+// ignored: true
 
 ItemEvents.tooltip(event => {
   event.addAdvanced('cataclysm:bulwark_of_the_flame', (item, advanced, text) => {
