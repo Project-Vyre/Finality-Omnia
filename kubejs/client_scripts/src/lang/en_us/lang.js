@@ -146,9 +146,6 @@ ClientEvents.lang('en_us', event => {
     "kubejs.tooltip.hold_shift": "§8Hold [§r§7Shift§r§8]§r §8for Summary§r",
     "kubejs.tooltip.hold_control.held": "§8Hold [§r§fCtrl§r§8]§r §8for Controls§r",
     "kubejs.tooltip.hold_shift.held": "§8Hold [§r§fShift§r§8]§r §8for Summary§r",
-    "kubejs.minecraft.beacon.tooltip1": "Gives positive effects to players in a certain radius.",
-    "kubejs.minecraft.beacon.tooltip2": "Requires a base built out of precious metals or gems to function!",
-    "kubejs.minecraft.beacon.tooltip3": "§fIron§r§7,§r §eGold§r§7,§r §bDiamond§r§7,§r §aEmerald§r §7and§r §8Netherite§r §7are valid materials.§r",
     "block.minecraft.obsidian.tooltip.summary": "Infinitely renewable, but takes forever to break automatically.",
     "block.minecraft.obsidian.tooltip.condition1": "Method 1 - Drills",
     "block.minecraft.obsidian.tooltip.behaviour1": "You can have a deployer place a lava bucket next to a waterlogged block or drill. This does take a while, however.",
@@ -185,32 +182,6 @@ ClientEvents.lang('en_us', event => {
     "item.create.zinc_nugget.tooltip.summary": "Now _renewable_ from Creepers as a potential loot drop.",
     "block.create.item_vault.tooltip.summary": "In addition to being a large, shared inventory, the Item Vault can't be destroyed by _any_ kind of explosion. Your valueables are _guaranteed_ to be safe."
   })
-  if (Platform.isLoaded('farmersdelight')) {
-    event.addAll('kubejs', {
-      "kubejs.farmersdelight.skillet.tooltip.summary": "The skillet can be used to cook over an open flame or a stove.",
-      "kubejs.farmersdelight.skillet.tooltip2": "It can also be occasionally used as a weapon should the need ever arise.",
-      "kubejs.farmersdelight.skillet.tooltip3": "The alternative use is not recommended for the sake of the durability of your skillet."
-    })
-  }
-  /*
-      text.add(3, [
-        Text.of('The skillet can be used to cook ').gold(),
-        Text.of('over an open flame ').yellow(),
-        Text.of('or a ').gold(),
-        Text.of('stove').yellow(),
-        Text.of('.').gold(),
-      ])
-      text.add(4, [
-        Text.of('It can also be occasionally used as a ').gold(),
-        Text.of('weapon ').red(),
-        Text.of('should the need ever arise.').gold()
-      ])
-      text.add(5, [
-        Text.of('The alternative use is not recommended for the sake of the ').gold(),
-        Text.of('durability ').yellow(),
-        Text.of('of your skillet.').gold()
-      ])
-  */
   if (Platform.isLoaded('universalbonemeal')) {
     event.addAll('kubejs', {
       "kubejs.bone_meal.tooltip.summary": "Used for accelerating the growth of plants. However, it can now universally bone meal a lot more things compared to before!",
@@ -549,70 +520,6 @@ ClientEvents.lang('en_us', event => {
       "alexsmobs.potion.poison_resistance.desc": "Grants immunity to poison."
     })
   }
-  if (Platform.isLoaded('apotheosis')) {
-    event.addAll('kubejs', {
-      "item.apotheosis.gem.kubejs:eversor": "Eversor Gem",
-      "item.apotheosis.gem.kubejs:acuti_ora": "Acuti Ora Gem"
-    })
-  }
-  if (Platform.isLoaded('apotheosis') && Platform.isLoaded('gateways')) {
-    event.addAll('kubejs', {
-      "kubejs.blaze_gate_small": "Small Blaze Gate",
-      "kubejs.blaze_gate": "Blaze Gate",
-      "kubejs.blaze_gate_large": "Large Blaze Gate",
-      "kubejs.creeper_gate_small": "Small Creeper Gate",
-      "kubejs.creeper_gate": "Creeper Gate",
-      "kubejs.creeper_gate_large": "Large Creeper Gate",
-      "kubejs.enderman_gate_small": "Small Enderman Gate",
-      "kubejs.enderman_gate": "Enderman Gate",
-      "kubejs.enderman_gate_large": "Large Enderman Gate",
-      "kubejs.drowned_gate_small": "Small Drowned Gate",
-      "kubejs.drowned_gate": "Drowned Gate",
-      "kubejs.drowned_gate_large": "Large Drowned Gate",
-      "kubejs.ghast_gate_small": "Small Ghast Gate",
-      "kubejs.ghast_gate": "Ghast Gate",
-      "kubejs.ghast_gate_large": "Large Ghast Gate",
-      "kubejs.hoglin_gate_small": "Small Hoglin Gate",
-      "kubejs.hoglin_gate": "Hoglin Gate",
-      "kubejs.hoglin_gate_large": "Large Hoglin Gate",
-      "kubejs.husk_gate_small": "Small Husk Gate",
-      "kubejs.husk_gate": "Husk Gate",
-      "kubejs.husk_gate_large": "Large Husk Gate",
-      "kubejs.magma_cube_gate_small": "Small Magma Cube Gate",
-      "kubejs.magma_cube_gate": "Magma Cube Gate",
-      "kubejs.magma_cube_gate_large": "Large Magma Cube Gate",
-      "kubejs.shulker_gate_small": "Small Shulker Gate",
-      "kubejs.shulker_gate": "Shulker Gate",
-      "kubejs.shulker_gate_large": "Large Shulker Gate",
-      "kubejs.skeleton_gate_small": "Small Skeleton Gate",
-      "kubejs.skeleton_gate": "Skeleton Gate",
-      "kubejs.skeleton_gate_large": "Large Skeleton Gate",
-      "kubejs.slime_gate_small": "Small Slime Gate",
-      "kubejs.slime_gate": "Slime Gate",
-      "kubejs.slime_gate_large": "Large Slime Gate",
-      "kubejs.spider_gate_small": "Small Spider Gate",
-      "kubejs.spider_gate": "Spider Gate",
-      "kubejs.spider_gate_large": "Large Spider Gate",
-      "kubejs.witch_gate_small": "Small Witch Gate",
-      "kubejs.witch_gate": "Witch Gate",
-      "kubejs.witch_gate_large": "Large Witch Gate",
-      "kubejs.zombie_gate_small": "Small Zombie Gate",
-      "kubejs.zombie_gate": "Zombie Gate",
-      "kubejs.zombie_gate_large": "Large Zombie Gate",
-      "kubejs.bastion_salvation": "Bastion's Salvation",
-      "kubejs.boss_gate_small": "Small Apothic Boss Gate",
-      "kubejs.boss_gate": "Apothic Boss Gate",
-      "kubejs.boss_gate_large": "Large Apothic Boss Gate",
-      "kubejs.cataclysm_boss_gate": "Cataclysm Boss Gate",
-      "kubejs.ultimatum_boss_gate": "Ultimatum Boss Gate",
-      "kubejs.mutant_boss_gate_large": "Large Mutant Boss Gate",
-      "kubejs.mass_destruction_boss_gate_large": "Bosses of Mass Destruction Gate",
-      "kubejs.endless/artifact_mimic_gate": "Endless Artifact Mimic Gate",
-      "kubejs.wilden_gate": "Wilden Gate",
-      "name.kubejs.skill_check": "Skill Check",
-      "rewards.gateways.loot_table.bastion_treasure": "Bastion Treasure Loot"
-    })
-  }
   if (Platform.isLoaded('create_bic_bit')) {
     event.addAll('kubejs', {
       "item.kubejs.speculaas_singularity": "Speculaas Singularity",
@@ -653,20 +560,6 @@ ClientEvents.lang('en_us', event => {
       "createaddition.ponder.liquid_blaze_burner.text_1": "DISABLED - Giving the Blaze Burner a Straw",
       "createaddition.ponder.liquid_blaze_burner.text_2": "This feature is disabled.",
       "createaddition.ponder.liquid_blaze_burner.text_3": "This feature is disabled."
-    })
-  }
-  if (Platform.isLoaded('lightmanscurrency')) {
-    event.addAll('kubejs', {
-      "item.kubejs.lightman.copper_coin.initial": "Cu",
-      "item.kubejs.lightman.copper_coin.plural": "Copper Coins",
-      "item.kubejs.lightman.iron_coin.initial": "Fe",
-      "item.kubejs.lightman.iron_coin.plural": "Copper Coins",
-      "item.kubejs.lightman.gold_coin.initial": "Au",
-      "item.kubejs.lightman.gold_coin.plural": "Gold Coins",
-      "item.kubejs.lightman.netherite_coin.initial": "n",
-      "item.kubejs.lightman.netherite_coin.plural": "Netherite Coins",
-      "item.kubejs.lightman.entropy_coin.initial": "E",
-      "item.kubejs.lightman.entropy_coin.plural": "Entropy Coins"
     })
   }
 })
