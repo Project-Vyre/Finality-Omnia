@@ -59,21 +59,21 @@ ignoredItems = ["quality_equipment:reforge_gui_button"]
 
 	[Styles.1-Default]
 		#Color in #AARRGGBB format.
-		defaultPanelBackgroundTop = "#F0100010"
+		defaultPanelBackgroundTop = "#F016141A"
 		#Color in #AARRGGBB format.
-		defaultPanelBackgroundBottom = "#F0100010"
+		defaultPanelBackgroundBottom = "#F016141A"
 		#Color in #AARRGGBB format.
-		defaultPanelBorderTop = "#505000FF"
+		defaultPanelBorderTop = "#50B1A0FF"
 		#Color in #AARRGGBB format.
-		defaultPanelBorderBottom = "#5028007F"
+		defaultPanelBorderBottom = "#508450FF"
 
 	[Styles.2-Uncommon-Items]
 		#Whether Obscure Tooltips should display a unique style for uncommon items.
 		uncommonStyleEnabled = true
 		#Color in #AARRGGBB format.
-		uncommonPanelBackgroundTop = "#F0100010"
+		uncommonPanelBackgroundTop = "#F016141A"
 		#Color in #AARRGGBB format.
-		uncommonPanelBackgroundBottom = "#F0100010"
+		uncommonPanelBackgroundBottom = "#F016141A"
 		#Color in #AARRGGBB format.
 		uncommonPanelBorderTop = "#80FF9019"
 		#Color in #AARRGGBB format.
@@ -83,9 +83,9 @@ ignoredItems = ["quality_equipment:reforge_gui_button"]
 		#Whether Obscure Tooltips should display a unique style for rare items.
 		rareStyleEnabled = true
 		#Color in #AARRGGBB format.
-		rarePanelBackgroundTop = "#F0100010"
+		rarePanelBackgroundTop = "#F016141A"
 		#Color in #AARRGGBB format.
-		rarePanelBackgroundBottom = "#F0100010"
+		rarePanelBackgroundBottom = "#F016141A"
 		#Color in #AARRGGBB format.
 		rarePanelBorderTop = "#80BBBBCC"
 		#Color in #AARRGGBB format.
@@ -95,9 +95,9 @@ ignoredItems = ["quality_equipment:reforge_gui_button"]
 		#Whether Obscure Tooltips should display a unique style for epic items.
 		epicStyleEnabled = true
 		#Color in #AARRGGBB format.
-		epicPanelBackgroundTop = "#F0100010"
+		epicPanelBackgroundTop = "#F016141A"
 		#Color in #AARRGGBB format.
-		epicPanelBackgroundBottom = "#F0100010"
+		epicPanelBackgroundBottom = "#F016141A"
 		#Color in #AARRGGBB format.
 		epicPanelBorderTop = "#80FFBB00"
 		#Color in #AARRGGBB format.
