@@ -156,4 +156,72 @@ ClientEvents.lang('en_us', event => {
     "item.minecraft.gold_ingot.tooltip.condition1": "When pressed",
     "item.minecraft.gold_ingot.tooltip.behaviour1": "Turns into a _Gold Sheet_ which has additional uses."
   })
+  event.addAll(
+    'minecraft',
+    createTooltip('minecraft:composter')
+      .addSummary('Primarily used for making _Bone Meal_. Both _Deployers_ and _Mechanical Arms_ are able to directly deposit items that can be composted into _Bone Meal_.')
+      .addBehaviour([
+        'Automated bone meal extraction',
+        'Unfortunately, _chutes_ and _funnels_ are not able to extract the finished Bone Meal, so you will have to use _hoppers_ instead.'
+      ])
+      .build()
+  )
+  event.addAll(
+    'minecraft',
+    createTooltip('minecraft:glowstone_dust')
+      .addSummary('The dust form of Glowstone. An essential ingredient in crafting blocks that emit light as well as _potion brewing_.')
+      .addBehaviour([
+        'Renewal',
+        'Can be obtained from defeating _witches_ or applying a _Night Vision Potion_ to some _Cinder Flour_.'
+      ])
+      .addBehaviour([
+        'Uses in Potion Brewing',
+        'Increases the _intensity_ of a potion. Also used in brewing a _Thick Potion_.'
+      ])
+      .build()
+  )
+  event.addAll(
+    'kubejs',
+    createTooltip('minecraft:gunpowder')
+      .addSummary('An essential ingredient in both the creation of _explosives_ and _splash potions_.')
+      .addBehaviour([
+        'Renewal',
+        'Can be obtained from defeating _Creepers_ or washing _Crushed Raw Zinc_.'
+      ])
+      .build()
+  )
+  if (Platform.isLoaded('salt')) {
+    event.addAll('kubejs', {
+      "item.minecraft.gunpowder.tooltip.condition2": "Renewal with Salt",
+      "item.minecraft.gunpowder.tooltip.behaviour2": "Can be mixed with _Salt_ and _Coal_ or _Charcoal_."
+    })
+  }
+  event.addAll(
+    'kubejs',
+    createTooltip('minecraft:redstone')
+      .addSummary('An embodiment of _game logic_ and can be used in many logic related components.')
+      .addBehaviour([
+        'Renewal',
+        'Can be obtained from defeating _witches_ or applying a _Strength Potion_ to some _Cinder Flour_.'
+      ])
+      .addBehaviour([
+        'Uses in Potion Brewing',
+        'Increases the _duration_ of a potion. Also used in brewing a _Mundane Potion_.'
+      ])
+      .build()
+  )
+  event.addAll(
+    'kubejs',
+    createTooltip('minecraft:echo_shard')
+      .addSummary('Now has additional uses.')
+      .addBehaviour([
+        'On R-Click on Warped Roots',
+        'Converts the roots into a _Sculk Sensor_.'
+      ])
+      .addBehaviour([
+        'On R-Click on Sculk Shrieker',
+        'Summons a Warden and _consumes_ the Echo Shard in the process.'
+      ])
+      .build()
+  )
 })

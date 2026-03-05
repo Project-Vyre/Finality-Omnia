@@ -507,4 +507,63 @@ ItemEvents.tooltip(event => {
       text.add(6, Component.translatable('item.minecraft.gold_ingot.tooltip.behaviour1'))
     }
   })
+  event.addAdvanced('minecraft:composter', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('block.minecraft.composter.tooltip.summary'))
+      text.add(4, '')
+      text.add(5, Component.translatable('block.minecraft.composter.tooltip.condition1'))
+      text.add(6, Component.translatable('block.minecraft.composter.tooltip.behaviour1'))
+    }
+  })
+  event.addAdvanced('minecraft:glowstone_dust', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('item.minecraft.glowstone_dust.tooltip.summary'))
+      text.add(4, '')
+      text.add(5, Component.translatable('item.minecraft.glowstone_dust.tooltip.condition1'))
+      text.add(6, Component.translatable('item.minecraft.glowstone_dust.tooltip.behaviour1'))
+      text.add(7, '')
+      text.add(8, Component.translatable('item.minecraft.glowstone_dust.tooltip.condition2'))
+      text.add(9, Component.translatable('item.minecraft.glowstone_dust.tooltip.behaviour2'))
+    }
+  })
+  event.addAdvanced('minecraft:gunpowder', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('item.minecraft.gunpowder.tooltip.summary'))
+      text.add(4, '')
+      text.add(5, Component.translatable('item.minecraft.gunpowder.tooltip.condition1'))
+      text.add(6, Component.translatable('item.minecraft.gunpowder.tooltip.behaviour1'))
+      text.add(7, '')
+      if (Platform.isLoaded('salt')) {
+        text.add(8, Component.translatable('item.minecraft.gunpowder.tooltip.condition2'))
+        text.add(9, Component.translatable('item.minecraft.gunpowder.tooltip.behaviour2'))
+      }
+    }
+  })
+  event.addAdvanced('minecraft:redstone', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('item.minecraft.redstone.tooltip.summary'))
+      text.add(4, '')
+      text.add(5, Component.translatable('item.minecraft.redstone.tooltip.condition1'))
+      text.add(6, Component.translatable('item.minecraft.redstone.tooltip.behaviour1'))
+      text.add(7, '')
+      text.add(8, Component.translatable('item.minecraft.redstone.tooltip.condition2'))
+      text.add(9, Component.translatable('item.minecraft.redstone.tooltip.behaviour2'))
+    }
+  })
 })
