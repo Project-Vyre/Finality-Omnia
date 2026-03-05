@@ -20,6 +20,7 @@
 	]
 	emergency_items_cooldown: 5
 	grid_scale: 0.5d
+	hide_excluded_quests: false
 	icon: "kubejs:final_singularity_stage_three"
 	lock_message: ""
 	loot_crate_no_drop: {

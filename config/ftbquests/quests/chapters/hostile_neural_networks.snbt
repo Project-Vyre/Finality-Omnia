@@ -1,0 +1,69 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "hostile_neural_networks"
+	group: "71A5625CEAEA7423"
+	icon: "hostilenetworks:sim_chamber"
+	id: "5880C1B8A5D298A1"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1677FFD8F720E6B2"]
+			description: [
+				"Before getting started you must know that to run a neural network, sufficient power must be supplied."
+				""
+				"If you are able to provide sufficient FE through the use of Alternators or other sources of FE, you can proceed."
+			]
+			id: "169CEA26474E79BD"
+			subtitle: "Hostile neural learning at its finest."
+			tasks: [{
+				id: "65108E6B54F6668B"
+				title: "I understand."
+				type: "checkmark"
+			}]
+			title: "Introduction to Hostile Neural Networks"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["169CEA26474E79BD"]
+			description: [
+				"First you need to obtain a data model from an entity with the &aModel Framework&r item."
+				""
+				"Once you obtain a data model from an entity, it needs to be placed into the &dDeep Learner&r before you put the Deep Learner itself into its special accessory slot."
+				""
+				"What to do next? Just get to <shake>killing</shake> to refine the data model."
+			]
+			icon: "hostilenetworks:sim_chamber"
+			id: "54C89CDD170A1B0F"
+			subtitle: "Here is what you need to get started."
+			tasks: [
+				{
+					id: "76C629B44532796D"
+					item: "hostilenetworks:sim_chamber"
+					type: "item"
+				}
+				{
+					id: "15AE00F8FB1D4C33"
+					item: "hostilenetworks:prediction_matrix"
+					type: "item"
+				}
+				{
+					id: "0F1937D344CCACE1"
+					item: "hostilenetworks:deep_learner"
+					type: "item"
+				}
+				{
+					id: "35664DA92982CF26"
+					item: "hostilenetworks:blank_data_model"
+					type: "item"
+				}
+			]
+			title: "H.N.N Prerequisites"
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "Hostile Neural Networks"
+}

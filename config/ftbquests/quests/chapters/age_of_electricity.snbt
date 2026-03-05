@@ -1,0 +1,60 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age_of_electricity"
+	group: "4A8875A8A8C06088"
+	icon: "createaddition:tesla_coil"
+	id: "59D420238A8B9414"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7E53FEEB22DE2A16"]
+			id: "76BF133A89F14775"
+			tasks: [{
+				id: "2004A560276988DA"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"57A69334C4D4299A"
+				"2FF7795C03DDC67B"
+			]
+			id: "5B495330AC74778C"
+			tasks: [{
+				id: "76908276A40818DE"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B495330AC74778C"]
+			id: "7E53FEEB22DE2A16"
+			tasks: [{
+				id: "7073E83A6661496F"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["76BF133A89F14775"]
+			id: "2B056ED190C24544"
+			tasks: [{
+				id: "5F3EE559FAD68D28"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "Age of Electricity"
+}
