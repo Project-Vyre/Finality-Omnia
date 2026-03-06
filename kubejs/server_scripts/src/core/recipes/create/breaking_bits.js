@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
   HEXCODES('green', '#00FF00')
   HEXCODES('blue', '#0000FF')
   HEXCODES('magenta', '#FF00FF')
-  HEXCODES('yellow', '#00FFFF')
+  HEXCODES('yellow', '#FFFF00')
   HEXCODES('cyan', '#00FFFF')
   COLOR_MIXING('magenta', 'red', 'blue')
   COLOR_MIXING('yellow', 'red', 'green')
