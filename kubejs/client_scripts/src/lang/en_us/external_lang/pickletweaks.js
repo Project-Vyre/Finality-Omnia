@@ -26,5 +26,6 @@ ClientEvents.lang('en_us', event => {
         'Additonal Info',
         'This also applies to Diamond, Netherite and other tools as well, wherever applicable.'
       ])
+      .build()
   )
 })
