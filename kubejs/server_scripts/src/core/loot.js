@@ -70,4 +70,7 @@ LootJS.modifiers(event => {
   event.addEntityLootModifier('minecraft:drowned')
     .randomChance(0.25).addLoot('create:copper_nugget')
     .randomChanceWithLooting(0.50, 1).addLoot('create:copper_nugget')
+  event.addEntityLootModifier('minecraft:iron_golem')
+    .removeLoot('minecraft:iron_ingot')
+    .addLoot('4x minecraft:iron_block')
 })
