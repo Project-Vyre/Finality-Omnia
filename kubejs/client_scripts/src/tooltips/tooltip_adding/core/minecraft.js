@@ -10,10 +10,22 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.beacon.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.beacon.tooltip.summary',
+          Component.translate('block.minecraft.beacon.tooltip.highlight1').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.beacon.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.beacon.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.beacon.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.beacon.tooltip.behaviour1',
+          Component.translatable('block.minecraft.beacon.tooltip.highlight2').white(),
+          Component.translatable('block.minecraft.beacon.tooltip.highlight3').yellow(),
+          Component.translatable('block.minecraft.beacon.tooltip.highlight4').aqua(),
+          Component.translatable('block.minecraft.beacon.tooltip.highlight5').green(),
+          Component.translatable('block.minecraft.beacon.tooltip.highlight6').color(0x443A3B)
+        ).color(STANDARD.txt)
+      )
     }
   })
   if (Platform.isLoaded('pickletweaks')) {
@@ -23,10 +35,19 @@ ItemEvents.tooltip(event => {
       } else {
         text.add(1, Component.translatable(kjsHoldShiftHeld))
         text.add(2, '')
-        text.add(3, Component.translatable('item.minecraft.wooden_pickaxe.tooltip.summary'))
+        text.add(3,
+          Component.translatable('item.minecraft.wooden_pickaxe.tooltip.summary',
+            Component.translatable('item.minecraft.wooden_pickaxe.tooltip.highlight1').green()
+          ).color(STANDARD.txt)
+        )
         text.add(4, '')
-        text.add(5, Component.translatable('item.minecraft.wooden_pickaxe.tooltip.condition1'))
-        text.add(6, Component.translatable('item.minecraft.wooden_pickaxe.tooltip.behaviour1'))
+        text.add(5, Component.translatable('item.minecraft.wooden_pickaxe.tooltip.condition1').gray())
+        text.add(6,
+          Component.translatable('item.minecraft.wooden_pickaxe.tooltip.behaviour1',
+            Component.translatable('item.minecraft.wooden_pickaxe.tooltip.highlight2').aqua(),
+            Component.translatable('item.minecraft.wooden_pickaxe.tooltip.highlight3').darkGray()
+          ).color(STANDARD.txt)
+        )
       }
     })
     event.addAdvanced('minecraft:stone_pickaxe', (item, advanced, text) => {
@@ -35,10 +56,19 @@ ItemEvents.tooltip(event => {
       } else {
         text.add(1, Component.translatable(kjsHoldShiftHeld))
         text.add(2, '')
-        text.add(3, Component.translatable('item.minecraft.stone_pickaxe.tooltip.summary'))
+        text.add(3,
+          Component.translatable('item.minecraft.stone_pickaxe.tooltip.summary',
+            Component.translatable('item.minecraft.stone_pickaxe.tooltip.highlight1').green()
+          ).color(STANDARD.txt)
+        )
         text.add(4, '')
-        text.add(5, Component.translatable('item.minecraft.stone_pickaxe.tooltip.condition1'))
-        text.add(6, Component.translatable('item.minecraft.stone_pickaxe.tooltip.behaviour1'))
+        text.add(5, Component.translatable('item.minecraft.stone_pickaxe.tooltip.condition1').gray())
+        text.add(6,
+          Component.translatable('item.minecraft.stone_pickaxe.tooltip.behaviour1',
+            Component.translatable('item.minecraft.stone_pickaxe.tooltip.highlight2').aqua(),
+            Component.translatable('item.minecraft.stone_pickaxe.tooltip.highlight3').darkGray()
+          ).color(STANDARD.txt)
+        )
       }
     })
     event.addAdvanced('minecraft:iron_pickaxe', (item, advanced, text) => {
@@ -47,10 +77,19 @@ ItemEvents.tooltip(event => {
       } else {
         text.add(1, Component.translatable(kjsHoldShiftHeld))
         text.add(2, '')
-        text.add(3, Component.translatable('item.minecraft.iron_pickaxe.tooltip.summary'))
+        text.add(3,
+          Component.translatable('item.minecraft.iron_pickaxe.tooltip.summary',
+            Component.translatable('item.minecraft.iron_pickaxe.tooltip.highlight1').green()
+          ).color(STANDARD.txt)
+        )
         text.add(4, '')
-        text.add(5, Component.translatable('item.minecraft.iron_pickaxe.tooltip.condition1'))
-        text.add(6, Component.translatable('item.minecraft.iron_pickaxe.tooltip.behaviour1'))
+        text.add(5, Component.translatable('item.minecraft.iron_pickaxe.tooltip.condition1').gray())
+        text.add(6,
+          Component.translatable('item.minecraft.iron_pickaxe.tooltip.behaviour1',
+            Component.translatable('item.minecraft.iron_pickaxe.tooltip.highlight2').aqua(),
+            Component.translatable('item.minecraft.iron_pickaxe.tooltip.highlight3').darkGray()
+          ).color(STANDARD.txt)
+        )
       }
     })
   }
@@ -101,7 +140,9 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('item.minecraft.clock.tooltip.summary'))
+      text.add(3, Component.translatable('item.minecraft.clock.tooltip.summary',
+        Component.translatable('item.minecraft.clock.tooltip.highlight1').color(STANDARD.hlt)
+      ).color(STANDARD.txt))
     }
   })
   // STONE BLOCKS
@@ -129,9 +170,12 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.diorite.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.diorite.tooltip.summary',
+          Component.translatable('block.minecraft.diorite.tooltip.highlight1').color(GRAY.hlt)
+        ).color(GRAY.txt))
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.diorite.tooltip.condition1'))
+      text.add(5, Component.translatable('block.minecraft.diorite.tooltip.condition1').gray())
       text.add(6, Component.translatable('block.minecraft.diorite.tooltip.behaviour1'))
       text.add(7, '')
       text.add(8, Component.translatable('block.minecraft.diorite.tooltip.condition2'))

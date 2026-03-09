@@ -1,7 +1,10 @@
 // priority: 1000
-// ignored: true
+// ignored: false
 
-// Work in progress and probably won't be finished for a while.
+/**
+ * @file Color palette for tooltips.
+ * @author CelestialAbyss <https://github.com/CelestialAbyss> Modpack lead
+ */
 
 /*
   public static final Palette BLUE = ofColors(ChatFormatting.BLUE, ChatFormatting.AQUA);
@@ -18,7 +21,7 @@
   public static final Palette GRAY_AND_RED = ofColors(ChatFormatting.GRAY, ChatFormatting.RED);
 */
 
-const paletteProperties = {
+const tooltipPalette = {
   STANDARD: { txt: 0xC7954B, hlt: 0xEEDA78 },
   BLUE: { txt: 0x5555FF, hlt: 0x55FFFF },
   GREEN: { txt: 0x00AA00, hlt: 0x55FF55 },
@@ -32,21 +35,17 @@ const paletteProperties = {
   GRAY_AND_GOLD: { txt: 0xAAAAAA, hlt: 0xFFAA00 },
   GRAY_AND_RED: { txt: 0xAAAAAA, hlt: 0xFF5555 }
 }
-let palette = [
-  'STANDARD',
-  'BLUE',
-  'GREEN',
-  'YELLOW',
-  'RED',
-  'PURPLE',
-  'GRAY',
-  'ALL_GRAY',
-  'GRAY_AND_BLUE',
-  'GRAY_AND_WHITE',
-  'GRAY_AND_GOLD',
-  'GRAY_AND_RED'
-]
-// So how does one parse _ and determine the start and end?
-for (const e of palette) {
-
-}
+/** @info Standard Create text palette. */
+const STANDARD = tooltipPalette.STANDARD
+const BLUE = tooltipPalette.BLUE
+const GREEN = tooltipPalette.GREEN
+const YELLOW = tooltipPalette.YELLOW
+const RED = tooltipPalette.RED
+const PURPLE = tooltipPalette.PURPLE
+/** @info Typically used for common items or building materials. */
+const GRAY = tooltipPalette.GRAY
+const ALL_GRAY = tooltipPalette.ALL_GRAY
+const GRAY_AND_BLUE = tooltipPalette.GRAY_AND_BLUE
+const GRAY_AND_WHITE = tooltipPalette.GRAY_AND_WHITE
+const GRAY_AND_GOLD = tooltipPalette.GRAY_AND_GOLD
+const GRAY_AND_RED = tooltipPalette.GRAY_AND_RED

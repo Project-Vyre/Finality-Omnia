@@ -26,6 +26,7 @@ function CreateTooltipBuilder(itemId) {
   this.behaviours = []
   this.controls = []
   this.actions = []
+  this.highlights = []
 }
 CreateTooltipBuilder.prototype = {
   addSummary: function (/** @type {string} */ summary) {
@@ -41,6 +42,10 @@ CreateTooltipBuilder.prototype = {
   addAction: function (/** @type {string[]} */ controlsAndActions) {
     this.controls.push(controlsAndActions[0])
     this.actions.push(controlsAndActions[1])
+    return this
+  },
+  addHighlight: function (/** @type {string} */ highlighted) {
+    this.highlights = (highlighted)
     return this
   },
   build: function () {
@@ -59,6 +64,9 @@ CreateTooltipBuilder.prototype = {
     }
     for (let index = 0; index < this.actions.length; index++) {
       map.putIfAbsent(this.descriptionId + ".tooltip.action" + (index + 1), this.actions[index])
+    }
+    for (let index = 0; index < this.highlights.length; index++) {
+      map.putIfAbsent(this.descriptionId + ".tooltip.highlight" + (index + 1), this.highlights[index])
     }
     return map
   }
