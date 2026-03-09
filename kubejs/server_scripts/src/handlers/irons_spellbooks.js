@@ -2,6 +2,7 @@
 // requires: apotheosis
 // requires: create_enchantment_industry
 // requires: kubejs_create
+// requires: lootjs
 
 /**
  * @file Server handler for Iron's Spells and Spellbooks.
