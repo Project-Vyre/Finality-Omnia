@@ -27,4 +27,25 @@ ServerEvents.recipes(event => {
     'create:chromatic_compound',
     'minecraft:crying_obsidian'
   ]).keepHeldItem().id('finality:deploying/shadow_steel_from_crying_obsidian')
+  // Storage Blocks
+  event.recipes.minecraft.crafting_shaped('create:refined_radiance_block', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'create:refined_radiance'
+  }).id('kubejs:create/refined_radiance_block')
+  event.recipes.minecraft.crafting_shapeless('9x create:refined_radiance', [
+    'create:refined_radiance_block'
+  ]).id('kubejs:create/refined_radiance_block_decompression')
+  event.recipes.minecraft.crafting_shaped('create:dark_steel_block', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'create:shadow_steel'
+  }).id('kubejs:create/dark_steel_block')
+  event.recipes.minecraft.crafting_shapeless('9x create:shadow_steel', [
+    'create:dark_steel_block'
+  ]).id('kubejs:create/dark_steel_block_decompression')
 })
