@@ -232,13 +232,13 @@ ServerEvents.recipes(event => {
     P: 'kubejs:iridium_sheet'
   }).id('kubejs:ae2/tools/matter_cannon')
   */
-  event.recipes.create.mechanical_crafting('ae2:annihilation_core', [
+  event.recipes.minecraft.crafting_shaped('2x ae2:annihilation_core', [
     'QFL'
   ], {
-    Q: 'kubejs:electron_tube_singularity',
+    Q: 'kubejs:null_matter',
     F: 'ae2:fluix_dust',
     L: 'ae2:logic_processor'
-  }).id('kubejs:ae2/mechanical_crafting/annhilationcore')
+  }).id('ae2:materials/annihilationcore')
   // basic cards
   event.shapeless('ae2:redstone_card', [
     'ae2:basic_card',
