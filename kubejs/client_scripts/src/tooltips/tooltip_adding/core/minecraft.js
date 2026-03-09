@@ -140,9 +140,11 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('item.minecraft.clock.tooltip.summary',
-        Component.translatable('item.minecraft.clock.tooltip.highlight1').color(STANDARD.hlt)
-      ).color(STANDARD.txt))
+      text.add(3,
+        Component.translatable('item.minecraft.clock.tooltip.summary',
+          Component.translatable('item.minecraft.clock.tooltip.highlight1').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
     }
   })
   // STONE BLOCKS
@@ -152,16 +154,35 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.andesite.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.andesite.tooltip.summary',
+          Component.translatable('block.minecraft.andesite.tooltip.highlight1').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.andesite.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.andesite.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.andesite.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.andesite.tooltip.behaviour1',
+          Component.translatable('block.minecraft.andesite.tooltip.highlight2').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(7, '')
-      text.add(8, Component.translatable('block.minecraft.andesite.tooltip.condition2'))
-      text.add(9, Component.translatable('block.minecraft.andesite.tooltip.behaviour2'))
+      text.add(8, Component.translatable('block.minecraft.andesite.tooltip.condition2').gray())
+      text.add(9,
+        Component.translatable('block.minecraft.andesite.tooltip.behaviour2',
+          Component.translatable('block.minecraft.andesite.tooltip.highlight3').color(GRAY.hlt),
+          Component.translatable('block.minecraft.andesite.tooltip.highlight4').color(GRAY.hlt),
+          Component.translatable('block.minecraft.andesite.tooltip.highlight5').color(GRAY.hlt),
+          Component.translatable('block.minecraft.andesite.tooltip.highlight6').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(10, '')
-      text.add(11, Component.translatable('block.minecraft.andesite.tooltip.condition3'))
-      text.add(12, Component.translatable('block.minecraft.andesite.tooltip.behaviour3'))
+      text.add(11, Component.translatable('block.minecraft.andesite.tooltip.condition3').gray())
+      text.add(12,
+        Component.translatable('block.minecraft.andesite.tooltip.behaviour3',
+          Component.translatable('block.minecraft.andesite.tooltip.highlight7').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:diorite', (item, advanced, text) => {
@@ -173,13 +194,23 @@ ItemEvents.tooltip(event => {
       text.add(3,
         Component.translatable('block.minecraft.diorite.tooltip.summary',
           Component.translatable('block.minecraft.diorite.tooltip.highlight1').color(GRAY.hlt)
-        ).color(GRAY.txt))
+        ).color(GRAY.txt)
+      )
       text.add(4, '')
       text.add(5, Component.translatable('block.minecraft.diorite.tooltip.condition1').gray())
-      text.add(6, Component.translatable('block.minecraft.diorite.tooltip.behaviour1'))
+      text.add(6,
+        Component.translatable('block.minecraft.diorite.tooltip.behaviour1',
+          Component.translatable('block.minecraft.diorite.tooltip.highlight2').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(7, '')
-      text.add(8, Component.translatable('block.minecraft.diorite.tooltip.condition2'))
-      text.add(9, Component.translatable('block.minecraft.diorite.tooltip.behaviour2'))
+      text.add(8, Component.translatable('block.minecraft.diorite.tooltip.condition2').gray())
+      text.add(9,
+        Component.translatable('block.minecraft.diorite.tooltip.behaviour2',
+          Component.translatable('block.minecraft.diorite.tooltip.highlight3').color(GRAY.hlt),
+          Component.translatable('block.minecraft.diorite.tooltip.highlight4').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:granite', (item, advanced, text) => {
@@ -188,10 +219,19 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.granite.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.granite.tooltip.summary',
+          Component.translatable('block.minecraft.granite.tooltip.highlight1').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.granite.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.granite.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.granite.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.granite.tooltip.behaviour1',
+          Component.translatable('block.minecraft.granite.tooltip.highlight2').color(GRAY.hlt),
+          Component.translatable('block.minecraft.granite.tooltip.highlight3').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:cobblestone', (item, advanced, text) => {
@@ -200,13 +240,28 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.cobblestone.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.cobblestone.tooltip.summary',
+          Component.translatable('block.minecraft.cobblestone.tooltip.highlight1').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.cobblestone.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.cobblestone.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.cobblestone.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.cobblestone.tooltip.behaviour1',
+          Component.translatable('block.minecraft.cobblestone.tooltip.highlight2').color(GRAY.hlt),
+          Component.translatable('block.minecraft.cobblestone.tooltip.highlight3').color(GRAY.hlt),
+          Component.translatable('block.minecraft.cobblestone.tooltip.highlight4').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(7, '')
-      text.add(8, Component.translatable('block.minecraft.cobblestone.tooltip.condition2'))
-      text.add(9, Component.translatable('block.minecraft.cobblestone.tooltip.behaviour2'))
+      text.add(8, Component.translatable('block.minecraft.cobblestone.tooltip.condition2').gray())
+      text.add(9,
+        Component.translatable('block.minecraft.cobblestone.tooltip.behaviour2',
+          Component.translatable('block.minecraft.cobblestone.tooltip.highlight5').color(GRAY.hlt),
+          Component.translatable('block.minecraft.cobblestone.tooltip.highlight6').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:dirt', (item, advanced, text) => {
@@ -215,10 +270,21 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.dirt.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.dirt.tooltip.summary',
+          Component.translatable('block.minecraft.dirt.tooltip.highlight1').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.dirt.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.dirt.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.dirt.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.dirt.tooltip.behaviour1',
+          Component.translatable('block.minecraft.dirt.tooltip.highlight2').color(GRAY.hlt),
+          Component.translatable('block.minecraft.dirt.tooltip.highlight3').color(GRAY.hlt),
+          Component.translatable('block.minecraft.dirt.tooltip.highlight4').color(GRAY.hlt),
+          Component.translatable('block.minecraft.dirt.tooltip.highlight5').color(GRAY.hlt),
+        ).color(GRAY.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:gravel', (item, advanced, text) => {
@@ -227,10 +293,19 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.gravel.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.gravel.tooltip.summary',
+          Component.translatable('block.minecraft.gravel.tooltip.highlight1').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.gravel.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.gravel.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.gravel.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.gravel.tooltip.behaviour1',
+          Component.translatable('block.minecraft.gravel.tooltip.highlight2').color(GRAY.hlt),
+          Component.translatable('block.minecraft.gravel.tooltip.highlight3').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:tuff', (item, advanced, text) => {
@@ -239,16 +314,34 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.tuff.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.tuff.tooltip.summary',
+          Component.translatable('block.minecraft.tuff.tooltip.highlight1').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.tuff.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.tuff.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.tuff.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.tuff.tooltip.behaviour1',
+          Component.translatable('block.minecraft.tuff.tooltip.highlight2').color(GRAY.hlt)
+        ).color(GRAY.txt)
+      )
       text.add(7, '')
-      text.add(8, Component.translatable('block.minecraft.tuff.tooltip.condition2'))
-      text.add(9, Component.translatable('block.minecraft.tuff.tooltip.behaviour2'))
+      text.add(8, Component.translatable('block.minecraft.tuff.tooltip.condition2').gray())
+      text.add(9,
+        Component.translatable('block.minecraft.tuff.tooltip.behaviour2',
+          Component.translatable('block.minecraft.tuff.tooltip.highlight3').color(GRAY.hlt),
+          Component.translatable('block.minecraft.tuff.tooltip.highlight4').aqua()
+        ).color(GRAY.txt)
+      )
       text.add(10, '')
-      text.add(11, Component.translatable('block.minecraft.tuff.tooltip.condition3'))
-      text.add(12, Component.translatable('block.minecraft.tuff.tooltip.behaviour3'))
+      text.add(11, Component.translatable('block.minecraft.tuff.tooltip.condition3',).gray())
+      text.add(12,
+        Component.translatable('block.minecraft.tuff.tooltip.behaviour3',
+          Component.translatable('block.minecraft.tuff.tooltip.highlight5').color(GRAY.hlt),
+          Component.translatable('block.minecraft.tuff.tooltip.highlight6').gold()
+        ).color(GRAY.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:dried_kelp_block', (item, advanced, text) => {
@@ -257,10 +350,19 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.dried_kelp_block.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.dried_kelp_block.tooltip.summary',
+          Component.translatable('block.minecraft.dried_kelp_block.tooltip.highlight1').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.dried_kelp_block.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.dried_kelp_block.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.dried_kelp_block.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.dried_kelp_block.tooltip.behaviour1',
+          Component.translatable('block.minecraft.dried_kelp_block.tooltip.highlight2').color(STANDARD.hlt),
+          Component.translatable('block.minecraft.dried_kelp_block.tooltip.highlight3').gold()
+        ).color(STANDARD.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:netherrack', (item, advanced, text) => {
@@ -269,13 +371,31 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.netherrack.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.netherrack.tooltip.summary',
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight1').color(RED.hlt),
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight2').color(RED.hlt)
+        ).color(RED.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.netherrack.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.netherrack.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.netherrack.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.netherrack.tooltip.behaviour1',
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight3').color(RED.hlt),
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight4').color(RED.hlt),
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight5').color(RED.hlt),
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight6').color(RED.hlt),
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight7').color(0x443A3B)
+        ).color(RED.txt)
+      )
       text.add(7, '')
-      text.add(8, Component.translatable('block.minecraft.netherrack.tooltip.condition2'))
-      text.add(9, Component.translatable('block.minecraft.netherrack.tooltip.behaviour2'))
+      text.add(8, Component.translatable('block.minecraft.netherrack.tooltip.condition2').gray())
+      text.add(9,
+        Component.translatable('block.minecraft.netherrack.tooltip.behaviour2',
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight8').color(RED.hlt),
+          Component.translatable('block.minecraft.netherrack.tooltip.highlight9').color(RED.hlt)
+        ).color(RED.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:coal', (item, advanced, text) => {
@@ -284,13 +404,26 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('item.minecraft.coal.tooltip.summary'))
+      text.add(3,
+        Component.translatable('item.minecraft.coal.tooltip.summary',
+          Component.translatable('item.minecraft.coal.tooltip.highlight1').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('item.minecraft.coal.tooltip.condition1'))
-      text.add(6, Component.translatable('item.minecraft.coal.tooltip.behaviour1'))
+      text.add(5, Component.translatable('item.minecraft.coal.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('item.minecraft.coal.tooltip.behaviour1',
+          Component.translatable('item.minecraft.coal.tooltip.highlight2').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
       text.add(7, '')
-      text.add(8, Component.translatable('item.minecraft.coal.tooltip.condition2'))
-      text.add(9, Component.translatable('item.minecraft.coal.tooltip.behaviour2'))
+      text.add(8, Component.translatable('item.minecraft.coal.tooltip.condition2').gray())
+      text.add(9,
+        Component.translatable('item.minecraft.coal.tooltip.behaviour2',
+          Component.translatable('item.minecraft.coal.tooltip.highlight3').color(STANDARD.hlt),
+          Component.translatable('item.minecraft.coal.tooltip.highlight4').gold()
+        ).color(STANDARD.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:coal_block', (item, advanced, text) => {
@@ -299,13 +432,25 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.coal_block.tooltip.summary'))
+      text.add(3, Component.translatable('block.minecraft.coal_block.tooltip.summary',
+        Component.translatable('block.minecraft.coal_block.tooltip.highlight1').color(STANDARD.hlt)
+      ).color(STANDARD.txt))
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.coal_block.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.coal_block.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.coal_block.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.coal_block.tooltip.behaviour1',
+          Component.translatable('block.minecraft.coal_block.tooltip.highlight2').aqua(),
+          Component.translatable('block.minecraft.coal_block.tooltip.highlight3').aqua()
+        ).color(STANDARD.txt)
+      )
       text.add(7, '')
-      text.add(8, Component.translatable('block.minecraft.coal_block.tooltip.condition2'))
-      text.add(9, Component.translatable('block.minecraft.coal_block.tooltip.behaviour2'))
+      text.add(8, Component.translatable('block.minecraft.coal_block.tooltip.condition2').gray())
+      text.add(9,
+        Component.translatable('block.minecraft.coal_block.tooltip.behaviour2',
+          Component.translatable('block.minecraft.coal_block.tooltip.highlight4').color(STANDARD.hlt),
+          Component.translatable('block.minecraft.coal_block.tooltip.highlight5').gold()
+        ).color(STANDARD.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:diamond', (item, advanced, text) => {
@@ -314,10 +459,19 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('item.minecraft.diamond.tooltip.summary'))
+      text.add(3,
+        Component.translatable('item.minecraft.diamond.tooltip.summary',
+          Component.translatable('item.minecraft.diamond.tooltip.highlight1').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('item.minecraft.diamond.tooltip.condition1'))
-      text.add(6, Component.translatable('item.minecraft.diamond.tooltip.behaviour1'))
+      text.add(5, Component.translatable('item.minecraft.diamond.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('item.minecraft.diamond.tooltip.behaviour1',
+          Component.translatable('item.minecraft.diamond.tooltip.highlight2').color(STANDARD.hlt),
+          Component.translatable('item.minecraft.diamond.tooltip.highlight3').aqua()
+        ).color(STANDARD.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:diamond_block', (item, advanced, text) => {
@@ -326,10 +480,19 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('block.minecraft.diamond_block.tooltip.summary'))
+      text.add(3,
+        Component.translatable('block.minecraft.diamond_block.tooltip.summary',
+          Component.translatable('block.minecraft.diamond_block.tooltip.highlight1').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('block.minecraft.diamond_block.tooltip.condition1'))
-      text.add(6, Component.translatable('block.minecraft.diamond_block.tooltip.behaviour1'))
+      text.add(5, Component.translatable('block.minecraft.diamond_block.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('block.minecraft.diamond_block.tooltip.behaviour1',
+          Component.translatable('block.minecraft.diamond_block.tooltip.highlight2').color(STANDARD.hlt),
+          Component.translatable('block.minecraft.diamond_block.tooltip.highlight3').aqua()
+        ).color(STANDARD.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:glass_bottle', (item, advanced, text) => {
@@ -338,10 +501,16 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('item.minecraft.glass_bottle.tooltip.summary'))
+      text.add(3,
+        Component.translatable('item.minecraft.glass_bottle.tooltip.summary',
+          Component.translatable('item.minecraft.glass_bottle.tooltip.highlight1').color(STANDARD.hlt)
+        ).color(STANDARD.txt)
+      )
       text.add(4, '')
-      text.add(5, Component.translatable('item.minecraft.glass_bottle.tooltip.condition1'))
-      text.add(6, Component.translatable('item.minecraft.glass_bottle.tooltip.behaviour1'))
+      text.add(5, Component.translatable('item.minecraft.glass_bottle.tooltip.condition1').gray())
+      text.add(6,
+        Component.translatable('item.minecraft.glass_bottle.tooltip.behaviour1').color(STANDARD.txt)
+      )
     }
   })
   event.addAdvanced('minecraft:lapis_lazuli', (item, advanced, text) => {

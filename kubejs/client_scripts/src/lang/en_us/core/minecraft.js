@@ -67,6 +67,188 @@ ClientEvents.lang('en_us', event => {
       .build()
   )
   event.addAll('minecraft',
+    createTooltip('minecraft:cobblestone')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'Usage',
+        'Can be used in making %s which can then be used to make %s for easy creation of %s.'
+      ])
+      .addBehaviour([
+        'When milled or crushed',
+        'Turns into %s which can be %s for more useful materials.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'Diorite',
+        'Andesite',
+        'Andesite Alloy',
+        'Gravel',
+        'washed'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:dirt')
+      .addSummary('The %s of many agricultural farms.')
+      .addBehaviour([
+        'Renewal',
+        'Can be renewed by mixing %s with some %s in a %s paired with a %s.'
+      ])
+      .addHighlight([
+        'foundation',
+        'Gravel',
+        'organic matter',
+        'Basin',
+        'Mechanical Mixer'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:gravel')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'When washed',
+        'Has a chance of revealing %s and %s.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'Iron Nuggets',
+        'Flint'
+      ])
+      .build()
+  )
+  event.addAll(
+    'minecraft',
+    createTooltip('minecraft:tuff')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'When crushed',
+        'Can randomly provide Flint or %s of gold, copper, zinc or iron.'
+      ])
+      .addBehaviour([
+        'Renewal Method 1',
+        'Can be made by %s some Gravel and Lava in a %s Basin.'
+      ])
+      .addBehaviour([
+        'Renewal Method 2',
+        'Can also be made by %s some Deepslate and Lava in a %s Basin.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'nuggets',
+        'compacting',
+        'superheated',
+        'compacting',
+        'heated'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:dried_kelp_block')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'When compacted',
+        'Turns into %s in a %s Basin.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'coal',
+        'heated'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:netherrack')
+      .addSummary('Now has %s in recipes and can be %s renewed.')
+      .addBehaviour([
+        'Usage',
+        'Used for making %s or %s when crushed into %s. Can also %s yield %s when crushed.'
+      ])
+      .addBehaviour([
+        'Renewal',
+        'Can be %s with %s potions which can be fully automated with quite a few Mechanical Mixers equipped with Basins and Blaze Burners.'
+      ])
+      .addHighlight([
+        'additional recipes',
+        'infinitely',
+        'Blaze Cakes',
+        'redstone',
+        'Cinder Flour',
+        'rarely',
+        'Netherite Scrap',
+        'renewed',
+        'Instant Health II'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:coal')
+      .addSummary('Now has %s uses in recipes.')
+      .addBehaviour([
+        'When milled',
+        'Produces black dye with a %s of gray dye.'
+      ])
+      .addBehaviour([
+        'Renewal',
+        'Can be infinitely renewed from %s dried kelp blocks in a %s Basin.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'chance',
+        'compacting',
+        'heated'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:coal_block')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'When compacted',
+        'Now turns into %s when compacted in a %s Basin.'
+      ])
+      .addBehaviour([
+        'Renewal',
+        'Can be infinitely renewed from %s dried kelp blocks in a %s basin.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'diamonds',
+        'superheated',
+        'compacting',
+        'heated'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:diamond')
+      .addSummary('Formerly the strongest material. Now has %s in recipes.')
+      .addBehaviour([
+        'Renewal',
+        'Can be infinitely renewed from %s coal blocks in a %s basin.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'compacting',
+        'superheated'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:diamond_block')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'Renewal',
+        'Can be infinitely renewed from %s coal blocks in a %s basin.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'compacting',
+        'superheated'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
     createTooltip('minecraft:beacon')
       .addSummary('Gives %s to players in a certain radius.')
       .addBehaviour([
@@ -83,63 +265,20 @@ ClientEvents.lang('en_us', event => {
       ])
       .build()
   )
+  event.addAll('minecraft',
+    createTooltip('minecraft:glass_bottle')
+      .addSummary('Now has %s in this modpack.')
+      .addBehaviour([
+        'When combined with a Dragon Egg in a crafting grid',
+        'Extracts Dragon Breath.'
+      ])
+      .addHighlight([
+        'additional uses'
+      ])
+      .build()
+  )
+  // Glass Bottle below.
   // event.addAll('minecraft', {
-  //   "block.minecraft.granite.tooltip": "GRANITE",
-  //   "block.minecraft.granite.tooltip.summary": "Now has _additional usefulness_ due to Create's presence.",
-  //   "block.minecraft.granite.tooltip.condition1": "When milled or crushed",
-  //   "block.minecraft.granite.tooltip.behaviour1": "Turns _Red Sand_ which can be _washed_ to procure useful materials such as nuggets of gold.",
-  //   "block.minecraft.cobblestone.tooltip": "COBBLESTONE",
-  //   "block.minecraft.cobblestone.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "block.minecraft.cobblestone.tooltip.condition1": "Usage",
-  //   "block.minecraft.cobblestone.tooltip.behaviour1": "Can be used in making _Diorite_ which can then be used to make _Andesite_ for easy creation of _Andesite Alloy_.",
-  //   "block.minecraft.cobblestone.tooltip.condition2": "When milled or crushed",
-  //   "block.minecraft.cobblestone.tooltip.behaviour2": "Turns into _Gravel_ which can be _washed_ for more _useful_ materials.",
-  //   "block.minecraft.dirt.tooltip": "DIRT",
-  //   "block.minecraft.dirt.tooltip.summary": "The _foundation_ of many agricultural farms.",
-  //   "block.minecraft.dirt.tooltip.condition1": "Renewal",
-  //   "block.minecraft.dirt.tooltip.behaviour1": "Can be renewed by mixing _gravel_ with some _organic matter_ in a _Basin_ paired with a _Mechanical Mixer_.",
-  //   "block.minecraft.gravel.tooltip": "GRAVEL",
-  //   "block.minecraft.gravel.tooltip.summary": "Now has _additional uses_ in recpipes.",
-  //   "block.minecraft.gravel.tooltip.condition1": "When washed",
-  //   "block.minecraft.gravel.tooltip.behaviour1": "Has a chance of revealing _iron nuggets_ and _flint_.",
-  //   "block.minecraft.tuff.tooltip": "TUFF",
-  //   "block.minecraft.tuff.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "block.minecraft.tuff.tooltip.condition1": "When crushed",
-  //   "block.minecraft.tuff.tooltip.behaviour1": "Can randomly provide flint or _nuggets_ of gold, copper, zinc or iron.",
-  //   "block.minecraft.tuff.tooltip.condition2": "Renewal Method 1",
-  //   "block.minecraft.tuff.tooltip.behaviour2": "Can be made by _compacting_ some gravel and lava in a _superheated_ Basin.",
-  //   "block.minecraft.tuff.tooltip.condition3": "Renewal Method 2",
-  //   "block.minecraft.tuff.tooltip.behaviour3": "Can also be made by _compacting_ some deepslate and lava in a _heated_ Basin.",
-  //   "block.minecraft.dried_kelp_block.tooltip": "DRIED KELP BLOCK",
-  //   "block.minecraft.dried_kelp_block.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "block.minecraft.dried_kelp_block.tooltip.condition1": "Heated Compacting",
-  //   "block.minecraft.dried_kelp_block.tooltip.behaviour1": "Now turns into _coal_ when given _sufficient_ _heat_ and _pressure_.",
-  //   "block.minecraft.netherrack.tooltip": "NETHERRACK",
-  //   "block.minecraft.netherrack.tooltip.summary": "Now has _additional uses_ in recipes and can be _infinitely_ _renewed_.",
-  //   "block.minecraft.netherrack.tooltip.condition1": "Usage",
-  //   "block.minecraft.netherrack.tooltip.behaviour1": "Used for making _Blaze Cakes_ or _redstone_ when _crushed_ into _Cinder Flour_. Can also _rarely_ _produce_ _Netherite Scrap_ when _crushed_.",
-  //   "block.minecraft.netherrack.tooltip.condition2": "Renewal",
-  //   "block.minecraft.netherrack.tooltip.behaviour2": "Can be _renewed_ with _Instant Health II_ which can be _fully automated_ with quite a few Mechanical Mixers and Blaze Burners.",
-  //   "item.minecraft.coal.tooltip": "COAL",
-  //   "item.minecraft.coal.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "item.minecraft.coal.tooltip.condition1": "When milled",
-  //   "item.minecraft.coal.tooltip.behaviour1": "Produces black dye with a _chance_ of gray dye.",
-  //   "item.minecraft.coal.tooltip.condition2": "Renewal",
-  //   "item.minecraft.coal.tooltip.behaviour2": "Can be infinitely renewed from _compacting_ dried kelp blocks in a _heated_ basin.",
-  //   "block.minecraft.coal_block.tooltip": "COAL BLOCK",
-  //   "block.minecraft.coal_block.tooltip.summary": "Now has _additional uses_ in recpipes.",
-  //   "block.minecraft.coal_block.tooltip.condition1": "Superheated Compacting",
-  //   "block.minecraft.coal_block.tooltip.behaviour1": "Now turns into _diamonds_ when given sufficient _heat_ and _pressure_.",
-  //   "block.minecraft.coal_block.tooltip.condition2": "Renewal",
-  //   "block.minecraft.coal_block.tooltip.behaviour2": "Can be infinitely renewed from _compacting_ dried kelp blocks in a _heated_ basin.",
-  //   "item.minecraft.diamond.tooltip": "DIAMOND",
-  //   "item.minecraft.diamond.tooltip.summary": "Formerly the strongest material. Now has _additional uses_ in recipes.",
-  //   "item.minecraft.diamond.tooltip.condition1": "Renewal",
-  //   "item.minecraft.diamond.tooltip.behaviour1": "Can be infinitely renewed from _compacting_ coal blocks in a _superheated_ basin.",
-  //   "block.minecraft.diamond_block.tooltip": "DIAMOND BLOCK",
-  //   "block.minecraft.diamond_block.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "block.minecraft.diamond_block.tooltip.condition1": "Renewal",
-  //   "block.minecraft.diamond_block.tooltip.behaviour1": "Can be _infinitely_ renewed from _compacting_ coal blocks in a _superheated_ basin.",
   //   "block.minecraft.beacon.tooltip.summary": "Gives positive effects to players in a certain radius.",
   //   "block.minecraft.beacon.tooltip.condition1": "Prerequisites",
   //   "block.minecraft.beacon.tooltip.behaviour1": "Requires a base built out of precious metals or gems to function! Iron, Gold, Diamond, Emerald and Netherite are valid materials.",
