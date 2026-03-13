@@ -437,11 +437,11 @@ ServerEvents.recipes(event => {
   ]).id('finality:filling/prismarine_from_cobblestone')
   event.recipes.create.filling('minecraft:netherite_ingot', [
     'minecraft:netherite_scrap',
-    Fluid.of('kubejs:molten_gold', 90)
+    {fluidTag: 'forge:molten_gold', amount: 90}
   ]).id('finality:filling/netherite_ingot_from_spout')
   event.recipes.create.filling('minecraft:gilded_blackstone', [
     'minecraft:blackstone',
-    Fluid.of('kubejs:molten_gold', 180)
+    {fluidTag: 'forge:molten_gold', amount: 180}
   ]).id('finality:filling/gilded_blackstone')
   /**
    * HAUNTING
@@ -540,7 +540,7 @@ ServerEvents.recipes(event => {
   ]).id('finality:mixing/bulk_prismarine_from_cobblestone')
   event.recipes.create.mixing('4x minecraft:netherite_ingot', [
     '4x minecraft:netherite_scrap',
-    Fluid.of('kubejs:molten_gold', 360)
+    {fluidTag: 'forge:molten_gold', amount: 360}
   ]).heated().id('finality:mixing/netherite_ingot_from_mixing')
   event.recipes.create.mixing([
     Item.of('create:asurine').withChance(0.25),
@@ -1309,7 +1309,7 @@ ServerEvents.recipes(event => {
   // Golden Apple
   event.recipes.create.filling('minecraft:golden_apple', [
     'minecraft:apple',
-    Fluid.of('kubejs:molten_gold', 720)
+    {fluidTag: 'forge:molten_gold', amount: 720}
   ]).id('finality:filling/golden_apple')
   event.shapeless('9x kubejs:netherite_nugget', 'minecraft:netherite_ingot').id('finality:netherite_nugget')
   // chorus fruit in overworld

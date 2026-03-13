@@ -93,4 +93,15 @@ ServerEvents.tags('fluid', event => {
   event.add('create:bottomless/deny', [
 
   ])
+
+  // Add all molten metals and other things needing to be heated to 100+ C to minecraft:lava tag
+  event.add('minecraft:lava', '#tconstruct:tooltips/metal')
+  event.add('minecraft:lava', '#tconstruct:tooltips/glass')
+  event.add('minecraft:lava', '#tconstruct:tooltips/gem_large')
+  event.add('minecraft:lava', '#tconstruct:tooltips/gem_small')
+  event.add('minecraft:lava', '#tconstruct:tooltips/clay')
+  event.add('minecraft:lava', 'tconstruct:blazing_blood')
+  event.add('minecraft:lava', 'tconstruct:magma')
+  event.add('minecraft:lava', 'tconstruct:ichor')
+  event.add('minecraft:lava', 'tconstruct:fiery_liquid')
 })

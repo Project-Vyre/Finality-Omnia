@@ -863,7 +863,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing('mysticalagriculture:supremium_ingot', [
     'mysticalagriculture:prosperity_ingot',
     '4x mysticalagriculture:supremium_essence',
-    Fluid.of('kubejs:molten_netherite', 180),
+    {fluidTag: 'forge:molten_netherite', amount: 180}
   ]).id('finality:mysticalagriculture/mixing/supremium_ingot')
 
   event.recipes.create.mixing('mysticalagriculture:supremium_gemstone', [

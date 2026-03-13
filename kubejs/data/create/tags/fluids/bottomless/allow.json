@@ -6,11 +6,11 @@
     "kubejs:condensed_universal_entropy",
     "kubejs:condensed_universal_order",
     "kubejs:shimmer",
-    "kubejs:molten_iron",
-    "kubejs:molten_gold",
-    "kubejs:molten_copper",
-    "kubejs:molten_zinc",
-    "kubejs:molten_brass",
-    "kubejs:molten_netherite"
+    "#forge:molten_iron",
+    "#forge:molten_gold",
+    "#forge:molten_copper",
+    "#forge:molten_zinc",
+    "#forge:molten_brass",
+    "#forge:molten_netherite"
   ]
 }
