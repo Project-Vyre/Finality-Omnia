@@ -3,7 +3,7 @@
 ClientEvents.lang('en_us', event => {
   event.addAll('farmersdelight',
     createTooltip('farmersdelight:skillet')
-      .addSummary('The skillet can be used to _cook_ food over an open flame or a stove. It can also be occasionally used as a weapon should the need ever arise.')
+      .addSummary('The skillet can be used to %s food over an open flame or a stove. It can also be occasionally used as a weapon should the need ever arise.')
       .addBehaviour([
         'When held over an open flame or stove',
         'Cooks one food item at a time at a faster speed than a campfire.'
@@ -15,6 +15,9 @@ ClientEvents.lang('en_us', event => {
       .addBehaviour([
         'On L-Click in main hand',
         'Can be utilized as a weapon.'
+      ])
+      .addHighlight([
+        'cook'
       ])
       .build()
   )
