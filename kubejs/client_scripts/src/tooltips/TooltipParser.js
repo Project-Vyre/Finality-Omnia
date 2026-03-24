@@ -33,7 +33,8 @@ const tooltipPalette = {
   GRAY_AND_BLUE: { txt: 0xAAAAAA, hlt: 0x5555FF },
   GRAY_AND_WHITE: { txt: 0xAAAAAA, hlt: 0xFFFFFF },
   GRAY_AND_GOLD: { txt: 0xAAAAAA, hlt: 0xFFAA00 },
-  GRAY_AND_RED: { txt: 0xAAAAAA, hlt: 0xFF5555 }
+  GRAY_AND_RED: { txt: 0xAAAAAA, hlt: 0xFF5555 },
+  ENTROPY: { txt: 0x9083C6, hlt: 0xD6CCFF }
 }
 /** @info Standard Create text palette. */
 const STANDARD = tooltipPalette.STANDARD
@@ -49,3 +50,4 @@ const GRAY_AND_BLUE = tooltipPalette.GRAY_AND_BLUE
 const GRAY_AND_WHITE = tooltipPalette.GRAY_AND_WHITE
 const GRAY_AND_GOLD = tooltipPalette.GRAY_AND_GOLD
 const GRAY_AND_RED = tooltipPalette.GRAY_AND_RED
+const ENTROPY = tooltipPalette.ENTROPY
