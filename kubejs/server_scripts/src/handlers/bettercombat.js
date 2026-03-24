@@ -84,6 +84,20 @@ ServerEvents.lowPriorityData(event => {
       })
     }
   }
+  if (Platform.isLoaded('cataclysm')) {
+    let cataclysmItems = {
+      astrape: 'halberd',
+      khopesh: 'sickle',
+      soul_render: 'halberd',
+      the_annihilator: 'mace',
+      the_immolator: 'mace'
+    }
+    for (const [item, type] of Object.entries(cataclysmItems)) {
+      event.addJson(`cataclysm:weapon_attributes/${item}.json`, {
+        "parent": `bettercombat:${type}`
+      })
+    }
+  }
   if (Platform.isLoaded('enigmaticlegacy')) {
     let enigmaticLegacyItems = {
       etherium_pickaxe: 'mace',
