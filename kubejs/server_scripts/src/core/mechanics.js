@@ -91,17 +91,31 @@ ItemEvents.firstRightClicked(event => {
     arrow.spawn()
   }
   if (item.getId() == 'kubejs:final_scythe') {
-    let end_ball = event.entity.level.getBlock(event.entity.x, event.entity.eyeY + 0.5, event.entity.z).createEntity('minecraft:wither_skull')
-    let speed = 3.0
-    let motionX = event.entity.lookAngle.x() * speed;
-    let motionY = event.entity.lookAngle.y() * speed;
-    let motionZ = event.entity.lookAngle.z() * speed;
+    if (player.isShiftKeyDown()) {
+      let end_ball = event.entity.level.getBlock(event.entity.x, event.entity.eyeY + 0.5, event.entity.z).createEntity('minecraft:dragon_fireball')
+      let speed = 3.0
+      let motionX = event.entity.lookAngle.x() * speed;
+      let motionY = event.entity.lookAngle.y() * speed;
+      let motionZ = event.entity.lookAngle.z() * speed;
 
-    let motionVec3 = new Vec3d(motionX, motionY, motionZ)
-    end_ball.persistentData.FinalScytheProjectile = true
-    end_ball.setOwner(player)
-    end_ball.setDeltaMovement(motionVec3)
-    end_ball.spawn()
+      let motionVec3 = new Vec3d(motionX, motionY, motionZ)
+      end_ball.persistentData.FinalScytheProjectile = true
+      end_ball.setOwner(player)
+      end_ball.setDeltaMovement(motionVec3)
+      end_ball.spawn()
+    } else {
+      let wither_skull = event.entity.level.getBlock(event.entity.x, event.entity.eyeY + 0.5, event.entity.z).createEntity('minecraft:wither_skull')
+      let speed = 3.0
+      let motionX = event.entity.lookAngle.x() * speed;
+      let motionY = event.entity.lookAngle.y() * speed;
+      let motionZ = event.entity.lookAngle.z() * speed;
+
+      let motionVec3 = new Vec3d(motionX, motionY, motionZ)
+      wither_skull.persistentData.FinalScytheProjectile = true
+      wither_skull.setOwner(player)
+      wither_skull.setDeltaMovement(motionVec3)
+      wither_skull.spawn()
+    }
   }
   if (item.getId() == 'kubejs:final_pickaxe') {
     let tnt = event.entity.level.getBlock(event.entity.x, event.entity.y + 0.5, event.entity.z).createEntity('minecraft:tnt')
