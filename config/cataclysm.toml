@@ -54,7 +54,7 @@
 	Sandstormcooldown = 50
 	#Soul Render's Timer
 	#Range: 0 ~ 1000000
-	SoulRenderCooldown = 50
+	SoulRenderCooldown = 20
 	#Gauntlet of Maelstrom's Timer
 	#Range: 0 ~ 1000000
 	gauntletofMaelstromCooldown = 45
@@ -69,7 +69,7 @@
 	"Ceraunus's Wave Damage'" = 6.0
 	#Ceraunus's Cooldown
 	#Range: 0 ~ 1000000
-	"Ceraunus Cooldown" = 150
+	"Ceraunus Cooldown" = 30
 	#Astrape's LightningStorm Damage
 	#Range: 0.0 ~ 1000000.0
 	"Astrape's Lightning Spear Damage" = 11.0
@@ -78,7 +78,7 @@
 	"Astrape's Area Damage'" = 2.0
 	#Astrape's Cooldown
 	#Range: 0 ~ 1000000
-	"Astrape Cooldown" = 80
+	"Astrape Cooldown" = 20
 
 [Block]
 	#Cursed Tombstone Summon cooldown Minute
