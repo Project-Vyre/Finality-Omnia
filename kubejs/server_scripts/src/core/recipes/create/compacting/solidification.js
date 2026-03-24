@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
    * @param {string} metal 
    */
   let NUGGET_SOLIDIFY = (nugget, metal) => {
-    event.recipes.create.compacting(nugget, Fluid.of(`kubejs:molten_${metal}`, 10)).id(`finality:molten_${metal}_to_${metal}_nugget`)
+    event.recipes.create.compacting(nugget, {fluidTag: `forge:molten_${metal}`, amount: 10}).id(`finality:molten_${metal}_to_${metal}_nugget`)
   }
   /**
    * 
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
    * @param {string} metal 
    */
   let INGOT_SOLIDIFY = (ingot, metal) => {
-    event.recipes.create.compacting(ingot, Fluid.of(`kubejs:molten_${metal}`, 90)).id(`finality:molten_${metal}_to_${metal}_ingot`)
+    event.recipes.create.compacting(ingot, {fluidTag: `forge:molten_${metal}`, amount: 90}).id(`finality:molten_${metal}_to_${metal}_ingot`)
   }
   NUGGET_SOLIDIFY('minecraft:iron_nugget', 'iron')
   NUGGET_SOLIDIFY('minecraft:gold_nugget', 'gold')
