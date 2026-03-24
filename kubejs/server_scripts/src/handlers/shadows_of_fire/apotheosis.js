@@ -232,26 +232,6 @@ ServerEvents.recipes(event => {
     'kubejs:stable_entropy_particles',
     '16x apotheosis:gem_dust'
   ]).id('finality:mixing/eversor_gem_from_dust')
-  event.recipes.create.milling(
-    'kubejs:unstable_entropy_particles',
-    Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:common"},gem:"kubejs:eversor"}').weakNBT()
-  ).processingTime(250).id('finality:milling/common_eversor_gem_recycling')
-  event.recipes.create.milling(
-    'kubejs:unstable_entropy_particles',
-    Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:uncommon"},gem:"kubejs:eversor"}').weakNBT()
-  ).processingTime(250).id('finality:milling/uncommon_eversor_gem_recycling')
-  event.recipes.create.milling(
-    'kubejs:unstable_entropy_particles',
-    Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:rare"},gem:"kubejs:eversor"}').weakNBT()
-  ).processingTime(250).id('finality:milling/rare_eversor_gem_recycling')
-  event.recipes.create.milling(
-    'kubejs:unstable_entropy_particles',
-    Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:epic"},gem:"kubejs:eversor"}').weakNBT()
-  ).processingTime(250).id('finality:milling/epic_eversor_gem_recycling')
-  event.recipes.create.milling(
-    'kubejs:unstable_entropy_particles',
-    Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:mythic"},gem:"kubejs:eversor"}').weakNBT()
-  ).processingTime(250).id('finality:milling/mythic_eversor_gem_recycling')
   event.recipes.create.deploying(Item.of('apotheosis:gem', '{gem:"kubejs:eversor",rarity:"ancient"}').weakNBT(), [
     Item.of('apotheosis:gem', '{gem:"kubejs:eversor",rarity:"mythic"}').weakNBT(),
     'kubejs:command_block'
