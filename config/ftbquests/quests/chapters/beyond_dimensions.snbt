@@ -1,0 +1,66 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "beyond_dimensions"
+	group: "71A5625CEAEA7423"
+	icon: "beyonddimensions:net_creater"
+	id: "161D28674C0C62B2"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2FF7795C03DDC67B"]
+			description: ["Please keep it on you so it will stabilize."]
+			id: "6D891838187D7052"
+			subtitle: "Start here!"
+			tasks: [{
+				id: "233CBB670DBF57A5"
+				item: "beyonddimensions:unstable_space_time_fragment"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D891838187D7052"]
+			id: "03AA7282AE46AFA4"
+			tasks: [{
+				id: "48A64A253F1EBD9F"
+				item: "beyonddimensions:stable_space_time_fragment"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"03AA7282AE46AFA4"
+				"22C4842B98BEA695"
+			]
+			id: "78545B809371695D"
+			subtitle: "Beyond storage."
+			tasks: [{
+				id: "5F11F55467FCBAB1"
+				item: "beyonddimensions:net_creater"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2FF7795C03DDC67B"]
+			id: "22C4842B98BEA695"
+			subtitle: "You'll need these."
+			tasks: [{
+				count: 4L
+				id: "125CA4515A319BD9"
+				item: "kubejs:command_block"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["The best storage."]
+	title: "Beyond Dimensions"
+}

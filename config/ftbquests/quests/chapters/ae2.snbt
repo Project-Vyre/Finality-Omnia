@@ -351,6 +351,7 @@
 		}
 		{
 			dependencies: ["3D1A802FD6537CFF"]
+			icon: "ae2:singularity"
 			id: "567B049F63EE2558"
 			tasks: [
 				{
