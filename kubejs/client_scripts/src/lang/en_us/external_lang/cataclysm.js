@@ -1,171 +1,413 @@
 // requires: cataclysm
 
 ClientEvents.lang('en_us', event => {
-  event.addAll('cataclysm', {
-    "kubejs.cataclysm.original_tooltip_text": "Original tooltip text below for translation purposes. - CelestialAbyss",
-    "item.cataclysm.infernal_forge.tooltip": "INFERNAL FORGE",
-    "item.cataclysm.infernal_forge.tooltip.summary": "A _devastating_ hammer. Also important to note, this is actually a pickaxe.",
-    "item.cataclysm.infernal_forge.tooltip.condition1": "On R-click while looking at a block",
-    "item.cataclysm.infernal_forge.tooltip.behaviour1": "Causes AoE damage around yourself and sends mobs flying.",
-    "item.cataclysm.monstrous_helm.tooltip": "MONSTROUS HELM",
-    "item.cataclysm.monstrous_helm.tooltip.summary": "Falling below _half_ of your HP will push away entities and _grant_ buffs.",
-    "item.cataclysm.monstrous_helm.tooltip.condition1": "Additional Information",
-    "item.cataclysm.monstrous_helm.tooltip.behaviour1": "You are given additional Defense, Knockback Resistance and Regeneration.",
-    "item.cataclysm.burning_ashes.tooltip": "BURNING ASHES",
-    "item.cataclysm.burning_ashes.tooltip.summary": "Used in _summoning_ _Ignis_.",
-    "item.cataclysm.the_incinerator.tooltip": "THE INCINERATOR",
-    "item.cataclysm.the_incinerator.tooltip.summary": "A very large sword.",
-    "item.cataclysm.the_incinerator.tooltip.condition1": "Usage",
-    "item.cataclysm.the_incinerator.tooltip.behaviour1": "Hold _right click_ for 3 seconds until you hear a sound. After _hearing_ the roar of the flames, let go to unleash _devastation_ in a _straight line_.",
-    "item.cataclysm.the_incinerator.tooltip.condition2": "Warning!",
-    "item.cataclysm.the_incinerator.tooltip.behaviour2": "Dropped items in the line of fire will be destroyed!",
-    "item.cataclysm.bulwark_of_the_flame.tooltip": "BULWARK OF THE FLAME",
-    "item.cataclysm.bulwark_of_the_flame.tooltip.summary": "Functions regularly like a shield, but with a charge ability.",
-    "item.cataclysm.bulwark_of_the_flame.tooltip.condition1": "Usage",
-    "item.cataclysm.bulwark_of_the_flame.tooltip.behaviour1": "While _sneaking_ and _blocking_, let go of right click to charge forward. Entities that collide with a wall are stunned from the impact and take additional damage.",
-    "item.cataclysm.void_scatter_arrow.tooltip": "VOID SCATTER ARROW",
-    "item.cataclysm.void_scatter_arrow.tooltip.summary": "This arrow _explodes_ on impact, creating many _fragments_ in the process.",
-    "item.cataclysm.void_core.tooltip": "VOID CORE",
-    "item.cataclysm.void_core.tooltip.summary": "A special object that can be used as a weapon.",
-    "item.cataclysm.void_core.tooltip.condition1": "Usage",
-    "item.cataclysm.void_core.tooltip.behaviour1": "Right click on the ground to cause Void Rune _spikes_ to _erupt_ in a straight line in front of you.",
-    "item.cataclysm.gauntlet_of_guard.tooltip": "GAUNTLET OF GUARD",
-    "item.cataclysm.gauntlet_of_guard.tooltip.summary": "A very hard punching glove with special abilities.",
-    "item.cataclysm.gauntlet_of_guard.tooltip.condition1": "On R-click",
-    "item.cataclysm.gauntlet_of_guard.tooltip.behaviour1": "When held in your main hand, you can _pull_ entities _towards_ you by holding right click. Be sure to give them a golden punch afterwards!",
-    "item.cataclysm.ignitium_helmet.tooltip": "IGNITIUM HELMET",
-    "item.cataclysm.ignitium_helmet.tooltip.summary": "Provides Lava Vision.",
-    "item.cataclysm.ignitium_chestplate.tooltip": "IGNITIUM CHESTPLATE",
-    "item.cataclysm.ignitium_chestplate.tooltip.summary": "You can combine an Elytra with this in the Smithing Table.",
-    "item.cataclysm.ignitium_leggings.tooltip": "IGNITIUM LEGGINGS",
-    "item.cataclysm.ignitium_leggings.tooltip.summary": "The developer, _L_Ender_ says 'Flame Reflex' which implies Fire Resistance. If the armor set _fails_ to provide Fire Resistance then it is not my fault.",
-    "item.cataclysm.ignitium_boots.tooltip": "IGNITIUM BOOTS",
-    "item.cataclysm.ignitium_boots.tooltip.summary": "Lava Walker, allows you to walk on lava. DOES NOT provide Fire Resistance, even with the full set!",
-    "item.cataclysm.wither_assault_shoulder_weapon.tooltip": "WITHER ASSAULT SHOULDER WEAPON",
-    "item.cataclysm.wither_assault_shoulder_weapon.tooltip.summary": "A rocket launcher that _shoots_ projectiles laced with the _wither_ effect.",
-    "item.cataclysm.wither_assault_shoulder_weapon.tooltip.condition1": "On R-click",
-    "item.cataclysm.wither_assault_shoulder_weapon.tooltip.behaviour1": "_Hold_ and _release_ right click to _fire_ a _Wither Missile_ that travels in a _straight line_ and explodes on contact.",
-    "item.cataclysm.wither_assault_shoulder_weapon.tooltip.condition2": "On Sneak + R-click",
-    "item.cataclysm.wither_assault_shoulder_weapon.tooltip.behaviour2": "_Hold [Shift]_ to use the _alt fire_ which fires a _Wither Howitzer_ projectile that follows an _arced_ path. Upon contact, the Howitzer projectile leaves behind _lingering smoke_ that applies the _wither_ effect.",
-    "item.cataclysm.void_forge.tooltip": "VOID FORGE",
-    "item.cataclysm.void_forge.tooltip.summary": "The power of a supernova is contained within. Yes, this is _still a pickaxe_.",
-    "item.cataclysm.void_forge.tooltip.condition1": "On R-click on a block",
-    "item.cataclysm.void_forge.tooltip.behaviour1": "Now creates a _fan of void spikes_ when you _right click_ a block, in addition to sending mobs flying.",
-    "item.cataclysm.gauntlet_of_bulwark.tooltip": "GAUNTLET OF BULWARK",
-    "item.cataclysm.gauntlet_of_bulwark.tooltip.summary": "A fist with the _punching_ power of planets colliding.",
-    "item.cataclysm.gauntlet_of_bulwark.tooltip.condition1": "Usage",
-    "item.cataclysm.gauntlet_of_bulwark.tooltip.behaviour1": "Hold right click to _push_ nearby entities and give them the _Blazing Brand_ debuff. _Releasing_ right click will make you _charge_ forward and deal damage to the entities hit by you. Entities that hit the wall take a lot of damage.",
-    "item.cataclysm.void_assault_shoulder_weapon.tooltip": "VOID ASSAULT SHOULDER WEAPON",
-    "item.cataclysm.void_assault_shoulder_weapon.tooltip.summary": "The _upgraded_ version of the Wither Assault Shoulder Weapon. The power of supernovae contained within each projectile.",
-    "item.cataclysm.void_assault_shoulder_weapon.tooltip.condition1": "Usage",
-    "item.cataclysm.void_assault_shoulder_weapon.tooltip.behaviour1": "You can now _shoot_ Void Howitzer projectiles which now _create_ a tsunami of void spikes on impact.",
-    "item.cataclysm.abyssal_sacrifice.tooltip": "ABYSSAL SACRIFICE",
-    "item.cataclysm.abyssal_sacrifice.tooltip.summary": "Used in _summoning_ the _Leviathan_.",
-    "item.cataclysm.tidal_claws.tooltip": "TIDAL CLAWS",
-    "item.cataclysm.tidal_claws.tooltip.summary": "_Long ranged_ and _deadly_. Also serves as a grappling hook.",
-    "item.cataclysm.tidal_claws.tooltip.condition1": "On L-click",
-    "item.cataclysm.tidal_claws.tooltip.behaviour1": "Left click to attack _multiple_ entities with a single tentacle. Applies a _stacking_ debuff.",
-    "item.cataclysm.tidal_claws.tooltip.condition2": "On R-click",
-    "item.cataclysm.tidal_claws.tooltip.behaviour2": "Right click to use as a grappling hook. Remember that it has _limited_ range!",
-    "block.cataclysm.abyssal_egg.tooltip": "ABYSSAL EGG",
-    "block.cataclysm.abyssal_egg.tooltip.summary": "You emerge as victor, but now you have an _egg_ in your possession.",
-    "block.cataclysm.abyssal_egg.tooltip.condition1": "How to Hatch",
-    "block.cataclysm.abyssal_egg.tooltip.behaviour1": "Simply _place_ the egg down to _start_ the hathching process. Also, no... there is no way to accelerate the hatching process. It must _remain placed_ in order to hatch.",
-    "block.cataclysm.abyssal_egg.tooltip.condition2": "Taming Info",
-    "block.cataclysm.abyssal_egg.tooltip.behaviour2": "Probably best to make sure you have some _tropical fish_ to _feed_ your adorable Leviathan once it hatches.",
-    "item.cataclysm.bloom_stone_pauldrons.tooltip": "BLOOM STONE PAULDRONS",
-    "item.cataclysm.bloom_stone_pauldrons.tooltip.summary": "A special chestplate.",
-    "item.cataclysm.bloom_stone_pauldrons.tooltip.condition1": "On Sneak while equipped",
-    "item.cataclysm.bloom_stone_pauldrons.tooltip.behaviour1": "Lets you _hide_ in the ground.",
-    "item.cataclysm.bloom_stone_pauldrons.tooltip.condition2": "Upon releasing the Sneak key",
-    "item.cataclysm.bloom_stone_pauldrons.tooltip.behaviour2": "Releases amethyst clusters _around_ you. Clusters that _collide_ with entities _cause damage_ to them.",
-    "item.cataclysm.blessed_amethyst_crab_meat.tooltip": "BLESSED AMETHYST CRAB MEAT",
-    "item.cataclysm.blessed_amethyst_crab_meat.tooltip.summary": "Grants the special _blessing_ effect which makes you _immune to _darkness_, _abyssal fear_ and _abyssal burn_ while fighting the _Leviathan_.",
-    "item.cataclysm.abyss_eye.tooltip": "ABYSS EYE",
-    "item.cataclysm.abyss_eye.tooltip.summary": "_Guides_ you to the _closest_ Sunken City where the _Leviathan_ resides. Only usable in the _Overworld_. Unusable in other dimensions.",
-    "item.cataclysm.abyss_eye.tooltip.condition1": "On R-click",
-    "item.cataclysm.abyss_eye.tooltip.behaviour1": "Throws the _Abyss Eye_ into the air. _Follow_ it.",
-    "item.cataclysm.void_eye.tooltip": "VOID EYE",
-    "item.cataclysm.void_eye.tooltip.summary": "_Guides_ you to the _closest_ Ruined Citadel where the _Ender Guardian_ resides. Only usable in _The End_. Unusable in other dimensions.",
-    "item.cataclysm.void_eye.tooltip.condition1": "On R-click",
-    "item.cataclysm.void_eye.tooltip.behaviour1": "Throws the _Void Eye_ into the air. _Follow_ it.",
-    "item.cataclysm.mech_eye.tooltip": "MECH EYE",
-    "item.cataclysm.mech_eye.tooltip.summary": "_Guides_ you to the _closest_ Ancient Factory where the _Harbinger_ resides. Only usable in the _Overworld_. Unusable in other dimensions.",
-    "item.cataclysm.mech_eye.tooltip.condition1": "On R-click",
-    "item.cataclysm.mech_eye.tooltip.behaviour1": "Throws the _Mech Eye_ into the air. _Follow_ it.",
-    "item.cataclysm.flame_eye.tooltip": "FLAME EYE",
-    "item.cataclysm.flame_eye.tooltip.summary": "_Guides_ you to the _closest_ Burning Arena where _Ignis_ resides. Only usable in the _Nether_. Unusable in other dimensions.",
-    "item.cataclysm.flame_eye.tooltip.condition1": "On R-click",
-    "item.cataclysm.flame_eye.tooltip.behaviour1": "Throws the _Flame Eye_ into the air. _Follow_ it.",
-    "item.cataclysm.monstrous_eye.tooltip": "MONSTROUS EYE",
-    "item.cataclysm.monstrous_eye.tooltip.summary": "_Guides_ you to the _closest_ Soul Forge where the _Netherite Monstrosity_ resides. Only usable in the _Nether_. Unusable in other dimensions.",
-    "item.cataclysm.monstrous_eye.tooltip.condition1": "On R-click",
-    "item.cataclysm.monstrous_eye.tooltip.behaviour1": "Throws the _Monstrous Eye_ into the air. _Follow_ it."
-  })
+  event.add('cataclysm', 'kubejs.cataclysm.original_tooltip_text', 'Original tooltip text below for translation purposes. - CelestialAbyss')
+  // NETHER
   event.addAll('cataclysm',
-    createTooltip('cataclysm:meat_shredder')
-      .addSummary('It does what it says it does, it _shreds_ your enemies.')
+    createTooltip('cataclysm:infernal_forge')
+      .addSummary('A %s hammer. Also important to note, this is actually a pickaxe.')
+      .addBehaviour([
+        'On R-click while looking at a block',
+        'Causes AoE damage around yourself and sends mobs flying.'
+      ])
+      .addHighlight([
+        'devestating'
+      ])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:monstrous_horn')
+      .addSummary('Used to craft the %s.')
+      .addHighlight(['Monstrous Helm'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:monstrous_helm')
+      .addSummary('Falling below %s of your HP will push away entities and %s buffs.')
+      .addBehaviour([
+        'Additional Information',
+        'You are given additional Defense, Knockback Resistance and Regeneration.'
+      ])
+      .addHighlight([
+        'half',
+        'grant'
+      ])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:burning_ashes')
+      .addSummary('Used in %s Ignis.')
+      .addHighlight(['summoning'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:the_incinerator')
+      .addSummary('A very large sword.')
+      .addBehaviour([
+        'Usage',
+        'Hold %s for 3 seconds until you hear a sound. After %s the roar of the flames, let go to unleash %s in a %s.'
+      ])
+      .addBehaviour([
+        'Warning!',
+        'Dropped items in the line of fire will be destroyed!'
+      ])
+      .addHighlight([
+        'right click',
+        'hearing',
+        'devastation',
+        'straight line'
+      ])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:bulwark_of_the_flame')
+      .addSummary('Functions regularly like a shield, but with a charge ability.')
+      .addBehaviour([
+        'Usage',
+        'While %s and %s, let go of right click to charge forward. Entities that collide with a wall are stunned from the impact and take additional damage.'
+      ])
+      .addHighlight(['sneaking', 'blocking'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:ignitium_helmet')
+      .addSummary('Formerly provided Lava Vision?')
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:ignitium_chestplate')
+      .addSummary('You can combine an Elytra with this in the Smithing Table.')
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:ignitium_leggings')
+      .addSummary('The developer, %s says "Flame Reflex" which implies Fire Resistance. If the armor set %s to provide Fire Resistance, then it is not my fault.')
+      .addHighlight(['L_Ender', 'fails'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:ignitium_boots')
+      .addSummary('Lava Walker, allows you to walk on lava. DOES NOT provide Fire Resistance, even with the full set!')
+      .build()
+  )
+  // VOID
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:void_scatter_arrow')
+      .addSummary('This arrow %s on impact, creating many %s in the process.')
+      .addHighlight(['explodes', 'fragments'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:void_core')
+      .addSummary('A special object that can be used as a weapon.')
+      .addBehaviour([
+        'Usage',
+        'Right click on the ground to cause Void Rune %s to %s in a straight line in front of you.'
+      ])
+      .addHighlight(['spikes', 'erupt'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:gauntlet_of_guard')
+      .addSummary('A very hard punching glove with special abilities.')
       .addBehaviour([
         'On R-Click',
-        'Damages entities in front of you while _ignoring invulnerability frames_.'
+        'When held in your main hand, you can %s entities %s you by holding right click. Be sure to give them a golden punch afterwards!'
       ])
+      .addHighlight(['pull', 'towards'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:void_forge')
+      .addSummary('The power of a supernova is contained within. Yes, this is %s.')
+      .addBehaviour([
+        'On R-Click on a block',
+        'Now creates a %s when you %s a block, in addition to sending mobs flying.'
+      ])
+      .addHighlight(['still a pickaxe', 'fan of void spikes', 'right click'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:gauntlet_of_bulwark')
+      .addSummary('A fist with the %s power of planets colliding.')
+      .addBehaviour([
+        'Usage',
+        'Hold right click to %s nearby entities and give them the %s debuff. %s right click will make you %s forward and deal damage to the entities hit by you. Entities that hit the wall take a lot of damage.'
+      ])
+      .addHighlight(['punching', 'push', 'Blazing Brand', 'Releasing', 'charge'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:void_assault_shoulder_weapon')
+      .addSummary('The %s version of the %s. The power of supernovae contained within each projectile.')
+      .addBehaviour([
+        'Usage',
+        'You can now %s Void Howitzer projectiles which now %s a tsunami of Void Spikes on impact.'
+      ])
+      .addHighlight(['upgraded', 'Wither Assault Shoulder Weapon', 'shoot', 'create'])
+      .build()
+  )
+  // WITHERITE
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:witherite_block')
+      .addSummary('Compacted Witherite. Used for making weapons from the Witherite arsenal and creating the %s.')
+      .addHighlight(['Mechanical Fusion Anvil'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:witherite_ingot')
+      .addSummary('Used for making weapons from the Witherite Arsenal and creating the %s.')
+      .addHighlight(['Mechanical Fusion Anvil'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:mechanical_fusion_anvil')
+      .addSummary('Used to %s the traits of %s weapons together.')
+      .addHighlight(['fuse', 'two'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:wither_assault_shoulder_weapon')
+      .addSummary('A rocket launcher that %s projectiles laced with the %s effect.')
+      .addBehaviour([
+        'On R-Click',
+        '%s and %s right click to %s a %s that travels in a %s and explodes on contact.'
+      ])
+      .addBehaviour([
+        'On Sneak + R-Click',
+        'Uses the %s which fires a %s projectile that follows an %s. Upon contact, it leaves behind %s that applies the %s effect.'
+      ])
+      .addHighlight([
+        'shoots',
+        'wither',
+        'Hold',
+        'release',
+        'fire',
+        'Wither Missile',
+        'straight line',
+        'alt fire',
+        'Wither Howitzer',
+        'arced path',
+        'lingering smoke',
+        'wither'
+      ])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:meat_shredder')
+      .addSummary('It does what it says it does, it %s your enemies.')
+      .addBehaviour([
+        'On R-Click',
+        'Damages entities in front of you while %s.'
+      ])
+      .addHighlight(['shreds', 'ignoring invulnerability frames'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:laser_gatling')
-      .addSummary('A _rapid fire_ laser gatling weapon. Also sets things _on fire_!')
+      .addSummary('A %s laser gatling weapon. Also sets things %s!')
       .addBehaviour([
         'To reload',
-        'Use _redstone_ in your inventory.'
+        'Use %s in your inventory.'
       ])
+      .addHighlight(['rapid fire', 'on fire', 'redstone'])
+      .build()
+  )
+  // ABYSS
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:abyssal_sacrifice')
+      .addSummary('Used in %s the %s.')
+      .addHighlight([
+        'summoning',
+        'Leviathan'
+      ])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:tidal_claws')
+      .addSummary('%s and %s. Also serves as a grappling hook.')
+      .addBehaviour([
+        'On L-click',
+        'Left click to attack %s entities with a single tentacle. Applies a %s debuff.'
+      ])
+      .addBehaviour([
+        'On R-click',
+        'Right click to use as a grappling hook. Remember that it has %s range!'
+      ])
+      .addHighlight([
+        'Long ranged',
+        'deadly',
+        'multiple',
+        'stacking',
+        'limited'
+      ])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:abyssal_egg')
+      .addSummary('You emerge as victor, but now you have an %s in your possession.')
+      .addBehaviour([
+        'How to Hatch',
+        'Simply %s the egg down to %s the hatching process. Also, no... there is no way to accelerate the hatching process. It must %s in order to hatch.'
+      ])
+      .addBehaviour([
+        'Additional Info',
+        'Probably best to make sure you have some %s to %s your adorable Leviathan once it hatches.'
+      ])
+      .addHighlight(['egg', 'place', 'start', 'remain placed', 'tropical fish', 'feed'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:bloom_stone_pauldrons')
+      .addSummary('A special chestplate.')
+      .addBehaviour([
+        'On Sneak while equipped',
+        'Lets you %s in the ground.'
+      ])
+      .addBehaviour([
+        'Upon releasing the Sneak key',
+        'Releases amethyst clusters %s you. Clusters that %s with entities %s to them.'
+      ])
+      .addHighlight(['hide', 'around', 'collide', 'cause damage'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:blessed_amethyst_crab_meat')
+      .addSummary('Grants the special %s effect which makes you %s, %s and %s while fighting the %s.')
+      .addHighlight(['blessing', 'immune to darkness', 'abyssal fear', 'abyssal burn', 'Leviathan'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:sandstorm_in_a_bottle')
-      .addSummary('When worn in the _belt slot_, press _V_ to turn into a _sandstorm_.')
+      .addSummary('A sandstorm rages within.')
+      .addBehaviour([
+        'On R-Click',
+        'Summons two Sandstorms that %s around you.'
+      ])
+      .addHighlight(['orbit'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:remnant_skull')
-      .addSummary('_Summons_ the Modern Remnant. Can be tamed through using the _Brush_ on it.')
+      .addSummary('Summons the Modern Remnant. Can be %s through using the %s on it.')
+      .addHighlight(['tamed', 'Brush/Sniffer Egg'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:necklace_of_the_desert')
-      .addSummary('It looks like you can _wake something up_...')
+      .addSummary('It looks like you can %s...')
+      .addHighlight(['wake something up'])
+      .build()
+  )
+  // EYES
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:abyss_eye')
+      .addSummary('Guides you to the nearest %s where the %s resides. Only usable in the %s. Unusable in other dimensions.')
+      .addBehaviour([
+        'On R-Click',
+        'Throws the %s into the air. %s it.'
+      ])
+      .addHighlight(['Sunken City', 'Leviathan', 'Overworld', 'Abyss Eye', 'Follow'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:cursed_eye')
+      .addSummary('Guides you to the nearest %s where %s resides. Only usable in the %s. Unusable in other dimensions.')
+      .addBehaviour([
+        'On R-Click',
+        'Throws the %s into the air. %s it.'
+      ])
+      .addHighlight(['Frosted Prison', 'Maledictus', 'Overworld', 'Cursed Eye', 'Follow'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:desert_eye')
-      .addSummary('_Guides_ you to the _closest_ Cursed Pyramid where the _Ancient Remnant_ resides. Only usable in the _Overworld_. Unusable in other dimensions.')
+      .addSummary('Guides you to the closest %s where the %s resides. Only usable in the %s. Unusable in other dimensions.')
       .addBehaviour([
         'On R-Click',
-        'Throws the _Desert Eye_ into the air. _Follow_ it.'
+        'Throws the %s into the air. %s it.'
       ])
+      .addHighlight(['Cursed Pyramid', 'Ancient Remnant', 'Overworld', 'Desert Eye', 'Follow'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:flame_eye')
+      .addSummary('Guides you to the closest %s where %s resides. Only usable in the %s. Unusable in other dimensions.')
+      .addBehaviour([
+        'On R-Click',
+        'Throws the %s into the air. %s it.'
+      ])
+      .addHighlight(['Burning Arena', 'Ignis', 'Nether', 'Flame Eye', 'Follow'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:mech_eye')
+      .addSummary('Guides you to the closest %s where the %s resides. Only usable in the %s. Unusable in other dimensions.')
+      .addBehaviour([
+        'On R-Click',
+        'Throws the %s into the air. %s it.'
+      ])
+      .addHighlight(['Ancient Factory', 'Harbinger', 'Overworld', 'Mech Eye', 'Follow'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:monstrous_eye')
+      .addSummary('Guides you to the closest %s where the %s resides. Only usable in the %s. Unusable in other dimensions.')
+      .addBehaviour([
+        'On R-Click',
+        'Throws the %s into the air. %s it.'
+      ])
+      .addHighlight(['Soul Forge', 'Netherite Monstrosity', 'Nether', 'Monstrous Eye', 'Follow'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:storm_eye')
+      .addSummary('Guides you to the closest %s where %s resides. Only usable in the %s. Unusable in other dimensions.')
+      .addBehaviour([
+        'On R-Click',
+        'Throws the %s into the air. %s it.'
+      ])
+      .addHighlight(['Acropolis', 'Scylla', 'Overworld', 'Storm Eye', 'Follow'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:void_eye')
+      .addSummary('Guides you to the closest %s where the %s resides. Only usable in %s. Unusable in other dimensions.')
+      .addBehaviour([
+        'On R-Click',
+        'Throws the %s into the air. %s it.'
+      ])
+      .addHighlight(['Ruined Citadel', 'Ender Guardian', 'The End', 'Void Eye', 'Follow'])
       .build()
   )
   // New Cataclysm items.
   event.addAll('cataclysm',
     createTooltip('cataclysm:gauntlet_of_maelstrom')
-      .addSummary('The fusion of the Gauntlet of Guard and Sandstorm in a Bottle.')
+      .addSummary('The %s of the %s and %s.')
       .addBehaviour([
         'On held R-Click then releasing',
-        'Creates a Void Vortex at the location you are looking at.'
+        'Creates a %s at the location you are looking at.'
       ])
+      .addHighlight(['fusion', 'Gauntlet of Guard', 'Sandstorm in a Bottle', 'Void Vortex'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:blazing_grips')
-      .addSummary('On hit, there is a chance to apply Brazing Brand to the target.')
+      .addSummary('On hit, there is a chance to apply %s to the target.')
       .addBehaviour([
         'Blazing Brand',
-        'A debuff that reduces Armor and Armor Toughness for each stack applied.'
+        'A %s that reduces Armor and Armor Toughness for %s applied.'
+      ])
+      .addHighlight([
+        'Blazing Brand',
+        'debuff',
+        'each stack'
       ])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:cursed_bow')
-      .addSummary('A special bow that shoots multiple arrows at once. However, it changes depending on what arrow you shoot it with.')
+      .addSummary('A special bow that shoots %s at once. However, it %s depending on what arrow you shoot it with.')
       .addBehaviour([
         'On R-Click usage with normal arrows',
         'Shoots 3 Phantom Arrows.'
@@ -174,62 +416,106 @@ ClientEvents.lang('en_us', event => {
         'On R-Click usage with tipped / special arrows',
         'Shoots 2 Phantom Arrows with the effects of the arrow used.'
       ])
+      .addHighlight(['multiple arrows', 'changes'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:wrath_of_the_desert')
-      .addSummary('The fusion of the Cursed Bow and Sandstorm in a Bottle.')
+      .addSummary('The %s of the %s and %s.')
       .addBehaviour([
         'On R-Click',
-        'Releases three Cursed Sandstorms that track enemies.'
+        'Releases three Cursed Sandstorms that %s enemies.'
       ])
+      .addHighlight(['fusion', 'Cursed Bow', 'Sandstorm in a Bottle', 'track'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:strange_key')
+      .addSummary('Used to open the Door of Seal that serves as the prison of Maledictus. Be prepared.')
+      .addHighlight(['prepared'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:soul_render')
-      .addSummary('A halberd with spectral properties.')
+      .addSummary('A halberd with %s properties.')
       .addBehaviour([
         'On R-Click',
-        'Hold then release to charge forward in the direction you are looking.'
+        'Hold then release to %s in the direction you are looking.'
       ])
       .addBehaviour([
         'On R-Click while sneaking',
-        'Summons Phantom Halberds that rise up from the ground around you in a spiral pattern.'
+        'Summons %s that %s from the ground around you in a spiral pattern.'
       ])
+      .addHighlight(['spectral', 'charge forward', 'Phantom Halberds', 'rise'])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:the_annihilator')
-      .addSummary('A mace with spectral properties.')
+      .addSummary('A mace with %s properties.')
       .addBehaviour([
         'When dual wielding',
-        'Allows charging with R-Click for 2 seconds then releasing to unleash a shockwave around you that deals AoE damage.'
+        'Allows charging with R-Click for 2 seconds then releasing to unleash a %s around you that deals AoE damage.'
       ])
       .addBehaviour([
         'Additional Info',
-        'Deals higher Critical Damage.'
+        'Deals %s Critical Damage.'
+      ])
+      .addHighlight([
+        'spectral',
+        'shockwave',
+        'higher'
+      ])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:the_immolator')
+      .addSummary('The %s of %s and %s.')
+      .addBehaviour([
+        'When dual wielding',
+        'Allows charging with R-Click for 2 seconds then releasing to unleash a Flame Strike around you that deals AoE fire damage.'
+      ])
+      .addBehaviour([
+        'Additional Info',
+        'Deals higher Critical Damage. Entities with Blazing Brand automatically recieve critical damage.'
+      ])
+      .addHighlight([
+        'fusion',
+        'Ignitium',
+        'The Annihilator'
       ])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:astrape')
-      .addSummary('A spear with a thunderous aura.')
+      .addSummary('A spear with a %s aura.')
       .addBehaviour([
         'On R-Click',
-        'Shoots out a Lightning Spear projectile that travels in a straight line. Upon hitting an entity or block, the spear will strike the area with lightning and leave a lingering lightning AoE.'
+        'Shoots out a %s projectile that travels in a straight line. Upon hitting an entity or block, the spear will %s the area with lightning and leave a %s lightning AoE.'
+      ])
+      .addHighlight([
+        'thunderous',
+        'Lightning Spear',
+        'strike',
+        'lingering'
       ])
       .build()
   )
   event.addAll('cataclysm',
     createTooltip('cataclysm:ceraunus')
-      .addSummary('An anchor with an immense weight to it, yet it can be wielded with ease.')
+      .addSummary('An anchor with an %s to it, yet it can be wielded with ease.')
       .addBehaviour([
         'On R-Click',
-        'Hold then release to throw the anchor in the direction you are looking. Entities hit by the anchor will suffer heavy damage. After impact, the anchor will be reeled back to you by its chain.'
+        'Hold then release to %s the anchor in the direction you are looking. Entities hit by the anchor will suffer %s. After impact, the anchor will be %s to you by its chain.'
       ])
       .addBehaviour([
         'On R-Click while sneaking',
         'Summons Waves in a fan pattern in front of you that deal damage and push back enemies on hit.'
+      ])
+      .addHighlight([
+        'immense weight',
+        'throw',
+        'heavy damage',
+        'reeled back'
       ])
       .build()
   )
@@ -238,11 +524,15 @@ ClientEvents.lang('en_us', event => {
       .addSummary('A spear made from very ancient metal.')
       .addBehaviour([
         'On L-Click',
-        'Shoots out a Sanstorm in a straight line in the direction you are looking. The Sandstorm damages entities that are hit and applies Curse of the Desert to them.'
+        'Shoots out a Sandstorm in a straight line in the direction you are looking. The Sandstorm damages entities that are hit and applies %s to them.'
       ])
       .addBehaviour([
         'Curse of the Desert',
-        'A debuff that reverses movement controls. Does not inflict blindness!'
+        'A debuff that %s movement controls. Does not inflict blindness!'
+      ])
+      .addHighlight([
+        'Curse of the Desert',
+        'reverses'
       ])
       .build()
   )
@@ -256,12 +546,19 @@ ClientEvents.lang('en_us', event => {
       .addSummary('A small effigy made of Netherite. Has a resemblance to the Netherite Monstrosity you have slain.')
       .addBehaviour([
         'On R-Click',
-        'Summons the Netherite Monstrosity. Can be tamed through feeding it Lava Power Cells.'
+        'Summons the Netherite Ministrosity. Can be %s through feeding it %s.'
       ])
       .addBehaviour([
         'Acquisition of Lava Power Cells',
-        'Obtained from slaying the Netherite Monstrosity.'
+        'Obtained from %s the Netherite Monstrosity.'
       ])
+      .addHighlight(['tamed', 'Lava Power Cells', 'slaying'])
+      .build()
+  )
+  event.addAll('cataclysm',
+    createTooltip('cataclysm:lava_power_cell')
+      .addSummary('Used for taming the Netherite Ministrosity.')
+      .addHighlight(['taming'])
       .build()
   )
   event.addAll('cataclysm',
@@ -287,8 +584,9 @@ ClientEvents.lang('en_us', event => {
       .addSummary('Leggings that have spectral properties.')
       .addBehaviour([
         'Ghost Dodge',
-        'Has a low chance to ignore attacks taken by the wearer. The probability of ignoring an attackincreases when the attack is a ranged projectile. (Chance is not explicitly stated by the developer, so good luck with that.)'
+        'Has a low chance to %s taken by the wearer. The probability of ignoring an attack %s when the attack is a %s. (Chance is not explicitly stated by the developer, so good luck with that.)'
       ])
+      .addHighlight(['ignore attacks', 'increases', 'ranged projectile'])
       .build()
   )
   event.addAll('cataclysm',
