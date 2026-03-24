@@ -5,13 +5,13 @@
 	group: "71A5625CEAEA7423"
 	icon: "hostilenetworks:sim_chamber"
 	id: "5880C1B8A5D298A1"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["1677FFD8F720E6B2"]
 			description: [
-				"Before getting started you must know that to run a neural network, sufficient power must be supplied."
+				"Before getting started you must know that to run a neural network, sufficient power must be supplied in addition to automation."
 				""
 				"If you are able to provide sufficient FE through the use of Alternators or other sources of FE, you can proceed."
 			]
