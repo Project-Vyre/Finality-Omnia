@@ -294,7 +294,7 @@ function plasmoVoiceMsg(event) {
 
 /** @param {Internal.SimplePlayerEventJS_} event */
 function YesSteveModelMsg(event) {
-  if (Platform.isLoaded('yes_steve_model')) {
+  if (!Platform.isLoaded('yes_steve_model')) {
     event.player.tell([
       Component.of('<'),
       Component.of('System').green(),
