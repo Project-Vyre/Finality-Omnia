@@ -55,5 +55,8 @@
   "string.kubejs.server.login.embeddium_cvf_issues.line_1": "If you encounter any bugs after disabling it, please report them here:\n",
   "string.kubejs.server.login.embeddium_cvf_issues.line_2": "Thank you!",
   "string.kubejs.server.login.open_chat": "You may need to open chat to see the full message.",
-  "string.kubejs.duplicator.entity_duplication_failure": "<§dDuplicator§r> I am currently unable to duplicate this entity, or it intentionally can't be duplicated. Apologies for the inconvenience."
+  "string.kubejs.duplicator.entity_duplication_failure": "<§dDuplicator§r> I am currently unable to duplicate this entity, or it intentionally can't be duplicated. Apologies for the inconvenience.",
+  "string.kubejs.server.login.plasmovoice.line_1": "%s settings can be accessed by pressing %s. You can change the keybind in settings if needed.",
+  "key.kubejs.v": "[V]",
+  "string.kubejs.server.login.ysm.line_1": "It seems that %s is not installed. Download it from %s to use custom player models from the multiplayer server."
 }

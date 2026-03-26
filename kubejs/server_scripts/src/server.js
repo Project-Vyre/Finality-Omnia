@@ -60,6 +60,8 @@ PlayerEvents.loggedIn(event => {
       event.server.scheduleInTicks(1200, t => { findMeMsg(event) })
       event.server.scheduleInTicks(1400, t => { reiPluginReload1(event) })
       event.server.scheduleInTicks(1500, t => { reiPluginReload2(event) })
+      event.server.scheduleInTicks(1600, t => { plasmoVoiceMsg(event) })
+      event.server.scheduleInTicks(1800, t => { YesSteveModelMsg(event) })
     }
     if (Platform.isLoaded('ftbquests') &&
       Platform.isLoaded('supplementaries') &&
@@ -73,6 +75,8 @@ PlayerEvents.loggedIn(event => {
       event.server.scheduleInTicks(1200, t => { findMeMsg(event) })
       event.server.scheduleInTicks(1400, t => { reiPluginReload1(event) })
       event.server.scheduleInTicks(1500, t => { reiPluginReload2(event) })
+      event.server.scheduleInTicks(1600, t => { plasmoVoiceMsg(event) })
+      event.server.scheduleInTicks(1800, t => { YesSteveModelMsg(event) })
     }
     if (Platform.isLoaded('ftbquests') &&
       Platform.isLoaded('supplementaries') &&
@@ -85,6 +89,8 @@ PlayerEvents.loggedIn(event => {
       event.server.scheduleInTicks(1200, t => { findMeMsg(event) })
       event.server.scheduleInTicks(1400, t => { reiPluginReload1(event) })
       event.server.scheduleInTicks(1500, t => { reiPluginReload2(event) })
+      event.server.scheduleInTicks(1600, t => { plasmoVoiceMsg(event) })
+      event.server.scheduleInTicks(1800, t => { YesSteveModelMsg(event) })
     }
   } else if (event.player.persistentData.contains('firstjoin')) {
     welcomeBackMsg(event)
@@ -92,6 +98,8 @@ PlayerEvents.loggedIn(event => {
     event.server.scheduleInTicks(1200, t => { findMeMsg(event) })
     event.server.scheduleInTicks(1400, t => { reiPluginReload1(event) })
     event.server.scheduleInTicks(1500, t => { reiPluginReload2(event) })
+    event.server.scheduleInTicks(1600, t => { plasmoVoiceMsg(event) })
+    event.server.scheduleInTicks(1800, t => { YesSteveModelMsg(event) })
   }
 })
 
@@ -269,6 +277,41 @@ function reiPluginReload2(event) {
     Component.of(' to hide the entries list when the search bar is empty with no text.'),
     Component.of('\n-----------------------------------------------------')
   ])
+}
+
+/** @param {Internal.SimplePlayerEventJS_} event */
+function plasmoVoiceMsg(event) {
+  event.player.tell([
+    Component.of('<'),
+    Component.of('System').green(),
+    Component.of('> '),
+    Component.translatable('string.kubejs.server.login.plasmovoice.line_1',
+      Component.of('Plasmo Voice').bold().blue(),
+      Component.translatable('key.kubejs.v').bold().blue()
+    )
+  ])
+}
+
+/** @param {Internal.SimplePlayerEventJS_} event */
+function YesSteveModelMsg(event) {
+  if (Platform.isLoaded('yes_steve_model')) {
+    event.player.tell([
+      Component.of('<'),
+      Component.of('System').green(),
+      Component.of('> '),
+      Component.translatable('string.kubejs.server.login.ysm.line_1',
+        Component.translatable('Yes Steve Model')
+          .bold()
+          .green(),
+        Component.translatable('[here]')
+          .bold()
+          .green()
+          .hover('https://modrinth.com/mod/yes-steve-model')
+          .clickOpenUrl('https://modrinth.com/mod/yes-steve-model'),
+
+      )
+    ])
+  }
 }
 
 let modBlacklist = {
