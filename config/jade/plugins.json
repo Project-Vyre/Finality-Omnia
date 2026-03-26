@@ -97,6 +97,9 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
   "tesseract": {
     "tesseract": true,
     "remove_default": true
