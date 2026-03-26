@@ -8,7 +8,7 @@ ClientEvents.lang('en_us', event => {
     "item.ftbquests.book.tooltip.highlight2": "useful",
 
     "item.ftbquests.book.tooltip.condition1": "On R-click",
-    "item.ftbquests.book.tooltip.behaviour1": "Opens the _quests_ screen. Be sure to read everything!",
+    "item.ftbquests.book.tooltip.behaviour1": "Opens the %s screen. Be sure to read everything!",
     "item.ftbquests.book.tooltip.highlight3": "quests",
 
     "item.ftbquests.book.tooltip.condition2": "Other methods of accessing quests",
