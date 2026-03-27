@@ -3,5 +3,5 @@
 shootProjectile: true
 energyPerUse: 200
 repairRecipe: true
-wandDurability: 255
+wandDurability: 1024
 defaultLightColor: -683
