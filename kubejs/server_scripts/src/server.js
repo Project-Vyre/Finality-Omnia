@@ -133,18 +133,18 @@ function firstWorldLoadMsg(event) {
       Component.of('System').green(),
       Component.of('> '),
       Component.translatable('string.kubejs.server.login.embeddium_cvf'),
-      Component.translatable('string.kubejs.server.login.embeddium_cvf_issues.line_1'),
+      Component.translatable('string.kubejs.server.login.github_issues.line_1'),
       Component.of('- '),
       Component.of('[GitHub]\n')
-        .clickOpenUrl('https://github.com/Project-Vyre/Finality-Mote/issues')
+        .clickOpenUrl('https://github.com/Project-Vyre/Finality-Omnia/issues')
         .hover(Component.translatable('string.kubejs.server.github_issues_hover'))
         .yellow(),
       Component.of('- '),
-      Component.of('[TauMC Discord]\n')
-        .clickOpenUrl('https://discord.gg/rN9Y7caguP')
-        .hover(Component.translate('string.kubejs.server.taumc_discord_hover'))
+      Component.of('[FinalityMC Discord]\n')
+        .clickOpenUrl('https://discord.gg/UF8yMZEmmc')
+        .hover(Component.translate('string.kubejs.server.finalitymc_discord_hover'))
         .color(0x5865F2),
-      Component.translatable('string.kubejs.server.login.embeddium_cvf_issues.line_2')
+      Component.translatable('string.kubejs.server.login.github_issues.line_2')
     ])
   })
   event.server.scheduleInTicks(200, t => { event.player.tell(Component.translatable('string.kubejs.server.login.open_chat').underlined().yellow()) })
@@ -181,18 +181,18 @@ function welcomeBackMsg(event) {
       Component.of('<'),
       Component.of('System').green(),
       Component.of('> '),
-      Component.translatable('string.kubejs.server.login.embeddium_cvf_issues.line_1'),
+      Component.translatable('string.kubejs.server.login.github_issues.line_1'),
       Component.of('- '),
       Component.of('[GitHub]\n')
-        .clickOpenUrl('https://github.com/Project-Vyre/Finality-Mote/issues')
+        .clickOpenUrl('https://github.com/Project-Vyre/Finality-Omnia/issues')
         .hover(Component.translatable('string.kubejs.server.github_issues_hover'))
         .yellow(),
       Component.of('- '),
-      Component.of('[TauMC Discord]\n')
-        .clickOpenUrl('https://discord.gg/rN9Y7caguP')
-        .hover(Component.translate('string.kubejs.server.taumc_discord_hover'))
+      Component.of('[FinalityMC Discord]\n')
+        .clickOpenUrl('https://discord.gg/UF8yMZEmmc')
+        .hover(Component.translate('string.kubejs.server.finalitymc_discord_hover'))
         .color(0x5865F2),
-      Component.translatable('string.kubejs.server.login.embeddium_cvf_issues.line_2')
+      Component.translatable('string.kubejs.server.login.github_issues.line_2')
     ])
   })
   event.server.scheduleInTicks(200, t => { event.player.tell(Component.translatable('string.kubejs.server.login.open_chat').underlined().yellow()) })
