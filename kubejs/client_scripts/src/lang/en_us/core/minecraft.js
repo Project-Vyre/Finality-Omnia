@@ -2,6 +2,24 @@
 
 ClientEvents.lang('en_us', event => {
   event.addAll('minecraft',
+    createTooltip('minecraft:obsidian')
+      .addSummary('%s renewable but takes forever to break automatically.')
+      .addBehaviour([
+        'Method 1 - Drills',
+        'You can have a %s place lava with a Lava Bucket next to a waterlogged block or drill. This does take a while, however.'
+      ])
+      .addBehaviour([
+        'Method 2 - Contraption Parking',
+        'You can have a %s or %s park blocks into place to break the obsidian instantly.'
+      ])
+      .addBehaviour([
+        'Method 3 - Cursed Recipes',
+        'You can %s Water and Lava in a Basin because of Create\'s cursed recipe magic or other methods shown by the recipe viewer.'
+      ])
+      .addHighlight(['Infinitely', 'Deployer', 'Mechanical Bearing', 'Mechanical Piston', 'compact'])
+      .build()
+  )
+  event.addAll('minecraft',
     createTooltip('minecraft:clock')
       .addSummary('You feel that this clock has the ability to control %s to some degree... How curious.')
       .addHighlight(['time'])
@@ -277,97 +295,254 @@ ClientEvents.lang('en_us', event => {
       ])
       .build()
   )
-  // Glass Bottle below.
-  // event.addAll('minecraft', {
-  //   "block.minecraft.beacon.tooltip.summary": "Gives positive effects to players in a certain radius.",
-  //   "block.minecraft.beacon.tooltip.condition1": "Prerequisites",
-  //   "block.minecraft.beacon.tooltip.behaviour1": "Requires a base built out of precious metals or gems to function! Iron, Gold, Diamond, Emerald and Netherite are valid materials.",
-  //   "item.minecraft.glass_bottle.tooltip": "GLASS BOTTLE",
-  //   "item.minecraft.glass_bottle.tooltip.summary": "Now has _additional uses_ in this modpack.",
-  //   "item.minecraft.glass_bottle.tooltip.condition1": "When combined with a Dragon Egg in a crafting grid",
-  //   "item.minecraft.glass_bottle.tooltip.behaviour1": "Extracts Dragon Breath.",
-  //   "item.minecraft.lapis_lazuli.tooltip": "LAPIS LAZULI",
-  //   "item.minecraft.lapis_lazuli.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "item.minecraft.lapis_lazuli.tooltip.condition1": "Usage",
-  //   "item.minecraft.lapis_lazuli.tooltip.behaviour1": "Other than _enchanting_ purposes, you can _haunt_ it to get _prismarine_ shards and crystals.",
-  //   "item.minecraft.lapis_lazuli.tooltip.condition2": "Renewal",
-  //   "item.minecraft.lapis_lazuli.tooltip.behaviour2": "Other than _clerics_, lapis lazuli can now be acquired from _witches_.",
-  //   "block.minecraft.pointed_dripstone.tooltip": "POINTED DRIPSTONE",
-  //   "block.minecraft.pointed_dripstone.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "block.minecraft.pointed_dripstone.tooltip.condition1": "Usage",
-  //   "block.minecraft.pointed_dripstone.tooltip.behaviour1": "Can now be used in making _Tridents_.",
-  //   "block.minecraft.cobbled_deepslate.tooltip": "COBBLED DEEPSLATE",
-  //   "block.minecraft.cobbled_deepslate.tooltip.summary": "Now has _additional uses_ in recipes.",
-  //   "block.minecraft.cobbled_deepslate.tooltip.condition1": "When crushed",
-  //   "block.minecraft.cobbled_deepslate.tooltip.behaviour1": "Produces _Deepslate Shards_ which can be _haunted_ to be transformed into different items.",
-  //   "block.minecraft.campfire.tooltip": "CAMPFIRE",
-  //   "block.minecraft.campfire.tooltip.summary": "Useful for _cooking_ food and other functionalities. See below!",
-  //   "block.minecraft.campfire.tooltip.condition1": "When nearby:",
-  //   "block.minecraft.campfire.tooltip.behaviour1": "Campfires can now _regenerate_ your health. _<wave>Cozy!</wave>_",
-  //   "block.minecraft.campfire.tooltip.condition2": "When placed in front of a powered Encased Fan:",
-  //   "block.minecraft.campfire.tooltip.behaviour2": "Permits _Bulk Smoking_ for food items.",
-  //   "block.minecraft.soul_campfire.tooltip": "SOUL CAMPFIRE",
-  //   "block.minecraft.soul_campfire.tooltip.summary": "_Repels_ piglins in addition to cooking food and other functionalities. See below!",
-  //   "block.minecraft.soul_campfire.tooltip.condition1": "When nearby:",
-  //   "block.minecraft.soul_campfire.tooltip.behaviour1": "Campfires can now _regenerate_ your health. _<wave>Cozy!</wave>_",
-  //   "block.minecraft.soul_campfire.tooltip.condition2": "When placed in front of a powered Encased Fan:",
-  //   "block.minecraft.soul_campfire.tooltip.behaviour2": "Permits _Bulk Haunting_ for items.",
-  //   "item.minecraft.rotten_flesh.tooltip": "ROTTEN FLESH",
-  //   "item.minecraft.rotten_flesh.tooltip.summary": "Now has _additional uses_ in multiple recipes.",
-  //   "item.minecraft.rotten_flesh.tooltip.condition1": "In crafting recipes",
-  //   "item.minecraft.rotten_flesh.tooltip.behaviour1": "Is the basis of creating _enriched_ soil for _higher_ crop yields.",
-  //   "item.minecraft.rotten_flesh.tooltip.condition2": "When haunted",
-  //   "item.minecraft.rotten_flesh.tooltip.behaviour2": "Turns into _Phantom Membrane_.",
-  //   "item.minecraft.nether_star.tooltip": "NETHER STAR",
-  //   "item.minecraft.nether_star.tooltip.summary": "Now has _additional uses_.",
-  //   "item.minecraft.nether_star.tooltip.condition1": "Usage",
-  //   "item.minecraft.nether_star.tooltip.behaviour1": "If Cataclysm is loaded, it is used in waking up _The Harbinger_ in the _Ancient Factory_ located deep underground in the _Overworld_.",
-  //   "block.minecraft.dragon_egg.tooltip": "DRAGON EGG",
-  //   "block.minecraft.dragon_egg.tooltip.summary": "Now has an _actual_ use.",
-  //   "block.minecraft.dragon_egg.tooltip.condition1": "Usage",
-  //   "block.minecraft.dragon_egg.tooltip.behaviour1": "Used in making _Dragon Breath_.",
-  //   "block.minecraft.structure_void.tooltip": "STRUCTURE VOID",
-  //   "block.minecraft.structure_void.tooltip.summary": "Primarily used for _crafting_ spawners.",
-  //   "block.minecraft.structure_void.tooltip.condition1": "Acquisition",
-  //   "block.minecraft.structure_void.tooltip.behaviour1": "Can be aquired by breaking _existing_ Spawners or by using a _crafted Command Block_ and then _striking it_ with a _Deployer_ using a _certain_ scythe.",
-  //   "item.minecraft.raw_iron.tooltip": "RAW IRON",
-  //   "item.minecraft.raw_iron.tooltip.summary": "Unrefined, but an _important_ ingredient in everything Create related.",
-  //   "item.minecraft.raw_iron.tooltip.condition1": "Renewal",
-  //   "item.minecraft.raw_iron.tooltip.behaviour1": "Can be _renewed_ from _washing_ Gravel in the form of nuggets in addition to existing methods.",
-  //   "item.minecraft.iron_ingot.tooltip": "IRON INGOT",
-  //   "item.minecraft.iron_ingot.tooltip.summary": "Now in its _refined_ form, it is now _useful_ to you.",
-  //   "item.minecraft.iron_ingot.tooltip.condition1": "When mixed with Andesite in nugget form",
-  //   "item.minecraft.iron_ingot.tooltip.behaviour1": "Creates _Andesite Alloy_ ingots.",
-  //   "item.minecraft.iron_ingot.tooltip.condition2": "When pressed",
-  //   "item.minecraft.iron_ingot.tooltip.behaviour2": "Turns into an _Iron Sheet_ which has additional uses.",
-  //   "item.minecraft.raw_copper.tooltip": "RAW COPPER",
-  //   "item.minecraft.raw_copper.tooltip.summary": "Unrefined, but an _important_ ingredient in everything related to Create _fluid_ manipulation.",
-  //   "item.minecraft.raw_copper.tooltip.condition1": "Renewal",
-  //   "item.minecraft.raw_copper.tooltip.behaviour1": "Can be _renewed_ from _Drowned_ in ingot form as a loot drop or from _Tuff_ in nugget form.",
-  //   "item.minecraft.copper_ingot.tooltip": "COPPER INGOT",
-  //   "item.minecraft.copper_ingot.tooltip.summary": "Now in its _refined_ form, it is now _useful_ to you.",
-  //   "item.minecraft.copper_ingot.tooltip.condition1": "When combined with a Zinc Ingot",
-  //   "item.minecraft.copper_ingot.tooltip.behaviour1": "Creates _two_ Brass Ingots.",
-  //   "item.minecraft.copper_ingot.tooltip.condition2": "When pressed",
-  //   "item.minecraft.copper_ingot.tooltip.behaviour2": "Turns into a _Copper Sheet_ which has additional uses, primarily focused on fluid manipulation.",
-  //   "item.minecraft.copper_ingot.tooltip.condition3": "Renewal",
-  //   "item.minecraft.copper_ingot.tooltip.behaviour3": "Can be _renewed_ from _Drowned_ as a loot drop or from _Tuff_ in nugget form.",
-  //   "item.minecraft.raw_gold.tooltip": "RAW GOLD",
-  //   "item.minecraft.raw_gold.tooltip.summary": "Unrefined, but an _important_ ingredient in Create components.",
-  //   "item.minecraft.raw_gold.tooltip.condition1": "Renewal",
-  //   "item.minecraft.raw_gold.tooltip.behaviour1": "Can be _renewed_ from _washing_ Red Sand or Soul Sand in nugget form. However, washing Soul Sand has _lower_ yields compared to washing Red Sand.",
-  //   "item.minecraft.gold_ingot.tooltip": "GOLD INGOT",
-  //   "item.minecraft.gold_ingot.tooltip.summary": "Now in its _refined_ form, it is now _useful_ to you.",
-  //   "item.minecraft.gold_ingot.tooltip.condition1": "When pressed",
-  //   "item.minecraft.gold_ingot.tooltip.behaviour1": "Turns into a _Gold Sheet_ which has additional uses."
-  // })
+  event.addAll('minecraft',
+    createTooltip('minecraft:lapis_lazuli')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'Usage',
+        'Typically used for %s items.'
+      ])
+      .addBehaviour([
+        'When haunted',
+        'Turns into %s and %s.'
+      ])
+      .addBehaviour([
+        'Renewal',
+        'Other than trading with %s, it can be dropped by %s.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'enchanting',
+        'Prismarine Shards',
+        'Prismarine Crystals',
+        'clerics',
+        'witches'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:pointed_dripstone')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'Usage',
+        'Can now be used in making %s.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'Tridents'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:cobbled_deepslate')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'When crushed',
+        'Produces %s which can be %s to turn into %s.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'Deepslate Shards',
+        'haunted',
+        'Echo Shards'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:campfire')
+      .addSummary('Useful for %s food and other functionalities. See below!')
+      .addBehaviour([
+        'When nearby',
+        'Campfires can now %s your health. <wave>Cozy!</wave>'
+      ])
+      .addBehaviour([
+        'When placed in front of a powered Encased fan',
+        'Permits %s for bulk cooking of food items.'
+      ])
+      .addHighlight([
+        'cooking',
+        'regenerate',
+        'Bulk Smoking'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:soul_campfire')
+      .addSummary('%s piglins in addition to cooking food and other functionalities. See below!')
+      .addBehaviour([
+        'When nearby',
+        'Campfires can now %s your health. <wave>Cozy!</wave>'
+      ])
+      .addBehaviour([
+        'When placed in front of a powered Encased fan',
+        'Permits %s for items.'
+      ])
+      .addHighlight([
+        'Repels',
+        'regenerate',
+        'Bulk Haunting'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:rotten_flesh')
+      .addSummary('Not suited for consumption. Now has %s.')
+      .addBehaviour([
+        'When combined with Dirt',
+        'Creates the basis of %s for %s crop yields.'
+      ])
+      .addBehaviour([
+        'When haunted',
+        'Turns into %s.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'Enriched Soil',
+        'higher',
+        'Phantom Membrane'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:nether_star')
+      .addSummary('Now has %s.')
+      .addBehaviour([
+        'Usage if Cataclysm is loaded',
+        'Used in waking up %s in the %s Ancient Factory located deep underground in the %s.'
+      ])
+      .addHighlight([
+        'additional uses',
+        'The Harbinger',
+        'Ancient Factory',
+        'Overworld'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:dragon_egg')
+      .addSummary('Now has an %s use.')
+      .addBehaviour([
+        'Usage',
+        'Used in making %s.'
+      ])
+      .addHighlight([
+        'actual',
+        'Dragon Breath'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:structure_void')
+      .addSummary('Used to indicate empty space in structures.')
+      .addBehaviour([
+        'Primary Usage',
+        'Used for %s spawners.'
+      ])
+      .addBehaviour([
+        'Acquisition',
+        'Can be acquired by breaking %s spawners.'
+      ])
+      .addBehaviour([
+        'Renewal',
+        'Can be renewed by using a crafted %s and then %s with a %s using a %s scythe.'
+      ])
+      .addHighlight([
+        'crafting',
+        'existing',
+        'Command Block',
+        'striking it',
+        'Deployer',
+        'certain'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:raw_iron')
+      .addSummary('Unrefined, but an %s ingredient in everything Create related.')
+      .addBehaviour([
+        'Renewal',
+        'Iron can be renewed from %s Gravel in the form of nuggets in addition to existing methods.'
+      ])
+      .addHighlight([
+        'important',
+        'washing'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:iron_ingot')
+      .addSummary('Now in its %s form, it is now %s to you.')
+      .addBehaviour([
+        'When mixed with Andesite in nugget form',
+        'Creates %s ingots.'
+      ])
+      .addBehaviour([
+        'When pressed',
+        'Turns into an %s which has additional uses.'
+      ])
+      .addHighlight(['refined', 'useful', 'Andesite Alloy', 'Iron Sheet'])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:raw_copper')
+      .addSummary('Unrefined, but an %s ingredient in everything related to Create %s manipulation.')
+      .addBehaviour([
+        'Renewal',
+        'Can be renewed from %s in ingot form as a loot drop or from %s in nugget form.'
+      ])
+      .addHighlight([
+        'important',
+        'fluid',
+        'Drowned',
+        'Tuff'
+      ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:copper_ingot')
+      .addSummary('Now in its %s form, it is now %s to you.')
+      .addBehaviour([
+        'When combined with a Zinc Ingot',
+        'Creates %s Brass Ingots.'
+      ])
+      .addBehaviour([
+        'When pressed',
+        'Turns into a %s which has additional uses. Resulting products are primarily focused on fluid manipulation and automation.'
+      ])
+      .addBehaviour([
+        'Renewal',
+        'Can be %s from %s as a loot drop or from %s in nugget form.'
+      ])
+      .addHighlight(['refined', 'useful', 'two', 'Copper Sheet', 'renewed', 'Drowned', 'Tuff'])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:raw_gold')
+      .addSummary('Unrefined but an %s ingredient in Create components.')
+      .addBehaviour([
+        'Renewal',
+        'Can be %s from %s Red Sand or Soul Sand in nugget form. However, washing Soul Sand has %s yields compared to washing Red Sand.'
+      ])
+      .addHighlight(['important', 'renewed', 'washing', 'lower'])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:gold_ingot')
+      .addSummary('Now in its %s form, it is now %s to you.')
+      .addBehaviour([
+        'When pressed',
+        'Turns into a %s which has additional uses.'
+      ])
+      .addHighlight(['refined', 'useful', 'Gold Sheet'])
+      .build()
+  )
   event.addAll(
     'minecraft',
     createTooltip('minecraft:composter')
-      .addSummary('Primarily used for making _Bone Meal_. Both _Deployers_ and _Mechanical Arms_ are able to directly deposit items that can be composted into _Bone Meal_.')
+      .addSummary('Primarily used for making %s. Both %s and %s are able to directly deposit items that can be composted into %s.')
       .addBehaviour([
         'Automated bone meal extraction',
-        'Unfortunately, _chutes_ and _funnels_ are not able to extract the finished Bone Meal, so you will have to use _hoppers_ instead.'
+        'Unfortunately, %s and %s are not able to extract the finished Bone Meal, so you will have to use %s instead.'
       ])
       .addHighlight([
         'Bone Meal',
@@ -383,44 +558,68 @@ ClientEvents.lang('en_us', event => {
   event.addAll(
     'minecraft',
     createTooltip('minecraft:glowstone_dust')
-      .addSummary('The dust form of Glowstone. An essential ingredient in crafting blocks that emit light as well as _potion brewing_.')
+      .addSummary('The dust form of Glowstone. An essential ingredient in crafting blocks that emit light as well as %s.')
       .addBehaviour([
         'Renewal',
-        'Can be obtained from defeating _witches_ or applying a _Night Vision Potion_ to some _Cinder Flour_.'
+        'Can be obtained from defeating %s or applying a %s to some %s.'
       ])
       .addBehaviour([
         'Uses in Potion Brewing',
-        'Increases the _intensity_ of a potion. Also used in brewing a _Thick Potion_.'
+        'Increases the %s of a potion. Also used in brewing a %s.'
+      ])
+      .addHighlight([
+        'potion brewing',
+        'witches',
+        'Night Vision Potion',
+        'Cinder Flour',
+        'intensity',
+        'Thick Potion'
       ])
       .build()
   )
   event.addAll(
     'kubejs',
     createTooltip('minecraft:gunpowder')
-      .addSummary('An essential ingredient in both the creation of _explosives_ and _splash potions_.')
+      .addSummary('An essential ingredient in both the creation of %s and %s.')
       .addBehaviour([
         'Renewal',
-        'Can be obtained from defeating _Creepers_ or washing _Crushed Raw Zinc_.'
+        'Can be obtained from defeating %s or washing %s.'
+      ])
+      // Salt mod is no longer maintained after 1.20.1. Substitute with self-made salt.
+      .addBehaviour([
+        'Renewal with Salt',
+        'Can be mixed with %s and %s or %s.'
+      ])
+      .addHighlight([
+        'explosives',
+        'splash potions',
+        'Creepers',
+        'Crushed Raw Zinc',
+        'Salt',
+        'Coal',
+        'Charcoal'
       ])
       .build()
   )
-  if (Platform.isLoaded('salt')) {
-    event.addAll('kubejs', {
-      "item.minecraft.gunpowder.tooltip.condition2": "Renewal with Salt",
-      "item.minecraft.gunpowder.tooltip.behaviour2": "Can be mixed with _Salt_ and _Coal_ or _Charcoal_."
-    })
-  }
   event.addAll(
     'kubejs',
     createTooltip('minecraft:redstone')
-      .addSummary('An embodiment of _game logic_ and can be used in many logic related components.')
+      .addSummary('An embodiment of %s and can be used in many logic related components.')
       .addBehaviour([
         'Renewal',
-        'Can be obtained from defeating _witches_ or applying a _Strength Potion_ to some _Cinder Flour_.'
+        'Can be obtained from defeating %s or applying a %s to some %s.'
       ])
       .addBehaviour([
         'Uses in Potion Brewing',
-        'Increases the _duration_ of a potion. Also used in brewing a _Mundane Potion_.'
+        'Increases the %s of a potion. Also used in brewing a %s.'
+      ])
+      .addHighlight([
+        'game logic',
+        'witches',
+        'Strength Potion',
+        'Cinder Flour',
+        'duration',
+        'Mundane Potion'
       ])
       .build()
   )
@@ -430,11 +629,15 @@ ClientEvents.lang('en_us', event => {
       .addSummary('Now has additional uses.')
       .addBehaviour([
         'On R-Click on Warped Roots',
-        'Converts the roots into a _Sculk Sensor_.'
+        'Converts the roots into a %s.'
       ])
       .addBehaviour([
         'On R-Click on Sculk Shrieker',
-        'Summons a Warden and _consumes_ the Echo Shard in the process.'
+        'Summons a Warden and %s the Echo Shard in the process.'
+      ])
+      .addHighlight([
+        'Sculk Sensor',
+        'consumes'
       ])
       .build()
   )
