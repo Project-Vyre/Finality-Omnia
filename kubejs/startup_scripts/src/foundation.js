@@ -60,6 +60,24 @@ let LETTERS = {
 const TOOLS = ['sword', 'shovel', 'pickaxe', 'axe', 'hoe']
 const ARMOR = ['helmet', 'chestplate', 'leggings', 'boots']
 const DIVING = ['diving_helmet', 'backtank', 'diving_boots']
+const CLASSIC_COLORS = [
+  'white',
+  'light_gray',
+  'dark_gray',
+  'red',
+  'orange',
+  'yellow',
+  'chartreuse',
+  'green',
+  'spring_green',
+  'cyan',
+  'capri',
+  'ultramarine',
+  'violet',
+  'purple',
+  'magenta',
+  'rose'
+]
 
 StartupEvents.registry('item', event => { // Register new items here event.create('example_item').displayName('Example Item')
   /**
