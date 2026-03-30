@@ -145,17 +145,7 @@ ClientEvents.lang('en_us', event => {
     "kubejs.tooltip.hold_control": "§8Hold [§r§7Ctrl§r§8]§r §8for Controls§r",
     "kubejs.tooltip.hold_shift": "§8Hold [§r§7Shift§r§8]§r §8for Summary§r",
     "kubejs.tooltip.hold_control.held": "§8Hold [§r§fCtrl§r§8]§r §8for Controls§r",
-    "kubejs.tooltip.hold_shift.held": "§8Hold [§r§fShift§r§8]§r §8for Summary§r",
-    "block.minecraft.obsidian.tooltip.summary": "Infinitely renewable, but takes forever to break automatically.",
-    "block.minecraft.obsidian.tooltip.condition1": "Method 1 - Drills",
-    "block.minecraft.obsidian.tooltip.behaviour1": "You can have a deployer place a lava bucket next to a waterlogged block or drill. This does take a while, however.",
-    "block.minecraft.obsidian.tooltip.condition2": "Method 2 - Contraption Parking",
-    "block.minecraft.obsidian.tooltip.behaviour2": "You can have a Mechanical Bearing or Mechanical Piston park blocks into place to break the Obsidian instantly.",
-    "block.minecraft.obsidian.tooltip.condition3": "Method 3 - Cursed Recipes",
-    "block.minecraft.obsidian.tooltip.behaviour3": "You can compact Water and Lava in a Basin because of Create's cursed recipe magic or other methods shown by the recipe viewer.",
-    "item.kubejs.unstable_entropy_particles.tooltip.summary": "It appears that it needs to be _stabilized_ first by something that is _very_ cold.",
-    "item.kubejs.unstable_entropy_particles.tooltip.condition1": "Acquisition",
-    "item.kubejs.unstable_entropy_particles.tooltip.behaviour1": "Can only be created by mixing many different materials together."
+    "kubejs.tooltip.hold_shift.held": "§8Hold [§r§fShift§r§8]§r §8for Summary§r"
   })
   event.addAll('create', {
     "block.create.hose_pulley.tooltip.summary": "By default, any volume of fluid will be considered bottomless at _*10,000 fluid source blocks_ which would normally require a hole that is _25x25x16_ in volume. That is _Length_ * _Width_ * _Height_ for those who don't know how to calculate volume. Please _DO NOT_ issue a bug report if you have not read the additional text below.",
