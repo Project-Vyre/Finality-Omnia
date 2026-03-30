@@ -1,0 +1,194 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "arknights_endfield_industries"
+	group: ""
+	icon: "arknights_endfield:dense_originium_powder"
+	id: "36F23D66DE598487"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&d<glitch>Quest tree is a work in progress.</glitch>&r"
+				"- CelestialAbyss"
+				""
+				"<&ePerlica&r> We seem to have been transported to a different universe, Endmin."
+				""
+				"<&3Chen&r> Yeah! Everything seems so blocky too! I'll see what I can find."
+				""
+				"<&ePerlica&r> Do be careful."
+				""
+				"<&3Chen&r> I will!"
+				""
+				"&oChen quickly leaves to go off on her own.&r"
+				""
+				"<&ePerlica&r> I also seem to be unable to reach anyone in Dijiang..."
+				""
+				"<&6Endmin&r> The &eCore PAC&r seems to have different logic as well, very interesting. It seems that we will need to break the virtual blocks around the edge and place these... &eCore PAC Port&r blocks in their place?"
+				""
+				"<&ePerlica&r> That seems to be correct, Endmin. However, it seems we need specialized but primitive tools to manipulate this world's blocks. There also seems to be this screen documenting all the different recipes."
+				"{@pagebreak}"
+				"&oEndmin checks the rest of her inventory...&r"
+				""
+				"<&6Endmin&r> And these... Mineral Vein blocks? We can't exactly make use of them right now."
+				""
+				"<&ePerlica&r> Noted. While we are waiting for Chen, we should build some shelter and create basic tools."
+				""
+				"<&6Endmin&r>These trees don't seem to take all that much force to harvest the blocks... Punching the wood doesn't hurt either."
+				""
+				"&oSome time passes...&r"
+				"{@pagebreak}"
+				"&oChen comes running out of a nearby cave excitedly waving a pickaxe in one hand as if signaling them to come over.&r"
+				""
+				"<&3Chen&r> I found some Originium ore blocks in a cave here Endmin!"
+				"{@pagebreak}"
+				"&oA few days pass, but time seems to move quickly in this universe with occasional differences during the night hours that ranged from being peaceful to outright being overriden by hostile entities.&r"
+			]
+			icon: "arknights_endfield:protocol_anchor_core"
+			id: "011B3E898C2829AB"
+			rewards: [{
+				id: "6648C99307945B8F"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Welcome back, Endministrator."
+			tasks: [
+				{
+					id: "2C7CB1B640789FE4"
+					item: "arknights_endfield:protocol_anchor_core"
+					type: "item"
+				}
+				{
+					id: "172B73F7F6DBF464"
+					item: "arknights_endfield:protocol_anchor_core_port"
+					type: "item"
+				}
+			]
+			title: "The Beginning of Civilization"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F3DF97647901FC6"]
+			id: "0A7F998D6F3A49B9"
+			tasks: [{
+				id: "0FFED5BCD222B022"
+				item: "arknights_endfield:electric_mining_rig"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["467DB3E010329366"]
+			id: "2F3DF97647901FC6"
+			subtitle: "Can't mine anything harder than Originium."
+			tasks: [{
+				id: "21093510A3BB02FC"
+				item: "arknights_endfield:portable_originium_rig"
+				type: "item"
+			}]
+			title: "Portable Mining Rigs"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2632A059D604A121"
+				"1588394D531B0339"
+			]
+			description: ["<&ePerlica&r> Using the ore we just gathered, we can now make the basic Endfield Industries facilities starting with the Refining and Shredding Units."]
+			id: "467DB3E010329366"
+			rewards: [{
+				id: "0F26E0232CB9B29E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Origocrust is the foundational material."
+			tasks: [
+				{
+					id: "2206F3B27DBE3BC1"
+					item: "arknights_endfield:refining_unit"
+					type: "item"
+				}
+				{
+					id: "6297F40C4C1F5850"
+					item: "arknights_endfield:shredding_unit"
+					type: "item"
+				}
+			]
+			title: "Automation Foundations"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["011B3E898C2829AB"]
+			description: [
+				"<&3Chen&r> It feels so strange to be able to place mineral veins wherever we want to."
+				""
+				"<&ePerlica&r> Yes, but it allows for very fast and efficient factory construction. Isn't that right, Endmin?"
+				""
+				"&oEndmin is seen placing mineral veins at lightning speed.&r"
+				""
+				"<&6Endmin&r> Yes."
+				""
+				"&oPerlica browses through the holographic interface listing the different recipes and animated 3D tutorials labeled &bPonders&r&o.&r"
+				""
+				"<&ePerlica&r> To make more mineral veins, we need to use a combination of high pressure and temperature with the respective material of the mineral vein we want to make."
+				""
+				"&oPerlica is deep in thought thinking of all the automation lines needed for this endeavour.&r"
+				""
+				"<&ePerlica&r> However, that requires more automation that makes use of mechanical force instead. These facilities make heavy use of wood, typical metals, and &bAndesite Alloy&r which is a fusion of a common igneous rock and trace amounts of iron."
+			]
+			icon: "arknights_endfield:originium_mineral_vein_block"
+			id: "2632A059D604A121"
+			rewards: [{
+				id: "69BA581BBE71D43E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "It seems like this world is different to ours, Endmin."
+			tasks: [{
+				id: "2722E90D1DFC33D5"
+				title: "Click me!"
+				type: "checkmark"
+			}]
+			title: "Introduction to Mineral Veins"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["011B3E898C2829AB"]
+			description: [
+				"<&ePerlica&r> Thankfully our facilities follow the same connection logic."
+				""
+				"<&6Endmin&r> Very convenient."
+			]
+			id: "1588394D531B0339"
+			rewards: [{
+				id: "71F38BB6968A60C8"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Endfield facilities need to be powered."
+			tasks: [
+				{
+					id: "31A5F46221F0DC7A"
+					item: "arknights_endfield:relay_tower"
+					type: "item"
+				}
+				{
+					id: "41D2EF435B25B772"
+					item: "arknights_endfield:electric_pylon"
+					type: "item"
+				}
+			]
+			title: "Introduction to Connections"
+			x: -1.0d
+			y: 1.0d
+		}
+	]
+	subtitle: ["Welcome back, Endministrator."]
+	title: "Arknights: Endfield Industries"
+}
