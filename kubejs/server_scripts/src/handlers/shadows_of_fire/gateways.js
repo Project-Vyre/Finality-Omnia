@@ -252,6 +252,44 @@ ServerEvents.recipes(event => {
       E: 'minecraft:nether_star'
     }).id('kubejs:ultimatum_boss_gate')
   }
+  if (Platform.isLoaded('irons_spellbooks')) {
+    event.recipes.create.mechanical_crafting(Item.of('gateways:gate_pearl', '{gateway:"kubejs:citadel_keeper_gate_small"}'), [
+      'SSISS',
+      'SDDDS',
+      'IDEDI',
+      'SDDDS',
+      'SSISS'
+    ], {
+      I: 'irons_spellbooks:legendary_ink',
+      S: 'irons_spellbooks:cinder_essence',
+      D: 'minecraft:netherite_block',
+      E: 'minecraft:ender_pearl'
+    }).id('kubejs:citadel_keeper_gate_small')
+    event.recipes.create.mechanical_crafting(Item.of('gateways:gate_pearl', '{gateway:"kubejs:citadel_keeper_gate"}'), [
+      'SSISS',
+      'SDDDS',
+      'IDEDI',
+      'SDDDS',
+      'SSISS'
+    ], {
+      I: 'irons_spellbooks:legendary_ink',
+      S: 'irons_spellbooks:cinder_essence',
+      D: 'minecraft:netherite_block',
+      E: 'minecraft:ender_eye'
+    }).id('kubejs:citadel_keeper_gate')
+    event.recipes.create.mechanical_crafting(Item.of('gateways:gate_pearl', '{gateway:"kubejs:citadel_keeper_gate_large"}'), [
+      'SSISS',
+      'SDDDS',
+      'IDEDI',
+      'SDDDS',
+      'SSISS'
+    ], {
+      I: 'irons_spellbooks:legendary_ink',
+      S: 'irons_spellbooks:cinder_essence',
+      D: 'minecraft:netherite_block',
+      E: 'minecraft:nether_star'
+    }).id('kubejs:citadel_keeper_gate_large')
+  }
   if (Platform.isLoaded('mutantmonsters') && Platform.isLoaded('mutantmore')) {
     event.recipes.create.filling(Item.of('gateways:gate_pearl', '{gateway:"kubejs:mutant_boss_gate_large"}'), [
       'minecraft:ender_eye',

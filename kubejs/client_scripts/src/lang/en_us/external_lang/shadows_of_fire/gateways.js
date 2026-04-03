@@ -60,6 +60,9 @@ ClientEvents.lang('en_us', event => {
     "kubejs.mass_destruction_boss_gate_large": "Bosses of Mass Destruction Gate",
     "kubejs.endless/artifact_mimic_gate": "Endless Artifact Mimic Gate",
     "kubejs.wilden_gate": "Wilden Gate",
+    "kubejs.citadel_keeper_gate_small": "Small Ancient Knight Gate",
+    "kubejs.citadel_keeper_gate": "Ancient Knight Gate",
+    "kubejs.citadel_keeper_gate_large": "Large Ancient Knight Gate",
     "name.kubejs.skill_check": "Skill Check",
     "rewards.gateways.loot_table.bastion_treasure": "Bastion Treasure Loot"
   })
