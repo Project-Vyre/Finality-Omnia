@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     G: 'kubejs:framed_glass_singularity',
     C: 'ae2:calculation_processor'
   }).id('kubejs:hostilenetworks/deep_learner')
-  event.recipes.minecraft.crafting_shaped('64x hostilenetworks:prediction_matrix', [
+  event.recipes.minecraft.crafting_shaped('hostilenetworks:quintuple_condensed_prediction_matrix', [
     ' G ',
     'GCG',
     ' G '
@@ -60,4 +60,19 @@ ServerEvents.recipes(event => {
     G: 'kubejs:framed_glass_singularity',
     C: 'kubejs:genesis_mechanism'
   }).id('kubejs:hostilenetworks/prediction_matrix')
+  event.shapeless('4x hostilenetworks:quadruple_condensed_prediction_matrix', [
+    'hostilenetworks:quintuple_condensed_prediction_matrix'
+  ]).id('kubejs:hostilenetworks/quintuple_condensed_prediction_matrix_decompression')
+  event.shapeless('4x hostilenetworks:triple_condensed_prediction_matrix', [
+    'hostilenetworks:quadruple_condensed_prediction_matrix'
+  ]).id('kubejs:hostilenetworks/quadruple_condensed_prediction_matrix_decompression')
+  event.shapeless('4x hostilenetworks:double_condensed_prediction_matrix', [
+    'hostilenetworks:triple_condensed_prediction_matrix'
+  ]).id('kubejs:hostilenetworks/triple_condensed_prediction_matrix_decompression')
+  event.shapeless('4x hostilenetworks:condensed_prediction_matrix', [
+    'hostilenetworks:double_condensed_prediction_matrix'
+  ]).id('kubejs:hostilenetworks/double_condensed_prediction_matrix_decompression')
+  event.shapeless('4x hostilenetworks:prediction_matrix', [
+    'hostilenetworks:condensed_prediction_matrix'
+  ]).id('kubejs:hostilenetworks/condensed_prediction_matrix_decompression')
 })
