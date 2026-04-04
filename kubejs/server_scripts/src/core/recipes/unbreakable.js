@@ -121,6 +121,112 @@ ServerEvents.recipes(event => {
       ]).id('kubejs:celestisynth/unbreakable_' + recipeid)
     }
   }
+  if (Platform.isLoaded('ars_nouveau')) {
+    let ars_armor = {
+      sorceror_hood: 'ars_nouveau:sorcerer_hood',
+      sorceror_robes: 'ars_nouveau:sorcerer_robes',
+      sorceror_leggings: 'ars_nouveau:sorcerer_leggings',
+      sorceror_boots: 'ars_nouveau:sorcerer_boots',
+      arcanist_hood: 'ars_nouveau:arcanist_hood',
+      arcanist_robes: 'ars_nouveau:arcanist_robes',
+      arcanist_leggings: 'ars_nouveau:arcanist_leggings',
+      arcanist_boots: 'ars_nouveau:arcanist_boots',
+      battlemage_hood: 'ars_nouveau:battlemage_hood',
+      battlemage_robes: 'ars_nouveau:battlemage_robes',
+      battlemage_leggings: 'ars_nouveau:battlemage_leggings',
+      battlemage_boots: 'ars_nouveau:battlemage_boots'
+    }
+    for (let [recipeid, id] of Object.entries(ars_armor)) {
+      event.recipes.kubejs.shapeless(Item.of(id).withNBT({ Unbreakable: 1 }), [
+        id,
+        'create:experience_block'
+      ]).id('kubejs:ars_nouveau/unbreakable_' + recipeid)
+    }
+  }
+  if (Platform.isLoaded('ars_noveau')) {
+    let ars_elemental_armor = {
+      fire_hat: 'ars_elemental:fire_hat',
+      fire_robes: 'ars_elemental:fire_robes',
+      fire_leggings: 'ars_elemental:fire_leggings',
+      fire_boots: 'ars_elemental:fire_boots',
+      air_hat: 'ars_elemental:air_hat',
+      air_robes: 'ars_elemental:air_robes',
+      air_leggings: 'ars_elemental:air_leggings',
+      air_boots: 'ars_elemental:air_boots',
+      earth_hat: 'ars_elemental:earth_hat',
+      earth_robes: 'ars_elemental:earth_chestplate',
+      earth_leggings: 'ars_elemental:earth_leggings',
+      earth_boots: 'ars_elemental:earth_boots',
+      aqua_hat: 'ars_elemental:aqua_hat',
+      aqua_robes: 'ars_elemental:aqua_robes',
+      aqua_leggings: 'ars_elemental:aqua_leggings',
+      aqua_boots: 'ars_elemental:aqua_boots'
+    }
+  }
+  if (Platform.isLoaded('irons_spellbooks')) {
+    let irons_armor = {
+      keeper_flamberge: 'irons_spellbooks:keeper_flamberge',
+      legionnaire_flamberge: 'irons_spellbooks:legionnaire_flamberge',
+      wandering_magician_helmet: 'irons_spellbooks:wandering_magician_helmet',
+      wandering_magician_chestplate: 'irons_spellbooks:wandering_magician_chestplate',
+      wandering_magician_leggings: 'irons_spellbooks:wandering_magician_leggings',
+      wandering_magician_boots: 'irons_spellbooks:wandering_magician_boots',
+      pumpkin_helmet: 'irons_spellbooks:pumpkin_helmet',
+      pumpkin_chestplate: 'irons_spellbooks:pumpkin_chestplate',
+      pumpkin_leggings: 'irons_spellbooks:pumpkin_leggings',
+      pumpkin_boots: 'irons_spellbooks:pumpkin_boots',
+      pyromancer_helmet: 'irons_spellbooks:pyromancer_helmet',
+      pyromancer_chestplate: 'irons_spellbooks:pyromancer_chestplate',
+      pyromancer_leggings: 'irons_spellbooks:pyromancer_leggings',
+      pyromancer_boots: 'irons_spellbooks:pyromancer_boots',
+      electromancer_helmet: 'irons_spellbooks:electromancer_helmet',
+      electromancer_chestplate: 'irons_spellbooks:electromancer_chestplate',
+      electromancer_leggings: 'irons_spellbooks:electromancer_leggings',
+      electromancer_boots: 'irons_spellbooks:electromancer_boots',
+      archevoker_helmet: 'irons_spellbooks:archevoker_helmet',
+      archevoker_chestplate: 'irons_spellbooks:archevoker_chestplate',
+      archevoker_leggings: 'irons_spellbooks:archevoker_leggings',
+      archevoker_boots: 'irons_spellbooks:archevoker_boots',
+      cultist_helmet: 'irons_spellbooks:cultist_helmet',
+      cultist_chestplate: 'irons_spellbooks:cultist_chestplate',
+      cultist_leggings: 'irons_spellbooks:cultist_leggings',
+      cultist_boots: 'irons_spellbooks:cultist_boots',
+      cryomancer_helmet: 'irons_spellbooks:cryomancer_helmet',
+      cryomancer_chestplate: 'irons_spellbooks:cryomancer_chestplate',
+      cryomancer_leggings: 'irons_spellbooks:cryomancer_leggings',
+      cryomancer_boots: 'irons_spellbooks:cryomancer_boots',
+      shadowwalker_helmet: 'irons_spellbooks:shadowwalker_helmet',
+      shadowwalker_chestplate:'irons_spellbooks:shadowwalker_chestplate',
+      shadowwalker_leggings: 'irons_spellbooks:shadowwalker_leggings',
+      shadowwalker_boots: 'irons_spellbooks:shadowwalker_boots',
+      priest_helmet: 'irons_spellbooks:priest_helmet',
+      priest_chestplate: 'irons_spellbooks:priest_chestplate',
+      priest_leggings: 'irons_spellbooks:priest_leggings',
+      priest_boots: 'irons_spellbooks:priest_boots',
+      plagued_helmet: 'irons_spellbooks:plagued_helmet',
+      plagued_chestplate: 'irons_spellbooks:plagued_chestplate',
+      plagued_leggings: 'irons_spellbooks:plagued_leggings',
+      plagued_boots: 'irons_spellbooks:plagued_boots',
+      netherite_mage_helmet: 'irons_spellbooks:netherite_mage_helmet',
+      netherite_mage_chestplate: 'irons_spellbooks:netherite_mage_chestplate',
+      netherite_mage_leggings: 'irons_spellbooks:netherite_mage_leggings',
+      netherite_mage_boots: 'irons_spellbooks:netherite_mage_boots',
+      wizard_helmet: 'irons_spellbooks:wizard_helmet',
+      wizard_hat: 'irons_spellbooks:wizard_hat',
+      wizard_chestplate: 'irons_spellbooks:wizard_chestplate',
+      wizard_leggings: 'irons_spellbooks:wizard_leggings',
+      wizard_boots: 'irons_spellbooks:wizard_boots',
+      infernal_sorcerer_chestplate: 'irons_spellbooks:infernal_sorcerer_chestplate',
+      paladin_chestplate: 'irons_spellbooks:paladin_chestplate',
+      speed_boots: 'irons_spellbooks:speed_boots'
+    }
+    for (let [recipeid, id] of Object.entries(irons_armor)) {
+      event.recipes.kubejs.shapeless(Item.of(id).withNBT({ Unbreakable: 1 }), [
+        id,
+        'create:experience_block'
+      ]).id('kubejs:irons_spellbooks/unbreakable_' + recipeid)
+    }
+  }
 })
 
 /*
