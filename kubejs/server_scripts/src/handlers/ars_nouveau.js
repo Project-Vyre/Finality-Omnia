@@ -76,6 +76,14 @@ ServerEvents.recipes(event => {
     { item: '#forge:nuggets/iron' },
     { item: 'kubejs:netherite_nugget' }
   ]).id('kubejs:imbuement_andesite_alloy')
+  if (Platform.isLoaded('arseng')) {
+    event.custom({
+      "type": "ars_nouveau:budding_conversion",
+      "id": "kubejs:arseng/ae2/flawless_budding_quartz",
+      "input": "ae2:flawed_budding_quartz",
+      "result": "ae2:flawless_budding_quartz"
+    }).id('kubejs:arseng/ae2/flawless_budding_quartz')
+  }
 })
 
 ServerEvents.tags('entity_type', event => {
