@@ -283,6 +283,10 @@ ServerEvents.recipes(event => {
       'kubejs:deconstructor'
     ]).keepHeldItem().id(`finality:item_application/${id}_banner_deconstruction`)
   }
+  event.recipes.create.item_application('minecraft:soul_sand', [
+    'create:scoria',
+    'kubejs:deconstructor'
+  ]).keepHeldItem().id('kubejs:item_application/scoria_deconstruction')
   if (Platform.isLoaded('quark')) {
     event.recipes.create.item_application([
       '2x minecraft:gold_ingot',
