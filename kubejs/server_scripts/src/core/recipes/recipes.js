@@ -302,7 +302,13 @@ ServerEvents.recipes(event => {
   ], {
     D: 'minecraft:crying_obsidian',
     S: 'create:shaft'
-  }).id('finality:deconstructor')
+  }).id('kubejs:deconstructor')
+  event.shaped('kubejs:reconstructor', [
+    'SSD'
+  ], {
+    D: 'minecraft:crying_obsidian',
+    S: 'create:shaft'
+  }).id('kubejs:reconstructor')
   /**
    * QoL
    */
@@ -358,6 +364,14 @@ ServerEvents.recipes(event => {
     'minecraft:bone_meal'
   ]).heated().id('finality:compacting/renew_calcite')
   event.recipes.create.compacting('minecraft:ice', '9x minecraft:snow_block').id('finality:snow_compacting')
+  event.recipes.create.compacting(
+    Fluid.of('kubejs:crimson', 50),
+    'minecraft:crimson_fungus'
+  ).id('kubejs:compacting/crimson_fungus_fluid_extraction')
+  event.recipes.create.compacting(
+    Fluid.of('kubejs:crimson', 25),
+    'minecraft:crimson_roots'
+  ).id('kubejs:compacting/crimson_roots_fluid_extraction')
   /*
   Watch me question myself later after writing this recipe 
   for making Lapis Lazuli automatable with just Create...
@@ -431,6 +445,10 @@ ServerEvents.recipes(event => {
     'minecraft:cobblestone',
     Fluid.of('create:potion', 250, '{Bottle: "REGULAR", Potion: "minecraft:strong_healing"}'),
   ]).id('finality:filling/living_flesh_stone')
+  event.recipes.create.filling('minecraft:netherrack', [
+    'minecraft:cobblestone',
+    Fluid.of('kubejs:crimson', 25)
+  ]).id('kubejs:filling/netherrack_from_crimson')
   event.recipes.create.filling('minecraft:prismarine', [
     'minecraft:cobblestone',
     Fluid.of('create:potion', 250, '{Bottle:"REGULAR",Potion:"minecraft:water_breathing"}')
@@ -479,6 +497,14 @@ ServerEvents.recipes(event => {
     'minecraft:warped_roots',
     'minecraft:echo_shard'
   ]).id('finality:item_application/sculk_sensor_conversion')
+  event.recipes.create.item_application('minecraft:deepslate', [
+    'minecraft:bedrock',
+    'kubejs:deconstructor'
+  ]).keepHeldItem().id('kubejs:item_application/deconstruct_bedrock_to_deepslate')
+  event.recipes.create.item_application('minecraft:bedrock', [
+    'minecraft:deepslate',
+    'kubejs:reconstructor'
+  ]).keepHeldItem().id('kubejs:item_application/reconstruct_deepslate_to_bedrock')
   /**
    * SPLASHING
    */
@@ -491,7 +517,7 @@ ServerEvents.recipes(event => {
     'create:sticky_mechanical_piston'
   ).id('finality:splashing/sticky_mechanical_piston')
   event.recipes.create.splashing([
-    Item.of('minecraft:glowstone_dust').withChance(0.25),
+    Item.of('minecraft:glowstone_dust', 3).withChance(0.50),
     Item.of('minecraft:bone').withChance(0.12)
   ], 'minecraft:soul_soil').id('finality:splashing/soul_soil')
   event.recipes.create.splashing(
@@ -534,6 +560,10 @@ ServerEvents.recipes(event => {
     '8x minecraft:cobblestone',
     Fluid.of('create:potion', 1000, '{Bottle:"REGULAR",Potion:"minecraft:strong_healing"}')
   ]).id('finality:mixing/bulk_netherrack_from_cobblestone')
+  event.recipes.create.mixing('8x minecraft:netherrack', [
+    '8x minecraft:cobblestone',
+    Fluid.of('kubejs:crimson', 200)
+  ]).id('kubejs:mixing/bulk_netherrack_from_crimson')
   event.recipes.create.mixing('8x minecraft:prismarine', [
     '8x minecraft:cobblestone',
     Fluid.of('create:potion', 1000, '{Bottle:"REGULAR",Potion:"minecraft:water_breathing"}')
