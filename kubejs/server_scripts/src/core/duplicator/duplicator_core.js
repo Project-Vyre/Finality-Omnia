@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
       C: 'create:clipboard',
       S: 'create:sturdy_sheet',
       N: '#forge:nuggets/netherite'
-    }).id('finality:mechanical_crafting/duplicator')
+    }).id('kubejs:mechanical_crafting/duplicator')
   } else {
     event.recipes.create.mechanical_crafting('kubejs:duplicator', [
       'FC',
@@ -73,8 +73,24 @@ ServerEvents.recipes(event => {
       C: 'create:clipboard',
       S: 'create:sturdy_sheet',
       F: 'dimdoors:enduring_fibers'
-    }).id('finality:mechanical_crafting/duplicator')
+    }).id('kubejs:mechanical_crafting/duplicator')
   }
+  event.recipes.create.mechanical_crafting('kubejs:duplicator_block', [
+    ' D ',
+    'DED',
+    ' D '
+  ], {
+    D: 'kubejs:duplicator',
+    E: 'kubejs:high_entropy_alloy_block'
+  }).id('kubejs:mechanical_crafting_duplicator_block')
+  event.recipes.create.mechanical_crafting('kubejs:quad_duplicator', [
+    'HD',
+    'SH'
+  ], {
+    D: 'kubejs:duplicator',
+    H: 'kubejs:high_entropy_alloy_nugget',
+    S: 'kubejs:high_entropy_alloy_sheet'
+  }).id('kubejs:mechanical_crafting/quad_duplicator')
   for (let i = 0; i < template_duplication.length; i++) {
     let element = template_duplication[i];
     event.remove({ id: 'minecraft:' + element })

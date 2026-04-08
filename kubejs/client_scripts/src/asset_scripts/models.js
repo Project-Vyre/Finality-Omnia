@@ -265,12 +265,6 @@ ClientEvents.highPriorityAssets(event => {
       }
     }
   })
-  event.add('kubejs:models/item/shimmer_bucket', {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "kubejs:item/shimmer_bucket"
-    }
-  })
   let coreSingularities = [
     'blaze_cake',
     'potion_base'
