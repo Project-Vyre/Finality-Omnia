@@ -819,7 +819,7 @@ ServerEvents.recipes(event => {
     'create:brass_nugget',
     Fluid.of('kubejs:condensed_universal_entropy', 10)
   ]).superheated().id('finality:mixing/iridium_nugget_from_netherite')
-  event.recipes.create.mixing('kubejs:iridium_ingot', [
+  event.recipes.create.mixing('2x kubejs:iridium_ingot', [
     'minecraft:netherite_ingot',
     'create:brass_ingot',
     Fluid.of('kubejs:condensed_universal_entropy', 90)
