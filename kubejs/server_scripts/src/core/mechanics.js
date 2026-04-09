@@ -154,6 +154,7 @@ ItemEvents.firstRightClicked(event => {
           if (!entity.isPlayer()) {
             if (event.player.isShiftKeyDown()) {
               entity.setIsInPowderSnow(true)
+              if (entity.potionEffects == null) { return }
               entity.potionEffects.add('minecraft:slowness', 200, 255, false, false)
               entity.block.createEntity('minecraft:evoker_fangs').spawn()
             }
