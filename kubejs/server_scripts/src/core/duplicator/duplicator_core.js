@@ -23,15 +23,6 @@ let template_duplication = [
   'eye_armor_trim_smithing_template',
   'spire_armor_trim_smithing_template'
 ]
-let item_duplication = {
-  blue_ice: 'minecraft:blue_ice',
-  egg: 'minecraft:egg',
-  asurine: 'create:asurine',
-  crimsite: 'create:crimsite',
-  ochrum: 'create:ochrum',
-  veridium: 'create:veridium',
-  iridium_upgrade_smithing_template: 'kubejs:iridium_upgrade_smithing_template'
-}
 let sherd_duplication = [
   'angler',
   'archer',
@@ -54,6 +45,21 @@ let sherd_duplication = [
   'skull',
   'snort'
 ]
+let item_duplication = {
+  blue_ice: 'minecraft:blue_ice',
+  egg: 'minecraft:egg',
+  asurine: 'create:asurine',
+  crimsite: 'create:crimsite',
+  ochrum: 'create:ochrum',
+  veridium: 'create:veridium',
+  iridium_upgrade_smithing_template: 'kubejs:iridium_upgrade_smithing_template'
+}
+let tr_dpltr_deployer_recipes = [
+  'egg'
+]
+let tr_dpltr_deployer_recipe_properties = {
+  egg: { item: 'minecraft:egg', stack: 16, recipeId: 'kubejs:deploying/egg_stack_duplication' }
+}
 
 ServerEvents.recipes(event => {
   if (!Platform.isLoaded('dimdoors')) {
@@ -84,13 +90,21 @@ ServerEvents.recipes(event => {
     E: 'kubejs:high_entropy_alloy_block'
   }).id('kubejs:mechanical_crafting_duplicator_block')
   event.recipes.create.mechanical_crafting('kubejs:quad_duplicator', [
+    'ID',
+    'SI'
+  ], {
+    D: 'kubejs:duplicator',
+    I: 'kubejs:iridium_nugget',
+    S: 'kubejs:iridium_sheet'
+  }).id('kubejs:mechanical_crafting/quad_duplicator')
+  event.recipes.create.mechanical_crafting('kubejs:true_duplicator', [
     'HD',
     'SH'
   ], {
-    D: 'kubejs:duplicator',
+    D: 'kubejs:quad_duplicator',
     H: 'kubejs:high_entropy_alloy_nugget',
     S: 'kubejs:high_entropy_alloy_sheet'
-  }).id('kubejs:mechanical_crafting/quad_duplicator')
+  }).id('kubejs:mechanical_crafting/true_duplicator')
   for (let i = 0; i < template_duplication.length; i++) {
     let element = template_duplication[i];
     event.remove({ id: 'minecraft:' + element })
@@ -98,12 +112,10 @@ ServerEvents.recipes(event => {
       'minecraft:' + element,
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + element + '_duplication')
-  }
-  for (let [recipeId, itemId] of Object.entries(item_duplication)) {
-    event.recipes.create.deploying(Item.of(itemId, 2), [
-      itemId,
-      'kubejs:duplicator'
-    ]).keepHeldItem().id('kubejs:deploying/' + recipeId + '_duplication')
+    event.recipes.create.deploying('5x minecraft:' + element, [
+      'minecraft:' + element,
+      'kubejs:quad_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/' + element + '_quad_duplication')
   }
   for (let i = 0; i < sherd_duplication.length; i++) {
     let element = sherd_duplication[i];
@@ -113,5 +125,28 @@ ServerEvents.recipes(event => {
       'minecraft:' + element + '_pottery_sherd',
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + element + '_pottery_sherd_duplication')
+    event.recipes.create.deploying([
+      '5x minecraft:' + element + '_pottery_sherd'
+    ], [
+      'minecraft:' + element + '_pottery_sherd',
+      'kubejs:quad_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/' + element + '_pottery_sherd_quad_duplication')
+  }
+  for (let [recipeId, itemId] of Object.entries(item_duplication)) {
+    event.recipes.create.deploying(Item.of(itemId, 2), [
+      itemId,
+      'kubejs:duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/' + recipeId + '_duplication')
+    event.recipes.create.deploying(Item.of(itemId, 5), [
+      itemId,
+      'kubejs:quad_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/' + recipeId + '_quad_duplication')
+  }
+  for (const element of tr_dpltr_deployer_recipes) {
+    event.recipes.create.deploying(
+      Item.of(tr_dpltr_deployer_recipe_properties[element].item, tr_dpltr_deployer_recipe_properties[element].stack), [
+      tr_dpltr_deployer_recipe_properties[element].item,
+      'kubejs:true_duplicator'
+    ]).keepHeldItem().id(tr_dpltr_deployer_recipe_properties[element].recipeId)
   }
 })
