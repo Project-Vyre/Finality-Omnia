@@ -86,11 +86,11 @@ ServerEvents.highPriorityData(event => {
       },
       {
         "block": "kubejs:high_entropy_alloy_block",
-        "amplifier": 90
+        "amplifier": 96
       },
       {
         "block": "kubejs:high_entropy_alloy_block_connecting",
-        "amplifier": 120
+        "amplifier": 125
       }
     ]
   })
