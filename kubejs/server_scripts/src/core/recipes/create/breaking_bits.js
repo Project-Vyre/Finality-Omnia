@@ -51,21 +51,35 @@ let INTEGER_BINARY = {
 
 ServerEvents.recipes(event => {
   let BINARYCONVERSION = (output, arrangement) => {
-    event.recipes.create.mechanical_crafting(`kubejs:${output}`, [
-      arrangement
-    ], {
-      '0': 'kubejs:zero',
-      '1': 'kubejs:one'
-    }).noMirror().id(`kubejs:mechanical_crafting/${output}`)
+    event.custom({
+      "type": "create:mechanical_crafting",
+      "acceptMirrored": false,
+      "key": {
+        "0": { "item": "kubejs:zero" },
+        "1": { "item": "kubejs:one" }
+      },
+      "pattern": [arrangement],
+      "result": {
+        "count": 1,
+        "item": `kubejs:${output}`
+      }
+    }).id(`kubejs:mechanical_crafting/${output}`)
   }
   let HEXCODES = (out, arrangement) => {
-    event.recipes.create.mechanical_crafting(`kubejs:color_${out}`, [
-      arrangement
-    ], {
-      '#': 'kubejs:octothorpe',
-      '0': 'kubejs:zero',
-      'F': 'kubejs:letter_f'
-    }).noMirror().id(`kubejs:mechanical_crafting/color_${out}`)
+    event.custom({
+      "type": "create:mechanical_crafting",
+      "acceptMirrored": false,
+      "key": {
+        "#": { "item": "kubejs:octothorpe" },
+        "0": { "item": "kubejs:zero" },
+        "F": { "item": "kubejs:letter_f" }
+      },
+      "pattern": [arrangement],
+      "result": {
+        "count": 1,
+        "item": `kubejs:color_${out}`
+      }
+    }).id(`kubejs:mechanical_crafting/color_${out}`)
   }
   let COLOR_MIXING = (output_color, color_one, color_two) => {
     event.recipes.create.mixing(`kubejs:color_${output_color}`, [
