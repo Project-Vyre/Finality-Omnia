@@ -232,8 +232,8 @@ ServerEvents.recipes(event => {
     'kubejs:stable_entropy_particles',
     '16x apotheosis:gem_dust'
   ]).id('finality:mixing/eversor_gem_from_dust')
-  event.recipes.create.deploying(Item.of('apotheosis:gem', '{gem:"kubejs:eversor",rarity:"ancient"}').weakNBT(), [
-    Item.of('apotheosis:gem', '{gem:"kubejs:eversor",rarity:"mythic"}').weakNBT(),
+  event.recipes.create.deploying(Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:ancient"}, gem:"kubejs:eversor"}').weakNBT(), [
+    Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:mythic"}, gem:"kubejs:eversor"}').weakNBT(),
     'kubejs:command_block'
   ]).keepHeldItem().id('finality:ancient_eversor_upgrade')
   // Acuti Ora
@@ -261,6 +261,10 @@ ServerEvents.recipes(event => {
     Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:ancient"},gem:"kubejs:acuti_ora"}'),
     Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:ancient"},gem:"kubejs:eversor"}').weakNBT()
   ).processingTime(250).id('finality:cutting/acuti_ora_ancient')
+  event.recipes.create.deploying(Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:ancient"}, gem:"kubejs:acuti_ora"}').weakNBT(), [
+    Item.of('apotheosis:gem', '{affix_data:{rarity:"apotheosis:mythic"}, gem:"kubejs:acuti_ora"}').weakNBT(),
+    'kubejs:command_block'
+  ]).keepHeldItem().id('finality:ancient_acuti_ora_upgrade')
   event.shaped('6x minecraft:arrow', [
     'F',
     'S',
