@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     'create:iron_sheet',
     'ae2:fluix_crystal'
   ]).id('ae2:tools/fluix_upgrade_smithing_template')
-  event.recipes.minecraft.crafting_shaped('ae2:quartz_fiber', [
+  event.recipes.minecraft.crafting_shaped('4x ae2:quartz_fiber', [
     'CGC',
     'GCG',
     'CGC'
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     I: 'kubejs:iridium_sheet'
   }).id('ae2:network/crafting/patterns_blank')
   // ME Storage Component
-  event.recipes.create.mechanical_crafting('ae2:cell_component_1k', [
+  event.recipes.minecraft.crafting_shaped('ae2:cell_component_1k', [
     'RCR',
     'CLC',
     'RCR'
@@ -124,57 +124,49 @@ ServerEvents.recipes(event => {
     R: 'minecraft:redstone',
     C: '#ae2:all_certus_quartz',
     L: 'ae2:logic_processor'
-  }).id('kubejs:ae2/network/cells/item_storage_components_1k_part')
-  event.recipes.create.mechanical_crafting('ae2:cell_component_4k', [
-    'R C R',  //     '  C  ',
-    ' EQE ',  //     ' RER ',
-    ' QQQ ',  //     ' EQE ',
-    ' EQE ',  //     ' RER ',
-    'R   R',  //     '     '
+  }).id('ae2:network/cells/item_storage_components_cell_1k_part')
+  event.recipes.minecraft.crafting_shaped('ae2:cell_component_4k', [
+    'ECE',
+    'QRQ',
+    'EQE'
   ], {
     R: 'kubejs:redstone_singularity',
     E: 'ae2:cell_component_1k',
     Q: 'ae2:quartz_glass',
     C: 'ae2:calculation_processor'
-  }).id('kubejs:ae2/network/cells/item_storage_components_4k_part')
-  event.recipes.create.mechanical_crafting('ae2:cell_component_16k', [
-    'G C G',
-    ' EQE ',
-    ' QQQ ',
-    ' EQE ',
-    'G   G',
+  }).id('ae2:network/cells/item_storage_components_cell_4k_part')
+  event.recipes.minecraft.crafting_shaped('ae2:cell_component_16k', [
+    'ECE',
+    'QGQ',
+    'EQE'
   ], {
     G: 'kubejs:glowstone_singularity',
     E: 'ae2:cell_component_4k',
     Q: 'ae2:quartz_glass',
     C: 'ae2:calculation_processor'
-  }).id('kubejs:ae2/network/cells/item_storage_components_cell_16k_part')
-  event.recipes.create.mechanical_crafting('ae2:cell_component_64k', [
-    'G C G',
-    ' EQE ',
-    ' QQQ ',
-    ' EQE ',
-    'G   G',
+  }).id('ae2:network/cells/item_storage_components_cell_16k_part')
+  event.recipes.minecraft.crafting_shaped('ae2:cell_component_64k', [
+    'ECE',
+    'QGQ',
+    'EQE'
   ], {
     G: 'kubejs:glowstone_singularity',
     E: 'ae2:cell_component_16k',
     Q: 'ae2:quartz_glass',
     C: 'ae2:calculation_processor'
-  }).id('kubejs:ae2/network/cells/item_storage_components_cell_64k_part')
-  event.recipes.create.mechanical_crafting('ae2:cell_component_256k', [
-    'K C K',
-    ' EQE ',
-    ' QQQ ',
-    ' EQE ',
-    'K   K',
+  }).id('ae2:network/cells/item_storage_components_cell_64k_part')
+  event.recipes.minecraft.crafting_shaped('ae2:cell_component_256k', [
+    'ECE',
+    'QKQ',
+    'EQE'
   ], {
     K: 'kubejs:sky_stone_singularity',
     E: 'ae2:cell_component_64k',
     Q: 'ae2:quartz_glass',
     C: 'ae2:calculation_processor'
-  }).id('kubejs:ae2/network/cells/item_storage_components_cell_256k_part')
+  }).id('ae2:network/cells/item_storage_components_cell_256k_part')
   // spatial components
-  event.recipes.create.mechanical_crafting('ae2:spatial_cell_component_2', [
+  event.recipes.minecraft.crafting_shaped('ae2:spatial_cell_component_2', [
     'GFG',
     'FPF',
     'GFG'
@@ -183,7 +175,7 @@ ServerEvents.recipes(event => {
     F: 'ae2:fluix_pearl',
     P: 'ae2:engineering_processor'
   }).id('ae2:network/cells/spatial_components')
-  event.recipes.create.mechanical_crafting('ae2:spatial_cell_component_16', [
+  event.recipes.minecraft.crafting_shaped('ae2:spatial_cell_component_16', [
     'GSG',
     'SPS',
     'GSG'
@@ -192,7 +184,7 @@ ServerEvents.recipes(event => {
     S: 'ae2:spatial_cell_component_2',
     P: 'ae2:engineering_processor'
   }).id('ae2:network/cells/spatial_components_0')
-  event.recipes.create.mechanical_crafting('ae2:spatial_cell_component_128', [
+  event.recipes.minecraft.crafting_shaped('ae2:spatial_cell_component_128', [
     'GSG',
     'SPS',
     'GSG'
