@@ -56,7 +56,7 @@
         },
         {
           id: "minecraft:deepslate_redstone_ore",
-          weight: 10.0,
+          weight: 20.0,
           maxY: 0,
         },
         {
@@ -80,8 +80,8 @@
           maxY: 0,
         },
         {
-          id: "minecraft:deepslate",
-          weight: 80.0,
+          id: "minecraft:cobbled_deepslate",
+          weight: 125.0,
           maxY: 0,
         },
       ],
@@ -90,19 +90,19 @@
       "minecraft:bedrock": [
         {
           id: "minecraft:stone",
-          weight: 40.0,
+          weight: 25.0,
         },
         {
           id: "minecraft:diorite",
-          weight: 20.0,
+          weight: 25.0,
         },
         {
           id: "minecraft:andesite",
-          weight: 20.0,
+          weight: 25.0,
         },
         {
           id: "minecraft:granite",
-          weight: 20.0,
+          weight: 25.0,
         },
       ],
     },
