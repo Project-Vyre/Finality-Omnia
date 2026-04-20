@@ -50,6 +50,16 @@ let INTEGER_BINARY = {
 }
 
 ServerEvents.recipes(event => {
+  // 1.21.1
+  /*
+  event.recipes.create.mechanical_crafting(`kubejs:${output}`, [
+    arrangement
+  ], {
+    '0': 'kubejs:zero',
+    '1': 'kubejs:one'
+  }).acceptMirrored(false).id(`kubejs:mechanical_crafting/${output}`)
+  */
+  // 1.20.1
   let BINARYCONVERSION = (output, arrangement) => {
     event.custom({
       "type": "create:mechanical_crafting",
@@ -65,6 +75,17 @@ ServerEvents.recipes(event => {
       }
     }).id(`kubejs:mechanical_crafting/${output}`)
   }
+  // 1.21.1
+  /*
+  event.recipes.create.mechanical_crafting(`kubejs:color_${out}`, [
+    arrangement
+  ], {
+    '#': 'kubejs:octothorpe',
+    '0': 'kubejs:zero',
+    'F': 'kubejs:letter_f'
+  }).acceptMirrored(false).id(`kubejs:mechanical_crafting/color_${out}`)
+  */
+  // 1.20.1
   let HEXCODES = (out, arrangement) => {
     event.custom({
       "type": "create:mechanical_crafting",
@@ -139,18 +160,32 @@ ServerEvents.recipes(event => {
     'kubejs:repeating_command_block',
     'kubejs:final_axe'
   ]).keepHeldItem().id('kubejs:uncolored_star')
-  event.recipes.create.mechanical_crafting('kubejs:color_uncolored', [
-    '#AAAAAA'
-  ], {
-    '#': 'kubejs:octothorpe',
-    'A': 'kubejs:letter_a'
-  }).noMirror().id('kubejs:mechanical_crafting/uncolored')
-  event.recipes.create.mechanical_crafting('kubejs:color_white', [
-    '#FFFFFF'
-  ], {
-    '#': 'kubejs:octothorpe',
-    'F': 'kubejs:letter_f'
-  }).noMirror().id('kubejs:mechanical_crafting/color_white')
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "acceptMirrored": false,
+    "key": {
+      "#": { "item": "kubejs:octothorpe" },
+      "A": { "item": "kubejs:letter_a" }
+    },
+    "pattern": ["#AAAAAA"],
+    "result": {
+      "count": 1,
+      "item": "kubejs:color_uncolored"
+    }
+  }).id('kubejs:mechanical_crafting/uncolored')
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "acceptMirrored": false,
+    "key": {
+      "#": { "item": "kubejs:octothorpe" },
+      "F": { "item": "kubejs:letter_f" }
+    },
+    "pattern": ["#FFFFFF"],
+    "result": {
+      "count": 1,
+      "item": "kubejs:color_white"
+    }
+  }).id('kubejs:mechanical_crafting/color_white')
   HEXCODES('red', '#FF0000')
   HEXCODES('green', '#00FF00')
   HEXCODES('blue', '#0000FF')
@@ -198,7 +233,7 @@ ServerEvents.recipes(event => {
     'I': 'kubejs:letter_i',
     'X': 'kubejs:letter_x',
     'Q': ['kubejs:denied_result', 'kubejs:removed_item', 'kubejs:errored_result']
-  }).noMirror().id('kubejs:mechanical_crafting/qubit')
+  }).id('kubejs:mechanical_crafting/qubit')
   // give
   event.recipes.create.mechanical_crafting('64x minecraft:netherite_block', [
     '/GIVE @S ',
@@ -223,7 +258,7 @@ ServerEvents.recipes(event => {
     'K': 'kubejs:letter_k',
     '6': 'kubejs:six',
     '4': 'kubejs:four'
-  }).noMirror().id('kubejs:command/netherite_block_stack')
+  }).id('kubejs:command/netherite_block_stack')
   event.recipes.create.mechanical_crafting('64x minecraft:diamond_block', [
     '/GIVE @S ',
     'DIAMOND  ',
@@ -247,7 +282,7 @@ ServerEvents.recipes(event => {
     'K': 'kubejs:letter_k',
     '6': 'kubejs:six',
     '4': 'kubejs:four'
-  }).noMirror().id('kubejs:command/diamond_block_stack')
+  }).id('kubejs:command/diamond_block_stack')
   event.recipes.create.mechanical_crafting('64x create:blaze_cake', [
     '/GIVE @S ',
     'CREATE   ',
@@ -271,7 +306,7 @@ ServerEvents.recipes(event => {
     'K': 'kubejs:letter_k',
     '6': 'kubejs:six',
     '4': 'kubejs:four'
-  }).noMirror().id('kubejs:command/blaze_cake_stack')
+  }).id('kubejs:command/blaze_cake_stack')
   for (let [shape, string] of Object.entries(global.SHAPES)) {
     for (let color of VALID_COLOR_MIX) {
       event.recipes.create.mixing(`kubejs:${color}_${shape}`, [
