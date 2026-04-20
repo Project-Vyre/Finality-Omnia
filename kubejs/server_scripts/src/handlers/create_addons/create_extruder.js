@@ -26,19 +26,31 @@ ServerEvents.recipes(event => {
     G: 'ae2:quartz_vibrant_glass',
     P: 'create:mechanical_press'
   }).id('create_mechanical_extruder:mechanical_extruder')
-  event.recipes.create_mechanical_extruder.extruding(Item.of('minecraft:amethyst_shard').withChance(0.020), [
+  event.recipes.create_mechanical_extruder.extruding(Item.of('minecraft:amethyst_shard').withChance(0.25), [
     Item.of('minecraft:budding_amethyst'),
     Item.of('minecraft:budding_amethyst')
-  ]).requiredBonks(24).withCatalyst('minecraft:budding_amethyst').id('kubejs:extruding/amethyst_shard_from_budding_amethyst_catalyst')
+  ]).requiredBonks(1)
+    .withCatalyst('minecraft:budding_amethyst')
+    .id('kubejs:extruding/amethyst_shard_from_budding_amethyst_catalyst')
+  event.recipes.create_mechanical_extruder.extruding(Item.of('minecraft:amethyst_block'), [
+    Item.of('kubejs:duplicator_block'),
+    Item.of('kubejs:duplicator_block')
+  ]).requiredBonks(1)
+    .withCatalyst('minecraft:budding_amethyst')
+    .id('kubejs:extruding/amethyst_duplication')
   for (let [material, raw] of Object.entries(orestones)) {
-    event.recipes.create_mechanical_extruder.extruding(Item.of(`create:${material}`, 64), [
-      Item.of(raw),
-      Fluid.of('kubejs:condensed_universal_entropy')
-    ]).requiredBonks(1).withCatalyst('kubejs:repeating_command_block').requiredBonks(1).id(`finality:repeating_command_block/${material}`)
+    event.recipes.create_mechanical_extruder.extruding(Item.of(raw, 64), [
+      Item.of('kubejs:duplicator_block'),
+      Item.of('kubejs:duplicator_block')
+    ]).requiredBonks(1)
+      .withCatalyst(`create:${material}`)
+      .id(`kubejs:extruding/duplicator/${material}`)
     event.recipes.create_mechanical_extruder.extruding(Item.of(`create:${material}`), [
       Item.of(raw),
       Fluid.of('kubejs:condensed_universal_entropy')
-    ]).requiredBonks(1).withCatalyst('minecraft:crying_obsidian').id(`finality:renew_extruder_${material}_with_crying_obsidian`)
+    ]).requiredBonks(1)
+      .withCatalyst('minecraft:crying_obsidian')
+      .id(`kubejs:extruding/renew_extruder_${material}_with_crying_obsidian`)
   }
   event.recipes.create_mechanical_extruder.extruding(Item.of('create:limestone'), [
     Fluid.of('create:honey'),
@@ -51,7 +63,7 @@ ServerEvents.recipes(event => {
   event.recipes.create_mechanical_extruder.extruding(Item.of('create:limestone', 64), [
     Fluid.of('create:honey'),
     Fluid.of('minecraft:lava')
-  ]).requiredBonks(1).withCatalyst('kubejs:repeating_command_block').id('kubejs:repeating_command_block/limestone_compat')
+  ]).requiredBonks(1).withCatalyst('kubejs:duplicator_block').id('kubejs:extruding/duplicator/limestone_compat')
   event.recipes.create_mechanical_extruder.extruding(Item.of('create:scoria'), [
     Fluid.of('create:chocolate'),
     Fluid.of('minecraft:lava')
@@ -59,7 +71,7 @@ ServerEvents.recipes(event => {
   event.recipes.create_mechanical_extruder.extruding(Item.of('create:scoria', 64), [
     Fluid.of('create:chocolate'),
     Fluid.of('minecraft:lava')
-  ]).requiredBonks(1).withCatalyst('kubejs:repeating_command_block').id('kubejs:repeating_command_block/scoria_compat')
+  ]).requiredBonks(1).withCatalyst('kubejs:duplicator_block').id('kubejs:extruding/duplicator/scoria_compat')
   if (Platform.isLoaded('malum')) {
     event.recipes.create_mechanical_extruder.extruding(Item.of('malum:cthonic_gold_fragment'), [
       Item.of('malum:twisted_rock'),
