@@ -69,6 +69,11 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "avaritia": {
+    "extreme_smithing": true,
+    "crafting_table": true,
+    "compressor": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
