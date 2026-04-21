@@ -31,6 +31,7 @@ let IRONS_SPELLGEMS = [
   'holy',
   'intelligent',
   'lightning',
+  'nature',
   'spell_resist',
   'summoning'
 ]
@@ -67,8 +68,8 @@ ServerEvents.recipes(event => {
       Item.of('apotheosis:gem_dust', 6).withChance(0.55)
     ], Item.of('apotheosis:gem', `{gem:"irons_spellbooks:${IRONS_SPELLGEMS[i]}",rarity:"ancient"}`).weakNBT()
     ).processingTime(150).id(`finality:irons_spellbooks_ancient_${IRONS_SPELLGEMS[i]}_gem_crushing`)
-    event.recipes.create.deploying(Item.of('apotheosis:gem', `{gem:"irons_spellbooks:${IRONS_SPELLGEMS[i]}",rarity:"ancient"}`).weakNBT(), [
-      Item.of('apotheosis:gem', `{gem:"irons_spellbooks:${IRONS_SPELLGEMS[i]}",rarity:"mythic"}`).weakNBT(),
+    event.recipes.create.deploying(Item.of('apotheosis:gem', `{affix_data:{rarity:"apotheosis:ancient"}, gem:"irons_spellbooks:${IRONS_SPELLGEMS[i]}"}`).weakNBT(), [
+      Item.of('apotheosis:gem', `{affix_data:{rarity:"apotheosis:mythic"}, gem:"irons_spellbooks:${IRONS_SPELLGEMS[i]}"}`).weakNBT(),
       'kubejs:command_block'
     ]).keepHeldItem().id(`finality:irons_spellbooks_ancient_${IRONS_SPELLGEMS[i]}_upgrade`)
   }
