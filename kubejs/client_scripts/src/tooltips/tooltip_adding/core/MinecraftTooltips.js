@@ -583,13 +583,13 @@ ItemEvents.tooltip(event => {
     } else {
       text.add(1, Component.translatable(kjsHoldShiftHeld))
       text.add(2, '')
-      text.add(3, Component.translatable('item.minecraft.dragon_egg.tooltip.summary',
-        Component.translatable('item.minecraft.dragon_egg.tooltip.highlight1').color(PURPLE.hlt)
+      text.add(3, Component.translatable('block.minecraft.dragon_egg.tooltip.summary',
+        Component.translatable('block.minecraft.dragon_egg.tooltip.highlight1').color(PURPLE.hlt)
       ).color(PURPLE.txt))
       text.add(4, '')
-      text.add(5, Component.translatable('item.minecraft.dragon_egg.tooltip.condition1').gray())
-      text.add(6, Component.translatable('item.minecraft.dragon_egg.tooltip.behaviour1',
-        Component.translatable('item.minecraft.dragon_egg.tooltip.highlight2').color(PURPLE.hlt)
+      text.add(5, Component.translatable('block.minecraft.dragon_egg.tooltip.condition1').gray())
+      text.add(6, Component.translatable('block.minecraft.dragon_egg.tooltip.behaviour1',
+        Component.translatable('block.minecraft.dragon_egg.tooltip.highlight2').color(PURPLE.hlt)
       ).color(PURPLE.txt))
     }
   })
