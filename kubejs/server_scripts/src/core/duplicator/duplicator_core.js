@@ -55,10 +55,22 @@ let item_duplication = {
   iridium_upgrade_smithing_template: 'kubejs:iridium_upgrade_smithing_template'
 }
 let tr_dpltr_deployer_recipes = [
-  'egg'
+  'blue_ice',
+  'egg',
+  'asurine',
+  'crimsite',
+  'ochrum',
+  'veridium',
+  'iridium_upgrade_smithing_template'
 ]
 let tr_dpltr_deployer_recipe_properties = {
-  egg: { item: 'minecraft:egg', stack: 16, recipeId: 'kubejs:deploying/egg_stack_duplication' }
+  blue_ice: { item: 'minecraft:blue_ice', stack: 64, recipeId: 'kubejs:deploying/blue_ice_stack_duplication' },
+  egg: { item: 'minecraft:egg', stack: 16, recipeId: 'kubejs:deploying/egg_stack_duplication' },
+  asurine: { item: 'create:asurine', stack: 64, recipeId: 'kubejs:deploying/asurine_stack_duplication' },
+  crimsite: { item: 'create:crimsite', stack: 64, recipeId: 'kubejs:deploying/crimsite_stack_duplication' },
+  ochrum: { item: 'create:ochrum', stack: 64, recipeId: 'kubejs:deploying/ochrum_stack_duplication' },
+  veridium: { item: 'create:veridium', stack: 64, recipeId: 'kubejs:deploying/veridium_stack_duplication' },
+  iridium_upgrade_smithing_template: { item: 'kubejs:iridium_upgrade_smithing_template', stack: 1, recipeId: 'kubejs:deploying/iridium_upgrade_smithing_template_stack_duplication' }
 }
 
 ServerEvents.recipes(event => {
@@ -116,6 +128,10 @@ ServerEvents.recipes(event => {
       'minecraft:' + element,
       'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + element + '_quad_duplication')
+    event.recipes.create.deploying('64x minecraft:' + element, [
+      'minecraft:' + element,
+      'kubejs:true_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/' + element + '_stack_duplication')
   }
   for (let i = 0; i < sherd_duplication.length; i++) {
     let element = sherd_duplication[i];
@@ -131,6 +147,12 @@ ServerEvents.recipes(event => {
       'minecraft:' + element + '_pottery_sherd',
       'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + element + '_pottery_sherd_quad_duplication')
+    event.recipes.create.deploying([
+      '64x minecraft:' + element + '_pottery_sherd'
+    ], [
+      'minecraft:' + element + '_pottery_sherd',
+      'kubejs:true_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/' + element + '_pottery_sherd_stack_duplication')
   }
   for (let [recipeId, itemId] of Object.entries(item_duplication)) {
     event.recipes.create.deploying(Item.of(itemId, 2), [
