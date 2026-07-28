@@ -7,14 +7,14 @@
 	enabled = true
 	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
 	debugging = false
-	#Enable the detection of certain compatible launchers, allowing you to use their name and icon in your config
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
 	launcherIntegration = false
 	#Allow using local image files, as RPC icons
 	rpcImageServer = false
 	#The URL of the RPC image server that will be used for local images. Restart required when changed
 	rpcImageServerUrl = "https://rpcavatar.firstdark.dev"
 	#Internal Version Number. NO TOUCHY!
-	version = 27
+	version = 26
 
 #The Game Loading event
 [init]
@@ -39,10 +39,11 @@
 		smallImageText = "Forge {{game.version}} - {{game.mods}} mods installed"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[init.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[init.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[init.presence.buttons]]
+		[[init.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -69,10 +70,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[main_menu.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[main_menu.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[main_menu.presence.buttons]]
+		[[main_menu.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -99,10 +101,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[server_list.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[server_list.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[server_list.presence.buttons]]
+		[[server_list.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -129,10 +132,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[realms_list.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[realms_list.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[realms_list.presence.buttons]]
+		[[realms_list.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -159,10 +163,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[join_game.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[join_game.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[join_game.presence.buttons]]
+		[[join_game.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -189,10 +194,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[single_player.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[single_player.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[single_player.presence.buttons]]
+		[[single_player.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -219,10 +225,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[multi_player.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[multi_player.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[multi_player.presence.buttons]]
+		[[multi_player.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -249,10 +256,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[realms.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[realms.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[realms.presence.buttons]]
+		[[realms.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -279,10 +287,11 @@
 		smallImageText = "{{player.name}}"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[paused.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[paused.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[paused.presence.buttons]]
+		[[paused.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -307,10 +316,11 @@
 		smallImageText = "{{game.mods}} mods installed"
 		#The Twitch or Youtube URL to use when type is set to STREAMING
 		streamingActivityUrl = "https://twitch.tv/twitch"
-		[[generic.presence.buttons]]
+		#List of buttons (max 2) to show on the RPC
+		[[generic.buttons]]
 		label = "Get the modpack here!"
 		url = "https://curseforge.com/minecraft/modpacks/finality"
-		[[generic.presence.buttons]]
+		[[generic.buttons]]
 		label = "Modpack Wiki"
 		url = "https://project-vyre.github.io/finality-wiki/"
 
@@ -350,12 +360,7 @@
 			#The Twitch or Youtube URL to use when type is set to STREAMING
 			streamingActivityUrl = "https://twitch.tv/twitch"
 			#List of buttons (max 2) to show on the RPC
-		    [[dimension_overrides.dimensions.presence.buttons]]
-		    label = "Get the modpack here!"
-		    url = "https://curseforge.com/minecraft/modpacks/finality"
-		    [[dimension_overrides.dimensions.presence.buttons]]
-		    label = "Modpack Wiki"
-		    url = "https://project-vyre.github.io/finality-wiki/"
+			buttons = []
 
 	[[dimension_overrides.dimensions]]
 		#The name of the Dimension/Biome to override. FORMAT: modid:dimension or modid:biome
@@ -380,12 +385,7 @@
 			#The Twitch or Youtube URL to use when type is set to STREAMING
 			streamingActivityUrl = "https://twitch.tv/twitch"
 			#List of buttons (max 2) to show on the RPC
-		    [[dimension_overrides.dimensions.presence.buttons]]
-		    label = "Get the modpack here!"
-		    url = "https://curseforge.com/minecraft/modpacks/finality"
-		    [[dimension_overrides.dimensions.presence.buttons]]
-		    label = "Modpack Wiki"
-		    url = "https://project-vyre.github.io/finality-wiki/"
+			buttons = []
 
 	[[dimension_overrides.dimensions]]
 		#The name of the Dimension/Biome to override. FORMAT: modid:dimension or modid:biome
@@ -410,10 +410,5 @@
 			#The Twitch or Youtube URL to use when type is set to STREAMING
 			streamingActivityUrl = "https://twitch.tv/twitch"
 			#List of buttons (max 2) to show on the RPC
-		    [[dimension_overrides.dimensions.presence.buttons]]
-		    label = "Get the modpack here!"
-		    url = "https://curseforge.com/minecraft/modpacks/finality"
-		    [[dimension_overrides.dimensions.presence.buttons]]
-		    label = "Modpack Wiki"
-		    url = "https://project-vyre.github.io/finality-wiki/"
+			buttons = []
 
