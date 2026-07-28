@@ -164,6 +164,10 @@ REIEvents.hide('item', event => {
   //   event.hide(`create:crushed_raw_${ore}`)
   // })
 
+  if (Platform.isLoaded('avaritia')) {
+    event.hide('avaritia:singularity')
+  }
+
   if (Platform.isLoaded('ars_nouveau')) {
     event.hide('ars_nouveau:magic_fire')
     event.hide('ars_nouveau:debug')

@@ -102,6 +102,9 @@ if (!Platform.isLoaded('roughlyenoughitems')) {
       'kubejs:stabilizing_entropy_particles'
     ])
     event.hide(/^kubejs.*[_:\/]incomplete(?![a-zA-Z0-9]).*/)
+    if (Platform.isLoaded('avaritia')) {
+      event.hide('avaritia:singularity')
+    }
     if (Platform.isLoaded('createaddition')) {
       event.hide([
         // /^createaddition.*[_:\/]electrum(?![a-zA-Z0-9]).*/,
