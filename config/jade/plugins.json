@@ -119,6 +119,9 @@
   "yes_steve_model": {
     "model_info": true
   },
+  "beyonddimensions": {
+    "net_info": true
+  },
   "jadeaddons.lootr": {
     "info": true
   },
@@ -126,6 +129,7 @@
     "chopping_board": true,
     "shawarma_spit": true,
     "recipe_block": true,
+    "food_bite_block": true,
     "millstone": true,
     "enamel_basin": true
   },
