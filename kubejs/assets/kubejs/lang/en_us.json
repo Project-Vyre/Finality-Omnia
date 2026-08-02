@@ -51,6 +51,7 @@
   "string.kubejs.server.login.link_indicator": "Words enclosed with the §a§l[]§r brackets are usually links!",
   "string.kubejs.server.login.welcome_back.link_indicator": "In case you didn't see previously, words enclosed with the [] brackets are links. So, feel free to mouse over them.",
   "string.kubejs.server.login.welcome_back.tooltip_and_ponder": "Don't forget to read tooltips for some helpful info and hold [w] to ponder!",
+  "string.kubejs.server.login.hold_w_to_ponder": "Do not forget to 'Hold [w] to Ponder' if you are stuck!",
   "string.kubejs.server.login.embeddium_cvf": "If you experience §oany§r form of §cZ-fighting§r or §cflickering§r on blocks go to §a[Video Settings]§r < §a[Performance]§r then §cdisable§r the setting the says §3§lUse Compact Vertex Format§r.\nPlease note that this is only applicable with §dEmbeddium 0.2+§r and does not work with §dOculus§r installed!",
   "string.kubejs.server.login.github_issues.line_1": "If you encounter any bugs with the modpack, please report them here:\n",
   "string.kubejs.server.login.github_issues.line_2": "Thank you!",
