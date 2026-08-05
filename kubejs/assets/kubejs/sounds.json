@@ -1,5 +1,33 @@
 {
-  "acheron_endfield": {
+  "music.title_screen": {
+    "sounds": [
+      {
+        "name": "kubejs:acheron_endfield",
+        "stream": true
+      },
+      {
+        "name": "kubejs:cjbeards_lost_in_the_darkness_inst",
+        "stream": true
+      },
+      {
+        "name": "kubejs:cjbeards_not_gonna_die_today_inst",
+        "stream": true
+      },
+      {
+        "name": "kubejs:farabi_hasan_music_a_fatui_requiem",
+        "stream": true
+      },
+      {
+        "name": "kubejs:farabi_hasan_music_lorelei_rearranged",
+        "stream": true
+      },
+      {
+        "name": "kubejs:farabi_hasan_music_meeting_tsaritsa",
+        "stream": true
+      }
+    ]
+  },
+  "disc.acheron_endfield": {
     "sounds": [
       {
         "name": "kubejs:acheron_endfield",
@@ -7,7 +35,7 @@
       }
     ]
   },
-  "arlecchino_battle_theme": {
+  "disc.arlecchino_battle_theme": {
     "sounds": [
       {
         "name": "kubejs:arlecchino_battle_theme",
@@ -15,7 +43,7 @@
       }
     ]
   },
-  "bad_deeds": {
+  "disc.bad_deeds": {
     "sounds": [
       {
         "name": "kubejs:bad_deeds",
@@ -23,7 +51,7 @@
       }
     ]
   },
-  "bad_deeds_inst": {
+  "disc.bad_deeds_inst": {
     "sounds": [
       {
         "name": "kubejs:bad_deeds_inst",
@@ -31,7 +59,7 @@
       }
     ]
   },
-  "black_white_red": {
+  "disc.black_white_red": {
     "sounds": [
       {
         "name": "kubejs:black_white_red",
@@ -39,7 +67,7 @@
       }
     ]
   },
-  "black_white_red_inst": {
+  "disc.black_white_red_inst": {
     "sounds": [
       {
         "name": "kubejs:black_white_red_inst",
@@ -47,7 +75,7 @@
       }
     ]
   },
-  "boo_hoo": {
+  "disc.boo_hoo": {
     "sounds": [
       {
         "name": "kubejs:boo_hoo",
@@ -55,7 +83,7 @@
       }
     ]
   },
-  "columbina_battle_theme": {
+  "disc.columbina_battle_theme": {
     "sounds": [
       {
         "name": "kubejs:columbina_battle_theme",
@@ -63,7 +91,7 @@
       }
     ]
   },
-  "from_the_shadows": {
+  "disc.from_the_shadows": {
     "sounds": [
       {
         "name": "kubejs:from_the_shadows",
@@ -71,7 +99,7 @@
       }
     ]
   },
-  "get_away": {
+  "disc.get_away": {
     "sounds": [
       {
         "name": "kubejs:get_away",
@@ -79,7 +107,7 @@
       }
     ]
   },
-  "get_away_inst": {
+  "disc.get_away_inst": {
     "sounds": [
       {
         "name": "kubejs:get_away_inst",
@@ -87,7 +115,7 @@
       }
     ]
   },
-  "heart_of_the_wicked": {
+  "disc.heart_of_the_wicked": {
     "sounds": [
       {
         "name": "kubejs:heart_of_the_wicked",
@@ -95,7 +123,7 @@
       }
     ]
   },
-  "mirror_mirror": {
+  "disc.mirror_mirror": {
     "sounds": [
       {
         "name": "kubejs:mirror_mirror",
@@ -103,7 +131,7 @@
       }
     ]
   },
-  "mirror_mirror_inst": {
+  "disc.mirror_mirror_inst": {
     "sounds": [
       {
         "name": "kubejs:mirror_mirror_inst",
@@ -111,7 +139,7 @@
       }
     ]
   },
-  "open_up": {
+  "disc.open_up": {
     "sounds": [
       {
         "name": "kubejs:open_up",
@@ -119,7 +147,7 @@
       }
     ]
   },
-  "open_up_inst": {
+  "disc.open_up_inst": {
     "sounds": [
       {
         "name": "kubejs:open_up_inst",
@@ -127,7 +155,7 @@
       }
     ]
   },
-  "pantalone_battle_theme": {
+  "disc.pantalone_battle_theme": {
     "sounds": [
       {
         "name": "kubejs:pantalone_battle_theme",
@@ -135,7 +163,7 @@
       }
     ]
   },
-  "pulcinella_battle_theme": {
+  "disc.pulcinella_battle_theme": {
     "sounds": [
       {
         "name": "kubejs:pulcinella_battle_theme",
@@ -143,7 +171,7 @@
       }
     ]
   },
-  "sandrone_battle_theme": {
+  "disc.sandrone_battle_theme": {
     "sounds": [
       {
         "name": "kubejs:sandrone_battle_theme",
@@ -151,7 +179,7 @@
       }
     ]
   },
-  "silent_night": {
+  "disc.silent_night": {
     "sounds": [
       {
         "name": "kubejs:silent_night",
@@ -159,7 +187,7 @@
       }
     ]
   },
-  "worst_nightmare": {
+  "disc.worst_nightmare": {
     "sounds": [
       {
         "name": "kubejs:worst_nightmare",
@@ -167,7 +195,7 @@
       }
     ]
   },
-  "worst_nightmare_inst": {
+  "disc.worst_nightmare_inst": {
     "sounds": [
       {
         "name": "kubejs:worst_nightmare_inst",

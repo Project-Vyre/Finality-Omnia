@@ -57,14 +57,14 @@ let musicDisc = [
 
 StartupEvents.registry('sound_event', event => {
   for (let element of musicDisc) {
-    event.create(element)
+    event.create(`disc.${element}`)
   }
 })
 
 StartupEvents.registry('item', event => {
   for (let element of musicDisc) {
     event.create(`kubejs:music_disc_${element}`, 'music_disc')
-      .song(`kubejs:${element}`, musicDiscProperties[element].duration)
+      .song(`kubejs:disc.${element}`, musicDiscProperties[element].duration)
       .analogOutput(musicDiscProperties[element].output)
       .texture(musicDiscProperties[element].disc_texture)
       .tag('minecraft:music_discs')
