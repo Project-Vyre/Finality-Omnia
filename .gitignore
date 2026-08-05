@@ -31,6 +31,7 @@ config/resourceful-config-web.json
 emi.json
 config/touhou_little_maid/info.json
 config/NoChatReports/NCR-Encryption.json
+kubejs/assets/minecraft/textures/gui/presets/endfield_dolosse.jpg
 
 # Ignore Essential files
 essential/*.jar
