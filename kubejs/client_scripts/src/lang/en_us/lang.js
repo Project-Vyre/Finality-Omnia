@@ -295,6 +295,7 @@ ClientEvents.lang('en_us', event => {
     "item.kubejs.blaze_cake_singularity": "Blaze Cake Singularity"
   })
   let discLang = {
+    'acheron_endfield': 'Metal Scar Radio - ACHERON | Arknights:Endfield',
     'arlecchino_battle_theme': 'Farabi Hasan Music - Arlecchino Battle Theme Phase 1 & 2 (Fan-Made) | Genshin Impact',
     'bad_deeds': 'Cjbeards - Bad Deeds',
     'bad_deeds_inst': 'Cjbeards - Bad Deeds (Instrumental)',

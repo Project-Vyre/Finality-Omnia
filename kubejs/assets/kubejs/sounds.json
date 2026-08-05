@@ -1,4 +1,12 @@
 {
+  "acheron_endfield": {
+    "sounds": [
+      {
+        "name": "kubejs:acheron_endfield",
+        "stream": true
+      }
+    ]
+  },
   "arlecchino_battle_theme": {
     "sounds": [
       {

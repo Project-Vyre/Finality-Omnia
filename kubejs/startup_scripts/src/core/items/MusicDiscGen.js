@@ -7,6 +7,7 @@
 // ignored: false
 
 const musicDiscProperties = {
+  acheron_endfield: { duration: 220, output: 2, disc_texture: 'kubejs:item/music_disc_acheron_endfield' },
   arlecchino_battle_theme: { duration: 477, output: 1, disc_texture: 'kubejs:item/music_disc_arlecchino' },
   bad_deeds: { duration: 142, output: 2, disc_texture: 'kubejs:item/music_disc_bad_deeds' },
   bad_deeds_inst: { duration: 142, output: 1, disc_texture: 'kubejs:item/music_disc_bad_deeds' },
@@ -30,6 +31,7 @@ const musicDiscProperties = {
   worst_nightmare_inst: { duration: 154, output: 1, disc_texture: 'kubejs:item/music_disc_worst_nightmare' }
 }
 let musicDisc = [
+  'acheron_endfield',
   'arlecchino_battle_theme',
   'bad_deeds',
   'bad_deeds_inst',
