@@ -1,0 +1,54 @@
+{
+  "priority": 0,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.title_screen",
+  "cooldown_seconds": 1,
+  "occupy_layer_during_cooldown": true,
+  "reset_cooldown_on_reactivation": false,
+  "condition": {
+    "type": "maestro:any_of",
+    "terms": [
+      {
+        "type": "maestro:screen",
+        "kind": "title",
+        "class_path": "net.minecraft.client.gui.screens.TitleScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.worldselection.SelectWorldScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.worldselection.CreateWorldScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.CreateFlatWorldScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.PresetFlatWorldScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.multiplayer.SafetyScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.multiplayer.EditServerScreen"
+      },
+      {
+        "type": "maestro:screen",
+        "class_path": "net.minecraft.client.gui.screens.multiplayer.DirectJoinServerScreen"
+      }
+    ]
+  }
+}

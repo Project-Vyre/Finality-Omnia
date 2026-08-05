@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1773148111518
-  is_enabled = true
+  last_edited_time = 1785899080834
+  is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:98f91500-e04e-4536-9fe2-429b6740fc5b-1773148054498] = [groups:][instances:40cb319c-ff96-4fed-8bc1-109facfd5aaf-1718108199603;]
+  [loading_requirement_container_meta:5e6a3ce6-58ab-4c63-aeb0-2c876c6396d5-1785907830166] = [groups:][instances:40cb319c-ff96-4fed-8bc1-109facfd5aaf-1718108199603;]
   [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if_not][req_id:40cb319c-ff96-4fed-8bc1-109facfd5aaf-1718108199603] = 
 }
 
@@ -43,6 +43,8 @@ element {
   audio_instance_weight_3 = 1.0
   audio_instance_4 = [source:local]/config/fancymenu/assets/menu_music/cjbeards_not_gonna_die_today_inst.ogg
   audio_instance_weight_4 = 1.0
+  audio_instance_5 = [source:location]kubejs:sounds/acheron_endfield.ogg
+  audio_instance_weight_5 = 1.0
   play_mode = shuffle
   looping = true
   volume = 1.0
