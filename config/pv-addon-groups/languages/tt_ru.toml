@@ -46,8 +46,10 @@ success = "&Сез төркемгә кушылды"
 
 [server.pv.addon.groups.command.join.error]
 already_joined = "&Сез төркемгә кушылды инде"
+wrong_password = "&cХаталы серсүз"
 usage = "&cКулланылу: /groups join <төркемнең UUID-ы> [серсүз]"
 banned = "&cСез бу төркемдә блокландыгыз"
+password_arg_missing = "&cКушылу өчен бу төркем серсүз таләп итә"
 
 [server.pv.addon.groups.command.set.error]
 unknown_flag = "&cБилгесез байрак: «%1$s». Шундый байраклар бар: %2$s"
