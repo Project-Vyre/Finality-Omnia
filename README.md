@@ -6,7 +6,7 @@ Work in progress.
 
 DO NOT UPDATE THESE MODS! Frozen mod versions are listed below. They will only be updated in the NeoForge 1.21.1 version of the modpack.
 
-- Blueprint `7.1.3`
+- Create: Enchantment Industry `1.4.1`
 - Drippy Loading Screen `3.1.0`
 - Exposure `1.7.16`
 - FancyMenu `3.8.1`
