@@ -309,6 +309,20 @@ ServerEvents.recipes(event => {
     D: 'minecraft:crying_obsidian',
     S: 'create:shaft'
   }).id('kubejs:reconstructor')
+  event.recipes.create.mechanical_crafting('kubejs:chronokinesis', [
+    ' C ',
+    'CIC',
+    ' C ',
+    ' E ',
+    ' E ',
+    ' E ',
+    ' N '
+  ], {
+    C: 'minecraft:clock',
+    I: 'kubejs:final_singularity_stage_one',
+    E: 'kubejs:high_entropy_alloy',
+    N: 'kubejs:high_entropy_alloy_block'
+  }).id('kubejs:mechanical_crafting/chronokinesis')
   /**
    * QoL
    */
@@ -1280,6 +1294,15 @@ ServerEvents.recipes(event => {
     '4x minecraft:feather',
     '2x minecraft:yellow_dye'
   ]).id('finality:music_disc_pulcinella_battle_theme')
+  // METAL SCAR RADIO
+  event.recipes.create.mechanical_crafting('kubejs:music_disc_acheron_endfield', [
+    ' QQQQQ ',
+    'QQB BQQ',
+    ' QQQQQ '
+  ], {
+    Q: 'minecraft:quartz_block',
+    B: 'minecraft:lapis_block'
+  }).id('kubejs:music_disc_acheron_endfield')
   // Shimmer Recipes
   event.recipes.create.mixing(Fluid.of('kubejs:shimmer', 1000), [
     'create:refined_radiance',
