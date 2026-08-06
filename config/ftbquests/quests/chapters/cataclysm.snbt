@@ -253,7 +253,7 @@
 					type: "structure"
 				}
 				{
-					icon: "extendedcrafting:flux_star"
+					icon: "cataclysm:witherite_block"
 					id: "4878248FE14BB992"
 					observe_type: 5
 					timer: 0L
@@ -387,7 +387,7 @@
 				type: "structure"
 			}]
 			x: 0.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["54378BE3AEDD91A3"]
@@ -421,7 +421,7 @@
 			]
 			title: "Create the Abyssal Sacrifice"
 			x: 0.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4179D9074E74A11B"]
@@ -439,7 +439,7 @@
 				type: "observation"
 			}]
 			x: 0.0d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2FB0CBAD2F6C47FC"]
@@ -479,7 +479,7 @@
 			]
 			title: "Victory at last!"
 			x: 0.0d
-			y: -9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -497,6 +497,114 @@
 			}]
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["54378BE3AEDD91A3"]
+			description: [
+				"Search for the key and find the door to open it."
+				""
+				"Be prepared."
+			]
+			icon: "minecraft:soul_lantern"
+			id: "039A7F47540C1DF4"
+			subtitle: "Cold unfeeling death."
+			tasks: [
+				{
+					icon: "minecraft:soul_lantern"
+					id: "017E5CBEDF64D5ED"
+					structure: "cataclysm:frosted_prison"
+					type: "structure"
+				}
+				{
+					id: "32A863A93E923F89"
+					item: "cataclysm:strange_key"
+					type: "item"
+				}
+			]
+			title: "The Frosted Prison"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["54378BE3AEDD91A3"]
+			description: ["Start climbing."]
+			icon: "minecraft:snowball"
+			id: "542C6A0D10A491C5"
+			subtitle: "Acropolis."
+			tasks: [{
+				icon: "cataclysm:essence_of_the_storm"
+				id: "68BA2304427A85DA"
+				structure: "cataclysm:acropolis"
+				type: "structure"
+			}]
+			title: "The Sky City"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["54378BE3AEDD91A3"]
+			description: ["It is quite the labyrinth down there. Good luck!"]
+			id: "110A883E5C5755DB"
+			subtitle: "A tomb that houses a cursed being."
+			tasks: [{
+				icon: "cataclysm:ancient_metal_nugget"
+				id: "0B9F7BAC4377C199"
+				structure: "cataclysm:cursed_pyramid"
+				type: "structure"
+			}]
+			title: "The Cursed Pyramid"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["039A7F47540C1DF4"]
+			id: "75A70EB5D7D010E6"
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				icon: "cataclysm:cursed_bow"
+				id: "476387D42C7B3534"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["542C6A0D10A491C5"]
+			id: "19CAB0979DFEEE14"
+			tasks: [{
+				entity: "cataclysm:scylla"
+				icon: "cataclysm:ceraunus"
+				id: "43DE918704240651"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["110A883E5C5755DB"]
+			id: "7AD61D823B222512"
+			tasks: [{
+				id: "3EDE4A6613B5B204"
+				item: "cataclysm:necklace_of_the_desert"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7AD61D823B222512"]
+			id: "538C524161331F3F"
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				icon: "cataclysm:remnant_skull"
+				id: "622515605BF84EC0"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -10.5d
 		}
 	]
 	subtitle: ["A lot of boss fights and indestructible tools!"]

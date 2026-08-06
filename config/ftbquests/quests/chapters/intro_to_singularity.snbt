@@ -279,7 +279,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["26EE67A2266D36E0"]
+			dependencies: ["4A691BB889286C89"]
 			description: [
 				"You can now &arepair&r your tools in the crafting grid, so you won't have to throw away your tools."
 				""
@@ -353,7 +353,7 @@
 			]
 			title: "Convenient Utilities Ch.1"
 			x: 0.0d
-			y: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7318337BEAEAFC6D"]
@@ -465,7 +465,7 @@
 			]
 			title: "Convenient Utilities Ch.2"
 			x: 0.0d
-			y: 9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1E4655B38C025E5A"]
@@ -560,10 +560,24 @@
 					item: "tesseract:tesseract"
 					type: "item"
 				}
+				{
+					id: "2DEA71A22859C850"
+					item: "kubejs:reconstructor"
+					type: "item"
+				}
+				{
+					id: "67F6AADAF6FBBFDD"
+					item: {
+						Count: 1
+						id: "gag:time_sand_pouch"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			title: "Convenient Utilities Ch.3"
 			x: 0.0d
-			y: 12.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["5E5E9241EB84A4E9"]
@@ -593,7 +607,7 @@
 			}]
 			title: "He who remains..."
 			x: 0.0d
-			y: 14.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0AE06EB85B6E1CB6"]
@@ -709,7 +723,7 @@
 			]
 			title: "Getting somewhere..."
 			x: 0.0d
-			y: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["03F919758AA7E318"]
@@ -748,7 +762,7 @@
 			}]
 			title: "Introduction to Create"
 			x: -1.5d
-			y: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["03F919758AA7E318"]
@@ -799,7 +813,7 @@
 			}]
 			title: "Diamond Pickaxe Acquired!"
 			x: 0.0d
-			y: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -839,7 +853,7 @@
 			]
 			title: "Useful Guidance"
 			x: 1.5d
-			y: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -940,7 +954,7 @@
 			]
 			title: "A Heads Up: Infinite Materials"
 			x: 1.5d
-			y: 8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2FF7795C03DDC67B"]
@@ -1066,7 +1080,7 @@
 			}]
 			title: "Coins exist?"
 			x: 1.5d
-			y: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2EF808209CCECE6A"]
@@ -1092,7 +1106,7 @@
 			}]
 			title: "Unbreakable!"
 			x: 0.0d
-			y: 11.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -1116,46 +1130,7 @@
 			}]
 			title: "The Mysterious Cube"
 			x: -1.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["4A691BB889286C89"]
-			description: [
-				"I would suggest trying to find paper as soon as possible to make matchboxes or finding an alternative light source."
-				""
-				"You &ocould&r also take torches from Minecraft structures for the easy way out."
-			]
-			icon: "realistictorches:lit_torch"
-			id: "26EE67A2266D36E0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "38534F2C0125BF7E"
-				table_id: 6652661467762805826L
-				type: "random"
-			}]
-			shape: "rsquare"
-			subtitle: "Wait, that's different..."
-			tasks: [
-				{
-					id: "46C585E2B1422649"
-					item: "realistictorches:lit_torch"
-					type: "item"
-				}
-				{
-					id: "0241651621F971A9"
-					item: {
-						Count: 1
-						id: "realistictorches:matchbox"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Realistic Torches"
-			x: 0.0d
-			y: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["13186E7B0D6B6115"]
@@ -1181,7 +1156,7 @@
 			}]
 			title: "The Lighting Wand"
 			x: 0.0d
-			y: 8.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["This chapter serves both as an introduction and some awareness of utilities."]

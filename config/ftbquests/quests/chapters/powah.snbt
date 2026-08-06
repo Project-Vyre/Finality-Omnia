@@ -1,0 +1,56 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "powah"
+	group: "71A5625CEAEA7423"
+	icon: "powah:uraninite"
+	id: "5551EB9850765ADC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["65FC712C5D7E312D"]
+			id: "66311AB462E16DC6"
+			subtitle: "It's just paste, very important paste."
+			tasks: [{
+				id: "3301991DD99CB53E"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			title: "Powah Foundation"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66311AB462E16DC6"]
+			id: "632586FC47F50221"
+			tasks: [
+				{
+					id: "5379E654047238ED"
+					item: "powah:dielectric_rod"
+					type: "item"
+				}
+				{
+					id: "509FF536B686D76B"
+					item: "powah:dielectric_rod_horizontal"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["632586FC47F50221"]
+			id: "772993832272F831"
+			tasks: [{
+				id: "5E1DCBC3684848A6"
+				item: "powah:dielectric_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+	subtitle: ["POWAH FOR EONS!"]
+	title: "Powah"
+}

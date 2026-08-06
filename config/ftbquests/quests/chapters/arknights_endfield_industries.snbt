@@ -78,7 +78,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["467DB3E010329366"]
@@ -91,7 +91,7 @@
 			}]
 			title: "Portable Mining Rigs"
 			x: 0.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -187,6 +187,17 @@
 			title: "Introduction to Connections"
 			x: -1.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["0A7F998D6F3A49B9"]
+			id: "3ADDF6C2BCC60FE6"
+			tasks: [{
+				id: "1E0C6E110E33E44A"
+				item: "arknights_endfield:electric_mining_rig_mk_ii"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["Welcome back, Endministrator."]
