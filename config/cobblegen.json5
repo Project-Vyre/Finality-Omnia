@@ -29,14 +29,14 @@
       "minecraft:bedrock": [
         {
           id: "kubejs:deepslate_iridium_ore",
-          weight: 1.0,
+          weight: 0.125,
           maxY: 0,
           dimensions: ["minecraft:overworld"],
           excludedDimensions: ["minecraft:the_nether", "minecraft:the_end"],
         },
         {
           id: "minecraft:deepslate_emerald_ore",
-          weight: 2.0,
+          weight: 0.75,
           maxY: 0,
         },
         {
@@ -56,32 +56,32 @@
         },
         {
           id: "minecraft:deepslate_redstone_ore",
-          weight: 20.0,
+          weight: 40.0,
           maxY: 0,
         },
         {
           id: "minecraft:deepslate_iron_ore",
-          weight: 15.0,
+          weight: 25.0,
           maxY: 0,
         },
         {
           id: "create:deepslate_zinc_ore",
-          weight: 15.0,
+          weight: 25.0,
           maxY: 0,
         },
         {
           id: "minecraft:deepslate_copper_ore",
-          weight: 15.0,
+          weight: 25.0,
           maxY: 0,
         },
         {
           id: "minecraft:deepslate_coal_ore",
-          weight: 20.0,
+          weight: 30.0,
           maxY: 0,
         },
         {
           id: "minecraft:cobbled_deepslate",
-          weight: 125.0,
+          weight: 200.0,
           maxY: 0,
         },
       ],
