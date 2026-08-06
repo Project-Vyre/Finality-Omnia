@@ -1,3 +1,13 @@
+# Credits, Attribution & Disclaimers
+
+## Resource Packs
+
+### Maestro-Terraria
+
+Thank you to Obscuria for creating this resource pack.
+
+Maestro: Terraria uses music from the Terraria Original Soundtrack. Terraria and its soundtrack are the intellectual property of Re-Logic. This resource pack is an unofficial fan-made project created for entertainment purposes. No ownership of the original music is claimed. All rights to the soundtrack belong to their respective copyright holders.
+
 ## Music
 
 All original music used in the menu belongs to the composers below.
@@ -23,6 +33,10 @@ All original music used in the menu belongs to the composers below.
 | [Columbina Battle Phase 1 & 2 (Fan-Made)](https://www.youtube.com/watch?v=M_jSIWCmSDA) | farabi_hasan_music_columbina_battle_phase_1and2.ogg |
 | [Pantalone Double Phase Battle Theme (Fan-Made)](https://www.youtube.com/watch?v=Kc__atMAGIA) | farabi_hasan_music_pantalone_double_phase.ogg |
 | [Sandrone Marionette Double Phase Battle Theme (Fan-Made)](https://www.youtube.com/watch?v=UldZX64M0C8) | farabi_hasan_music_sandrone_double_phase.ogg |
+
+### Re-Logic
+
+Terraria and its soundtrack are the intellectual property of Re-Logic. This resource pack is an unofficial fan-made project created for entertainment purposes. No ownership of the original music is claimed. All rights to the soundtrack belong to their respective copyright holders.
 
 ### R3 Music Box
 
