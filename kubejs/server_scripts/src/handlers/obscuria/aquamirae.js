@@ -7,6 +7,7 @@
  */
 
 ServerEvents.recipes(event => {
+  /** Prior to v7.0
   event.shaped('aquamirae:oxygen_tank', [
     'IOI',
     'IOI',
@@ -15,10 +16,11 @@ ServerEvents.recipes(event => {
     I: 'create:iron_sheet',
     O: 'aquamirae:oxygelium'
   }).id('aquamirae:oxygen_tank')
+   */
   event.recipes.create.mixing('aquamirae:ship_graveyard_echo', [
     'minecraft:soul_sand',
     'minecraft:kelp',
     '#minecraft:boats',
     Fluid.of('minecraft:water', 1000)
-  ]).id('finality:mixing/ship_graveyard_echo')
+  ]).id('kubejs:mixing/ship_graveyard_echo')
 })
