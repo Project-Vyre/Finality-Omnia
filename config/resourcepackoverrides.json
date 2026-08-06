@@ -2,8 +2,8 @@
   "schema_version": "2",
   "failed_reloads_per_session": 5,
   "default_packs": [
-    "file/Enhanced Audio r6.zip",
-    "file/Enhanced Audio Ambience r1.zip",
+    "file/Enhanced Audio r7.zip",
+    "file/Enhanced Audio Ambience r2.zip",
     "file/Nicer-Rain-1.0.0.zip",
     "file/Fusion Emissive Ores v1.0.2 for Minecraft 1.20-1.21.8.zip",
     "file/Fusion Connected Glass v1.0.1 for Minecraft 1.20-1.21.8.zip",
@@ -16,8 +16,8 @@
   },
   "pack_overrides": {
     "omnia_resources": [
-      "file/Enhanced Audio r6.zip",
-      "file/Enhanced Audio Ambience r1.zip",
+      "file/Enhanced Audio r7.zip",
+      "file/Enhanced Audio Ambience r2.zip",
       "file/Nicer-Rain-1.0.0.zip",
       "file/Fusion Emissive Ores v1.0.2 for Minecraft 1.20-1.21.8.zip",
       "file/Fusion Connected Glass v1.0.1 for Minecraft 1.20-1.21.8.zip",
