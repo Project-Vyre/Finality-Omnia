@@ -592,11 +592,13 @@ REIEvents.information(event => {
       'In other words, it is made by wearing Phoenix Armor, then quenching it with water.'
     ])
   }
+  /*
   if (Platform.isLoaded('obscure_api')
     || Platform.isLoaded('aquamirae')
   ) {
     event.addItem('obscure_api:astral_dust', 'Acquisition', ['Used in making a special chestpiece. Can only be found in Frozen Chests.'])
   }
+  */
   if (Platform.isLoaded('culturaldelights')) {
     event.addItem('culturaldelights:avocado', 'Acquisition', [
       'Can only be acquired by picking it off right from flowering leaf blocks on avocado trees.'
