@@ -34,6 +34,10 @@ All original music used in the menu belongs to the composers below.
 | [Pantalone Double Phase Battle Theme (Fan-Made)](https://www.youtube.com/watch?v=Kc__atMAGIA) | farabi_hasan_music_pantalone_double_phase.ogg |
 | [Sandrone Marionette Double Phase Battle Theme (Fan-Made)](https://www.youtube.com/watch?v=UldZX64M0C8) | farabi_hasan_music_sandrone_double_phase.ogg |
 
+### Hypergryph
+
+Arknights:Endfield and its soundtrack are the intellectual property of Hypergryph. Soundtracks included are for entertainment purposes. No ownership of the original music is claimed. All rights to the soundtrack belong to their respective copyright holders.
+
 ### Re-Logic
 
 Terraria and its soundtrack are the intellectual property of Re-Logic. This resource pack is an unofficial fan-made project created for entertainment purposes. No ownership of the original music is claimed. All rights to the soundtrack belong to their respective copyright holders.
