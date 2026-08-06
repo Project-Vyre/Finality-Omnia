@@ -1,0 +1,18 @@
+{
+  "priority": 0,
+  "layer": "encounter",
+  "sound_event": "kubejs:music.weather.snow",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:weather",
+        "is_snowing": true
+      },
+      {
+        "type": "maestro:height",
+        "above": 60
+      }
+    ]
+  }
+}

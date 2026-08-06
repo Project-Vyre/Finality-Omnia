@@ -1,0 +1,33 @@
+{
+  "priority": 30,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.biome.snowy_underground",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:any_of",
+        "terms": [
+          {
+            "type": "maestro:biome",
+            "values": [
+              "minecraft:snowy_plains",
+              "minecraft:snowy_slopes",
+              "minecraft:snowy_taiga"
+            ]
+          },
+          {
+            "type": "maestro:biome_tag",
+            "values": [
+              "minecraft:is_taiga"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "maestro:height",
+        "below": 60
+      }
+    ]
+  }
+}

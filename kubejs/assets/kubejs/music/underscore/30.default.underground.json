@@ -1,0 +1,42 @@
+{
+  "priority": 30,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.underground",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:height",
+        "below": 60
+      },
+      {
+        "type": "maestro:none_of",
+        "terms": [
+          {
+            "type": "maestro:biome",
+            "values": [
+              "minecraft:snowy_plains",
+              "minecraft:snowy_slopes",
+              "minecraft:snowy_taiga",
+              "minecraft:jungle",
+              "minecraft:sparse_jungle",
+              "minecraft:bamboo_jungle",
+              "minecraft:lush_caves"
+            ]
+          },
+          {
+            "type": "maestro:biome_tag",
+            "values": [
+              "minecraft:is_taiga",
+              "minecraft:is_ocean",
+              "minecraft:is_beach",
+              "minecraft:is_jungle",
+              "c:is_jungle",
+              "c:jungle"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

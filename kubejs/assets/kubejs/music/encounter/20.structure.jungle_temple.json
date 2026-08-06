@@ -1,0 +1,12 @@
+{
+  "priority": 20,
+  "layer": "encounter",
+  "sound_event": "kubejs:music.structure.jungle_temple",
+  "condition": {
+    "type": "maestro:structure",
+    "values": [
+      "minecraft:jungle_pyramid",
+      "betterjungletemples:jungle_temple"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "priority": 20,
+  "layer": "encounter",
+  "sound_event": "kubejs:music.structure.dungeons",
+  "condition": {
+    "type": "maestro:any_of",
+    "terms": [
+      {
+        "type": "maestro:structure",
+        "values": [
+          "minecraft:stronghold",
+          "integrated_stronghold:stronghold",
+          "minecraft:fortress",
+          "betterfortresses:fortress",
+          "minecraft:bastion_remnant",
+          "minecraft:desert_pyramid",
+          "betterdungeons:skeleton_dungeon",
+          "betterdungeons:small_dungeon",
+          "betterdungeons:small_nether_dungeon",
+          "betterdungeons:spider_dungeon",
+          "betterdungeons:zombie_dungeon",
+          "irons_spellbooks:catacombs"
+        ]
+      },
+      {
+        "type": "maestro:all_of",
+        "terms": [
+          {
+            "type": "maestro:height",
+            "below": 60
+          },
+          {
+            "type": "maestro:structure",
+            "values": [
+              "minecraft:mineshaft",
+              "minecraft:mineshaft_mesa",
+              "bettermineshafts:mineshaft_acacia",
+              "bettermineshafts:mineshaft_desert",
+              "bettermineshafts:mineshaft_dripstone",
+              "bettermineshafts:mineshaft_ice",
+              "bettermineshafts:mineshaft_jungle",
+              "bettermineshafts:mineshaft_lush",
+              "bettermineshafts:mineshaft_mesa",
+              "bettermineshafts:mineshaft_mushroom",
+              "bettermineshafts:mineshaft_oak",
+              "bettermineshafts:mineshaft_overgrown",
+              "bettermineshafts:mineshaft_red_desert",
+              "bettermineshafts:mineshaft_spruce",
+              "bettermineshafts:mineshaft_spruce_snowy"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

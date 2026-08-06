@@ -1,0 +1,21 @@
+{
+  "priority": 40,
+  "layer": "encounter",
+  "sound_event": "kubejs:music.boss.wither",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:boss_event",
+        "value": true
+      },
+      {
+        "type": "maestro:entity",
+        "search_radius": 256,
+        "values": [
+          "minecraft:wither"
+        ]
+      }
+    ]
+  }
+}

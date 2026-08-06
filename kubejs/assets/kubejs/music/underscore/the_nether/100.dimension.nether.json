@@ -1,0 +1,27 @@
+{
+  "priority": 100,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.dimension.nether",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:dimension",
+        "values": [
+          "minecraft:the_nether"
+        ]
+      },
+      {
+        "type": "maestro:none_of",
+        "terms": [
+          {
+            "type": "maestro:biome",
+            "values": [
+              "minecraft:basalt_deltas"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

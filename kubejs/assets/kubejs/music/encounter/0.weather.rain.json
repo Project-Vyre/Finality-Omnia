@@ -1,0 +1,18 @@
+{
+  "priority": 0,
+  "layer": "encounter",
+  "sound_event": "kubejs:music.weather.rain",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:weather",
+        "is_raining": true
+      },
+      {
+        "type": "maestro:height",
+        "above": 60
+      }
+    ]
+  }
+}

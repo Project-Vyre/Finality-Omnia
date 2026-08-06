@@ -1,0 +1,9 @@
+{
+  "priority": 40,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.depths",
+  "condition": {
+    "type": "maestro:height",
+    "below": 0
+  }
+}

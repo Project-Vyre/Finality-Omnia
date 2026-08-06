@@ -1,0 +1,21 @@
+{
+  "priority": 20,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.ocean_night",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:day_cycle",
+        "is_night": true
+      },
+      {
+        "type": "maestro:biome_tag",
+        "values": [
+          "minecraft:is_ocean",
+          "minecraft:is_beach"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "priority": 30,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.biome.jungle_underground",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:height",
+        "below": 60
+      },
+      {
+        "type": "maestro:any_of",
+        "terms": [
+          {
+            "type": "maestro:biome",
+            "values": [
+              "minecraft:jungle",
+              "minecraft:sparse_jungle",
+              "minecraft:bamboo_jungle",
+              "minecraft:lush_caves"
+            ]
+          },
+          {
+            "type": "maestro:biome_tag",
+            "values": [
+              "c:is_jungle",
+              "c:jungle"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

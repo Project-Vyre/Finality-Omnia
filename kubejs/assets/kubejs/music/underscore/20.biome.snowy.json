@@ -1,0 +1,27 @@
+
+{
+  "priority": 20,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.biome.snowy",
+  "condition": {
+    "type": "maestro:any_of",
+    "terms": [
+      {
+        "type": "maestro:biome",
+        "values": [
+          "minecraft:snowy_plains",
+          "minecraft:snowy_slopes",
+          "minecraft:snowy_taiga",
+          "minecraft:frozen_peaks",
+          "minecraft:frozen_river"
+        ]
+      },
+      {
+        "type": "maestro:biome_tag",
+        "values": [
+          "minecraft:is_taiga"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "priority": 20,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.biome.jungle_day",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:day_cycle",
+        "is_day": true
+      },
+      {
+        "type": "maestro:any_of",
+        "terms": [
+          {
+            "type": "maestro:biome",
+            "values": [
+              "minecraft:jungle",
+              "minecraft:sparse_jungle",
+              "minecraft:bamboo_jungle"
+            ]
+          },
+          {
+            "type": "maestro:biome_tag",
+            "values": [
+              "c:is_jungle",
+              "c:jungle"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

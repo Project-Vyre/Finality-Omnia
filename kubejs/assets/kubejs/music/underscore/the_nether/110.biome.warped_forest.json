@@ -1,0 +1,11 @@
+{
+  "priority": 110,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.nether.biome.warped_forest",
+  "condition": {
+    "type": "maestro:biome",
+    "values": [
+      "minecraft:warped_forest"
+    ]
+  }
+}

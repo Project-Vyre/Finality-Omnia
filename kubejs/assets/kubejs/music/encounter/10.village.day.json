@@ -1,0 +1,22 @@
+{
+  "priority": 10,
+  "layer": "encounter",
+  "sound_event": "kubejs:music.village_day",
+  "condition": {
+    "type": "maestro:all_of",
+    "terms": [
+      {
+        "type": "maestro:day_cycle",
+        "is_day": true
+      },
+      {
+        "type": "maestro:entity",
+        "required_amount": 3,
+        "search_radius": 32,
+        "values": [
+          "minecraft:villager"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "priority": 20,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.desert",
+  "condition": {
+    "type": "maestro:any_of",
+    "terms": [
+      {
+        "type": "maestro:biome",
+        "values": [
+          "minecraft:desert",
+          "biomesoplenty:lush_desert",
+          "biomesoplenty:cold_desert"
+        ]
+      },
+      {
+        "type": "maestro:biome_tag",
+        "values": [
+          "c:is_desert",
+          "c:is_mesa",
+          "c:desert",
+          "c:mesa"
+        ]
+      }
+    ]
+  }
+}

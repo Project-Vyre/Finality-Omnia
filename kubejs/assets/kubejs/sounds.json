@@ -3,27 +3,647 @@
     "sounds": [
       {
         "name": "kubejs:acheron_endfield",
-        "stream": true
+        "stream": true,
+        "volume": 0.6
       },
       {
         "name": "kubejs:cjbeards_lost_in_the_darkness_inst",
-        "stream": true
+        "stream": true,
+        "volume": 0.6
       },
       {
         "name": "kubejs:cjbeards_not_gonna_die_today_inst",
-        "stream": true
+        "stream": true,
+        "volume": 0.6
       },
       {
         "name": "kubejs:farabi_hasan_music_a_fatui_requiem",
-        "stream": true
+        "stream": true,
+        "volume": 0.6
       },
       {
         "name": "kubejs:farabi_hasan_music_lorelei_rearranged",
-        "stream": true
+        "stream": true,
+        "volume": 0.6
       },
       {
         "name": "kubejs:farabi_hasan_music_meeting_tsaritsa",
+        "stream": true,
+        "volume": 0.6
+      }
+    ]
+  },
+  "music.sunrise": {
+    "sounds": [
+      {
+        "name": "minecraft:music/game/comforting_memories",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/featherfall",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/floating_dream",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/living_mice",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/minecraft",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/one_more_day",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/stand_tall",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/watcher",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/aria_math",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/taswell",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.day": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_overworld_day",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "kubejs:terraria_alternate_day",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "minecraft:music/game/a_familiar_room",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/an_ordinary_day",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/bromeliad",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/clark",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/danny",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/featherfall",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/floating_dream",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/haggstrom",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/infinite_amethyst",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/left_to_bloom",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/living_mice",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/mice_on_venus",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/minecraft",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/one_more_day",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/stand_tall",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/sweden",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/watcher",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/aria_math",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/biome_fest",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/blind_spots",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/taswell",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/swamp/aerie",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/swamp/firebugs",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/swamp/labyrinthine",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.sunset": {
+    "sounds": [
+      {
+        "name": "minecraft:music/game/dry_hands",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/komorebi",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/subwoofer_lullaby",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/wet_hands",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/haunt_muskie",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.night": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_overworld_night",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "minecraft:music/game/crescent_dunes",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/dry_hands",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/echo_in_the_wind",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/endless",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/infinite_amethyst",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/komorebi",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/mice_on_venus",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/pokopoko",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/subwoofer_lullaby",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/sweden",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/wending",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/wet_hands",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/dreiton",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/creative/haunt_muskie",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.underground": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_underground",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "minecraft:music/game/deeper",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/stand_tall",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.depths": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_alternate_underground",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "minecraft:music/game/deeper",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/eld_unknown",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.weather.rain": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_rain",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "minecraft:music/game/ancestry",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/floating_dream",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/komorebi",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/water/axolotl",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.weather.sandstorm": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_sandstorm",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.weather.snow": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_snow",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "minecraft:music/game/echo_in_the_wind",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/puzzlebox",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/yakusoku",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.biome.snowy": {
+    "sounds": [
+      {
+        "name": "kubejs:music.weather.snow",
+        "type": "event"
+      }
+    ]
+  },
+  "music.biome.snowy_underground": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_underground_ice",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.biome.jungle_day": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_jungle_day",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.biome.jungle_night": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_jungle_night",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.biome.jungle_underground": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_underground_jungle",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.ocean_day": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_ocean_day",
+        "stream": true,
+        "volume": 0.25
+      },
+      {
+        "name": "minecraft:music/game/water/axolotl",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/water/dragon_fish",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.ocean_night": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_ocean_night",
+        "stream": true,
+        "volume": 0.25
+      },
+      {
+        "name": "minecraft:music/game/water/axolotl",
+        "stream": true,
+        "volume": 0.30
+      },
+      {
+        "name": "minecraft:music/game/water/shuniji",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.village_day": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_town_day",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.village_night": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_town_night",
+        "stream": true,
+        "volume": 0.25
+      },
+      {
+        "name": "minecraft:music/game/crescent_dunes",
+        "stream": true,
+        "volume": 0.30
+      }
+    ]
+  },
+  "music.desert": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_desert",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.structure.dungeons": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_dungeon",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.structure.jungle_temple": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_lihzahrd",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
+  "music.dimension.nether": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_underworld",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 5
+      },
+      {
+        "name": "minecraft:music/game/nether/ballad_of_the_cats",
         "stream": true
+      },
+      {
+        "name": "minecraft:music/game/nether/concrete_halls",
+        "stream": true
+      },
+      {
+        "name": "minecraft:music/game/nether/dead_voxel",
+        "stream": true
+      },
+      {
+        "name": "minecraft:music/game/nether/warmth",
+        "stream": true
+      }
+    ]
+  },
+  "music.nether.biome.crimson_forest": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_underground_crimson",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 3
+      },
+      {
+        "name": "minecraft:music/game/nether/crimson_forest/chrysopoeia",
+        "stream": true
+      }
+    ]
+  },
+  "music.nether.biome.warped_forest": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_underground_corruption",
+        "stream": true,
+        "volume": 0.25,
+        "weight": 2
+      },
+      {
+        "name": "minecraft:music/game/nether/crimson_forest/chrysopoeia",
+        "stream": true
+      }
+    ]
+  },
+  "music.nether.biome.nether_wastes": {
+    "sounds": [
+      {
+        "name": "minecraft:music/game/nether/nether_wastes/rubedo",
+        "stream": true
+      }
+    ]
+  },
+  "music.nether.biome.soulsand_valley": {
+    "sounds": [
+      {
+        "name": "minecraft:music/game/nether/soulsand_valley/so_below",
+        "stream": true
+      }
+    ]
+  },
+  "music.boss.wither": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_boss_1",
+        "stream": true,
+        "volume": 0.25
       }
     ]
   },

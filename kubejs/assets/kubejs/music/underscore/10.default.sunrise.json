@@ -1,0 +1,9 @@
+{
+  "priority": 10,
+  "layer": "underscore",
+  "sound_event": "kubejs:music.sunrise",
+  "condition": {
+    "type": "maestro:day_cycle",
+    "is_sunrise": true
+  }
+}
