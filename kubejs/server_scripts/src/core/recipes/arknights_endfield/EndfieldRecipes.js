@@ -51,4 +51,15 @@ ServerEvents.recipes(event => {
     ['minecraft:iron_ore', 'minecraft:deepslate_iron_ore'],
     'minecraft:budding_amethyst'
   ]).superheated().id('kubejs:arknights_endfield/compacting/iron_vein_creation')
+  event.custom({
+    "type": "arknights_endfield:ore_rig",
+    "input": {
+      "item": "kubejs:deepslate_iridium_ore"
+    },
+    "output": {
+      "count": 1,
+      "item": "kubejs:raw_iridium"
+    },
+    "tier": 3
+  }).id('kubejs:endfield/rig/raw_iridium')
 })
