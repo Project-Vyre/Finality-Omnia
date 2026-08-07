@@ -723,6 +723,7 @@ ServerEvents.recipes(event => {
   ], 'create:precision_mechanism', [
     event.recipes.create.deploying('kubejs:incomplete_umbral_mechanism', ['kubejs:incomplete_umbral_mechanism', 'kubejs:soul_sand_singularity']),
     event.recipes.create.deploying('kubejs:incomplete_umbral_mechanism', ['kubejs:incomplete_umbral_mechanism', 'kubejs:soul_soil_singularity']),
+    event.recipes.create.deploying('kubejs:incomplete_umbral_mechanism', ['kubejs:incomplete_umbral_mechanism', 'kubejs:ender_pearl_singularity']),
     event.recipes.create.deploying('kubejs:incomplete_umbral_mechanism', ['kubejs:incomplete_umbral_mechanism', 'kubejs:end_crystal_singularity'])
   ]).transitionalItem('kubejs:incomplete_umbral_mechanism').loops(1).id('kubejs:sequenced_assembly/umbral_mechanism_creation')
 
@@ -807,13 +808,6 @@ ServerEvents.recipes(event => {
     'kubejs:final_singularity'
   ], 'kubejs:final_singularity').processingTime(500).id('kubejs:crushing/final_singularity')
 
-  event.recipes.create.mixing(Item.of('kubejs:final_singularity_stage_one').withChance(0.125), [
-    'kubejs:final_singularity_stage_nulla',
-    'kubejs:uncolored_circle_corner',
-    'kubejs:uncolored_rectangle_corner',
-    'kubejs:uncolored_windmill_corner',
-    'kubejs:uncolored_star_corner'
-  ]).id('kubejs:final_singularity_stage_one_stable')
   event.recipes.create.mixing('kubejs:final_singularity_stage_one', [
     'kubejs:final_singularity_stage_nulla',
     'kubejs:uncolored_circle_corner',
@@ -821,7 +815,7 @@ ServerEvents.recipes(event => {
     'kubejs:uncolored_windmill_corner',
     'kubejs:uncolored_star_corner',
     enRI4[RNG4]
-  ]).id('kubejs:final_singularity_stage_one_random')
+  ]).id('kubejs:final_singularity_stage_one')
   event.recipes.create.mechanical_crafting('kubejs:final_singularity_stage_two', [
     '/UPGRADE',
     '@ {     ',
@@ -864,26 +858,25 @@ ServerEvents.recipes(event => {
     R: 'kubejs:color_red',
     '@': 'kubejs:final_singularity_stage_two'
   }).id('kubejs:final_singularity_stage_three')
-  // note to self in the morning I forgot what I was doing here... probably mixing complex shapes
-  event.recipes.create.mixing(Item.of('kubejs:final_singularity_stage_four').withChance(0.125), [
-    'kubejs:tnt_singularity',
-    'kubejs:blaze_cake_singularity',
-    'kubejs:final_singularity_stage_three',
-    'kubejs:watermelon_shape',
-    'kubejs:star_of_light_shape',
-    'kubejs:potion_base_singularity'
-  ]).id('kubejs:final_singularity_stage_four_stable')
-  event.recipes.create.mixing('kubejs:final_singularity_stage_four', [
-    'kubejs:tnt_singularity',
-    'kubejs:blaze_cake_singularity',
-    'kubejs:final_singularity_stage_three',
-    'kubejs:watermelon_shape',
-    'kubejs:star_of_light_shape',
-    'kubejs:potion_base_singularity',
-    enRI3[RNG3],
-    enRI5[RNG5],
-    enRI1[RNG1]
-  ]).id('kubejs:final_singularity_stage_four_random')
+  event.recipes.create.mechanical_crafting('kubejs:final_singularity_stage_four', [
+    ' HGIGH ',
+    'HEFDFEH',
+    'GFCBCFG',
+    'IDBABDI',
+    'GFCBCFG',
+    'HEFDFEH',
+    ' HGIGH '
+  ], {
+    A: 'kubejs:final_singularity_stage_three',
+    B: 'kubejs:tnt_singularity',
+    C: 'kubejs:blaze_cake_singularity',
+    D: 'kubejs:star_of_light_shape',
+    E: 'kubejs:watermelon_shape',
+    F: 'kubejs:potion_base_singularity',
+    G: enRI3[RNG3], // 'kubejs:cpu_shape', 'kubejs:green_rectangle', 'kubejs:white_rectangle'     
+    H: enRI5[RNG5], // 'kubejs:blueprint_shape', 'kubejs:blue_circle', 'kubejs:white_circle', 'kubejs:blue_rectangle_corner'
+    I: enRI1[RNG1] // 'kubejs:monochromatic_singularity', 'kubejs:concrete_black_singularity', 'kubejs:concrete_white_singularity'
+  }).id('kubejs:final_singularity_stage_four')
   event.recipes.create.mechanical_crafting('kubejs:final_singularity', [
     'COMPONENT',
     '.JOIN([  ',
