@@ -88,12 +88,16 @@ ClientEvents.lang('en_us', event => {
     createTooltip('minecraft:cobblestone')
       .addSummary('Now has %s in recipes.')
       .addBehaviour([
-        'Usage',
+        'Usage - Andesite Alloy',
         'Can be used in making %s which can then be used to make %s for easy creation of %s.'
       ])
       .addBehaviour([
         'When milled or crushed',
         'Turns into %s which can be %s for more useful materials.'
+      ])
+      .addBehaviour([
+        'Usage - Netherrack',
+        'Can be used in making %s with either %s or %s.'
       ])
       .addHighlight([
         'additional uses',
@@ -101,7 +105,10 @@ ClientEvents.lang('en_us', event => {
         'Andesite',
         'Andesite Alloy',
         'Gravel',
-        'washed'
+        'washed',
+        'Netherrack',
+        'Crimson Essence',
+        'Instant Health II'
       ])
       .build()
   )
@@ -346,6 +353,22 @@ ClientEvents.lang('en_us', event => {
         'haunted',
         'Echo Shards'
       ])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:deepslate')
+      .addSummary('Now has %s in recipes.')
+      .addBehaviour([
+        'When used with the Reconstructor',
+        'Turns into Bedrock.'
+      ])
+      .addHighlight(['additional uses'])
+      .build()
+  )
+  event.addAll('minecraft',
+    createTooltip('minecraft:bedrock')
+      .addSummary('Now has %s in recipes.')
+      .addHighlight(['additional uses'])
       .build()
   )
   event.addAll('minecraft',
@@ -639,6 +662,27 @@ ClientEvents.lang('en_us', event => {
         'Sculk Sensor',
         'consumes'
       ])
+      .build()
+  )
+  event.addAll(
+    'kubejs',
+    createTooltip('minecraft:red_sand')
+      .addSummary('It\'s Sand, but red.')
+      .addBehaviour([
+        'When washed',
+        'Can yield both gold nuggets and dead bushes.'
+      ])
+      .addBehaviour([
+        'Renewal',
+        'Can be obtained from milling or crushing granite.',
+      ])
+      .build()
+  )
+  event.addAll(
+    'kubejs',
+    createTooltip('minecraft:nether_wart')
+      .addSummary('A %s fungus used in %s. Primarily used for brewing %s.')
+      .addHighlight(['red', 'potion brewing', 'Awkward Potions'])
       .build()
   )
 })

@@ -31,6 +31,29 @@ ClientEvents.lang('en_us', event => {
    * ENTROPY RELATED
    */
   event.addAll('kubejs',
+    createTooltip('kubejs:dormant_singularity_core')
+      .addSummary('Seems to be missing something...')
+      .addBehaviour([
+        'Usage',
+        'Use a Spout to pour %s onto it.'
+      ])
+      .addHighlight(['Condensed Universal Entropy'])
+      .build()
+  )
+  event.addAll('kubejs',
+    createTooltip('kubejs:awakened_singularity_core')
+      .addSummary('Primed for utilization.')
+      .addBehaviour([
+        'Acquisition',
+        'Use a Spout to pour %s onto a %s.'
+      ])
+      .addHighlight([
+        'Condensed Universal Entropy',
+        'Dormant Singularity Core'
+      ])
+      .build()
+  )
+  event.addAll('kubejs',
     createTooltip('kubejs:unstable_entropy_particles')
       .addSummary('It appears that it needs to be %s first by something that is %s cold.')
       .addBehaviour([
@@ -65,6 +88,84 @@ ClientEvents.lang('en_us', event => {
         'Used in blocks and items that %s.'
       ])
       .addHighlight(['break reality'])
+      .build()
+  )
+  // FINAL SINGULARITIES
+  event.addAll('kubejs',
+    createTooltip('kubejs:final_singularity_stage_nulla')
+      .addSummary('Stage 0.')
+      .addBehaviour([
+        'C\\: chk quantum',
+        'C\\: %s'
+      ])
+      .addHighlight(['false'])
+      .build()
+  )
+  event.addAll('kubejs',
+    createTooltip('kubejs:final_singularity_stage_one')
+      .addSummary('Stage 1.')
+      .addBehaviour([
+        'C\\: chk quantum',
+        'C\\: %s'
+      ])
+      .addBehaviour([
+        'C\\: list dir',
+        'C\\: High Entropy Alloy Nugget, Iridium Nugget, Netherite Nugget'
+      ])
+      .addHighlight(['<glitch>true</glitch>'])
+      .build()
+  )
+  event.addAll('kubejs',
+    createTooltip('kubejs:final_singularity_stage_two')
+      .addSummary('Stage 2.')
+      .addBehaviour([
+        'C\\: chk quantum',
+        'C\\: %s'
+      ])
+      .addHighlight(['false'])
+      .build()
+  )
+  event.addAll('kubejs',
+    createTooltip('kubejs:final_singularity_stage_three')
+      .addSummary('Stage 3.')
+      .addBehaviour([
+        'C\\: chk quantum',
+        'C\\: %s'
+      ])
+      .addHighlight(['false'])
+      .build()
+  )
+  event.addAll('kubejs',
+    createTooltip('kubejs:final_singularity_stage_four')
+      .addSummary('Stage 4.')
+      .addBehaviour([
+        'C\\: chk quantum',
+        'C\\: %s'
+      ])
+      .addBehaviour([
+        'C\\: list dir',
+        'C\\: 1/3 CPU Shape, Green Rectangle, White Rectangle'
+      ])
+      .addBehaviour([
+        'C\\: 2/3',
+        'C\\: Blueprint Shape, Blue Circle, White Circle, Blue Rectangle Corner'
+        /**
+          'kubejs:blueprint_shape',
+          'kubejs:blue_circle',
+          'kubejs:white_circle',
+          'kubejs:blue_rectangle_corner'
+         */
+      ])
+      .addBehaviour([
+        'C\\: 3/3',
+        'C\\: Monochromatic Singularity, Concrete Black Singularity, Concrete White Singularity'
+        /**
+          'kubejs:monochromatic_singularity',
+          'kubejs:concrete_black_singularity',
+          'kubejs:concrete_white_singularity'
+         */
+      ])
+      .addHighlight(['<glitch>true</glitch>'])
       .build()
   )
   event.addAll('kubejs',
@@ -103,6 +204,79 @@ ClientEvents.lang('en_us', event => {
       .addHighlight(['Redo Button', 'why'])
       .build()
   )
+  // DUPLICATORS
+  event.addAll('kubejs',
+    createTooltip('kubejs:duplicator')
+      .addSummary('It uhh... %s things...')
+      .addBehaviour([
+        'On R-Click on a block',
+        'Depending on the block, it will essentially %s then %s if applicable.'
+      ])
+      .addBehaviour([
+        'On R-Click on an entity',
+        'Gives you the %s of that entity, if applicable.'
+      ])
+      .addBehaviour([
+        'Additional Info',
+        'Does %s duplicate everything.'
+      ])
+      .addHighlight([
+        'copies',
+        '[Ctrl] + [C]',
+        '[Ctrl] + [V]',
+        'spawn egg',
+        'not'
+      ])
+      .build()
+  )
+  event.addAll('kubejs',
+    createTooltip('kubejs:quad_duplicator')
+      .addSummary('It uhh... %s things... but 4 times!')
+      .addBehaviour([
+        'On R-Click on a block',
+        'Depending on the block, it will essentially %s then %s if applicable.'
+      ])
+      .addBehaviour([
+        'On R-Click on an entity',
+        'Gives you the %s of that entity, if applicable.'
+      ])
+      .addBehaviour([
+        'Additional Info',
+        'Does %s duplicate everything.'
+      ])
+      .addHighlight([
+        'copies',
+        '[Ctrl] + [C]',
+        '[Ctrl] + [V]',
+        'spawn egg',
+        'not'
+      ])
+      .build()
+  )
+  event.addAll('kubejs',
+    createTooltip('kubejs:true_duplicator')
+      .addSummary('Duplicating with %s privileges.')
+      .addBehaviour([
+        'On R-Click on a block',
+        'Depending on the block, it will essentially %s then %s if applicable.'
+      ])
+      .addBehaviour([
+        'On R-Click on an entity',
+        'Gives you the %s of that entity, if applicable.'
+      ])
+      .addBehaviour([
+        'Additional Info',
+        'Still does %s duplicate everything.'
+      ])
+      .addHighlight([
+        'elevated',
+        '[Ctrl] + [C]',
+        '[Ctrl] + [V]',
+        'spawn egg',
+        'not'
+      ])
+      .build()
+  )
   // COMMAND BLOCKS
   event.addAll('kubejs',
     createTooltip('kubejs:command_block')
@@ -120,6 +294,12 @@ ClientEvents.lang('en_us', event => {
     createTooltip('kubejs:repeating_command_block')
       .addSummary('Not actually a true command block, but it can still do %s.')
       .addHighlight(['certain things'])
+      .build()
+  )
+  // FINAL ITEMS
+  event.addAll('kubejs',
+    createTooltip('kubejs:chronokinesis')
+      .addSummary('Work in progress.')
       .build()
   )
   event.addAll('kubejs',

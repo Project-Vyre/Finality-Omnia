@@ -229,6 +229,13 @@ ItemEvents.tooltip(event => {
         Component.translatable('block.minecraft.cobblestone.tooltip.highlight5').color(GRAY.hlt),
         Component.translatable('block.minecraft.cobblestone.tooltip.highlight6').color(GRAY.hlt)
       ).color(GRAY.txt))
+      text.add(10, '')
+      text.add(11, Component.translatable('block.minecraft.cobblestone.tooltip.condition3').gray())
+      text.add(12, Component.translatable('block.minecraft.cobblestone.tooltip.behaviour3',
+        Component.translatable('block.minecraft.cobblestone.tooltip.highlight7').color(RED.txt),
+        Component.translatable('block.minecraft.cobblestone.tooltip.highlight8').color(RED.hlt),
+        Component.translatable('block.minecraft.cobblestone.tooltip.highlight9').color(RED.hlt)
+      ).color(GRAY.txt))
     }
   })
   event.addAdvanced('minecraft:dirt', (item, advanced, text) => {
@@ -492,6 +499,31 @@ ItemEvents.tooltip(event => {
         Component.translatable('block.minecraft.cobbled_deepslate.tooltip.highlight2').color(GRAY.hlt),
         Component.translatable('block.minecraft.cobbled_deepslate.tooltip.highlight3').darkAqua(),
         Component.translatable('block.minecraft.cobbled_deepslate.tooltip.highlight4').color(GRAY.hlt)
+      ).color(GRAY.txt))
+    }
+  })
+  event.addAdvanced('minecraft:deepslate', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('block.minecraft.deepslate.tooltip.summary',
+        Component.translatable('block.minecraft.deepslate.tooltip.highlight1').color(GRAY.hlt)
+      ).color(GRAY.txt))
+      text.add(4, '')
+      text.add(5, Component.translatable('block.minecraft.deepslate.tooltip.condition1').gray())
+      text.add(6, Component.translatable('block.minecraft.deepslate.tooltip.behaviour1').color(GRAY.txt))
+    }
+  })
+  event.addAdvanced('minecraft:bedrock', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('block.minecraft.bedrock.tooltip.summary',
+        Component.translatable('block.minecraft.bedrock.tooltip.highlight1').color(GRAY.hlt)
       ).color(GRAY.txt))
     }
   })
@@ -852,6 +884,34 @@ ItemEvents.tooltip(event => {
       text.add(9, Component.translatable('item.minecraft.echo_shard.tooltip.behaviour2',
         Component.translatable('item.minecraft.echo_shard.tooltip.highlight2').aqua()
       ).darkAqua())
+    }
+  })
+  event.addAdvanced('minecraft:red_sand', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('block.minecraft.red_sand.tooltip.summary').color(GRAY.txt))
+      text.add(4, '')
+      text.add(5, Component.translatable('block.minecraft.red_sand.tooltip.condition1').gray())
+      text.add(6, Component.translatable('block.minecraft.red_sand.tooltip.behaviour1').color(GRAY.txt))
+      text.add(7, '')
+      text.add(8, Component.translatable('block.minecraft.red_sand.tooltip.condition2').gray())
+      text.add(9, Component.translatable('block.minecraft.red_sand.tooltip.behaviour2').color(GRAY.txt))
+    }
+  })
+  event.addAdvanced('minecraft:nether_wart', (item, advanced, text) => {
+    if (!event.isShift()) {
+      text.add(1, Component.translatable(kjsHoldShift))
+    } else {
+      text.add(1, Component.translatable(kjsHoldShiftHeld))
+      text.add(2, '')
+      text.add(3, Component.translatable('block.minecraft.nether_wart.tooltip.summary',
+        Component.translatable('block.minecraft.nether_wart.tooltip.highlight1').color(RED.hlt),
+        Component.translatable('block.minecraft.nether_wart.tooltip.highlight2').color(RED.hlt),
+        Component.translatable('block.minecraft.nether_wart.tooltip.highlight3').color(RED.hlt),
+      ).color(RED.txt))
     }
   })
 })
