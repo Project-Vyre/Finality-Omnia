@@ -436,6 +436,15 @@
       }
     ]
   },
+  "music.weather.storm": {
+    "sounds": [
+      {
+        "name": "kubejs:terraria_storm",
+        "stream": true,
+        "volume": 0.25
+      }
+    ]
+  },
   "music.biome.snowy": {
     "sounds": [
       {
