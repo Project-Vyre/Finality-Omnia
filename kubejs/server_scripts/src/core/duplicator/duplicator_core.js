@@ -191,6 +191,12 @@ ServerEvents.recipes(event => {
       'kubejs:true_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/avaritia/star_fuel_stack_duplication')
   }
+  if (Platform.isLoaded('hostilenetworks')) {
+    event.recipes.create.deploying('64x hostilenetworks:quintuple_condensed_prediction_matrix', [
+      'hostilenetworks:quintuple_condensed_prediction_matrix',
+      'kubejs:true_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/hostilenetworks/quintuple_condensed_prediction_matrix_stack_duplication')
+  }
   if (Platform.isLoaded('powah')) {
     event.recipes.create.deploying('2x powah:uraninite_raw', [
       'powah:uraninite_raw',
