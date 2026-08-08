@@ -100,6 +100,16 @@ ServerEvents.recipes(event => {
     { output: 'sophisticatedbackpacks:stack_upgrade_tier_3' },
     { output: 'sophisticatedbackpacks:stack_upgrade_tier_4' },
     { output: 'sophisticatedbackpacks:stack_upgrade_omega_tier' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_2_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_3_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_4_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_3_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_4_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_3_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_4_conversion' },
+    { output: 'sophisticatedbackpacks:stack_upgrade_tier_3_to_tier_4_conversion' },
     { id: 'sophisticatedbackpacks:xp_pump_upgrade' }
   ])
   event.recipes.minecraft.crafting_shaped('sophisticatedbackpacks:upgrade_base', [
@@ -442,6 +452,93 @@ ServerEvents.recipes(event => {
     N: 'sophisticatedbackpacks:stack_upgrade_tier_4',
     F: 'kubejs:final_singularity'
   }).id('kubejs:sophisticatedbackpacks/stack_upgrade_omega_tier')
+  /**
+   * STACK UPGRADE CONVERSION
+   */
+  // Starter tier to next tier
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion', [
+    ' I ',
+    'IBI',
+    ' I '
+  ], {
+    I: 'kubejs:iron_singularity',
+    B: 'sophisticatedbackpacks:upgrade_base'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_starter_tier_to_tier_1_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_2_conversion', [
+    'GGG',
+    'GBG',
+    'GGG'
+  ], {
+    G: 'kubejs:gold_singularity',
+    B: 'sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_starter_tier_to_tier_2_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_3_conversion', [
+    'DDD',
+    'DBD',
+    'DDD'
+  ], {
+    D: 'kubejs:diamond_singularity',
+    B: 'sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_2_conversion'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_starter_tier_to_tier_3_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_4_conversion', [
+    'NNN',
+    'NBN',
+    'NNN'
+  ], {
+    N: 'kubejs:netherite_singularity',
+    B: 'sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_3_conversion'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_starter_tier_to_tier_4_conversion')
+  // Tier 1 to next tier
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion', [
+    'GGG',
+    'GBG',
+    'GGG'
+  ], {
+    G: 'kubejs:gold_singularity',
+    B: 'sophisticatedbackpacks:upgrade_base'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_tier_1_to_tier_2_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_3_conversion', [
+    'DDD',
+    'DBD',
+    'DDD'
+  ], {
+    D: 'kubejs:diamond_singularity',
+    B: 'sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_tier_1_to_tier_3_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_4_conversion', [
+    'NNN',
+    'NBN',
+    'NNN'
+  ], {
+    N: 'kubejs:netherite_singularity',
+    B: 'sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_3_conversion'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_tier_1_to_tier_4_conversion')
+  // Tier 2 to next tier
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_3_conversion', [
+    'DDD',
+    'DBD',
+    'DDD'
+  ], {
+    D: 'kubejs:diamond_singularity',
+    B: 'sophisticatedbackpacks:upgrade_base'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_tier_2_to_tier_3_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_4_conversion', [
+    'NNN',
+    'NBN',
+    'NNN'
+  ], {
+    N: 'kubejs:netherite_singularity',
+    B: 'sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_3_conversion'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_tier_2_to_tier_4_conversion')
+  // Tier 3 to tier 4
+  event.recipes.create.mechanical_crafting('sophisticatedbackpacks:stack_upgrade_tier_3_to_tier_4_conversion', [
+    'NNN',
+    'NBN',
+    'NNN'
+  ], {
+    N: 'kubejs:netherite_singularity',
+    B: 'sophisticatedbackpacks:upgrade_base'
+  }).id('kubejs:sophisticatedbackpacks/stack_upgrade_tier_3_to_tier_4_conversion')
   // jukebox
   event.recipes.minecraft.crafting_shapeless('sophisticatedbackpacks:jukebox_upgrade', [
     'sophisticatedbackpacks:upgrade_base',

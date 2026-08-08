@@ -70,6 +70,21 @@ ServerEvents.recipes(event => {
     { output: 'sophisticatedstorage:stack_upgrade_tier_4' },
     { output: 'sophisticatedstorage:stack_upgrade_tier_5' },
     { output: 'sophisticatedstorage:stack_upgrade_omega_tier' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_1_plus_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_2_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_3_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_4_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_5_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_2_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_3_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_4_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_5_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_2_to_tier_3_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_2_to_tier_4_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_2_to_tier_5_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_3_to_tier_4_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_3_to_tier_5_conversion' },
+    { output: 'sophisticatedstorage:stack_upgrade_tier_4_to_tier_5_conversion' },
     { output: 'sophisticatedstorage:basic_tier_upgrade' },
     { output: 'sophisticatedstorage:basic_to_copper_tier_upgrade' },
     { output: 'sophisticatedstorage:basic_to_iron_tier_upgrade' },
@@ -374,7 +389,9 @@ ServerEvents.recipes(event => {
     B: 'sophisticatedstorage:upgrade_base',
     I: 'create:iron_sheet'
   }).id('kubejs:sophisticatedstorage/stonecutter_upgrade')
-  // STACK UPGRADES
+  /**
+   * STACK UPGRADES
+   */
   event.recipes.minecraft.crafting_shaped('sophisticatedstorage:stack_upgrade_tier_1', [
     'LLL',
     'LUL',
@@ -433,6 +450,149 @@ ServerEvents.recipes(event => {
     N: 'sophisticatedstorage:stack_upgrade_tier_5',
     F: 'kubejs:final_singularity'
   }).id('kubejs:sophisticatedstorage/stack_upgrade_omega_tier')
+  /**
+   * STACK UPGRADE CONVERSION
+   */
+  // Tier 1 to next tier
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_to_tier_1_plus_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:copper_singularity',
+    I: 'minecraft:copper_ingot',
+    B: 'sophisticatedstorage:upgrade_base'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_to_tier_1_plus_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_to_tier_2_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:iron_singularity',
+    I: 'minecraft:iron_ingot',
+    B: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_1_plus_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_to_tier_2_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_to_tier_3_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:gold_singularity',
+    I: 'minecraft:gold_ingot',
+    B: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_2_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_to_tier_3_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_to_tier_4_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:diamond_singularity',
+    I: 'minecraft:diamond',
+    B: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_3_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_to_tier_4_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_to_tier_5_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:netherite_singularity',
+    I: 'minecraft:netherite_ingot',
+    B: 'sophisticatedstorage:stack_upgrade_tier_1_to_tier_4_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_to_tier_5_conversion')
+  // Tier 1 Plus to next tier
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_2_conversion', [
+    ' I ',
+    'IBI',
+    ' G '
+  ], {
+    G: 'kubejs:iron_singularity',
+    I: 'minecraft:iron_ingot',
+    B: 'sophisticatedstorage:upgrade_base'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_plus_to_tier_2_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_3_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:gold_singularity',
+    I: 'minecraft:gold_ingot',
+    B: 'sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_2_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_plus_to_tier_3_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_4_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:diamond_singularity',
+    I: 'minecraft:diamond',
+    B: 'sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_3_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_plus_to_tier_4_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_5_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:netherite_singularity',
+    I: 'minecraft:netherite_ingot',
+    B: 'sophisticatedstorage:stack_upgrade_tier_1_plus_to_tier_4_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_1_plus_to_tier_5_conversion')
+  // Tier 2 to next tier
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_2_to_tier_3_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:gold_singularity',
+    I: 'minecraft:gold_ingot',
+    B: 'sophisticatedstorage:upgrade_base'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_2_to_tier_3_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_2_to_tier_4_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:diamond_singularity',
+    I: 'minecraft:diamond',
+    B: 'sophisticatedstorage:stack_upgrade_tier_2_to_tier_3_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_2_to_tier_4_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_2_to_tier_5_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:netherite_singularity',
+    I: 'minecraft:netherite_ingot',
+    B: 'sophisticatedstorage:stack_upgrade_tier_2_to_tier_4_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_2_to_tier_5_conversion')
+  // Tier 3 to next tier
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_3_to_tier_4_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:diamond_singularity',
+    I: 'minecraft:diamond',
+    B: 'sophisticatedstorage:upgrade_base'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_3_to_tier_4_conversion')
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_3_to_tier_5_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:netherite_singularity',
+    I: 'minecraft:netherite_ingot',
+    B: 'sophisticatedstorage:stack_upgrade_tier_3_to_tier_4_conversion'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_3_to_tier_5_conversion')
+  // Tier 4 to tier 5
+  event.recipes.create.mechanical_crafting('sophisticatedstorage:stack_upgrade_tier_4_to_tier_5_conversion', [
+    'III',
+    'IBI',
+    'GIG'
+  ], {
+    G: 'kubejs:netherite_singularity',
+    I: 'minecraft:netherite_ingot',
+    B: 'sophisticatedstorage:upgrade_base'
+  }).id('kubejs:sophisticatedstorage/stack_upgrade_tier_4_to_tier_5_conversion')
   // jukebox
   event.recipes.minecraft.crafting_shapeless('sophisticatedstorage:jukebox_upgrade', [
     'sophisticatedstorage:upgrade_base',
