@@ -5,7 +5,11 @@
 
 // ignored: false
 
-ItemEvents.entityInteracted('kubejs:duplicator', event => {
+ItemEvents.entityInteracted([
+  'kubejs:duplicator',
+  'kubejs:quad_duplicator',
+  'kubejs:true_duplicator'
+], event => {
   if (event.target.type == null) return
   switch (event.target.type) {
     case 'minecraft:allay':
@@ -232,6 +236,18 @@ ItemEvents.entityInteracted('kubejs:duplicator', event => {
       break;
     case 'minecraft:zombified_piglin':
       event.player.give('minecraft:zombified_piglin_spawn_egg')
+      break;
+    case 'cataclysm:ignited_berserker':
+      event.player.give('cataclysm:ignited_berserker_spawn_egg')
+      break;
+    case 'cataclysm:ignited_revenant':
+      event.player.give('cataclysm:ignited_revenant_spawn_egg')
+      break;
+    case 'goblintraders:goblin_trader':
+      event.player.give('goblintraders:goblin_trader_spawn_egg')
+      break;
+    case 'goblintraders:vein_goblin_trader':
+      event.player.give('goblintraders:vein_goblin_trader_spawn_egg')
       break;
     default:
       event.player.tell(Component.translatable('string.kubejs.duplicator.entity_duplication_failure'))
