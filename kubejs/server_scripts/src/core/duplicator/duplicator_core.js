@@ -61,7 +61,9 @@ let tr_dpltr_deployer_recipes = [
   'crimsite',
   'ochrum',
   'veridium',
-  'iridium_upgrade_smithing_template'
+  'cinder_flour',
+  'iridium_upgrade_smithing_template',
+  'final_singularity'
 ]
 let tr_dpltr_deployer_recipe_properties = {
   blue_ice: { item: 'minecraft:blue_ice', stack: 64, recipeId: 'kubejs:deploying/blue_ice_stack_duplication' },
@@ -70,7 +72,9 @@ let tr_dpltr_deployer_recipe_properties = {
   crimsite: { item: 'create:crimsite', stack: 64, recipeId: 'kubejs:deploying/crimsite_stack_duplication' },
   ochrum: { item: 'create:ochrum', stack: 64, recipeId: 'kubejs:deploying/ochrum_stack_duplication' },
   veridium: { item: 'create:veridium', stack: 64, recipeId: 'kubejs:deploying/veridium_stack_duplication' },
-  iridium_upgrade_smithing_template: { item: 'kubejs:iridium_upgrade_smithing_template', stack: 1, recipeId: 'kubejs:deploying/iridium_upgrade_smithing_template_stack_duplication' }
+  cinder_flour: { item: 'create:cinder_flour', stack: 64, recipeId: 'kubejs:deploying/cinder_flour_stack_duplication' },
+  iridium_upgrade_smithing_template: { item: 'kubejs:iridium_upgrade_smithing_template', stack: 64, recipeId: 'kubejs:deploying/iridium_upgrade_smithing_template_stack_duplication' },
+  final_singularity: { item: 'kubejs:final_singularity', stack: 2, recipeId: 'kubejs:deploying/final_singularity_duplication' }
 }
 
 ServerEvents.recipes(event => {
@@ -164,11 +168,33 @@ ServerEvents.recipes(event => {
       'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + recipeId + '_quad_duplication')
   }
+  // TRUE DUPLICATOR RECIPES
   for (const element of tr_dpltr_deployer_recipes) {
     event.recipes.create.deploying(
       Item.of(tr_dpltr_deployer_recipe_properties[element].item, tr_dpltr_deployer_recipe_properties[element].stack), [
       tr_dpltr_deployer_recipe_properties[element].item,
       'kubejs:true_duplicator'
     ]).keepHeldItem().id(tr_dpltr_deployer_recipe_properties[element].recipeId)
+  }
+  event.recipes.create.compacting([
+    '4x kubejs:deepslate_iridium_ore',
+    '4x minecraft:tuff',
+    'kubejs:true_duplicator'
+  ], [
+    'kubejs:crushed_raw_iridium',
+    ['minecraft:deepslate', 'minecraft:cobbled_deepslate'],
+    'kubejs:true_duplicator'
+  ]).superheated().id('kubejs:compacting/true_duplicator/deepslate_iridium_ore_renewal')
+  if (Platform.isLoaded('avaritia')) {
+    event.recipes.create.deploying('64x avaritia:star_fuel', [
+      'avaritia:star_fuel',
+      'kubejs:true_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/avaritia/star_fuel_stack_duplication')
+  }
+  if (Platform.isLoaded('powah')) {
+    event.recipes.create.deploying('2x powah:uraninite_raw', [
+      'powah:uraninite_raw',
+      'kubejs:true_duplicator'
+    ]).keepHeldItem().id('kubejs:deploying/powah/raw_uraninite_duplication')
   }
 })
