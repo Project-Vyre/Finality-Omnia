@@ -89,6 +89,12 @@ MoreJSEvents.wandererTrades(event => {
       'minecraft:emerald'
     ], 'minecraft:warden_spawn_egg')
   }
+  if (Platform.isLoaded('avaritia')) {
+    event.addTrade(2, [
+      '64x kubejs:entropy_coin',
+      'avaritia:eternal_singularity'
+    ], 'avaritia:infinity_elytra')
+  }
   if (Platform.isLoaded('cataclysm')) {
     event.addTrade(2, [
       'minecraft:emerald_block',
