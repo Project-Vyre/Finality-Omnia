@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
       ]).id('kubejs:ars_nouveau/unbreakable_' + recipeid)
     }
   }
-  if (Platform.isLoaded('ars_noveau')) {
+  if (Platform.isLoaded('ars_elemental')) {
     let ars_elemental_armor = {
       fire_hat: 'ars_elemental:fire_hat',
       fire_robes: 'ars_elemental:fire_robes',
@@ -154,13 +154,19 @@ ServerEvents.recipes(event => {
       air_leggings: 'ars_elemental:air_leggings',
       air_boots: 'ars_elemental:air_boots',
       earth_hat: 'ars_elemental:earth_hat',
-      earth_robes: 'ars_elemental:earth_chestplate',
+      earth_robes: 'ars_elemental:earth_robes',
       earth_leggings: 'ars_elemental:earth_leggings',
       earth_boots: 'ars_elemental:earth_boots',
       aqua_hat: 'ars_elemental:aqua_hat',
       aqua_robes: 'ars_elemental:aqua_robes',
       aqua_leggings: 'ars_elemental:aqua_leggings',
       aqua_boots: 'ars_elemental:aqua_boots'
+    }
+    for (let [recipeid, id] of Object.entries(ars_elemental_armor)) {
+      event.recipes.kubejs.shapeless(Item.of(id).withNBT({ Unbreakable: 1 }), [
+        id,
+        'create:experience_block'
+      ]).id('kubejs:ars_elemental/unbreakable_' + recipeid)
     }
   }
   if (Platform.isLoaded('irons_spellbooks')) {

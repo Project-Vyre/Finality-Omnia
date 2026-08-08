@@ -17,5 +17,13 @@ ServerEvents.recipes(event => {
       itemId,
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:biomesoplenty/deploying/' + recipeId + '_duplication')
+    event.recipes.create.deploying(Item.of(itemId, 4), [
+      itemId,
+      'kubejs:duplicator'
+    ]).keepHeldItem().id('kubejs:biomesoplenty/deploying/' + recipeId + '_quad_duplication')
+    event.recipes.create.deploying(Item.of(itemId, 64), [
+      itemId,
+      'kubejs:duplicator'
+    ]).keepHeldItem().id('kubejs:biomesoplenty/deploying/' + recipeId + '_stack_duplication')
   }
 })

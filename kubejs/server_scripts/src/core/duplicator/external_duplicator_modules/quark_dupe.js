@@ -7,4 +7,12 @@ ServerEvents.recipes(event => {
     'quark:smithing_template_rune',
     'kubejs:duplicator'
   ]).keepHeldItem().id('kubejs:deploying/smithing_template_rune_duplication')
+  event.recipes.create.deploying('4x quark:smithing_template_rune', [
+    'quark:smithing_template_rune',
+    'kubejs:duplicator'
+  ]).keepHeldItem().id('kubejs:deploying/smithing_template_rune_quad_duplication')
+  event.recipes.create.deploying('64x quark:smithing_template_rune', [
+    'quark:smithing_template_rune',
+    'kubejs:duplicator'
+  ]).keepHeldItem().id('kubejs:deploying/smithing_template_rune_stack_duplication')
 })
