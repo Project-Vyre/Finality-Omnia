@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + element + '_pottery_sherd_duplication')
     event.recipes.create.deploying([
-      '4x alexscaves:' + element + '_pottery_sherd'
+      '5x alexscaves:' + element + '_pottery_sherd'
     ], [
       'alexscaves:' + element + '_pottery_sherd',
       'kubejs:quad_duplicator'
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
       itemId,
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + recipeId + '_duplication')
-    event.recipes.create.deploying(Item.of(itemId, 4), [
+    event.recipes.create.deploying(Item.of(itemId, 5), [
       itemId,
       'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + recipeId + '_quad_duplication')
@@ -79,13 +79,13 @@ ServerEvents.recipes(event => {
       Item.of('alexscaves:cave_tablet', tabletId).weakNBT(),
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + recipeId + '_cave_tablet_duplication')
-    event.recipes.create.deploying(Item.of('alexscaves:cave_tablet', 4, tabletId), [
+    event.recipes.create.deploying(Item.of('alexscaves:cave_tablet', 5, tabletId), [
       Item.of('alexscaves:cave_tablet', tabletId).weakNBT(),
-      'kubejs:duplicator'
+      'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + recipeId + '_cave_tablet_quad_duplication')
     event.recipes.create.deploying(Item.of('alexscaves:cave_tablet', 64, tabletId), [
       Item.of('alexscaves:cave_tablet', tabletId).weakNBT(),
-      'kubejs:duplicator'
+      'kubejs:true_duplicator'
     ]).keepHeldItem().id('kubejs:alexscaves/deploying/' + recipeId + '_cave_tablet_stack_duplication')
   }
 })

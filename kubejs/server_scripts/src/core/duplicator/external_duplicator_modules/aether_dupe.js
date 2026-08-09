@@ -25,13 +25,13 @@ ServerEvents.recipes(event => {
       itemId,
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:deploying/aether/' + recipeId + '_duplication')
-    event.recipes.create.deploying(Item.of(itemId, 4), [
+    event.recipes.create.deploying(Item.of(itemId, 5), [
       itemId,
-      'kubejs:duplicator'
+      'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/aether/' + recipeId + '_quad_duplication')
     event.recipes.create.deploying(Item.of(itemId, 64), [
       itemId,
-      'kubejs:duplicator'
+      'kubejs:true_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/aether/' + recipeId + '_stack_duplication')
   }
 })

@@ -29,16 +29,16 @@ ServerEvents.recipes(event => {
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:neapolitan/deploying/' + element + '_pottery_sherd_duplication')
     event.recipes.create.deploying([
-      '4x neapolitan:' + element + '_pottery_sherd'
+      '5x neapolitan:' + element + '_pottery_sherd'
     ], [
       'neapolitan:' + element + '_pottery_sherd',
-      'kubejs:duplicator'
+      'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:neapolitan/deploying/' + element + '_pottery_sherd_quad_duplication')
     event.recipes.create.deploying([
       '64x neapolitan:' + element + '_pottery_sherd'
     ], [
       'neapolitan:' + element + '_pottery_sherd',
-      'kubejs:duplicator'
+      'kubejs:true_duplicator'
     ]).keepHeldItem().id('kubejs:neapolitan/deploying/' + element + '_pottery_sherd_stack_duplication')
   }
 })

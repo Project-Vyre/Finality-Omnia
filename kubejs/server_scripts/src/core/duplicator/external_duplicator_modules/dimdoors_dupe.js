@@ -14,13 +14,13 @@ ServerEvents.recipes(event => {
       'dimdoors:' + element,
       'kubejs:duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + element + '_duplication')
-    event.recipes.create.deploying('2x dimdoors:' + element, [
+    event.recipes.create.deploying('5x dimdoors:' + element, [
       'dimdoors:' + element,
-      'kubejs:duplicator'
+      'kubejs:quad_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + element + '_quad_duplication')
-    event.recipes.create.deploying('2x dimdoors:' + element, [
+    event.recipes.create.deploying('64x dimdoors:' + element, [
       'dimdoors:' + element,
-      'kubejs:duplicator'
+      'kubejs:true_duplicator'
     ]).keepHeldItem().id('kubejs:deploying/' + element + '_stack_duplication')
   }
 })
