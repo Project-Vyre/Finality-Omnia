@@ -8,6 +8,16 @@ ServerEvents.recipes(event => {
     { id: 'powah:crafting/energy_cell_starter' },
     { id: 'powah:energizing/nitro_crystal' }
   ])
+  event.recipes.create.mixing('24x powah:dielectric_paste', [
+    '3x minecraft:coal',
+    '2x minecraft:clay_ball',
+    Fluid.of('minecraft:lava')
+  ]).id('kubejs:powah/mixing/dielectric_paste_with_coal')
+  event.recipes.create.mixing('24x powah:dielectric_paste', [
+    '3x minecraft:charcoal',
+    '2x minecraft:clay_ball',
+    Fluid.of('minecraft:lava')
+  ]).id('kubejs:powah/mixing/dielectric_paste_with_charcoal')
   event.shaped('powah:dielectric_casing', [
     'SHS',
     'V V',
