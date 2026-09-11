@@ -1,10 +1,10 @@
-# Copyright Info
-Current keyholders are CelestialAbyss, squoshi and Skensian.
+# Modpack Copyright Info
+Current keyholders are CelestialAbyss, Wayfarer and Skensian.
 
 ## Modpack Assets
 This includes scripts, models, pixel art and textures.
 
-### squoshi
+### Wayfarer
 - Gold Block texture
 - Assisted with writing KubeJS scripts
 
@@ -20,6 +20,8 @@ Over the course of developing the modpacks, I have only used color references an
 - Custom KubeJS Textures and assets
 - Custom KubeJS recipes
 - I do not claim ownership of the JetBrains Mono NL font, though it was used extensively for some custom items.
+
+# Credits, Attribution & Disclaimers
 
 ## Music
 All original music belongs to the composers below.
@@ -46,6 +48,22 @@ All original music belongs to the composers below.
 - [Pantalone Double Phase Battle Theme (Fan-Made) | Genshin Impact](https://www.youtube.com/watch?v=Kc__atMAGIA)
 - [Pulcinella Double Phase Boss Theme (Fan-Made) | Genshin Impact](https://www.youtube.com/watch?v=klg2rGbu7K0)
 - [Sandrone Marionette Double Phase Battle Theme (Fan-Made) | Genshin Impact](https://www.youtube.com/watch?v=UldZX64M0C8)
+
+### Hypergryph
+
+Arknights:Endfield and its soundtrack are the intellectual property of Hypergryph. Soundtracks included are for entertainment purposes. No ownership of the original music is claimed. All rights to the soundtrack belong to their respective copyright holders.
+- [ACHERON - Metal Scar Radio](https://www.youtube.com/watch?v=tLMlgpdqnmM)
+
+
+### Re-Logic
+
+Terraria and its soundtrack are the intellectual property of Re-Logic. This resource pack is an unofficial fan-made project created for entertainment purposes. No ownership of the original music is claimed. All rights to the soundtrack belong to their respective copyright holders.
+
+#### Maestro-Terraria
+
+Thank you to Obscuria for creating this resource pack as the basis for use with Maestro.
+
+Maestro: Terraria uses music from the Terraria Original Soundtrack. Terraria and its soundtrack are the intellectual property of Re-Logic. This resource pack is an unofficial fan-made project created for entertainment purposes. No ownership of the original music is claimed. All rights to the soundtrack belong to their respective copyright holders.
 
 ### R3 Music Box
 | Song Name | File Name |
