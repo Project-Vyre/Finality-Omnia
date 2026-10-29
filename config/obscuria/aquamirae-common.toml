@@ -83,10 +83,6 @@ abyssal_spawn_min_count = 2
 #Range: 1 ~ 10
 abyssal_spawn_max_count = 4
 enable_maze_mother_spawning = true
-#Range: 1 ~ 400
-maze_mother_spawn_weight = 1
-#Range: 1 ~ 10
-maze_mother_spawn_min_count = 1
-#Range: 1 ~ 10
-maze_mother_spawn_max_count = 1
+#Range: 0.0 ~ 1.0
+maze_mother_spawn_chance = 0.01
 

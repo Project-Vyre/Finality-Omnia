@@ -3,13 +3,10 @@ disable_crowdin = false
 check_for_updates = true
 
 [[key_bindings]]
+keys = ["key.keyboard.down"]
 name = "key.plasmovoice.general.mute_microphone"
 any_context = false
 category = "key.plasmovoice.general"
-
-[[key_bindings.keys]]
-code = 264
-type = "KEYSYM"
 
 [voice]
 disabled = false

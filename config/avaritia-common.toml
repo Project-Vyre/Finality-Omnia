@@ -45,6 +45,8 @@
 			#config.avaritia.blade_slash_radius.tooltip
 			#Range: 5 ~ 100
 			blade_slash_radius = 10
+			#config.avaritia.is_sword_attack_explode.tooltip
+			is_sword_attack_explode = true
 
 [emc]
 

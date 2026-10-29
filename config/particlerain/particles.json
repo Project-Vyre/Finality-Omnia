@@ -1,13 +1,18 @@
 {
   "rain": {},
-  "heavy_dust": {},
-  "mist_after_rain": {},
+  "vertical_fog_after_rain": {},
+  "splatter": {},
+  "skittering_dust": {},
+  "smoke": {},
+  "heavy_snow": {},
+  "vertical_fog": {},
+  "streak": {},
+  "fog_after_rain": {},
+  "shrub": {},
   "ripple": {},
   "snow": {},
-  "splatter": {},
-  "smoke": {},
-  "streak": {},
+  "heavy_rain": {},
   "dust": {},
-  "mist": {},
-  "shrub": {}
+  "dust_haze": {},
+  "fog": {}
 }
