@@ -53,24 +53,17 @@
 				xp_levels: 10
 			}]
 			subtitle: "Welcome back, Endministrator."
-			tasks: [
-				{
-					id: "2C7CB1B640789FE4"
-					item: "arknights_endfield:protocol_anchor_core"
-					type: "item"
-				}
-				{
-					id: "172B73F7F6DBF464"
-					item: "arknights_endfield:protocol_anchor_core_port"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2C7CB1B640789FE4"
+				item: "arknights_endfield:protocol_anchor_core"
+				type: "item"
+			}]
 			title: "The Beginning of Civilization"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2F3DF97647901FC6"]
+			dependencies: ["467DB3E010329366"]
 			id: "0A7F998D6F3A49B9"
 			tasks: [{
 				id: "0FFED5BCD222B022"
@@ -78,10 +71,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["467DB3E010329366"]
+			dependencies: ["62152C1776A70DDC"]
 			id: "2F3DF97647901FC6"
 			subtitle: "Can't mine anything harder than Originium."
 			tasks: [{
@@ -91,7 +84,7 @@
 			}]
 			title: "Portable Mining Rigs"
 			x: 0.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -120,10 +113,10 @@
 			]
 			title: "Automation Foundations"
 			x: 0.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["011B3E898C2829AB"]
+			dependencies: ["2F3DF97647901FC6"]
 			description: [
 				"<&3Chen&r> It feels so strange to be able to place mineral veins wherever we want to."
 				""
@@ -156,10 +149,10 @@
 			}]
 			title: "Introduction to Mineral Veins"
 			x: 1.0d
-			y: 1.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["011B3E898C2829AB"]
+			dependencies: ["2F3DF97647901FC6"]
 			description: [
 				"<&ePerlica&r> Thankfully our facilities follow the same connection logic."
 				""
@@ -186,7 +179,7 @@
 			]
 			title: "Introduction to Connections"
 			x: -1.0d
-			y: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0A7F998D6F3A49B9"]
@@ -197,7 +190,35 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["011B3E898C2829AB"]
+			description: [
+				"&oUsing the Originium that Chen has obtained from a cave via Pickaxe, Endmin creates the Crafter to start making facilities.&r"
+				""
+				"&oThis is a hint for you, the Player, to craft the Portable Mining Rig to extract Originium from a surface Originium Mineral Vein.&r"
+				""
+				"&oIf you somehow have not found Originium in a Cave, look for surface Originium veins. Make sure to avoid the Mineral Vein blocks themselves as they require a pickaxe tier higher than Stone.&r"
+			]
+			icon: "arknights_endfield:crafter"
+			id: "62152C1776A70DDC"
+			subtitle: "We can't extract material yet."
+			tasks: [
+				{
+					id: "1B65C10BA475DE02"
+					item: "arknights_endfield:originium_ore"
+					type: "item"
+				}
+				{
+					id: "77C4290D1D88D4FD"
+					item: "arknights_endfield:crafter"
+					type: "item"
+				}
+			]
+			title: "Originium Crafting"
+			x: 0.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Welcome back, Endministrator."]
